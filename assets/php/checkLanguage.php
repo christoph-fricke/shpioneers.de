@@ -1,19 +1,22 @@
 <?php
 session_start();
 
-if ($_GET['lang']) {
+if (isset($_GET['lang'])) {
     $_SESSION['lang'] = $_GET['lang'];
+}
+else {
+    $_SESSION['lang'] = "de-de";
 }
 
 switch ($_SESSION['lang']) {
-    case "en":
-        include_once('Pfad_Englisch');
+    case "en-en":
+        include_once('assets/lang/en-en.php');
         break;
-    case "de":
-        include_once('Pfad_Deutsch');
+    case "de-de":
+        include_once('assets/lang/de-de.php');
         break;
     default:
-        include_once('Pfad_Default');
+        include_once('assets/lang/en-en.php');
         break;
 }
 
@@ -21,7 +24,7 @@ function setHtmlLang() {
     if ($_SESSION['lang']) {
         echo $_SESSION['lang'];
     } else {
-        echo "de";
+        echo "de-de";
     }
 }
 ?>
