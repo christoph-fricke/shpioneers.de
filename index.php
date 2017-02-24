@@ -50,14 +50,9 @@ include('assets/php/checkLanguage.php');
           <a href="">
             <?php echo LANGUAGE ?>
           </a>
-      <ul>
-        <li>
-        <a href="#down">pioneers</a>
-
-        </li>
+     
       </ul>
     </nav>
-    <div id="down">hier steht text</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
     <script src="assets/js/functions.js"></script>
   </body>
