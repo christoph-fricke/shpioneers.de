@@ -47,14 +47,19 @@ include('assets/php/checkLanguage.php');
           </a>
         </div>
         <div class="right">
-          <a class="navbar-option" href="">
+          <a class="navbar-option dropdown" href="">
             <?php echo LANGUAGE ?>
-            <!--<svg class="icon-nav">
-                <path d="M7 10l5 5 5-5z"/>
-                <path d="M0 0h24v24H0z" fill="none"/>
-            </svg>-->
-            <i class="mdi mdi-arrow-down-drop-circle"></i>
+              <i class="mdi mdi-arrow-down-drop-circle"></i>
           </a>
+          <div class="dropdown-content">
+            <a href="">
+              <?php echo TEAM ?>
+            </a>
+            <a href="">
+              <?php echo TEAM ?>
+            </a>
+          </div>
+        </div>
     </nav>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
