@@ -17,7 +17,12 @@ body {
     left: 0px;
     top: 0px;
     right: 0px;
+<<<<<<< HEAD
     background-color: red;
+=======
+    bottom: 0px;
+    background-color: #F5F5F5;
+>>>>>>> origin/design
 }
 
 
@@ -26,28 +31,47 @@ body {
  */
 
 nav {
-    display: flex;
-    background-color: green;
+    background-color: #FF4103;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 10%;
-    align-items: center;
+}
+
+.active {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 0.1em solid rgba(255, 255, 255, 1);
 }
 
 .navbar-content {
-    list-style-type: none;
-    margin: 0;
+    overflow: hidden;
+    margin: 0 50px 0 50px;
     padding: 0;
 }
 
-.navbar-option {
+.left {
     float: left;
 }
 
-.navbar-option a {
+.right {
+    float: right;
+}
+
+.navbar-option {
     display: block;
+<<<<<<< HEAD
     padding: 8px;
 
+=======
+    padding: 1em;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-option:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+>>>>>>> origin/design
 }
