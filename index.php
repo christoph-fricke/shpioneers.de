@@ -14,7 +14,6 @@ include('assets/php/checkLanguage.php');
     <link rel="icon" href="assets/img/favicon.ico" />
 
     <meta name="author" content="Christoph Fricke" />
-
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -55,6 +54,7 @@ include('assets/php/checkLanguage.php');
       </ul>
     </nav>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
     <script src="assets/js/functions.js"></script>
   </body>
 
