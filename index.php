@@ -20,8 +20,37 @@ include('assets/php/checkLanguage.php');
 
   <body>
     <nav>
-      <ul>
-        <li>
+      <ul class="navbar-content">
+        <li class="navbar-option">
+          <a href="">
+            <?php echo NEWS ?>
+          </a>
+        </li>
+        <li class="navbar-option">
+          <a href="">
+            <?php echo CONTEST ?>
+          </a>
+        </li>
+        <li class="navbar-option">
+          <a href="">
+            <?php echo SPONSORS ?>
+          </a>
+        </li>
+
+        <li class="navbar-option">
+          <a href="">
+            <?php echo SUCESS ?>
+          </a>
+        </li>
+        <li class="navbar-option">
+          <a href="">
+            <?php echo TEAM ?>
+          </a>
+        </li>
+        <li class="navbar-option">
+          <a href="">
+            <?php echo LANGUAGE ?>
+          </a>
         </li>
       </ul>
     </nav>
