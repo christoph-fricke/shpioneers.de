@@ -15,13 +15,14 @@ include('assets/php/checkLanguage.php');
 
     <meta name="author" content="Christoph Fricke" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   </head>
 
   <body>
     <nav>
       <div class="navbar-content">
         <div class="left">
-          <a class="navbar-option active" href="">
+          <a class="active navbar-option" href="">
             <?php echo NEWS ?>
           </a>
         </div>
@@ -47,17 +48,16 @@ include('assets/php/checkLanguage.php');
         </div>
         <div class="right">
           <a class="navbar-option" href="">
-            <?php echo LANGUAGE ?>
+            <span class="left nav-span"><?php echo LANGUAGE ?></span>
+            <svg class="icon-nav left" viewBox="0 0 30 30">
+                <path d="M7 10l5 5 5-5z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
           </a>
-<<<<<<< HEAD
-     
-      </ul>
-=======
-        </div>
-      </div>
->>>>>>> origin/design
     </nav>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/functions.js"></script>
   </body>
+
   </html>
