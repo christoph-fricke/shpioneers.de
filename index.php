@@ -15,7 +15,7 @@ include('assets/php/checkLanguage.php');
 
     <meta name="author" content="Christoph Fricke" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -48,11 +48,12 @@ include('assets/php/checkLanguage.php');
         </div>
         <div class="right">
           <a class="navbar-option" href="">
-            <span class="left nav-span"><?php echo LANGUAGE ?></span>
-            <svg class="icon-nav left" viewBox="0 0 30 30">
+            <?php echo LANGUAGE ?>
+            <!--<svg class="icon-nav">
                 <path d="M7 10l5 5 5-5z"/>
                 <path d="M0 0h24v24H0z" fill="none"/>
-            </svg>
+            </svg>-->
+            <i class="mdi mdi-arrow-down-drop-circle"></i>
           </a>
     </nav>
 

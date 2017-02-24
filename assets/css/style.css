@@ -63,21 +63,10 @@ nav {
     font-size: 1.25rem;
     text-decoration: none;
     font-weight: 700;
-    vertical-align: middle;
     color: rgba(255, 255, 255, 0.7);
 }
 
 .navbar-option:hover {
     background-color: rgba(0, 0, 0, 0.2);
     border-bottom: 0.1em solid rgba(0, 0, 0, 0.0);
-}
-
-.icon-nav {
-
-    fill: rgba(255, 255, 255, 0.7);
-    height: 1.875rem;
-}
-
-.nav-span {
-    display: block;
 }
