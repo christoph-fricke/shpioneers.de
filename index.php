@@ -16,6 +16,7 @@ include('assets/php/checkLanguage.php');
     <meta name="author" content="Christoph Fricke" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
+    
   </head>
 
   <body>
@@ -25,8 +26,8 @@ include('assets/php/checkLanguage.php');
         </li>
       </ul>
     </nav>
-
+    <script src ="https://code.jquery.com/jquery-3.1.1.min.js">>/script>
     <script src="assets/js/functions.js"></script>
+    
   </body>
-
   </html>
