@@ -1,5 +1,5 @@
 <?php
-define("TITLE", "Hallo");
-define("TEST", "Du Peter");
+// Meta Infos
+define("TITLE", "Pioneers");
 
 ?>
