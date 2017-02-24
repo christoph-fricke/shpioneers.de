@@ -49,4 +49,10 @@ nav {
 .navbar-option a {
     display: block;
     padding: 8px;
+
+}
+#down{
+position: absolute;
+top:5000px;
+
 }
