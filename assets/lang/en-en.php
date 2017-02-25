@@ -10,5 +10,8 @@ define('SUCESS', 'Sucesses');
 define('TEAM', 'Team');
 define('LANGUAGE', 'English');
 define('GERMAN', 'German');
-define('ENGLISH', 'English')
+define('ENGLISH', 'English');
+
+//News content
+define('HEADER_NEWS', 'That is new');
 ?>

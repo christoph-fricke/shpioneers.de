@@ -13,10 +13,6 @@
 
 html,
 body {
-    /*position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;*/
     background-color: #F5F5F5;
 }
 
@@ -102,11 +98,12 @@ nav {
  */
 
  header {
-     position: absolute;
+     position: relative;
      left: 0px;
      right: 0px;
      top: 0px;
-     bottom: 60px;
+     bottom: 0px;
+     margin-bottom: 60px;
      z-index: -1;
      background-color: pink;
  }
