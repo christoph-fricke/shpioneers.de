@@ -23,12 +23,12 @@ include('assets/php/news.php');
     <nav>
       <div class="navbar-content">
         <div class="left">
-          <a class="active navbar-option" href="#news">
+          <a class="navbar-option" href="#news">
             <?php echo NEWS ?>
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option active" href="">
+          <a class="navbar-option" href="">
             <?php echo CONTEST ?>
           </a>
         </div>
@@ -67,9 +67,11 @@ include('assets/php/news.php');
       <section class="logo-header">
 
       </section>
-      <a href="#news"><div class="fab">
-        <i class="mdi mdi-arrow-down mdi-24px"></i>
-      </div></a>
+      <a href="#news">
+        <div class="fab">
+          <i class="mdi mdi-arrow-down mdi-24px"></i>
+        </div>
+      </a>
     </header>
 
     <main>

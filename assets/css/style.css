@@ -90,6 +90,7 @@ nav {
     text-transform: uppercase;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.7);
+    border-bottom: 0.1em solid transparent;
 }
 
 .navbar-option:hover {
