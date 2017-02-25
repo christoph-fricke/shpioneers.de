@@ -28,7 +28,7 @@ include('assets/php/news.php');
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="">
+          <a class="navbar-option active" href="">
             <?php echo CONTEST ?>
           </a>
         </div>
