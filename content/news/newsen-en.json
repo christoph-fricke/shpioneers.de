@@ -1,0 +1,19 @@
+[
+
+	{
+			"title":"english",
+			"image":"path/paht/filename",
+			"date":"unixtimecode",
+			"preview":"kurze einleitung",
+			"text":"hier stehen die neuigkeiten"
+		},
+	{
+		"title":"we are the pioneers",
+		"image":"path/paht/filename",
+		"date":"unixtimecode",
+		"preview":"kurze einleitung",
+		"text":"hier stehen die neuigkeiten2"
+		
+		}	
+    
+]
