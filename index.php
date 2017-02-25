@@ -67,9 +67,11 @@ include('assets/php/news.php');
       <section class="logo-header">
 
       </section>
-      <a href="#news"><div class="fab">
-        <i class="mdi mdi-arrow-down mdi-24px"></i>
-      </div></a>
+      <a href="#news">
+        <div class="fab">
+          <i class="mdi mdi-arrow-down mdi-24px"></i>
+        </div>
+      </a>
     </header>
 
     <main>
