@@ -8,7 +8,7 @@
 if(!isset($_SESSION['lang'])) $_SESSION['lang'] = 'de-de'; //external links may not have visited before
 if($_SESSION['lang'] == "de-de") $String = file_get_contents('../../content/news/newsde-de.json');
 else $String = file_get_contents('../../content/news/newsen-en.json');
-$json = json_decode($String)[intval($_GET['ind'])];
+    $json = json_decode($String)[intval($_GET['ind'])];
 define('TITLE',$json -> title);
 define('TEXT', $json -> text);
 define('DATES',date("D, j.M.y",intval($json -> {'date'})));
