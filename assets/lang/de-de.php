@@ -14,4 +14,5 @@ define('ENGLISH', 'Englisch');
 
 //News content
 define('HEADER_NEWS', 'Das ist neu');
+define('BUTTON_NEWS', 'Mehr erfahren');
 ?>
