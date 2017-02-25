@@ -9,4 +9,6 @@ define('SPONSORS', 'Sponsoren');
 define('SUCESS', 'Erfolge');
 define('TEAM', 'Team');
 define('LANGUAGE', 'Deutsch');
+define('GERMAN', 'Deutsch');
+define('ENGLISH', 'Englisch')
 ?>
