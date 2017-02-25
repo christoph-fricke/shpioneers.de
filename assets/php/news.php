@@ -14,7 +14,7 @@
         $String = file_get_contents('localhost/content/news/newsen-en.json');
     }
     // choosing the language specific news data
-    $json = json_decode($String)  ;
+    $news = json_decode($String)  ;
 // usage of the json file 
 // $json[index] -> property
 ?>
