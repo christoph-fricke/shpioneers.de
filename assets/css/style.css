@@ -159,7 +159,7 @@ header {
   */
 
 .news {
-    overflow: auto;
+    overflow: visible;
 }
 
 .news-card {
