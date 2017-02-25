@@ -3,7 +3,7 @@
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);
 // this was debugging although the php doesnt show syntx errors
-writenews(1); //calling the function to see wether it does what it promises
+//writenews(1); //calling the function to see wether it does what it promises
 function writenews(int $index){ // the index describes the number to which news number news is supposed to be displayed
     session_start();
     if(!isset($_SESSION['lang'])){
