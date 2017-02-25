@@ -23,7 +23,7 @@ include('assets/php/news.php');
     <nav>
       <div class="navbar-content">
         <div class="left">
-          <a class="active navbar-option" href="">
+          <a class="active navbar-option" href="#news">
             <?php echo NEWS ?>
           </a>
         </div>
