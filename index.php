@@ -62,6 +62,15 @@ include('assets/php/checkLanguage.php');
         </div>
     </nav>
 
+    <header>
+        <section class="logo-header">
+
+        </section>
+            <div class="fab">
+                <i class="mdi mdi-arrow-down mdi-24px"></i>
+            </div>
+    </header>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/functions.js"></script>
   </body>
