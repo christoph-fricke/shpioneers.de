@@ -15,10 +15,18 @@ $(this).removeClass('active');
 });
 }
 
-
-$(document).scroll(function(){ // triggerind reached event
-	$('section').each(function(){
-            	var dt = $(window).scrollTop() - $(this).position().top;
+var didscroll = false;
+$(document).scroll(function(){
+didscroll = true;
+});
+var sections = $('section');
+var dt;
+setInterval(function(){ // triggerind reached event
+	if(didscroll){
+		sections.each(function(){
+            	dt = $(window).scrollTop() - $(this).position().top;
             	if( dt >= -70  && dt < 100) $(this).trigger('reached');
-		console.log(dt);
-});});
+	didscroll = false;
+}
+);
+}},250);
