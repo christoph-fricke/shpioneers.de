@@ -63,6 +63,10 @@ nav {
     z-index: 50;
 }
 
+.navbar-option{
+    transition: color 0.5s ease;
+}
+
 .navbar-option.active {
     color: rgba(255, 255, 255, 1);
 }
