@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-.right .dropdown i.mdi{ /* selector has to be this complicated for priotiy */
-line-height: initial;
+.right .dropdown i.mdi {
+    /* selector has to be this complicated for priotiy */
+    line-height: initial;
 }
+
 :root {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: 16px;
@@ -183,7 +185,7 @@ header {
     height: 300px;
 }
 
-.news-upper img{
+.news-upper img {
     width: 100%;
     max-height: 300px;
     border-radius: 2px 2px 0 0;
