@@ -30,4 +30,14 @@ define('TEXT_SPONSORS_0', 'Unsere Partner haben uns aktiv bei der Fertigung des 
 define('TEXT_SPONSORS_1', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
 define('TEXT_SPONSORS_2', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
 define('BUTTON_SPONSORS', 'Mehr erfahren');
+
+//Sucess content
+define('HEADER_SUCESS', 'Das haben wir erreicht');
+define('SUBHEADERS_SUCESS_0', '1. Platz LM 2017');
+define('SUBHEADERS_SUCESS_1', '6. Platz DM 2016');
+define('SUBHEADERS_SUCESS_2', '1. Platz LM 2016');
+define('TEXT_SUCESS_0', 'Nordmetallcup Schlewsig Holstein | Nordakademie Elmshorn');
+define('TEXT_SUCESS_1', 'Nordmetallcup Schlewsig Holstein | Nordakademie Elmshorn');
+define('TEXT_SUCESS_2', 'Nordmetallcup Schlewsig Holstein | Nordakademie Elmshorn');
+define('BUTTON_SUCESS', 'Mehr erfahren');
 ?>
