@@ -33,17 +33,17 @@ include('assets/php/news.php');
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="">
+          <a class="navbar-option" href="#sponsors">
             <?php echo SPONSORS ?>
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="">
+          <a class="navbar-option" href="#sucess">
             <?php echo SUCESS ?>
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="">
+          <a class="navbar-option" href="#team">
             <?php echo TEAM ?>
           </a>
         </div>
@@ -88,7 +88,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[0] -> preview ?>
               </p>
-              <a href="news.php?ind=0">
+              <a class="btn-small" href="news.php?ind=0">
                 <?php echo BUTTON_NEWS ?>
               </a>
             </div>
@@ -103,7 +103,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[1] -> preview ?>
               </p>
-              <a href="news.php?ind=1">
+              <a class="btn-small" href="news.php?ind=1">
                 <?php echo BUTTON_NEWS ?>
               </a>
             </div>
@@ -118,7 +118,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[2] -> preview ?>
               </p>
-              <a href="news.php?ind=2">
+              <a class="btn-small" href="news.php?ind=2">
                 <?php echo BUTTON_NEWS ?>
               </a>
             </div>
@@ -133,7 +133,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[3] -> preview ?>
               </p>
-              <a href="news.php?ind=3">
+              <a class="btn-small" href="news.php?ind=3">
                 <?php echo BUTTON_NEWS ?>
               </a>
             </div>
@@ -150,6 +150,110 @@ include('assets/php/news.php');
         </p>
         <a class="btn-big" href="">
           <?php echo BUTTON_CONTEST ?>
+        </a>
+      </main>
+    </section>
+
+    <main>
+      <section id="sponsors" class="sponsors">
+        <h1><?php echo HEADER_SPONSORS ?></h1>
+        <div class="row">
+          <div class="card sponsors-card">
+            <div class="icon-area">
+            </div>
+            <h2><?php echo SUBHEADERS_SPONSORS_0 ?></h2>
+            <p>
+              <?php echo TEXT_SPONSORS_0 ?>
+            </p>
+            <a class="btn-small" href="">
+              <?php echo BUTTON_SPONSORS ?>
+            </a>
+          </div>
+          <div class="card sponsors-card">
+            <div class="icon-area">
+            </div>
+            <h2><?php echo SUBHEADERS_SPONSORS_1 ?></h2>
+            <p>
+              <?php echo TEXT_SPONSORS_1 ?>
+            </p>
+            <a class="btn-small" href="">
+              <?php echo BUTTON_SPONSORS ?>
+            </a>
+          </div>
+          <div class="card sponsors-card">
+            <div class="icon-area">
+            </div>
+            <h2><?php echo SUBHEADERS_SPONSORS_2 ?></h2>
+            <p>
+              <?php echo TEXT_SPONSORS_2 ?>
+            </p>
+            <a class="btn-small" href="">
+              <?php echo BUTTON_SPONSORS ?>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sucess" class="sucess">
+        <h1><?php echo HEADER_SUCESS ?></h1>
+        <div class="row">
+          <div class="card sucess-card">
+            <div class="trophy">
+              <svg class="icon-big" viewBox="0 0 24 24">
+                <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
+                />
+              </svg>
+            </div>
+            <h2><?php echo SUBHEADERS_SUCESS_0 ?></h2>
+            <p>
+              <?php echo TEXT_SUCESS_0 ?>
+            </p>
+            <a class="btn-small" href="">
+              <?php echo BUTTON_SUCESS ?>
+            </a>
+          </div>
+          <div class="card sucess-card">
+            <div class="trophy">
+              <svg class="icon-big" viewBox="0 0 24 24">
+                <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
+                />
+              </svg>
+            </div>
+            <h2><?php echo SUBHEADERS_SUCESS_1 ?></h2>
+            <p>
+              <?php echo TEXT_SUCESS_1 ?>
+            </p>
+            <a class="btn-small" href="">
+              <?php echo BUTTON_SUCESS ?>
+            </a>
+          </div>
+          <div class="card sucess-card">
+            <div class="trophy">
+              <svg class="icon-big" viewBox="0 0 24 24">
+                <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
+                />
+              </svg>
+            </div>
+            <h2><?php echo SUBHEADERS_SUCESS_2 ?></h2>
+            <p>
+              <?php echo TEXT_SUCESS_2 ?>
+            </p>
+            <a class="btn-small" href="">
+              <?php echo BUTTON_SUCESS ?>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="team" class="team">
+      <main class="inner-team">
+        <h1><?php echo HEADER_TEAM ?></h1>
+        <p>
+          <?php echo TEXT_TEAM ?>
+        </p>
+        <a class="btn-big" href="">
+          <?php echo BUTTON_TEAM ?>
         </a>
       </main>
     </section>
