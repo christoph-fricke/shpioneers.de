@@ -16,7 +16,6 @@ $('section').on('reached', function() { // switching active element based on pos
 		leftpos = headerobject.parent().position().left;
 		width = headerobject.parent().width();
 		$('#magic-line').stop(true,false).animate({left: leftpos, width: width});
-		console.log(leftpos,width);
 		oldid = id; 
 	}
 	else if($(this).attr('id') === undefined){
