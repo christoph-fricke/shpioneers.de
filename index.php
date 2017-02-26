@@ -53,11 +53,11 @@ include('assets/php/news.php');
               <i class="mdi mdi-arrow-down-drop-circle"></i>
           </a>
           <div class="dropdown-content">
-            <a href="">
-              <?php echo TEAM ?>
+            <a href="?lang=de-de">
+              <?php echo GERMAN ?>
             </a>
-            <a href="">
-              <?php echo TEAM ?>
+            <a href="?lang=en-en">
+              <?php echo ENGLISH ?>
             </a>
           </div>
         </div>
