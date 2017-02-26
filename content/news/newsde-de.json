@@ -4,7 +4,7 @@
         "image": "assets/img/test.JPG",
         "date": "unixtimecode",
         "subtitle": "Yay I'm subtitle",
-        "preview": "kurze einleitung",
+        "preview": "kurze einleitung1",
         "text": "hier stehen die neuigkeiten"
     },
     {
@@ -12,7 +12,7 @@
         "image": "assets/img/test.JPG",
         "date": "unixtimecode",
         "subtitle": "Yay I'm subtitle",
-        "preview": "kurze einleitung",
+        "preview": "kurze einleitung2",
         "text": "hier stehen die neuigkeiten2"
 
     },
@@ -21,7 +21,7 @@
         "image": "assets/img/test.JPG",
         "date": "unixtimecode",
         "subtitle": "Yay I'm subtitle",
-        "preview": "kurze einleitung",
+        "preview": "kurze einleitung3",
         "text": "hier stehen die neuigkeiten3"
 
     },
@@ -30,7 +30,7 @@
         "image": "assets/img/test.JPG",
         "date": "unixtimecode",
         "subtitle": "Yay I'm subtitle",
-        "preview": "kurze einleitung",
+        "preview": "kurze einleitung4",
         "text": "hier stehen die neuigkeiten4"
 
     }

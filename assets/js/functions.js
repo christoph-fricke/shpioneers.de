@@ -27,8 +27,8 @@ var dt;
 setInterval(function(){ // triggerind reached event
 	if(didscroll){
 		sections.each(function(){
-            	dt = $(window).scrollTop() - $(this).position().top;
-            	if( dt >= -70  && dt < 100) $(this).trigger('reached');
+            	dt = $(window).scrollTop() + 71;// - $(this).position().top;
+            	if( dt > $(this).position().top  && dt < $(this).position().top + $(this).height()) $(this).trigger('reached');
 	didscroll = false;
 }
 );

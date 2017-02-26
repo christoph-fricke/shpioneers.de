@@ -64,13 +64,45 @@ nav {
     z-index: 50;
 }
 
-.navbar-option.active {
-    color: rgba(255, 255, 255, 1);
-    border-bottom: 0.1em solid rgba(255, 255, 255, 1);
+.navbar-option{
+    transition: color 0.5s ease;
 }
 
-.navbar-option.active:hover {
-    border-bottom: 0.1em solid rgba(255, 255, 255, 1);
+.navbar-option.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.navbar-option:before{
+content:'';
+position: absolute;
+left: 0;
+bottom: 0;
+height: 0.1em;
+width: 0;
+transition: width 0s ease, background .5s ease;
+}
+
+.navbar-option:after{
+content:'';
+position: absolute;
+right: 0;
+bottom: 0;
+height: 0.1em;
+width: 0;
+background: white;
+transition: width 0.5s ease;
+}
+
+.active.navbar-option:before{
+transition: width .5s ease;
+background: white;
+width: 100%;
+}
+.active.navbar-option:after{
+transition: width 0s;
+background: transparent;
+width:100%;
 }
 
 .navbar-content {
@@ -81,6 +113,7 @@ nav {
 
 .left {
     float: left;
+    position: relative;
 }
 
 .right {
@@ -173,6 +206,9 @@ header {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.logo-header{
+	height: 100%;
+}
 
 /*
   * NEWS
