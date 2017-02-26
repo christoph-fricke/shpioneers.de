@@ -95,13 +95,13 @@ include('assets/php/news.php');
           </div>
           <div class="card news-card">
             <div class="news-upper">
-              <img src="<?php echo htmlspecialchars($news[0] -> image) ?>" />
-              <h4><?php echo $news[0] -> title ?></h4>
+              <img src="<?php echo htmlspecialchars($news[1] -> image) ?>" />
+              <h4><?php echo $news[1] -> title ?></h4>
             </div>
             <div class="news-lower">
-              <h5><?php echo $news[0] -> subtitle ?></h5>
+              <h5><?php echo $news[1] -> subtitle ?></h5>
               <p>
-                <?php echo $news[0] -> preview ?>
+                <?php echo $news[1] -> preview ?>
               </p>
               <a href="news.php?ind=1">
                 <?php echo BUTTON_NEWS ?>
@@ -110,13 +110,13 @@ include('assets/php/news.php');
           </div>
           <div class="card news-card">
             <div class="news-upper">
-              <img src="<?php echo htmlspecialchars($news[0] -> image) ?>" />
-              <h4><?php echo $news[0] -> title ?></h4>
+              <img src="<?php echo htmlspecialchars($news[2] -> image) ?>" />
+              <h4><?php echo $news[2] -> title ?></h4>
             </div>
             <div class="news-lower">
-              <h5><?php echo $news[0] -> subtitle ?></h5>
+              <h5><?php echo $news[2] -> subtitle ?></h5>
               <p>
-                <?php echo $news[0] -> preview ?>
+                <?php echo $news[2] -> preview ?>
               </p>
               <a href="news.php?ind=2">
                 <?php echo BUTTON_NEWS ?>
@@ -125,13 +125,13 @@ include('assets/php/news.php');
           </div>
           <div class="card news-card">
             <div class="news-upper">
-              <img src="<?php echo htmlspecialchars($news[0] -> image) ?>" />
-              <h4><?php echo $news[0] -> title ?></h4>
+              <img src="<?php echo htmlspecialchars($news[3] -> image) ?>" />
+              <h4><?php echo $news[3] -> title ?></h4>
             </div>
             <div class="news-lower">
-              <h5><?php echo $news[0] -> subtitle ?></h5>
+              <h5><?php echo $news[3] -> subtitle ?></h5>
               <p>
-                <?php echo $news[0] -> preview ?>
+                <?php echo $news[3] -> preview ?>
               </p>
               <a href="news.php?ind=3">
                 <?php echo BUTTON_NEWS ?>
