@@ -17,7 +17,17 @@ define('HEADER_NEWS', 'This is new');
 define('BUTTON_NEWS', 'Learn more');
 
 //Contest content
-define('HEADER_CONTEST', 'Der Wettbewerb');
+define('HEADER_CONTEST', 'The Contest');
 define('TEXT_CONTEST', 'Formel 1 in der Schule ist ein multidisziplinärer Technologiewettbewerb bei dem wir einen Miniatur-Rennwagen am Computer konstruiert und gefertigt haben. Entscheidend für das Ergebnis ist nicht nur die Fahrzeit des Rennwagens, sondern auch die Gesamt-leistung aus Konstruktion, Fertigung, Businessplan, Portfolio und Präsentation.');
-define('BUTTON_CONTEST', 'Zur Wettbewerbsseite');
+define('BUTTON_CONTEST', 'Contestpage');
+
+//Sponsors content
+define('HEADER_SPONSORS', 'Our Supporters');
+define('SUBHEADERS_SPONSORS_0', 'Partner');
+define('SUBHEADERS_SPONSORS_1', 'Sachsponsoren');
+define('SUBHEADERS_SPONSORS_2', 'Finanzsponsoren');
+define('TEXT_SPONSORS_0', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
+define('TEXT_SPONSORS_1', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
+define('TEXT_SPONSORS_2', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
+define('BUTTON_SPONSORS', 'Learn more');
 ?>
