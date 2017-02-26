@@ -1,0 +1,37 @@
+[
+    {
+        "title": "english",
+        "image": "assets/img/test.JPG",
+        "date": "unixtimecode",
+        "subtitle": "Yay I'm subtitle",
+        "preview": "kurze einleitung",
+        "text": "hier stehen die neuigkeiten"
+    },
+    {
+        "title": "we are the pioneers",
+        "image": "assets/img/test.JPG",
+        "date": "unixtimecode",
+        "subtitle": "Yay I'm subtitle",
+        "preview": "kurze einleitung",
+        "text": "hier stehen die neuigkeiten2"
+
+    },
+    {
+        "title": "we are the pioneers",
+        "image": "assets/img/test.JPG",
+        "date": "unixtimecode",
+        "subtitle": "Yay I'm subtitle",
+        "preview": "kurze einleitung",
+        "text": "hier stehen die neuigkeiten3"
+
+    },
+    {
+        "title": "we are the pioneers",
+        "image": "assets/img/test.JPG",
+        "date": "unixtimecode",
+        "subtitle": "Yay I'm subtitle",
+        "preview": "kurze einleitung",
+        "text": "hier stehen die neuigkeiten4"
+
+    }
+]
