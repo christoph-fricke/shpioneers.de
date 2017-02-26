@@ -28,7 +28,7 @@ include('assets/php/news.php');
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="">
+          <a class="navbar-option" href="#contest">
             <?php echo CONTEST ?>
           </a>
         </div>
@@ -140,11 +140,19 @@ include('assets/php/news.php');
           </div>
         </div>
       </section>
-
-      <section id="contest" class="contest">
-          <h1><?php echo HEADER_CONTENT ?></h1>
-      </section>
     </main>
+
+    <section id="contest" class="contest">
+      <main class="inner-contest">
+        <h1><?php echo HEADER_CONTEST ?></h1>
+        <p>
+          <?php echo TEXT_CONTEST ?>
+        </p>
+        <a class="btn-big" href="">
+          <?php echo BUTTON_CONTEST ?>
+        </a>
+      </main>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/functions.js"></script>
