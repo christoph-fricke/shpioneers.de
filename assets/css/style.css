@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.right .dropdown i.mdi {
-    /* selector has to be this complicated for priotiy */
-    line-height: initial;
-}
-
 :root {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: 16px;
@@ -23,18 +18,30 @@ body {
 
 main {
     max-width: 1000px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto;
     background-color: greenyellow;
 }
 
 h1 {
     font-size: 3rem;
     color: #FF4103;
-    margin: 0.5em 10px;
+    margin: 0.5em 0;
+}
+
+p {
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0px;
 }
 
 .row {
     width: 100%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .card {
@@ -46,6 +53,23 @@ h1 {
 
 .card:nth-child(odd) {
     margin-right: 10%;
+}
+
+.btn-big {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding: 0.5em 1em;
+    color: rgba(255, 255, 255, 1);
+    background-color: #00BFFC;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.btn-big:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 
@@ -63,13 +87,45 @@ nav {
     z-index: 50;
 }
 
-.navbar-option.active {
-    color: rgba(255, 255, 255, 1);
-    border-bottom: 0.1em solid rgba(255, 255, 255, 1);
+.navbar-option{
+    transition: color 0.5s ease;
 }
 
-.navbar-option.active:hover {
-    border-bottom: 0.1em solid rgba(255, 255, 255, 1);
+.navbar-option.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.navbar-option:before{
+content:'';
+position: absolute;
+left: 0;
+bottom: 0;
+height: 0.1em;
+width: 0;
+transition: width 0s ease, background .5s ease;
+}
+
+.navbar-option:after{
+content:'';
+position: absolute;
+right: 0;
+bottom: 0;
+height: 0.1em;
+width: 0;
+background: white;
+transition: width 0.5s ease;
+}
+
+.active.navbar-option:before{
+transition: width .5s ease;
+background: white;
+width: 100%;
+}
+.active.navbar-option:after{
+transition: width 0s;
+background: transparent;
+width:100%;
 }
 
 .navbar-content {
@@ -80,11 +136,17 @@ nav {
 
 .left {
     float: left;
+    position: relative;
 }
 
 .right {
     height: 100%;
     float: right;
+}
+
+.right .dropdown i.mdi {
+    /* selector has to be this complicated for priotiy */
+    line-height: initial;
 }
 
 .navbar-option {
@@ -142,7 +204,9 @@ header {
     position: relative;
     height: calc(100vh - 60px);
     margin-bottom: 60px;
-    background-color: pink;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .fab {
@@ -175,12 +239,17 @@ header {
 
 .news {
     overflow: visible;
+    padding-bottom: 100px;
 }
 
 .news-card {
     width: 45%;
     height: 500px;
     margin-bottom: 50px;
+}
+
+.news-card:last-child, .news-card:nth-last-child(2) {
+    margin-bottom: 0px;
 }
 
 .news-upper {
@@ -236,3 +305,31 @@ header {
 .news-lower a:hover {
     color: #009DCF;
 }
+
+/*
+ * CONTEST
+ */
+
+ .contest {
+     background-color: #CCCCCC;
+     padding: 50px 0;
+ }
+
+ .inner-contest {
+     background-color: #CCCCCC;
+ }
+
+.inner-contest h1 {
+    margin-top: 0px;
+}
+
+.inner-contest .btn-big {
+    float: right;
+}
+
+.inner-contest::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
