@@ -32,4 +32,4 @@ setInterval(function(){ // triggerind reached event
 	didscroll = false;
 }
 );
-}},250);
+}},50);
