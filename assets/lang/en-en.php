@@ -13,6 +13,6 @@ define('GERMAN', 'German');
 define('ENGLISH', 'English');
 
 //News content
-define('HEADER_NEWS', 'That is new');
-define('BUTTON_NEWS', 'Mehr erfahren');
+define('HEADER_NEWS', 'This is new');
+define('BUTTON_NEWS', 'Learn more');
 ?>
