@@ -338,6 +338,12 @@ header {
  * SPONSORS
  */
 
+.sponsors {
+    margin-bottom: 0px;
+    padding-bottom: 100px;
+    border-bottom: 2px solid #FF4103;
+}
+
 .sponsors-card {
     position: relative;
     padding: 0 10px;
@@ -357,7 +363,7 @@ header {
 
 .icon-area {
     height: 60px;
-    border-bottom: 2px solid #FF4103;
+    border-bottom: 1px solid #FF4103;
 }
 
 .sponsors-card h2 {
