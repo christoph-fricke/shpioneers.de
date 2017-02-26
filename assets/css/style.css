@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+.right .dropdown i.mdi{ /* selector has to be this complicated for priotiy */
+line-height: initial;
+}
 :root {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: 16px;
