@@ -5,11 +5,23 @@ $(document).ready(function() {
     });
 });
 
-
-
+var oldid = '';
 $('section').on('reached', function() { // switching active element based on position
-    removeactive();
-    $('a[href=\\#' + $(this).attr('id') + ']').addClass('active');
+	headerobject = $('a[href=\\#' + $(this).attr('id') + ']');
+	if(oldid != $(this).attr('id') && $(this).attr('id') !== undefined ){
+		removeactive();
+		headerobject.addClass('active');
+		leftpos = headerobject.parent().position().left;
+		width = headerobject.parent().width();
+		$('#magic-line').stop().animate({left: leftpos, width: width});
+		console.log(leftpos,width);
+		oldid = $(this).attr('id');
+	}
+	else if($(this).attr('id') === undefined){
+		removeactive();
+		$('#magic-line').stop().animate({width: 0, left: 0});
+		oldid = undefined;
+	}
 });
 
 function removeactive() {
