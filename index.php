@@ -88,7 +88,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[0] -> preview ?>
               </p>
-              <a href="news.php?ind=0">
+              <a class="btn-small" href="news.php?ind=0">
                 <?php echo BUTTON_NEWS ?>
               </a>
             </div>
@@ -103,7 +103,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[1] -> preview ?>
               </p>
-              <a href="news.php?ind=1">
+              <a class="btn-small" href="news.php?ind=1">
                 <?php echo BUTTON_NEWS ?>
               </a>
             </div>
@@ -118,7 +118,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[2] -> preview ?>
               </p>
-              <a href="news.php?ind=2">
+              <a class="btn-small" href="news.php?ind=2">
                 <?php echo BUTTON_NEWS ?>
               </a>
             </div>
@@ -133,7 +133,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[3] -> preview ?>
               </p>
-              <a href="news.php?ind=3">
+              <a class="btn-small" href="news.php?ind=3">
                 <?php echo BUTTON_NEWS ?>
               </a>
             </div>
@@ -153,6 +153,47 @@ include('assets/php/news.php');
         </a>
       </main>
     </section>
+
+    <main>
+      <section id="sponsors" class="sponsors">
+        <h1><?php echo HEADER_SPONSORS ?></h1>
+        <div class="row">
+          <div class="card sponsors-card">
+            <div class="icon-area">
+            </div>
+            <h2><?php echo SUBHEADERS_SPONSORS_0 ?></h2>
+            <p>
+              <?php echo TEXT_SPONSORS_0 ?>
+            </p>
+            <a class="btn-small" href="">
+              <?php echo BUTTON_SPONSORS ?>
+            </a>
+          </div>
+          <div class="card sponsors-card">
+            <div class="icon-area">
+            </div>
+            <h2><?php echo SUBHEADERS_SPONSORS_0 ?></h2>
+            <p>
+              <?php echo TEXT_SPONSORS_0 ?>
+            </p>
+            <a class="btn-small" href="">
+              <?php echo BUTTON_SPONSORS ?>
+            </a>
+          </div>
+          <div class="card sponsors-card">
+            <div class="icon-area">
+            </div>
+            <h2><?php echo SUBHEADERS_SPONSORS_0 ?></h2>
+            <p>
+              <?php echo TEXT_SPONSORS_0 ?>
+            </p>
+            <a class="btn-small" href="">
+              <?php echo BUTTON_SPONSORS ?>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/functions.js"></script>
