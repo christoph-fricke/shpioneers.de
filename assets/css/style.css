@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.right .dropdown i.mdi {
-    /* selector has to be this complicated for priotiy */
-    line-height: initial;
-}
-
 :root {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: 16px;
@@ -93,6 +88,11 @@ nav {
     float: right;
 }
 
+.right .dropdown i.mdi {
+    /* selector has to be this complicated for priotiy */
+    line-height: initial;
+}
+
 .navbar-option {
     display: block;
     padding: 1em;
@@ -148,7 +148,9 @@ header {
     position: relative;
     height: calc(100vh - 60px);
     margin-bottom: 60px;
-    background-color: pink;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .fab {
@@ -239,3 +241,7 @@ header {
 .news-lower a:hover {
     color: #009DCF;
 }
+
+/*
+ * CONTEST
+ */
