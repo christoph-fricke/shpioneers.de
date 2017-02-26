@@ -40,4 +40,9 @@ define('TEXT_SUCESS_0', 'Nordmetallcup Schlewsig Holstein | Nordakademie Elmshor
 define('TEXT_SUCESS_1', 'Nordmetallcup Schlewsig Holstein | Nordakademie Elmshorn');
 define('TEXT_SUCESS_2', 'Nordmetallcup Schlewsig Holstein | Nordakademie Elmshorn');
 define('BUTTON_SUCESS', 'Learn more');
+
+//Team content
+define('HEADER_TEAM', 'Our Team');
+define('TEXT_TEAM', 'Moin, wir sind das Team Pioneers und nehmen in neuer Zusammensetzung nun das zweite Mal am Wettbewerb „Formel 1 in der Schule“ teil. Ziel ist es, ein eigenes, vielseitiges Projekt auf die Beine zu stellen und dabei möglichst viel zu lernen. Hierbei darf aber die Freude an der Arbeit nicht verloren gehen.<br> Durch unsere Erfahrung aus zwei Saison und der erfolgreichen Teilnahme an der Deutschen Meisterschaft mit einer 6. Platzierung haben wir eine gute Basis geschaffen, um in der kommenden Saison voll durch zu starten.<br> Wir haben in unserem Team durch individuelle Stärken und Interessengebiete für den multidisziplinären Wettbewerb eine gute Vorraussetzungen geschaffen und ergänzen uns in jeder Hinsicht optimal.');
+define('BUTTON_TEAM', 'Visit the team');
 ?>

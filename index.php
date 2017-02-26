@@ -33,17 +33,17 @@ include('assets/php/news.php');
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="">
+          <a class="navbar-option" href="#sponsors">
             <?php echo SPONSORS ?>
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="">
+          <a class="navbar-option" href="#sucess">
             <?php echo SUCESS ?>
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="">
+          <a class="navbar-option" href="#team">
             <?php echo TEAM ?>
           </a>
         </div>
@@ -245,6 +245,18 @@ include('assets/php/news.php');
         </div>
       </section>
     </main>
+
+    <section id="team" class="team">
+      <main class="inner-team">
+        <h1><?php echo HEADER_TEAM ?></h1>
+        <p>
+          <?php echo TEXT_TEAM ?>
+        </p>
+        <a class="btn-big" href="">
+          <?php echo BUTTON_TEAM ?>
+        </a>
+      </main>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/functions.js"></script>
