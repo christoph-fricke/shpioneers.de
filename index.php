@@ -140,6 +140,10 @@ include('assets/php/news.php');
           </div>
         </div>
       </section>
+
+      <section id="contest" class="contest">
+          <h1><?php echo HEADER_CONTENT ?></h1>
+      </section>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
