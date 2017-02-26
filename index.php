@@ -61,6 +61,7 @@ include('assets/php/news.php');
             </a>
           </div>
         </div>
+	<div id='magic-line'/>
     </nav>
 
     <header>
