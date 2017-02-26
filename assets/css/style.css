@@ -118,7 +118,7 @@ nav {
     color: rgba(0, 0, 0, 0.70);
 }
 
-.navbar-option:active .dropdown-content {
+.right:hover .dropdown-content {
     display: block;
 }
 
