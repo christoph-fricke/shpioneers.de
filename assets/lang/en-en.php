@@ -8,7 +8,7 @@ define('CONTEST', 'Contest');
 define('SPONSORS', 'Sponsors');
 define('SUCESS', 'Sucesses');
 define('TEAM', 'Team');
-define('LANGUAGE', 'English');
+define('LANGUAGE', 'Language');
 define('GERMAN', 'German');
 define('ENGLISH', 'English');
 
