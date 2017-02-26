@@ -7,15 +7,17 @@ $(document).ready(function() {
 
 var oldid = '';
 $('section').on('reached', function() { // switching active element based on position
-	headerobject = $('a[href=\\#' + $(this).attr('id') + ']');
-	if(oldid != $(this).attr('id') && $(this).attr('id') !== undefined ){
+	var id = $(this).attr('id');
+	headerobject = $('a[href=\\#' + id + ']');
+	
+	if(oldid != id  && id  !== undefined ){
 		removeactive();
 		headerobject.addClass('active');
 		leftpos = headerobject.parent().position().left;
 		width = headerobject.parent().width();
 		$('#magic-line').stop().animate({left: leftpos, width: width});
 		console.log(leftpos,width);
-		oldid = $(this).attr('id');
+		oldid = id; 
 	}
 	else if($(this).attr('id') === undefined){
 		removeactive();
