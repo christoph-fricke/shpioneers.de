@@ -59,4 +59,10 @@ define('SUBHEADER_IMPRESSUM_1', "Telefonnummer:");
 define("TEXT_IMPRESSUM_1", '6666 - 666666');
 define('SUBHEADER_IMPRESSUM_2', "E-Mail:");
 define("TEXT_IMPRESSUM_2", 'info@pioneers.de');
+define('BUTTON_SOCIAL_0', 'Facebook');
+define('BUTTON_SOCIAL_1', 'Twitter');
+define('BUTTON_SOCIAL_2', 'Instagram');
+define('BUTTON_SOCIAL_3', 'YouTube');
+define('BUTTON_SOCIAL_4', 'Archiv');
+define('COPYRIGHT', '&copy; 2017, Pioneers');
 ?>
