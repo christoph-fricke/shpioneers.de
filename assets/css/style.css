@@ -110,6 +110,16 @@ nav {
     z-index: 50;
 }
 
+.navbar-content {
+    margin: 0 50px;
+}
+
+.navbar-content::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
 .navbar-option {
     transition: color 0.5s ease;
 }
@@ -410,3 +420,24 @@ header {
     content: "";
     clear: both;
 }
+
+/*
+ * FOOTER
+ */
+
+ footer {
+     background-color: #D13603;
+     padding: 50px 0;
+ }
+
+ .contact {
+     float: left;
+     width: 45%;
+     margin-right:10%;
+ }
+
+ .footer-right {
+     float: right;
+     width: 45%;
+     margin-left: 10%;
+ }
