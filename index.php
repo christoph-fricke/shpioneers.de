@@ -281,7 +281,7 @@ include('assets/php/news.php');
               <h6><?php echo SUBHEADER_IMPRESSUM_1 ?></h6>
               <p>
                 <?php echo TEXT_IMPRESSUM_1 ?>
-              </p>>
+              </p>
               <h6><?php echo SUBHEADER_IMPRESSUM_2 ?></h6>
               <p>
                 <?php echo TEXT_IMPRESSUM_2 ?>
@@ -306,7 +306,7 @@ include('assets/php/news.php');
             </div>
           </div>
         </div>
-        <p>
+        <p class="copyright">
           <?php echo COPYRIGHT ?>
         </p>
       </main>

@@ -39,6 +39,12 @@ h2 {
     margin: 0.1em 0 0.2em 0;
 }
 
+h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0px;
+}
+
 p {
     font-size: 1.25rem;
     color: rgba(0, 0, 0, 0.87);
@@ -427,7 +433,17 @@ header {
 
  footer {
      background-color: #D13603;
-     padding: 50px 0;
+     padding: 50px 0 20px 0;
+ }
+
+ footer h2 {
+     text-align: left;
+     color: rgba(255, 255, 255, 1);
+     margin-top: 0;
+ }
+
+ footer .btn-big {
+     margin-bottom: 20px; 
  }
 
  .contact {
@@ -439,5 +455,24 @@ header {
  .footer-right {
      float: right;
      width: 45%;
-     margin-left: 10%;
  }
+
+ .social, .impressum {
+     float: left;
+     width: 50%;
+ }
+
+ .impressum h6 {
+     color: rgba(255, 255, 255, 1);
+ }
+
+ .impressum p {
+     color: rgba(255, 255, 255, 0.7);
+     margin-bottom: 10px;
+ }
+
+.copyright {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin-top: 50px;
+}
