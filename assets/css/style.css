@@ -381,8 +381,8 @@ header {
     width: 75px;
     height: 75px;
     fill: rgba(255, 255, 255, 1);
-	top: calc(50% - 36px);
-	left: calc(50% - 36px);
+	top: calc(50% - 37.5px);
+	left: calc(50% - 37.5px);
 }
 
 .sucess-card .btn-small {
