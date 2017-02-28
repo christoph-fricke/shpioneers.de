@@ -291,10 +291,10 @@ include('assets/php/news.php');
               <a class="btn-big" href="https://www.facebook.com/SHpioneers/">
                 <?php echo BUTTON_SOCIAL_0 ?>
               </a>
-              <a class="btn-big" href="https://www.instagram.com/shpioneers/">
+              <a class="btn-big" href="https://twitter.com/SHpioneers/">
                 <?php echo BUTTON_SOCIAL_1 ?>
               </a>
-              <a class="btn-big" href="https://twitter.com/SHpioneers">
+              <a class="btn-big" href="https://www.instagram.com/shpioneers">
                 <?php echo BUTTON_SOCIAL_2 ?>
               </a>
               <a class="btn-big" href="">
