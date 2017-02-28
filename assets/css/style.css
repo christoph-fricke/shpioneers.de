@@ -337,10 +337,28 @@ header {
     position: relative;
     padding: 0 10px;
     width: 30%;
-    height: 260px;
+    height: 350px;
     margin-right: 5%;
 }
 
+.icon-area{
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #FF4103;
+	height: 100px;
+}
+.partner{
+background-image: url('../icons/partner.svg');
+}
+
+.thingssponsor{
+background-image: url('../icons/sachsponsor.svg');
+}
+
+.financesponsor{
+background-image: url('../icons/finanzsponsor.svg');
+}
 .sponsors-card:last-child {
     margin-right: 0px;
 }
@@ -350,10 +368,6 @@ header {
     right: 10px;
 }
 
-.icon-area {
-    height: 60px;
-    border-bottom: 1px solid #FF4103;
-}
 
 .sponsors-card p {
     color: rgba(0, 0, 0, 0.70);
