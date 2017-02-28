@@ -157,7 +157,7 @@ include('assets/php/news.php');
         <h1><?php echo HEADER_SPONSORS ?></h1>
         <div class="row">
           <div class="card sponsors-card">
-            <div class="icon-area">
+            <div class="icon-area partner">
             </div>
             <h2><?php echo SUBHEADERS_SPONSORS_0 ?></h2>
             <p>
@@ -168,7 +168,7 @@ include('assets/php/news.php');
             </a>
           </div>
           <div class="card sponsors-card">
-            <div class="icon-area">
+            <div class="icon-area thingssponsor">
             </div>
             <h2><?php echo SUBHEADERS_SPONSORS_1 ?></h2>
             <p>
@@ -179,7 +179,7 @@ include('assets/php/news.php');
             </a>
           </div>
           <div class="card sponsors-card">
-            <div class="icon-area">
+            <div class="icon-area financesponsor">
             </div>
             <h2><?php echo SUBHEADERS_SPONSORS_2 ?></h2>
             <p>
