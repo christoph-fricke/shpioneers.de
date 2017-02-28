@@ -78,6 +78,7 @@ include('assets/php/news.php');
     <main>
       <section id="news" class="news">
         <h1><?php echo HEADER_NEWS ?></h1>
+	<a class="btn-small top_left" href=""><?php echo BUTTON_OLD_NEWS?></a>
         <div class="row">
           <div class="card news-card">
             <div class="news-upper">
