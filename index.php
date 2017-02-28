@@ -297,9 +297,6 @@ include('assets/php/news.php');
               <a class="btn-big" href="">
                 <?php echo BUTTON_SOCIAL_3 ?>
               </a>
-              <a class="btn-big" href="">
-                <?php echo BUTTON_SOCIAL_4 ?>
-              </a>
             </div>
           </div>
         </div>

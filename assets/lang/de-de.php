@@ -64,6 +64,5 @@ define('BUTTON_SOCIAL_0', 'Facebook');
 define('BUTTON_SOCIAL_1', 'Twitter');
 define('BUTTON_SOCIAL_2', 'Instagram');
 define('BUTTON_SOCIAL_3', 'YouTube');
-define('BUTTON_SOCIAL_4', 'Archiv');
 define('COPYRIGHT', '&copy; 2017, Pioneers');
 ?>
