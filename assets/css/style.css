@@ -19,6 +19,7 @@ body {
 main {
     max-width: 1000px;
     margin: 0 auto;
+	padding: 0 5%;
 }
 
 section {
@@ -73,6 +74,7 @@ p {
     font-weight: 700;
     transition:  200ms cubic-bezier(0.4, 0.0, 0.2, 1);
 	padding: 0 5px;
+	border-radius: 2px;
 }
 
 .btn-small:hover {

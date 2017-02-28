@@ -81,8 +81,7 @@ include('assets/php/news.php');
 	<a class="btn-small top_left" href=""><?php echo BUTTON_OLD_NEWS?></a>
         <div class="row">
           <div class="card news-card">
-            <div class="news-upper">
-              <img src="<?php echo htmlspecialchars($news[0] -> image) ?>" />
+            <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[0] -> image) ?>);">
               <h4><?php echo $news[0] -> title ?></h4>
             </div>
             <div class="news-lower">
@@ -96,8 +95,7 @@ include('assets/php/news.php');
             </div>
           </div>
           <div class="card news-card">
-            <div class="news-upper">
-              <img src="<?php echo htmlspecialchars($news[1] -> image) ?>" />
+            <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[1] -> image) ?>);">
               <h4><?php echo $news[1] -> title ?></h4>
             </div>
             <div class="news-lower">
@@ -111,8 +109,7 @@ include('assets/php/news.php');
             </div>
           </div>
           <div class="card news-card">
-            <div class="news-upper">
-              <img src="<?php echo htmlspecialchars($news[2] -> image) ?>" />
+            <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[2] -> image) ?>);">
               <h4><?php echo $news[2] -> title ?></h4>
             </div>
             <div class="news-lower">
@@ -126,8 +123,7 @@ include('assets/php/news.php');
             </div>
           </div>
           <div class="card news-card">
-            <div class="news-upper">
-              <img src="<?php echo htmlspecialchars($news[3] -> image) ?>" />
+            <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[3] -> image) ?>);">
               <h4><?php echo $news[3] -> title ?></h4>
             </div>
             <div class="news-lower">
