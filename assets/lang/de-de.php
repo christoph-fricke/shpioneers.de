@@ -15,6 +15,7 @@ define('ENGLISH', 'Englisch');
 //News content
 define('HEADER_NEWS', 'Das ist neu');
 define('BUTTON_NEWS', 'Mehr erfahren');
+define('BUTTON_OLD_NEWS', 'Archiv');
 
 //Contest content
 define('HEADER_CONTEST', 'Der Wettbewerb');
@@ -36,9 +37,9 @@ define('HEADER_SUCESS', 'Das haben wir erreicht');
 define('SUBHEADERS_SUCESS_0', '1. Platz LM 2017');
 define('SUBHEADERS_SUCESS_1', '6. Platz DM 2016');
 define('SUBHEADERS_SUCESS_2', '1. Platz LM 2016');
-define('TEXT_SUCESS_0', 'Nordmetallcup Schlewsig Holstein | Nordakademie Elmshorn');
-define('TEXT_SUCESS_1', 'Nordmetallcup Schlewsig Holstein | Nordakademie Elmshorn');
-define('TEXT_SUCESS_2', 'Nordmetallcup Schlewsig Holstein | Nordakademie Elmshorn');
+define('TEXT_SUCESS_0', 'Nordmetallcup Schleswig Holstein | Nordakademie Elmshorn');
+define('TEXT_SUCESS_1', 'Nordmetallcup Schleswig Holstein | Nordakademie Elmshorn');
+define('TEXT_SUCESS_2', 'Nordmetallcup Schleswig Holstein | Nordakademie Elmshorn');
 define('BUTTON_SUCESS', 'Mehr erfahren');
 
 //Team content
