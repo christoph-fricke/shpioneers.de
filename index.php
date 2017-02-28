@@ -48,10 +48,10 @@ include('assets/php/news.php');
           </a>
         </div>
         <div class="right">
-          <a class="navbar-option dropdown" href="">
+          <div class="navbar-option dropdown" href="">
             <?php echo LANGUAGE ?>
               <i class="mdi mdi-arrow-down-drop-circle"></i>
-          </a>
+          </div>
           <div class="dropdown-content">
             <a href="?lang=de-de">
               <?php echo GERMAN ?>
