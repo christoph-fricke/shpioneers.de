@@ -16,6 +16,7 @@ body {
     background-color: #F5F5F5;
 }
 
+
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -48,6 +49,7 @@ p {
 
 .row {
     width: 100%;
+	position: relative;
 }
 
 .row::after {
@@ -191,6 +193,11 @@ nav {
     display: inline-block;
 }
 
+@media screen and (max-width: 1000px){
+	nav{
+		visibility: hidden;
+	}
+}
 
 /*
  * HEADER
@@ -298,7 +305,17 @@ header {
     color: rgba(0, 0, 0, 0.70);
 }
 
-
+@media screen and (max-width:1000px){
+	.news-card{
+		position:absolute;
+		visibility: hidden;
+	}
+	.news-card:nth-child(1){
+		width: 100%;
+		position: relative;
+		visibility: visible;
+	}
+}
 /*
  * CONTEST
  */
@@ -373,16 +390,21 @@ background-image: url('../icons/finanzsponsor.svg');
     color: rgba(0, 0, 0, 0.70);
 }
 
+@media screen and (max-width: 1000px){
+.sponsors-card{ 
+	width: 100%;
+	margin-top: 5%;
+}
 
+}
 /*
  * SUCESS
  */
 
 .sucess-card {
     position: relative;
-    padding: 0 10px;
+    padding: 0 10px 2.5rem 10px;
     width: 30%;
-    height: 400px;
     margin-right: 5%;
 }
 
@@ -415,6 +437,17 @@ background-image: url('../icons/finanzsponsor.svg');
     right: 10px;
 }
 
+@media screen and (max-width: 1000px){
+	.sucess-card{
+		width:100%;
+		margin-top:5%;
+		margin-right: 0;
+	}
+	.sucess-card:nth-child(3){
+		position:absolute;
+		visibility: hidden;
+	}
+}
 /*
  * TEAM
  */
