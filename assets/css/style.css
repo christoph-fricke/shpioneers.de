@@ -82,10 +82,6 @@ p {
 	background-color: rgba(0,0,0,0.26);
 }
 
-#news .top_left{
-	bottom: auto;
-	top: 20px;
-}
 
 .btn-big {
     display: inline-block;
@@ -243,6 +239,11 @@ header {
 	position:relative;
 }
 
+#news .top_left{
+	bottom: auto;
+	top: 20px;
+}
+
 .news-card {
     width: 45%;
     height: 500px;
@@ -261,6 +262,9 @@ header {
 .news-upper {
     position: relative;
     height: 300px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .news-upper img {
