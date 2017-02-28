@@ -25,6 +25,9 @@ section {
     margin-bottom: 100px;
 }
 
+body section:last-of-type{
+	margin-bottom: 0;
+}
 h1 {
     font-size: 3rem;
     color: #FF4103;
