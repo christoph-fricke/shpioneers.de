@@ -61,7 +61,7 @@ include('assets/php/news.php');
             </a>
           </div>
         </div>
-	<div id='magic-line'/>
+        <div id='magic-line' />
     </nav>
 
     <header>
@@ -255,6 +255,59 @@ include('assets/php/news.php');
         </a>
       </main>
     </section>
+
+    <footer>
+      <main>
+        <div class="row">
+          <div class="contact">
+            <h2><?php echo HEADER_FOOTER_0 ?></h2>
+            <form action="" method="POST">
+              <input type="text" name="name" placeholder="<?php echo NAME_FORM ?>" required />
+              <input type="email" name="email" placeholder="<?php echo EMAIL_FORM ?>" required />
+              <textarea name="message" placeholder="<?php echo MESSAGE_FORM ?>"></textarea>
+              <input class="btn-big" type="submit" value="<?php echo BUTTON_FORM ?>"/>
+            </form>
+          </div>
+          <div class="footer-right">
+            <div class="impressum">
+            <h2><?php echo HEADER_FOOTER_1 ?></h2>
+              <h6><?php echo SUBHEADER_IMPRESSUM_0 ?></h6>
+              <p>
+                <?php echo TEXT_IMPRESSUM_0 ?>
+              </p>
+              <h6><?php echo SUBHEADER_IMPRESSUM_1 ?></h6>
+              <p>
+                <?php echo TEXT_IMPRESSUM_1 ?>
+              </p>
+              <h6><?php echo SUBHEADER_IMPRESSUM_2 ?></h6>
+              <p>
+                <?php echo TEXT_IMPRESSUM_2 ?>
+              </p>
+            </div>
+            <div class="social">
+              <a class="btn-big" href="https://www.facebook.com/SHpioneers/">
+                <?php echo BUTTON_SOCIAL_0 ?>
+              </a>
+              <a class="btn-big" href="https://twitter.com/SHpioneers/">
+                <?php echo BUTTON_SOCIAL_1 ?>
+              </a>
+              <a class="btn-big" href="https://www.instagram.com/shpioneers">
+                <?php echo BUTTON_SOCIAL_2 ?>
+              </a>
+              <a class="btn-big" href="">
+                <?php echo BUTTON_SOCIAL_3 ?>
+              </a>
+              <a class="btn-big" href="">
+                <?php echo BUTTON_SOCIAL_4 ?>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          <?php echo COPYRIGHT ?>
+        </p>
+      </main>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/functions.js"></script>

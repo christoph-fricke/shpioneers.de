@@ -45,4 +45,24 @@ define('BUTTON_SUCESS', 'Learn more');
 define('HEADER_TEAM', 'Our Team');
 define('TEXT_TEAM', 'Moin, wir sind das Team Pioneers und nehmen in neuer Zusammensetzung nun das zweite Mal am Wettbewerb „Formel 1 in der Schule“ teil. Ziel ist es, ein eigenes, vielseitiges Projekt auf die Beine zu stellen und dabei möglichst viel zu lernen. Hierbei darf aber die Freude an der Arbeit nicht verloren gehen.<br> Durch unsere Erfahrung aus zwei Saison und der erfolgreichen Teilnahme an der Deutschen Meisterschaft mit einer 6. Platzierung haben wir eine gute Basis geschaffen, um in der kommenden Saison voll durch zu starten.<br> Wir haben in unserem Team durch individuelle Stärken und Interessengebiete für den multidisziplinären Wettbewerb eine gute Vorraussetzungen geschaffen und ergänzen uns in jeder Hinsicht optimal.');
 define('BUTTON_TEAM', 'Visit the team');
+
+//Footer content
+define('HEADER_FOOTER_0', 'Contact');
+define('HEADER_FOOTER_1', 'Impressum');
+define('NAME_FORM', 'Name');
+define('EMAIL_FORM', 'E-Mail');
+define('MESSAGE_FORM', 'Message');
+define('BUTTON_FORM', 'Submit');
+define('SUBHEADER_IMPRESSUM_0', "Location:");
+define("TEXT_IMPRESSUM_0", 'z. Hd. Pioneers<br>Gymnasium Kronshagen<br>Suchsdorfer Weg 35<br>24119 Kronshagen');
+define('SUBHEADER_IMPRESSUM_1', "Phonenumber:");
+define("TEXT_IMPRESSUM_1", '6666 - 666666');
+define('SUBHEADER_IMPRESSUM_2', "E-Mail:");
+define("TEXT_IMPRESSUM_2", 'info@pioneers.de');
+define('BUTTON_SOCIAL_0', 'Facebook');
+define('BUTTON_SOCIAL_1', 'Twitter');
+define('BUTTON_SOCIAL_2', 'Instagram');
+define('BUTTON_SOCIAL_3', 'YouTube');
+define('BUTTON_SOCIAL_4', 'Archiv');
+define('COPYRIGHT', '&copy; 2017, Pioneers');
 ?>
