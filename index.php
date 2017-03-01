@@ -262,8 +262,8 @@ include('assets/php/news.php');
           <div class="contact">
             <h2><?php echo HEADER_FOOTER_0 ?></h2>
             <form action="" method="POST">
-              <input type="text" name="name" placeholder="<?php echo NAME_FORM ?>" required />
-              <input type="email" name="email" placeholder="<?php echo EMAIL_FORM ?>" required />
+              <input class="contactfield" type="text" name="name" placeholder="<?php echo NAME_FORM ?>" required />
+              <input class="contactfield" type="email" name="email" placeholder="<?php echo EMAIL_FORM ?>" required />
               <textarea name="message" placeholder="<?php echo MESSAGE_FORM ?>"></textarea>
               <input class="btn-big" type="submit" value="<?php echo BUTTON_FORM ?>"/>
             </form>
