@@ -20,9 +20,12 @@ body {
 main {
     max-width: 1000px;
     margin: 0 auto;
-	/*padding: 0 5%;*/
+	padding: 0 2%;
 }
 
+@media screen and (max-width: 1000px){
+	main{padding: 0 5%;}
+}
 section {
     margin-bottom: 100px;
 }
