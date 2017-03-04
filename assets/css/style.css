@@ -21,17 +21,25 @@ main {
     max-width: 1000px;
     margin: 0 auto;
 	padding: 0 2%;
+	width: 100%;
 }
 
 @media screen and (max-width: 1000px){
-	main{padding: 0 5%;}
+	main{padding: 0 5%;
+		}
 }
 section {
     margin-bottom: 100px;
+	float: left;
 }
 
 body>section:last-of-type{
 	margin-bottom: 0;
+}
+
+body>section{
+	float: left;
+	width: 100%;
 }
 
 h1 {
@@ -63,6 +71,7 @@ p {
 .row {
     width: 100%;
 	position: relative;
+	float: left;
 }
 
 .row::after {
@@ -267,6 +276,8 @@ header {
 .news {
     overflow: visible;
 	position:relative;
+	float: left;
+	width: 100%;
 }
 
 #news .top_left{
@@ -511,6 +522,8 @@ background-image: url('../icons/finanzsponsor.svg');
  footer {
      background-color: #D13603;
      padding: 50px 0 20px 0;
+	float: left;
+	width: 100%;
  }
 
  footer h2 {
@@ -595,7 +608,9 @@ input[type="submit"] {
 	.contact{
 		width: 100%;
 	}
-	
+	footer {
+		float: left;
+	}	
 	.footer-right{
 		margin-top: 5%;
 		width: 100%;
