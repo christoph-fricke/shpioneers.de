@@ -286,15 +286,19 @@ include('assets/php/news.php');
             </div>
             <div class="social">
               <a class="btn-big" href="https://www.facebook.com/SHpioneers/">
-                <?php echo BUTTON_SOCIAL_0 ?>
+                <i class="mdi mdi-facebook-box"></i> 
+		<?php echo BUTTON_SOCIAL_0 ?>
               </a>
               <a class="btn-big" href="https://twitter.com/SHpioneers/">
+                <i class="mdi mdi-twitter-box"></i> 
                 <?php echo BUTTON_SOCIAL_1 ?>
               </a>
               <a class="btn-big" href="https://www.instagram.com/shpioneers">
+                <i class="mdi mdi-instagram"></i> 
                 <?php echo BUTTON_SOCIAL_2 ?>
               </a>
               <a class="btn-big" href="">
+                <i class="mdi mdi-youtube-play"></i> 
                 <?php echo BUTTON_SOCIAL_3 ?>
               </a>
             </div>

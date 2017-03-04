@@ -512,6 +512,7 @@ background-image: url('../icons/finanzsponsor.svg');
 
  footer .btn-big {
      margin-bottom: 20px; 
+	width: 100%;
  }
 
  .contact {
@@ -567,7 +568,7 @@ textarea {
 }
 
 .contactfield {
-    width: 47.5%;
+    width: 47%;
 }
 
 .contactfield:first-child {
