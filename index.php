@@ -77,8 +77,8 @@ include('assets/php/news.php');
 
     <main>
       <section id="news" class="news">
-        <h1><?php echo HEADER_NEWS ?></h1>
 	<a class="btn-small top_left" href=""><?php echo BUTTON_OLD_NEWS?></a>
+        <h1><?php echo HEADER_NEWS ?></h1>
         <div class="row">
           <div class="card news-card">
             <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[0] -> image) ?>);">

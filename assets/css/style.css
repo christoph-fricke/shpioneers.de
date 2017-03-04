@@ -338,6 +338,15 @@ header {
 		position: relative;
 		visibility: visible;
 	}
+	#news .top_left{
+		float: right;
+		position: relative;
+		margin-left: 15px;
+	}
+	#news h1{
+		float: left;
+		position: relative;
+	}
 }
 /*
  * CONTEST
@@ -513,6 +522,7 @@ background-image: url('../icons/finanzsponsor.svg');
  footer .btn-big {
      margin-bottom: 20px; 
 	width: 100%;
+	text-align: center;
  }
 
  .contact {
@@ -579,4 +589,30 @@ input[type="submit"] {
     margin: 10px 0 0 auto;
     border: none;
     outline: none;
+}
+
+@media screen and (max-width: 1000px){
+	.contact{
+		width: 100%;
+	}
+	
+	.footer-right{
+		margin-top: 5%;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.footer-right{
+		display: flex;
+		flex-flow: column;
+	}
+	.impressum{
+		width: 100%;
+		order: 2;
+	}
+	.social{
+		width: 100%;
+		order:1;
+	}
 }
