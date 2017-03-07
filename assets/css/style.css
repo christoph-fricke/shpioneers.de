@@ -235,15 +235,12 @@ nav {
     .mobile {
         display: block;
     }
-
     .desktop {
         display: none;
     }
-
     .navbar-content {
         margin: 0 20px;
     }
-
     .navbar-option {
         padding: 0.5em;
     }
@@ -322,15 +319,10 @@ header {
 .news-upper {
     position: relative;
     height: 300px;
+    border-radius: 2px 2px 0 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.news-upper img {
-    width: 100%;
-    max-height: 300px;
-    border-radius: 2px 2px 0 0;
 }
 
 .news-upper h4 {
