@@ -16,12 +16,11 @@ body {
     background-color: #F5F5F5;
 }
 
-
 main {
     max-width: 1000px;
     margin: 0 auto;
-	padding: 0 2%;
-	width: 100%;
+    padding: 0 2%;
+    width: 100%;
 }
 
 main::after {
@@ -30,22 +29,24 @@ main::after {
     clear: both;
 }
 
-@media screen and (max-width: 1000px){
-	main{padding: 0 5%;
-		}
+@media screen and (max-width: 1000px) {
+    main {
+        padding: 0 5%;
+    }
 }
+
 section {
     margin-bottom: 100px;
-	float: left;
+    float: left;
 }
 
-body>section:last-of-type{
-	margin-bottom: 0;
+body>section:last-of-type {
+    margin-bottom: 0;
 }
 
-body>section{
-	float: left;
-	width: 100%;
+body>section {
+    float: left;
+    width: 100%;
 }
 
 h1 {
@@ -76,8 +77,8 @@ p {
 
 .row {
     width: 100%;
-	position: relative;
-	float: left;
+    position: relative;
+    float: left;
 }
 
 .row::after {
@@ -102,16 +103,15 @@ p {
     font-size: 1.25rem;
     text-transform: uppercase;
     font-weight: 700;
-    transition:  200ms cubic-bezier(0.4, 0.0, 0.2, 1);
-	padding: 0 5px;
-	border-radius: 2px;
+    transition: 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    padding: 0 5px;
+    border-radius: 2px;
 }
 
 .btn-small:hover {
     color: #009DCF;
-	background-color: rgba(0,0,0,0.26);
+    background-color: rgba(0, 0, 0, 0.26);
 }
-
 
 .btn-big {
     display: inline-block;
@@ -163,11 +163,11 @@ nav {
     color: rgba(255, 255, 255, 1);
 }
 
-#magic-line{
-	position: absolute;
-	height: 2px;
-	background-color: white;
-	bottom: 0;	
+#magic-line {
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
 }
 
 .left {
@@ -231,11 +231,12 @@ nav {
     display: inline-block;
 }
 
-@media screen and (max-width: 1000px){
-	nav{
-		visibility: hidden;
-	}
+@media screen and (max-width: 1000px) {
+    nav {
+        visibility: hidden;
+    }
 }
+
 
 /*
  * HEADER
@@ -281,14 +282,14 @@ header {
 
 .news {
     overflow: visible;
-	position:relative;
-	float: left;
-	width: 100%;
+    position: relative;
+    float: left;
+    width: 100%;
 }
 
-#news .top_left{
-	bottom: auto;
-	top: 20px;
+#news .top_left {
+    bottom: auto;
+    top: 20px;
 }
 
 .news-card {
@@ -309,9 +310,9 @@ header {
 .news-upper {
     position: relative;
     height: 300px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .news-upper img {
@@ -345,26 +346,28 @@ header {
     color: rgba(0, 0, 0, 0.70);
 }
 
-@media screen and (max-width:1000px){
-	.news-card{
-		position:absolute;
-		visibility: hidden;
-	}
-	.news-card:nth-child(1){
-		width: 100%;
-		position: relative;
-		visibility: visible;
-	}
-	#news .top_left{
-		float: right;
-		position: relative;
-		margin-left: 15px;
-	}
-	#news h1{
-		float: left;
-		position: relative;
-	}
+@media screen and (max-width:1000px) {
+    .news-card {
+        position: absolute;
+        visibility: hidden;
+    }
+    .news-card:nth-child(1) {
+        width: 100%;
+        position: relative;
+        visibility: visible;
+    }
+    #news .top_left {
+        float: right;
+        position: relative;
+        margin-left: 15px;
+    }
+    #news h1 {
+        float: left;
+        position: relative;
+    }
 }
+
+
 /*
  * CONTEST
  */
@@ -407,24 +410,26 @@ header {
     margin-right: 5%;
 }
 
-.icon-area{
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	border-bottom: 1px solid #FF4103;
-	height: 100px;
-}
-.partner{
-background-image: url('../icons/partner.svg');
+.icon-area {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #FF4103;
+    height: 100px;
 }
 
-.thingssponsor{
-background-image: url('../icons/sachsponsor.svg');
+.partner {
+    background-image: url('../icons/partner.svg');
 }
 
-.financesponsor{
-background-image: url('../icons/finanzsponsor.svg');
+.thingssponsor {
+    background-image: url('../icons/sachsponsor.svg');
 }
+
+.financesponsor {
+    background-image: url('../icons/finanzsponsor.svg');
+}
+
 .sponsors-card:last-child {
     margin-right: 0px;
 }
@@ -434,18 +439,18 @@ background-image: url('../icons/finanzsponsor.svg');
     right: 10px;
 }
 
-
 .sponsors-card p {
     color: rgba(0, 0, 0, 0.70);
 }
 
-@media screen and (max-width: 1000px){
-.sponsors-card{ 
-	width: 100%;
-	margin-top: 5%;
+@media screen and (max-width: 1000px) {
+    .sponsors-card {
+        width: 100%;
+        margin-top: 5%;
+    }
 }
 
-}
+
 /*
  * SUCESS
  */
@@ -486,22 +491,24 @@ background-image: url('../icons/finanzsponsor.svg');
     right: 10px;
 }
 
-@media screen and (max-width: 1000px){
-	.sucess-card{
-		width:100%;
-		margin-top:5%;
-		margin-right: 0;
-	}
-	.sucess-card:nth-child(3){
-		position:absolute;
-		visibility: hidden;
-	}
+@media screen and (max-width: 1000px) {
+    .sucess-card {
+        width: 100%;
+        margin-top: 5%;
+        margin-right: 0;
+    }
+    .sucess-card:nth-child(3) {
+        position: absolute;
+        visibility: hidden;
+    }
 }
+
+
 /*
  * TEAM
  */
 
- .team {
+.team {
     background-color: #CCCCCC;
     padding: 50px 0;
 }
@@ -521,53 +528,55 @@ background-image: url('../icons/finanzsponsor.svg');
     clear: both;
 }
 
+
 /*
  * FOOTER
  */
 
- footer {
-     background-color: #D13603;
-     padding: 50px 0 20px 0;
-	float: left;
-	width: 100%;
- }
+footer {
+    background-color: #D13603;
+    padding: 50px 0 20px 0;
+    float: left;
+    width: 100%;
+}
 
- footer h2 {
-     text-align: left;
-     color: rgba(255, 255, 255, 1);
-     margin-top: 0;
- }
+footer h2 {
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 0;
+}
 
- footer .btn-big {
-     margin-bottom: 20px; 
-	width: 100%;
-	text-align: center;
- }
+footer .btn-big {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
 
- .contact {
-     float: left;
-     width: 45%;
-     margin-right:10%;
- }
+.contact {
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+}
 
- .footer-right {
-     float: right;
-     width: 45%;
- }
+.footer-right {
+    float: right;
+    width: 45%;
+}
 
- .social, .impressum {
-     float: left;
-     width: 50%;
- }
+.social,
+.impressum {
+    float: left;
+    width: 50%;
+}
 
- .impressum h6 {
-     color: rgba(255, 255, 255, 1);
- }
+.impressum h6 {
+    color: rgba(255, 255, 255, 1);
+}
 
- .impressum p {
-     color: rgba(255, 255, 255, 0.7);
-     margin-bottom: 10px;
- }
+.impressum p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+}
 
 .copyright {
     color: rgba(255, 255, 255, 0.7);
@@ -575,7 +584,8 @@ background-image: url('../icons/finanzsponsor.svg');
     margin-top: 50px;
 }
 
-.contactfield , textarea{
+.contactfield,
+textarea {
     box-sizing: border-box;
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: 1rem;
@@ -585,7 +595,8 @@ background-image: url('../icons/finanzsponsor.svg');
     transition: border 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-.contactfield:focus , textarea:focus {
+.contactfield:focus,
+textarea:focus {
     border: 2px solid #009DCF;
 }
 
@@ -593,7 +604,7 @@ textarea {
     width: 100%;
     height: 105px;
     resize: vertical;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 .contactfield {
@@ -610,30 +621,30 @@ input[type="submit"] {
     outline: none;
 }
 
-@media screen and (max-width: 1000px){
-	.contact{
-		width: 100%;
-	}
-	footer {
-		float: left;
-	}	
-	.footer-right{
-		margin-top: 5%;
-		width: 100%;
-	}
+@media screen and (max-width: 1000px) {
+    .contact {
+        width: 100%;
+    }
+    footer {
+        float: left;
+    }
+    .footer-right {
+        margin-top: 5%;
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 450px){
-	.footer-right{
-		display: flex;
-		flex-flow: column;
-	}
-	.impressum{
-		width: 100%;
-		order: 2;
-	}
-	.social{
-		width: 100%;
-		order:1;
-	}
+@media screen and (max-width: 450px) {
+    .footer-right {
+        display: flex;
+        flex-flow: column;
+    }
+    .impressum {
+        width: 100%;
+        order: 2;
+    }
+    .social {
+        width: 100%;
+        order: 1;
+    }
 }
