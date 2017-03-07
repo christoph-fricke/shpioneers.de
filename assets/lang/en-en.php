@@ -15,6 +15,7 @@ define('ENGLISH', 'English');
 //News content
 define('HEADER_NEWS', 'This is new');
 define('BUTTON_NEWS', 'Learn more');
+define('BUTTON_OLD_NEWS','Archive');
 
 //Contest content
 define('HEADER_CONTEST', 'The Contest');
@@ -63,6 +64,5 @@ define('BUTTON_SOCIAL_0', 'Facebook');
 define('BUTTON_SOCIAL_1', 'Twitter');
 define('BUTTON_SOCIAL_2', 'Instagram');
 define('BUTTON_SOCIAL_3', 'YouTube');
-define('BUTTON_SOCIAL_4', 'Archiv');
 define('COPYRIGHT', '&copy; 2017, Pioneers');
 ?>

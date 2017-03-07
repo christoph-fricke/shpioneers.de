@@ -15,12 +15,36 @@ include('assets/php/news.php');
     <link rel="icon" href="assets/img/favicon.ico" />
 
     <meta name="author" content="Pioneers" />
+    <meta name="theme-color" content="#FF4103" />
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" />
   </head>
 
   <body>
-    <nav>
+    <nav class="mobile">
+      <div class="navbar-content">
+        <div class="left">
+          <div class="navbar-option">
+              <i class="mdi mdi-menu"></i>
+          </div>
+        </div>
+        <div class="right">
+          <div class="navbar-option dropdown" href="">
+            <i class="mdi mdi-translate"></i>
+          </div>
+          <div class="dropdown-content">
+            <a href="?lang=de-de">
+              <?php echo GERMAN ?>
+            </a>
+            <a href="?lang=en-en">
+              <?php echo ENGLISH ?>
+            </a>
+          </div>
+        </div>
+    </nav>
+
+    <nav class="desktop">
       <div class="navbar-content">
         <div class="left">
           <a class="navbar-option" href="#news">
@@ -48,10 +72,10 @@ include('assets/php/news.php');
           </a>
         </div>
         <div class="right">
-          <a class="navbar-option dropdown" href="">
+          <div class="navbar-option dropdown" href="">
             <?php echo LANGUAGE ?>
               <i class="mdi mdi-arrow-down-drop-circle"></i>
-          </a>
+          </div>
           <div class="dropdown-content">
             <a href="?lang=de-de">
               <?php echo GERMAN ?>
@@ -77,8 +101,10 @@ include('assets/php/news.php');
 
     <main>
       <section id="news" class="news">
+        <a class="btn-small top_left" href="">
+          <?php echo BUTTON_OLD_NEWS?>
+        </a>
         <h1><?php echo HEADER_NEWS ?></h1>
-	<a class="btn-small top_left" href=""><?php echo BUTTON_OLD_NEWS?></a>
         <div class="row">
           <div class="card news-card">
             <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[0] -> image) ?>);">
@@ -265,12 +291,12 @@ include('assets/php/news.php');
               <input class="contactfield" type="text" name="name" placeholder="<?php echo NAME_FORM ?>" required />
               <input class="contactfield" type="email" name="email" placeholder="<?php echo EMAIL_FORM ?>" required />
               <textarea name="message" placeholder="<?php echo MESSAGE_FORM ?>"></textarea>
-              <input class="btn-big" type="submit" value="<?php echo BUTTON_FORM ?>"/>
+              <input class="btn-big" type="submit" value="<?php echo BUTTON_FORM ?>" />
             </form>
           </div>
           <div class="footer-right">
             <div class="impressum">
-            <h2><?php echo HEADER_FOOTER_1 ?></h2>
+              <h2><?php echo HEADER_FOOTER_1 ?></h2>
               <h6><?php echo SUBHEADER_IMPRESSUM_0 ?></h6>
               <p>
                 <?php echo TEXT_IMPRESSUM_0 ?>
@@ -286,19 +312,20 @@ include('assets/php/news.php');
             </div>
             <div class="social">
               <a class="btn-big" href="https://www.facebook.com/SHpioneers/">
+                <i class="mdi mdi-facebook-box"></i>
                 <?php echo BUTTON_SOCIAL_0 ?>
               </a>
               <a class="btn-big" href="https://twitter.com/SHpioneers/">
+                <i class="mdi mdi-twitter-box"></i>
                 <?php echo BUTTON_SOCIAL_1 ?>
               </a>
               <a class="btn-big" href="https://www.instagram.com/shpioneers">
+                <i class="mdi mdi-instagram"></i>
                 <?php echo BUTTON_SOCIAL_2 ?>
               </a>
               <a class="btn-big" href="">
+                <i class="mdi mdi-youtube-play"></i>
                 <?php echo BUTTON_SOCIAL_3 ?>
-              </a>
-              <a class="btn-big" href="">
-                <?php echo BUTTON_SOCIAL_4 ?>
               </a>
             </div>
           </div>
