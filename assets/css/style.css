@@ -24,6 +24,12 @@ main {
 	width: 100%;
 }
 
+main::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
 @media screen and (max-width: 1000px){
 	main{padding: 0 5%;
 		}
