@@ -230,11 +230,15 @@ nav {
 .right:hover .dropdown-content {
     display: inline-block;
 }
+.mobile{
+	visibility: hidden;
 
+}
 @media screen and (max-width: 1000px) {
     .mobile {
         display: block;
-    }
+    	visibility: visible;
+	}
     .desktop {
         display: none;
     }
