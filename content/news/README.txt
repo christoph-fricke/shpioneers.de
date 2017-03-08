@@ -14,5 +14,3 @@ Snippet:
 
 Only change the image name in the brackets for the path to the image.
 There is no need to change the date. It gets generated.
-
-
