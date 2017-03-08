@@ -28,13 +28,24 @@ include('assets/php/news.php');
           <div class="navbar-option">
               <i class="mdi mdi-menu"></i>
           </div>
-		<div class="sidebar">
-			<a class="sidebar-option" href="#news"><?php echo NEWS ?> </a>
-			<a class="sidebar-option"href="#contest"><?php echo CONTEST ?> </a>
-			<a class="sidebar-option" href="#sponsors">  <?php echo SPONSORS ?> </a>
-			<a class="sidebar-option" href="#sucess"> <?php echo SUCESS ?> </a>
-			<a class="sidebar-option"href="#team"> <?php echo TEAM ?> </a>
+		<div class="sidebar dropdown-content">
+			<div class="sidebar-option">
+			<a href="#news" class="navbar-option" ><?php echo NEWS ?> </a>
+			</div>
+			<div class="sidebar-option">
+			<a href="#contest" class="navbar-option" ><?php echo CONTEST ?> </a>
+			</div>
+			<div class="sidebar-option">
+			<a href="#sponsors"class="navbar-option" ><?php echo SPONSORS ?> </a>
+			</div>
+			<div class="sidebar-option">
+			<a href="#sucess"class="navbar-option" ><?php echo SUCESS ?> </a>
+			</div>
+			<div class="sidebar-option">
+			<a href="#team"class="navbar-option" ><?php echo TEAM ?> </a>
+			</div>
 		</div>
+	<div class="grey"></div>
         </div>
         <div class="right">
           <div class="navbar-option dropdown" href="">
