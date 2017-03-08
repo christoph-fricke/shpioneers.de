@@ -232,7 +232,7 @@ nav {
 }
 
 .mobile {
-    visibility: hidden;
+    display: none;
 }
 
 .sidebar-option .navbar-option {
@@ -255,7 +255,6 @@ nav {
 @media screen and (max-width: 1000px) {
     .mobile {
         display: block;
-        visibility: visible;
         z-index: 50;
     }
     .desktop {
@@ -393,12 +392,12 @@ header {
 @media screen and (max-width:1000px) {
     .news-card {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
     .news-card:nth-child(1) {
         width: 100%;
         position: relative;
-        visibility: visible;
+        display: block;
     }
     #news .top_left {
         float: right;
@@ -546,7 +545,7 @@ header {
     }
     .sucess-card:nth-child(3) {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
 }
 
