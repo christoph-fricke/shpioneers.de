@@ -339,19 +339,19 @@ include('assets/php/news.php');
               </p>
             </div>
             <div class="social">
-              <a class="btn-big" href="https://www.facebook.com/SHpioneers/">
+              <a class="btn-big" href="https://www.facebook.com/SHpioneers/" target="_blank">
                 <i class="mdi mdi-facebook-box"></i>
                 <?php echo BUTTON_SOCIAL_0 ?>
               </a>
-              <a class="btn-big" href="https://twitter.com/SHpioneers/">
+              <a class="btn-big" href="https://twitter.com/SHpioneers/" target="_blank">
                 <i class="mdi mdi-twitter-box"></i>
                 <?php echo BUTTON_SOCIAL_1 ?>
               </a>
-              <a class="btn-big" href="https://www.instagram.com/shpioneers">
+              <a class="btn-big" href="https://www.instagram.com/shpioneers" target="_blank">
                 <i class="mdi mdi-instagram"></i>
                 <?php echo BUTTON_SOCIAL_2 ?>
               </a>
-              <a class="btn-big" href="">
+              <a class="btn-big" href="" target="_blank">
                 <i class="mdi mdi-youtube-play"></i>
                 <?php echo BUTTON_SOCIAL_3 ?>
               </a>
