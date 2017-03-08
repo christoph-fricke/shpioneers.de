@@ -342,6 +342,7 @@ header {
 #news .top_left {
     bottom: auto;
     top: 20px;
+    right: 0px;
 }
 
 .news-card {
@@ -406,11 +407,20 @@ header {
     #news .top_left {
         float: right;
         position: relative;
-        margin-left: 15px;
+        /*margin-left: 15px;*/
     }
     #news h1 {
         float: left;
         position: relative;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #news .top_left {
+        float: left;
+        top: 0px;
+        left: 0px;
+        margin: 0 0 10px 0;
     }
 }
 
