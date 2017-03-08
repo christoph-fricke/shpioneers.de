@@ -236,7 +236,7 @@ nav {
 }
 
 .sidebar-option .navbar-option {
-    color: #FF4103;
+    color: rgba(0, 0, 0, 0.70);
 }
 
 .grey {
@@ -245,7 +245,7 @@ nav {
     height: 100%;
     z-index: -1;
     pointer-events: none;
-    transition: background-color 200ms ease;
+    transition: background-color 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .left:hover .grey {
@@ -261,28 +261,31 @@ nav {
         display: none;
     }
     .navbar-content {
-        margin: 0 20px;
+        margin: 0;
+        margin-right: 20px;
     }
     .navbar-option {
         padding: 0.5em;
     }
+    .hamburger {
+        padding: 0.5em 20px;
+    }
+
     .sidebar {
-        left: 0;
+        left: -200px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         background-color: white;
-        transition-duration: .2s;
-        transition-property: height;
-        width: auto;
+        transition: left 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        width: 200px;
         overflow: hidden;
         position: fixed;
-        height: 0;
+        height: 100%;
         display: inline-block;
     }
     .left:hover .sidebar {
-        height: 100%;
+        left: 0px;
     }
-    .sidebar-option {
-        width: 100%;
-    }
+
 }
 
 

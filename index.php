@@ -25,7 +25,7 @@ include('assets/php/news.php');
     <nav class="mobile">
       <div class="navbar-content">
         <div class="left">
-          <div class="navbar-option">
+          <div class="navbar-option hamburger">
             <i class="mdi mdi-menu"></i>
           </div>
           <div class="sidebar dropdown-content">
