@@ -8,7 +8,7 @@ $(document).ready(function() {
 var oldid = '';
 $('section').on('reached', function() { // switching active element based on position
 	var id = $(this).attr('id');
-	headerobject = $('a[href=\\#' + id + ']');
+	headerobject = $('.desktop a[href=\\#' + id + ']');
 	
 	if(oldid != id  && id  !== undefined ){
 		removeactive();
