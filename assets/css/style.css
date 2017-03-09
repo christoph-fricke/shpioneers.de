@@ -174,11 +174,13 @@ nav {
 .left {
     float: left;
     position: relative;
+	cursor: pointer;
 }
 
 .right {
     height: 100%;
     float: right;
+	cursor: pointer;
 }
 
 .right .dropdown i.mdi {
