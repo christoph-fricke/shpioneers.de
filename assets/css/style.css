@@ -213,7 +213,13 @@ nav {
     background-color: #FFFFFF;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
+.mobile .right .dropdown-content{
+margin: auto;
+right: 0;
+}
+.mobile .right{
+	position: relative;
+}
 .dropdown-content a {
     display: inline-block;
     width: 100%;
