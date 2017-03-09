@@ -59,7 +59,7 @@ include('assets/php/news.php');
           <div class="grey"></div>
         </div>
         <div class="right">
-          <div class="navbar-option dropdown" href="">
+          <div class="navbar-option dropdown" >
             <i class="mdi mdi-translate"></i>
           </div>
           <div class="dropdown-content">
