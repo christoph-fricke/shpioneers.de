@@ -12,11 +12,14 @@ include('assets/php/news.php');
     </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="format-detection" content="telephone=no" />
-	<link rel="icon" href="assets/img/favicon.ico" />
+	<!--<link rel="icon" href="assets/img/favicon.ico" />-->
 
-    <meta name="author" content="Pioneers" />
+    <meta name="Author" content="Pioneers" />
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    
     <meta name="theme-color" content="#FF4103" />
+    <meta name="format-detection" content="telephone=no" />
 	
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" />
@@ -201,7 +204,7 @@ include('assets/php/news.php');
         <p>
           <?php echo TEXT_CONTEST ?>
         </p>
-        <a class="btn-big" href="">
+        <a class="btn-big" href="https://www.f1inschools.de/" target="_blank">
           <?php echo BUTTON_CONTEST ?>
         </a>
       </main>
