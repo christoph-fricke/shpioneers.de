@@ -22,10 +22,10 @@ include('assets/php/news.php');
     <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body >
     <nav class="mobile">
       <div class="navbar-content">
-        <div class="left" onclick="">
+        <div class="left" >
           <div class="navbar-option hamburger">
             <i class="mdi mdi-menu"></i>
           </div>
@@ -58,7 +58,7 @@ include('assets/php/news.php');
           </div>
           <div class="grey"></div>
         </div>
-        <div class="right" onclick="" >
+        <div class="right"  >
           <div class="navbar-option dropdown" >
             <i class="mdi mdi-translate"></i>
           </div>
@@ -100,7 +100,7 @@ include('assets/php/news.php');
             <?php echo TEAM ?>
           </a>
         </div>
-        <div class="right" onclick="" > 
+        <div class="right" > 
           <div class="navbar-option dropdown" href="">
             <?php echo LANGUAGE ?>
               <i class="mdi mdi-arrow-down-drop-circle"></i>
