@@ -12,11 +12,12 @@ include('assets/php/news.php');
     </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="assets/img/favicon.ico" />
+    <meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="assets/img/favicon.ico" />
 
     <meta name="author" content="Pioneers" />
     <meta name="theme-color" content="#FF4103" />
-
+	
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" />
   </head>
