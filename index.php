@@ -25,7 +25,7 @@ include('assets/php/news.php');
   <body>
     <nav class="mobile">
       <div class="navbar-content">
-        <div class="left">
+        <div class="left" onclick="">
           <div class="navbar-option hamburger">
             <i class="mdi mdi-menu"></i>
           </div>
@@ -58,7 +58,7 @@ include('assets/php/news.php');
           </div>
           <div class="grey"></div>
         </div>
-        <div class="right">
+        <div class="right" onclick="" >
           <div class="navbar-option dropdown" >
             <i class="mdi mdi-translate"></i>
           </div>
@@ -100,7 +100,7 @@ include('assets/php/news.php');
             <?php echo TEAM ?>
           </a>
         </div>
-        <div class="right">
+        <div class="right" onclick="" > 
           <div class="navbar-option dropdown" href="">
             <?php echo LANGUAGE ?>
               <i class="mdi mdi-arrow-down-drop-circle"></i>
