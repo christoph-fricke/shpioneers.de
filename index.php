@@ -12,23 +12,23 @@ include('assets/php/news.php');
     </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--<link rel="icon" href="assets/img/favicon.ico" />-->
+    <!--<link rel="icon" href="assets/img/favicon.ico" />-->
 
     <meta name="Author" content="Pioneers" />
     <meta name="Description" content="" />
     <meta name="Keywords" content="" />
-    
+
     <meta name="theme-color" content="#FF4103" />
     <meta name="format-detection" content="telephone=no" />
-	
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" />
   </head>
 
-  <body >
+  <body>
     <nav class="mobile">
       <div class="navbar-content">
-        <div class="left" >
+        <div class="left">
           <div class="navbar-option hamburger">
             <i class="mdi mdi-menu"></i>
           </div>
@@ -61,8 +61,8 @@ include('assets/php/news.php');
           </div>
           <div class="grey"></div>
         </div>
-        <div class="right"  >
-          <div class="navbar-option dropdown" >
+        <div class="right">
+          <div class="navbar-option dropdown">
             <i class="mdi mdi-translate"></i>
           </div>
           <div class="dropdown-content">
@@ -103,7 +103,7 @@ include('assets/php/news.php');
             <?php echo TEAM ?>
           </a>
         </div>
-        <div class="right" > 
+        <div class="right">
           <div class="navbar-option dropdown" href="">
             <?php echo LANGUAGE ?>
               <i class="mdi mdi-arrow-down-drop-circle"></i>
@@ -319,7 +319,7 @@ include('assets/php/news.php');
         <div class="row">
           <div class="contact">
             <h2><?php echo HEADER_FOOTER_0 ?></h2>
-            <form action="" method="POST">
+            <form id="contact" action="" method="POST">
               <input class="contactfield" type="text" name="name" placeholder="<?php echo NAME_FORM ?>" required />
               <input class="contactfield" type="email" name="email" placeholder="<?php echo EMAIL_FORM ?>" required />
               <textarea name="message" placeholder="<?php echo MESSAGE_FORM ?>"></textarea>

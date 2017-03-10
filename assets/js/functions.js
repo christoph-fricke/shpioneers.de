@@ -1,4 +1,6 @@
-document.addEventListener("touchstart", function(){}, true);
+// Makes the side works on safari for touch devices.
+document.addEventListener("touchstart", function() {}, true);
+
 $(document).ready(function() {
     $("a[href*=\\#]").click(function(event) { // scrolling effect for anchors
         event.preventDefault();
@@ -8,22 +10,21 @@ $(document).ready(function() {
 
 var oldid = '';
 $('section').on('reached', function() { // switching active element based on position
-	var id = $(this).attr('id');
-	headerobject = $('.desktop a[href=\\#' + id + ']');
-	
-	if(oldid != id  && id  !== undefined ){
-		removeactive();
-		headerobject.addClass('active');
-		leftpos = headerobject.parent().position().left;
-		width = headerobject.parent().width();
-		$('#magic-line').stop(true,false).animate({left: leftpos, width: width});
-		oldid = id; 
-	}
-	else if($(this).attr('id') === undefined){
-		removeactive();
-		$('#magic-line').stop(true,false).animate({width: 0, left: 0});
-		oldid = undefined;
-	}
+    var id = $(this).attr('id');
+    headerobject = $('.desktop a[href=\\#' + id + ']');
+
+    if (oldid != id && id !== undefined) {
+        removeactive();
+        headerobject.addClass('active');
+        leftpos = headerobject.parent().position().left;
+        width = headerobject.parent().width();
+        $('#magic-line').stop(true, false).animate({ left: leftpos, width: width });
+        oldid = id;
+    } else if ($(this).attr('id') === undefined) {
+        removeactive();
+        $('#magic-line').stop(true, false).animate({ width: 0, left: 0 });
+        oldid = undefined;
+    }
 });
 
 function removeactive() {
@@ -33,17 +34,60 @@ function removeactive() {
 }
 
 var didscroll = false;
-$(document).scroll(function(){
-didscroll = true;
+$(document).scroll(function() {
+    didscroll = true;
 });
 var sections = $('section');
 var dt;
-setInterval(function(){ // triggerind reached event
-	if(didscroll){
-		sections.each(function(){
-            	dt = $(window).scrollTop() + 71;// - $(this).position().top;
-            	if( dt > $(this).position().top  && dt < $(this).position().top + $(this).height()) $(this).trigger('reached');
-	didscroll = false;
-}
-);
-}},50);
+setInterval(function() { // triggerind reached event
+    if (didscroll) {
+        sections.each(function() {
+            dt = $(window).scrollTop() + 71; // - $(this).position().top;
+            if (dt > $(this).position().top && dt < $(this).position().top + $(this).height()) $(this).trigger('reached');
+            didscroll = false;
+        });
+    }
+}, 50);
+
+// Calls the server to recieve a token
+$(function() {
+    var token, tokenRequest;
+
+    tokenRequest = $.ajax({
+        url: 'assets/php/tokenCreator.php',
+        type: 'post'
+    });
+
+    tokenRequest.done(function(response, textStatus, jqXHR) {
+        var token = this.response;
+        console.log(token); //Just for Dev-Ops! Has to get removed later!
+    });
+});
+
+// Interrupts the submit event of the contact form and handles the data-serving with ajax
+$('#contact').submit(function(event) {
+    event.preventDefault();
+    var dataString, sendMail;
+
+    dataString = 'name=' + $('#contact [name=name]').val() +
+        "&email=" + $('#contact [name=email]').val() +
+        "&message=" + $('#contact [name=message]').val() +
+        "&token=" + token; // Maybe the token should gets checked wether or not it is checked be for it gets send. Otherwise it gets checked on the server anyway.
+
+    sendMail = $.ajax({
+        url: 'assets/php/mail.php',
+        type: 'post',
+        data: dataString
+    });
+
+    sendMail.done(function(response, textStatus, jqXHR) {
+        response = this.response.split(';');
+        token = response[1];
+
+        if (1 == response[0]) {
+            console.log('Email has been send.');
+        } else {
+            console.log('Email could not been send');
+        }
+    });
+});
