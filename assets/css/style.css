@@ -179,6 +179,7 @@ nav {
 .right {
     height: 100%;
     float: right;
+	cursor:default; 
 }
 
 .right .dropdown i.mdi {
