@@ -47,3 +47,17 @@ setInterval(function(){ // triggerind reached event
 }
 );
 }},50);
+// interactive news area
+	$('.news-lower a.btn-small').click(
+		function(event){
+			event.preventDefault();
+			var card = $(this).parent().parent();
+			//card.parent().prepend(card);
+			card.parent().children().each(function(){
+				$(this).removeClass('selected');
+				$(this).addClass('minor');
+			});
+			card.removeClass('minor');
+			card.addClass('selected');
+		}
+	);
