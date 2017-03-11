@@ -33,7 +33,7 @@ function removeactive() {
     });
 }
 
-var didscroll = false;
+var didscroll = true;
 $(document).scroll(function() {
     didscroll = true;
 });
