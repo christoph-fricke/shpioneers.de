@@ -147,6 +147,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[0] -> preview ?>
               </p>
+		<div class="news-content"> <?php echo $news[0] -> text ?></div>
               <a class="btn-small" href="news.php?ind=0">
                 <?php echo BUTTON_NEWS ?>
               </a>
@@ -161,6 +162,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[1] -> preview ?>
               </p>
+		<div class="news-content"> <?php echo $news[1] -> text ?></div>
               <a class="btn-small" href="news.php?ind=1">
                 <?php echo BUTTON_NEWS ?>
               </a>
@@ -175,6 +177,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[2] -> preview ?>
               </p>
+		<div class="news-content"> <?php echo $news[2] -> text ?></div>
               <a class="btn-small" href="news.php?ind=2">
                 <?php echo BUTTON_NEWS ?>
               </a>
@@ -189,6 +192,7 @@ include('assets/php/news.php');
               <p>
                 <?php echo $news[3] -> preview ?>
               </p>
+		<div class="news-content"> <?php echo $news[3] -> text ?></div>
               <a class="btn-small" href="news.php?ind=3">
                 <?php echo BUTTON_NEWS ?>
               </a>
