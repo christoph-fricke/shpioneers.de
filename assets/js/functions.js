@@ -49,20 +49,19 @@ setInterval(function() { // triggerind reached event
     }
 }, 50);
 
+
 // Calls the server to recieve a token
+var token; // gloabal because we will need it later
 $(function() {
-    var token, tokenRequest;
+    var tokenRequest;
 
     tokenRequest = $.ajax({
         url: 'assets/php/tokenCreator.php',
-        type: 'post'
+        type: 'post',
+    	success: function(result){token = result;}
+	});
+	
     });
-
-    tokenRequest.done(function(response, textStatus, jqXHR) {
-        var token = this.response;
-        console.log(token); //Just for Dev-Ops! Has to get removed later!
-    });
-});
 
 // Interrupts the submit event of the contact form and handles the data-serving with ajax
 $('#contact').submit(function(event) {
