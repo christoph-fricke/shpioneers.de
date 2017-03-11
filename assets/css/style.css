@@ -665,6 +665,7 @@ footer .btn-big {
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
+	cursor: pointer;
 }
 
 .contact {
