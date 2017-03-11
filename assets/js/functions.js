@@ -88,7 +88,9 @@ $('#contact').submit(function(event) {
 		$('#contact [name=name]').val("");
 		$('#contact [name=email]').val("");
 		$('#contact [name=message]').val("");
-        } else {
+        	$('#emailsent').addClass('active');
+		setInterval(function(){$('#emailsent').removeClass('active')},5000);
+	} else {
             console.log('Email could not been send');
         }
     });

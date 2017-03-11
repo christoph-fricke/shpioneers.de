@@ -697,6 +697,18 @@ textarea {
     transition: border 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
+.notification{
+position: fixed;
+background-color: white;
+bottom: -100px;
+transition-duration: .5s;
+left: 50%;
+transform: translateX(-50%);
+}
+.notification.active{
+bottom: 100px;
+
+}
 .contactfield:focus,
 textarea:focus {
     border: 2px solid #009DCF;

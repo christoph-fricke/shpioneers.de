@@ -329,6 +329,7 @@ include('assets/php/news.php');
               <textarea name="message" placeholder="<?php echo MESSAGE_FORM ?>"></textarea>
               <input class="btn-big" type="submit" value="<?php echo BUTTON_FORM ?>" />
             </form>
+		<div id="emailsent"class="notification">hier kommt text rein</div>
           </div>
           <div class="footer-right">
             <div class="impressum">
