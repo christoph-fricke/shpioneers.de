@@ -80,11 +80,14 @@ $('#contact').submit(function(event) {
     });
 
     sendMail.done(function(response, textStatus, jqXHR) {
-        response = this.response.split(';');
+        response = response.split(';');
         token = response[1];
 
         if (1 == response[0]) {
             console.log('Email has been send.');
+		$('#contact [name=name]').val("");
+		$('#contact [name=email]').val("");
+		$('#contact [name=message]').val("");
         } else {
             console.log('Email could not been send');
         }
