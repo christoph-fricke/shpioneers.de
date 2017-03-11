@@ -58,10 +58,12 @@ $(function() {
     tokenRequest = $.ajax({
         url: 'assets/php/tokenCreator.php',
         type: 'post',
-    	success: function(result){token = result;}
-	});
-	
+        success: function(result) {
+            token = result;
+        }
     });
+
+});
 
 // Interrupts the submit event of the contact form and handles the data-serving with ajax
 $('#contact').submit(function(event) {
@@ -85,27 +87,27 @@ $('#contact').submit(function(event) {
 
         if (1 == response[0]) {
             console.log('Email has been send.');
-		$('#contact [name=name]').val("");
-		$('#contact [name=email]').val("");
-		$('#contact [name=message]').val("");
-        	$('#emailsent').addClass('active');
-		setInterval(function(){$('#emailsent').removeClass('active')},5000);
-	} else {
+            $('#contact [name=name]').val("");
+            $('#contact [name=email]').val("");
+            $('#contact [name=message]').val("");
+            $('#emailsent').addClass('active');
+            setInterval(function() { $('#emailsent').removeClass('active') }, 5000);
+        } else {
             console.log('Email could not been send');
         }
     });
 });
 // interactive news area
-	$('.news-lower a.btn-small').click(
-		function(event){
-			event.preventDefault();
-			var card = $(this).parent().parent();
-			//card.parent().prepend(card);
-			card.parent().children().each(function(){
-				$(this).removeClass('selected');
-				$(this).addClass('minor');
-			});
-			card.removeClass('minor');
-			card.addClass('selected');
-		}
-	);
+$('.news-lower a.btn-small').click(
+    function(event) {
+        event.preventDefault();
+        var card = $(this).parent().parent();
+        //card.parent().prepend(card);
+        card.parent().children().each(function() {
+            $(this).removeClass('selected');
+            $(this).addClass('minor');
+        });
+        card.removeClass('minor');
+        card.addClass('selected');
+    }
+);
