@@ -1,6 +1,11 @@
 <?php
 include('assets/php/checkLanguage.php');
 include('assets/php/news.php');
+include('assets/php/achievment.php');
+$tournament = array();
+$tournament[] = getcontent(0);
+$tournament[] = getcontent(1);
+$tournament[] = getcontent(2);
 ?>
 
   <!DOCTYPE html>
@@ -272,9 +277,9 @@ include('assets/php/news.php');
                 />
               </svg>
             </div>
-            <h2><?php echo SUBHEADERS_SUCESS_0 ?></h2>
+            <h2><?php echo $tournament[0][2] -> place . "." . PLACE ." ". $tournament[0][0] -> title  ?></h2>
             <p>
-              <?php echo TEXT_SUCESS_0 ?>
+              <?php echo $tournament[0][0] -> name. ' | ' . $tournament[0][0] -> location ?>
             </p>
             <a class="btn-small" href="">
               <?php echo BUTTON_SUCESS ?>
@@ -287,9 +292,9 @@ include('assets/php/news.php');
                 />
               </svg>
             </div>
-            <h2><?php echo SUBHEADERS_SUCESS_1 ?></h2>
+            <h2><?php echo $tournament[1][2] -> place . "." . PLACE ." ". $tournament[1][0] -> title  ?></h2>
             <p>
-              <?php echo TEXT_SUCESS_1 ?>
+              <?php echo $tournament[1][0] -> name. ' | ' . $tournament[1][0] -> location ?>
             </p>
             <a class="btn-small" href="">
               <?php echo BUTTON_SUCESS ?>
@@ -302,9 +307,9 @@ include('assets/php/news.php');
                 />
               </svg>
             </div>
-            <h2><?php echo SUBHEADERS_SUCESS_2 ?></h2>
+            <h2><?php echo $tournament[2][2] -> place . "." . PLACE ." ". $tournament[2][0] -> title  ?></h2>
             <p>
-              <?php echo TEXT_SUCESS_2 ?>
+              <?php echo $tournament[2][0] -> name. ' | ' . $tournament[2][0] -> location ?>
             </p>
             <a class="btn-small" href="">
               <?php echo BUTTON_SUCESS ?>
