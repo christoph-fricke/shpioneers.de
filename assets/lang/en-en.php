@@ -34,7 +34,7 @@ define('BUTTON_SPONSORS', 'Learn more');
 
 //Sucess content
 define('HEADER_SUCESS', 'This is what we have achieved');
-define('PLACE','place');
+define('PLACE','Place');
 define('BUTTON_SUCESS', 'Learn more');
 
 //Team content

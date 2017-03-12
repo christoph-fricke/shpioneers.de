@@ -277,7 +277,7 @@ $tournament[] = getcontent(2);
                 />
               </svg>
             </div>
-            <h2><?php echo $tournament[0][2] -> place . "." . PLACE ." ". $tournament[0][0] -> title  ?></h2>
+            <h2><?php echo $tournament[0][2] -> place . ". " . PLACE ." ". $tournament[0][0] -> title  ?></h2>
             <p>
               <?php echo $tournament[0][0] -> name. ' | ' . $tournament[0][0] -> location ?>
             </p>
@@ -292,7 +292,7 @@ $tournament[] = getcontent(2);
                 />
               </svg>
             </div>
-            <h2><?php echo $tournament[1][2] -> place . "." . PLACE ." ". $tournament[1][0] -> title  ?></h2>
+            <h2><?php echo $tournament[1][2] -> place . ". " . PLACE ." ". $tournament[1][0] -> title  ?></h2>
             <p>
               <?php echo $tournament[1][0] -> name. ' | ' . $tournament[1][0] -> location ?>
             </p>
@@ -307,7 +307,7 @@ $tournament[] = getcontent(2);
                 />
               </svg>
             </div>
-            <h2><?php echo $tournament[2][2] -> place . "." . PLACE ." ". $tournament[2][0] -> title  ?></h2>
+            <h2><?php echo $tournament[2][2] -> place . ". " . PLACE ." ". $tournament[2][0] -> title  ?></h2>
             <p>
               <?php echo $tournament[2][0] -> name. ' | ' . $tournament[2][0] -> location ?>
             </p>
