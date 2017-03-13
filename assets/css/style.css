@@ -258,6 +258,10 @@ nav {
     color: rgba(0, 0, 0, 0.70);
 }
 
+.sidebar.dropdown-content {
+    box-shadow: none;
+}
+
 .grey {
     position: fixed;
     width: 0%;
