@@ -135,8 +135,8 @@ $tournament[] = getcontent(2);
         <div id='magic-line' />
     </nav>
 
-    <header id="home">
-      <section class="logo-header">
+    <header >
+      <section class="logo-header" id="home">
 
       </section>
       <a href="#news">
