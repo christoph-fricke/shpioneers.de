@@ -17,7 +17,7 @@ $tournament[] = getcontent(2);
     </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--<link rel="icon" href="assets/img/favicon.ico" />-->
+    <link rel="icon" href="assets/icons/favicon.png" />
 
     <meta name="Author" content="Pioneers" />
     <meta name="Description" content="" />

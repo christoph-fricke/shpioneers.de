@@ -280,15 +280,14 @@ nav {
         display: none;
     }
     .logo {
-    display: block;
-    height: 50px;
-    width: auto;
-}
-
-.logo-svg {
-    height: 50px;
-    padding: 5px 10px 5px 10px;
-}
+        display: block;
+        height: 50px;
+        width: auto;
+    }
+    .logo-svg {
+        height: 50px;
+        padding: 5px 10px 5px 10px;
+    }
     .navbar-content {
         margin: 0;
         margin-right: 20px;
@@ -585,11 +584,11 @@ header {
 /*
  * SUCESS
  */
-
 .sucess-card {
     position: relative;
     padding: 0 10px 2.5rem 10px;
     width: 30%;
+    height: 400px;
     margin-right: 5%;
 }
 
