@@ -156,12 +156,15 @@ nav {
     clear: both;
 }
 
-.navbar-option {
-    transition: color 0.5s ease;
+.logo {
+    display: block;
+    height: 72px;
+    width: auto;
 }
 
-.navbar-option.active {
-    color: rgba(255, 255, 255, 1);
+.logo-svg {
+    height: 72px;
+    padding: 11px 10px 11px 0;
 }
 
 #magic-line {
@@ -179,7 +182,7 @@ nav {
 .right {
     height: 100%;
     float: right;
-	cursor:default; 
+    cursor: default;
 }
 
 .right .dropdown i.mdi {
@@ -195,12 +198,17 @@ nav {
     text-transform: uppercase;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.7);
+    transition: color 0.5s ease;
     border-bottom: 0.1em solid transparent;
 }
 
 .navbar-option:hover {
     background-color: rgba(0, 0, 0, 0.2);
     border-bottom: 0.1em solid rgba(0, 0, 0, 0.0);
+}
+
+.navbar-option.active {
+    color: rgba(255, 255, 255, 1);
 }
 
 .dropdown {
@@ -263,7 +271,7 @@ nav {
     background-color: rgba(0, 0, 0, .2);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1075px) {
     .mobile {
         display: block;
         z-index: 50;
@@ -271,6 +279,16 @@ nav {
     .desktop {
         display: none;
     }
+    .logo {
+    display: block;
+    height: 50px;
+    width: auto;
+}
+
+.logo-svg {
+    height: 50px;
+    padding: 5px 10px 5px 10px;
+}
     .navbar-content {
         margin: 0;
         margin-right: 20px;
@@ -666,7 +684,7 @@ footer .btn-big {
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .contact {
@@ -723,7 +741,7 @@ textarea {
     z-index: 50;
     background-color: white;
     bottom: 0;
-	transform: translateY(100%);
+    transform: translateY(100%);
     padding: 0.5em 1em;
     width: 300px;
     left: calc(50% - 150px);
@@ -731,7 +749,7 @@ textarea {
 }
 
 .notification.active {
-	transform: translateY(0);
+    transform: translateY(0);
 }
 
 .contactfield:focus,

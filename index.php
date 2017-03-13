@@ -66,6 +66,11 @@ $tournament[] = getcontent(2);
           </div>
           <div class="grey"></div>
         </div>
+        <div class="left">
+          <a class="logo" href="#home">
+            <img class="logo logo-svg" src="assets/icons/logo_text.svg" />
+          </a>
+        </div>
         <div class="right">
           <div class="navbar-option dropdown">
             <i class="mdi mdi-translate"></i>
@@ -83,6 +88,11 @@ $tournament[] = getcontent(2);
 
     <nav class="desktop">
       <div class="navbar-content">
+        <div class="left">
+          <a class="logo" href="#home">
+            <img class="logo logo-svg" src="assets/icons/logo_text.svg" />
+          </a>
+        </div>
         <div class="left">
           <a class="navbar-option" href="#news">
             <?php echo NEWS ?>
@@ -125,7 +135,7 @@ $tournament[] = getcontent(2);
         <div id='magic-line' />
     </nav>
 
-    <header>
+    <header id="home">
       <section class="logo-header">
 
       </section>
