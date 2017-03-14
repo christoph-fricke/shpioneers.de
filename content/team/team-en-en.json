@@ -1,0 +1,19 @@
+[
+{
+"name": "Bendix Sonnenberg",
+"job":"IT and Renderings",
+"quote": "Bendix is great",
+"quotee": "Hanno",
+"text": "Hi I#m Bendix and I'm slightly less retarded than the rest of these guys",
+"img": "assets/img/bendix.png"
+},
+
+{
+"name": "Hanno Christiansen",
+"job":"Engineering",
+"quote": "Hanno is definition of mediocre",
+"quotee": "Linus",
+"text": "Hi I'm Hanno and I do like to work with sis team",
+"img": "assets/img/hanno.png"
+}
+]

@@ -335,7 +335,7 @@ $tournament[] = getcontent(2);
         <p>
           <?php echo TEXT_TEAM ?>
         </p>
-        <a class="btn-big" href="">
+        <a class="btn-big" href="/team.php">
           <?php echo BUTTON_TEAM ?>
         </a>
       </main>
