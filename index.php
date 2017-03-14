@@ -23,7 +23,7 @@ $tournament[] = getcontent(2);
     <meta name="Description" content="" />
     <meta name="Keywords" content="" />
 
-    <meta name="theme-color" content="#FF4103" />
+    <meta name="theme-color" content="#EA5B10" />
     <meta name="format-detection" content="telephone=no" />
 
     <link rel="stylesheet" href="assets/css/style.css" />

@@ -51,7 +51,7 @@ body>section {
 
 h1 {
     font-size: 3rem;
-    color: #FF4103;
+    color: #EA5B10;
     margin: 0.5em 0;
     margin-top: 0px;
 }
@@ -137,7 +137,7 @@ p {
  */
 
 nav {
-    background-color: #FF4103;
+    background-color: #EA5B10;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: fixed;
     left: 0px;
@@ -340,7 +340,7 @@ header {
     width: 56px;
     height: 56px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    background-color: #FF4103;
+    background-color: #EA5B10;
     border-radius: 50%;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
@@ -405,7 +405,7 @@ header {
     left: 10px;
     margin: 0px;
     font-size: 1.5rem;
-    color: #FF4103;
+    color: #EA5B10;
 }
 
 .news-content {
@@ -533,7 +533,7 @@ header {
 
 .sponsors {
     padding-bottom: 100px;
-    border-bottom: 2px solid #FF4103;
+    border-bottom: 2px solid #EA5B10;
 }
 
 .sponsors-card {
@@ -548,7 +548,7 @@ header {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    border-bottom: 1px solid #FF4103;
+    border-bottom: 1px solid #EA5B10;
     height: 100px;
 }
 
@@ -672,7 +672,7 @@ header {
  */
 
 footer {
-    background-color: #D13603;
+    background-color: #C04B0E;
     padding: 50px 0 20px 0;
     float: left;
     width: 100%;
