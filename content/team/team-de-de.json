@@ -1,0 +1,19 @@
+[
+{
+"name": "Bendix Sonnenberg",
+"job":"IT und Renderings",
+"quote": "Bendix ist der beste",
+"quotee": "Hanno",
+"text": "Hallo ich bin der Bendix und ich bin nicht behindert",
+"img": "assets/img/bendix.png"
+},
+
+{
+"name": "Hanno Christiansen",
+"job":"Engineering",
+"quote": "Hanno ist so mittelklasse",
+"quotee": "Linus",
+"text": "Hallo ich bin der Hanno und ich bin nicht behindert",
+"img": "assets/img/hanno.png"
+}
+]
