@@ -377,8 +377,8 @@ header {
 .news-card {
     width: 45%;
     height: 500px;
+	max-height: 500px;
     margin-bottom: 50px;
-    transition: .2s;
 }
 
 .news-card:nth-child(odd) {
@@ -475,6 +475,9 @@ header {
     order: -1;
     margin-right: 0;
     margin-bottom: 50px;
+	transition: max-height  .2s ease;
+	overflow: hidden;
+max-height: 1000px;
 }
 
 .selected .news-content {
