@@ -16,6 +16,7 @@ define('ENGLISH', 'Englisch');
 define('HEADER_NEWS', 'Das ist neu');
 define('BUTTON_NEWS', 'Mehr erfahren');
 define('BUTTON_OLD_NEWS', 'Archiv');
+define('BUTTON_NEWS_MIN', 'Zurück');
 
 //Contest content
 define('HEADER_CONTEST', 'Der Wettbewerb');

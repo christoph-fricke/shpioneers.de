@@ -98,7 +98,7 @@ $('#contact').submit(function(event) {
     });
 });
 // interactive news area
-$('.news-lower a.btn-small').click(
+$('.news-lower a.btn-small.maximise').click( // expanding the news-card
     function(event) {
         event.preventDefault();
         var card = $(this).parent().parent();
@@ -111,3 +111,13 @@ $('.news-lower a.btn-small').click(
         card.addClass('selected');
     }
 );
+$('.news-lower a.btn-small.minimise').click( // minimising it again
+    function(event) {
+	event.preventDefault();
+        var card = $(this).parent().parent();
+        //card.parent().prepend(card);
+        card.parent().children().each(function() {
+            $(this).removeClass('selected');
+		$(this).removeClass('minor');
+	});
+});

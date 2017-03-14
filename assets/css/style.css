@@ -379,6 +379,7 @@ header {
     height: 500px;
 	max-height: 500px;
     margin-bottom: 50px;
+	transition: max-height  .2s ease;
 }
 
 .news-card:nth-child(odd) {
@@ -409,9 +410,9 @@ header {
 }
 
 .news-content {
-    height: 0;
     width: 0;
     overflow: hidden;
+	max-height: 0;
 }
 
 .news-lower {
@@ -475,21 +476,27 @@ header {
     order: -1;
     margin-right: 0;
     margin-bottom: 50px;
-	transition: max-height  .2s ease;
 	overflow: hidden;
 max-height: 1000px;
 }
-
+.news-card.selected .news-lower .minimise{
+display: block;
+}
 .selected .news-content {
     height: auto;
     width: auto;
+	padding-bottom: 40px;
+	max-height: 1000px;
+	transition: max-height .9s ease;
 }
 
 .selected .news-lower {
     height: auto;
     padding: 10px 10px;
 }
-
+.news-card .minimise{
+display: none;
+}
 .selected {
     height: auto;
 }

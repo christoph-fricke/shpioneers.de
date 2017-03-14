@@ -165,8 +165,11 @@ $tournament[] = getcontent(2);
               <div class="news-content">
                 <?php echo $news[0] -> text ?>
               </div>
-              <a class="btn-small" href="news.php?ind=0">
+              <a class="btn-small maximise" href="news.php?ind=0">
                 <?php echo BUTTON_NEWS ?>
+              </a>
+              <a class="btn-small minimise" href="news.php?ind=0">
+                <?php echo BUTTON_NEWS_MIN ?>
               </a>
             </div>
           </div>
@@ -182,8 +185,11 @@ $tournament[] = getcontent(2);
               <div class="news-content">
                 <?php echo $news[1] -> text ?>
               </div>
-              <a class="btn-small" href="news.php?ind=1">
+              <a class="btn-small maximise" href="news.php?ind=1">
                 <?php echo BUTTON_NEWS ?>
+              </a>
+              <a class="btn-small minimise" href="news.php?ind=0">
+                <?php echo BUTTON_NEWS_MIN ?>
               </a>
             </div>
           </div>
@@ -199,8 +205,11 @@ $tournament[] = getcontent(2);
               <div class="news-content">
                 <?php echo $news[2] -> text ?>
               </div>
-              <a class="btn-small" href="news.php?ind=2">
+              <a class="btn-small maximise" href="news.php?ind=2">
                 <?php echo BUTTON_NEWS ?>
+              </a>
+              <a class="btn-small minimise" href="news.php?ind=0">
+                <?php echo BUTTON_NEWS_MIN ?>
               </a>
             </div>
           </div>
@@ -216,8 +225,11 @@ $tournament[] = getcontent(2);
               <div class="news-content">
                 <?php echo $news[3] -> text ?>
               </div>
-              <a class="btn-small" href="news.php?ind=3">
+              <a class="btn-small maximise" href="news.php?ind=3">
                 <?php echo BUTTON_NEWS ?>
+              </a>
+              <a class="btn-small minimise" href="news.php?ind=0">
+                <?php echo BUTTON_NEWS_MIN ?>
               </a>
             </div>
           </div>
