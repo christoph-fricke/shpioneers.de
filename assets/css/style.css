@@ -377,9 +377,8 @@ header {
 .news-card {
     width: 45%;
     height: 500px;
-	max-height: 500px;
     margin-bottom: 50px;
-	transition: max-height  .2s ease;
+    /*transition: height 10s cubic-bezier(0.4, 0.0, 0.2, 1);*/
 }
 
 .news-card:nth-child(odd) {
@@ -412,7 +411,7 @@ header {
 .news-content {
     width: 0;
     overflow: hidden;
-	max-height: 0;
+    max-height: 0;
 }
 
 .news-lower {
@@ -472,33 +471,47 @@ header {
 }
 
 .news-card.selected {
-    width: 100%;
     order: -1;
     margin-right: 0;
     margin-bottom: 50px;
-	overflow: hidden;
-max-height: 1000px;
+    overflow: hidden;
+    max-height: 1000px;
 }
-.news-card.selected .news-lower .minimise{
-display: block;
+
+.news-card.selected .news-lower .minimise {
+    display: block;
 }
+
 .selected .news-content {
     height: auto;
     width: auto;
-	padding-bottom: 40px;
-	max-height: 1000px;
-	transition: max-height .9s ease;
+    padding-bottom: 40px;
+    max-height: 1000px;
+    /*transition: max-height .9s ease;*/
 }
 
 .selected .news-lower {
     height: auto;
     padding: 10px 10px;
 }
-.news-card .minimise{
-display: none;
+
+.news-card .minimise {
+    display: none;
 }
+
 .selected {
-    height: auto;
+    animation: card-grow 1s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+}
+
+@keyframes card-grow {
+    from {
+        width: 45%; /* initial would be better but it breaks the animation*/
+        height: 500px;
+    }
+    to {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .news-card.selected .btn-small {
