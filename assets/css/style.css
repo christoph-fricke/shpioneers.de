@@ -715,7 +715,14 @@ footer .btn-big {
 .social,
 .impressum {
     float: left;
-    width: 50%;
+}
+
+.social {
+    width: 45%;
+}
+
+.impressum {
+    width: 55%;
 }
 
 .impressum h6 {
