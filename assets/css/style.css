@@ -811,7 +811,7 @@ input[type="submit"] {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .footer-right {
         display: flex;
         flex-flow: column;
