@@ -94,6 +94,9 @@ $('#contact').submit(function(event) {
             setInterval(function() { $('#emailsent').removeClass('active') }, 5000);
         } else {
             console.log('Email could not been send');
+            $('#nemailsent').addClass('active');
+            setInterval(function() { $('#nemailsent').removeClass('active') }, 5000);
+
         }
     });
 });

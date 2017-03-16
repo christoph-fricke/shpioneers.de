@@ -367,6 +367,9 @@ $tournament[] = getcontent(2);
             <div id="emailsent" class="notification">
               <?php echo EMAIL_SENT_SUC ?>
             </div>
+            <div id="nemailsent" class="notification">
+              <?php echo EMAIL_SENT_USUC ?>
+            </div>
           </div>
           <div class="footer-right">
             <div class="impressum">
