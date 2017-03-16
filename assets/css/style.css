@@ -501,16 +501,17 @@ header {
 
 .selected {
     animation: card-grow 1s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+	height:auto;
 }
 
 @keyframes card-grow {
     from {
         width: 45%; /* initial would be better but it breaks the animation*/
-        height: 500px;
+        max-height: 500px;
     }
     to {
         width: 100%;
-        height: auto;
+        max-height: 1000px;
     }
 }
 
