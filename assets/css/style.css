@@ -411,8 +411,6 @@ header {
 .news-content {
     width: 0;
     overflow: hidden;
-    max-height: 0;
-    transition: max-height .9s ease;
 }
 
 .news-lower {
@@ -487,7 +485,6 @@ header {
     height: auto;
     width: auto;
     padding-bottom: 40px;
-    max-height: 1000px;
 }
 
 .selected .news-lower {
@@ -502,20 +499,6 @@ header {
 .selected {
     animation: card-grow 1s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
 	height:auto;
-}
-.transition{
-    animation: card-shrink 1s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
-}
-@keyframes card-shrink{
-    from {
-        width: 100%;
-        max-height: 1000px;
-    }
-    to {
-        width: 45%; /* initial would be better but it breaks the animation*/
-        max-height: 500px;
-    }
-
 }
 @keyframes card-grow {
     from {
