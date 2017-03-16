@@ -106,6 +106,7 @@ $('.news-lower a.btn-small.maximise').click( // expanding the news-card
         card.parent().children().each(function() {
             $(this).removeClass('selected');
             $(this).addClass('minor');
+		$(this).removeClass('transition');
         });
         card.removeClass('minor');
         card.addClass('selected');
@@ -120,4 +121,5 @@ $('.news-lower a.btn-small.minimise').click( // minimising it again
             $(this).removeClass('selected');
 		$(this).removeClass('minor');
 	});
+	card.addClass('transition');
 });
