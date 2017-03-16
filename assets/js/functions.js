@@ -121,5 +121,4 @@ $('.news-lower a.btn-small.minimise').click( // minimising it again
             $(this).removeClass('selected');
 		$(this).removeClass('minor');
 	});
-	card.addClass('transition');
 });
