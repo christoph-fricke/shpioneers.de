@@ -7,7 +7,6 @@ if (isset($_GET['lang'])) {
 else {
     $_SESSION['lang'] = "de-de";
 }
-
 switch ($_SESSION['lang']) {
     case "en-en":
         include_once('../assets/lang/en-en.php');
@@ -19,7 +18,32 @@ switch ($_SESSION['lang']) {
         include_once('../assets/lang/en-en.php');
         break;
 }
+function getdata($type){
+if(!file_exists("../content/sponsors/". $type ."-". $_SESSION['lang']. ".json")) die();
+return json_decode(file_get_contents("../content/sponsors/". $type ."-". $_SESSION['lang']. ".json"));
+}
+function printsponsors(){
+foreach (getdata('partner') as $spons){
+printcard($spons);
+}}
+function printcard($data){
+	echo '<div class="card news-card">
+            <div class="news-upper" style=" background-image: url(' .$data -> img. ') ?>);">
+              <h4>'.$data -> name .'</h4>
+            </div>
+            <div class="news-lower">
+              <div class="news-content">
+              '.$data -> text.'
+		</div>
+              <a class="btn-small maximise" href="news.php?ind=0">
+              '. BUTTON_NEWS.'
+		</a>
+              <a class="btn-small minimise" href="news.php?ind=0">
+              '. BUTTON_NEWS_MIN.'</a>
+		</div>
+            </div>';
 
+}
 function setHtmlLang() {
     if ($_SESSION['lang']) {
         echo $_SESSION['lang'];
@@ -160,53 +184,12 @@ function setHtmlLang() {
     <main>
       <section id="partner" class="news">
         <h1><?php echo SPONSOR_HEADER_PARTNER ?></h1>
-        <div class="row">
-          <div class="card sucess-card">
-            <div class="trophy">
-              <svg class="icon-big" viewBox="0 0 24 24">
-                <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
-                />
-              </svg>
-            </div>
-            <h2><?php echo $tournament[0][2] -> place . ". " . PLACE ." ". $tournament[0][0] -> title  ?></h2>
-            <p>
-              <?php echo $tournament[0][0] -> name. ' | ' . $tournament[0][0] -> location ?>
-            </p>
-            <a class="btn-small" href="">
-              <?php echo BUTTON_SUCESS ?>
-            </a>
-          </div>
-          <div class="card sucess-card">
-            <div class="trophy">
-              <svg class="icon-big" viewBox="0 0 24 24">
-                <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
-                />
-              </svg>
-            </div>
-            <h2><?php echo $tournament[1][2] -> place . ". " . PLACE ." ". $tournament[1][0] -> title  ?></h2>
-            <p>
-              <?php echo $tournament[1][0] -> name. ' | ' . $tournament[1][0] -> location ?>
-            </p>
-            <a class="btn-small" href="">
-              <?php echo BUTTON_SUCESS ?>
-            </a>
-          </div>
-          <div class="card sucess-card">
-            <div class="trophy">
-              <svg class="icon-big" viewBox="0 0 24 24">
-                <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
-                />
-              </svg>
-            </div>
-            <h2><?php echo $tournament[2][2] -> place . ". " . PLACE ." ". $tournament[2][0] -> title  ?></h2>
-            <p>
-              <?php echo $tournament[2][0] -> name. ' | ' . $tournament[2][0] -> location ?>
-            </p>
-            <a class="btn-small" href="">
-              <?php echo BUTTON_SUCESS ?>
-            </a>
-          </div>
-        </div>
+	<section class="news"id="news">
+	<div class="row">
+
+	<?php printsponsors() ?>
+       </div>
+	</section>
       </section>
     </main>
 

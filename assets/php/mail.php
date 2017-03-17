@@ -24,7 +24,6 @@ if (isset($_SESSION["token"]) && $strToken == $_SESSION["token"]) {
 } else {
     $status = 0;
 }
-
 echo $status . ";" . newToken();
 
 function newToken() {
