@@ -795,7 +795,7 @@ textarea {
     transition: transform 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 #nemailsent{
-color:red;
+color: rgba(244, 67, 54, 0.87);
 }
 
 .notification.active {
