@@ -27,7 +27,7 @@ $tournament[] = getcontent(2);
     <meta name="format-detection" content="telephone=no" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
   </head>
 
   <body>
@@ -135,7 +135,7 @@ $tournament[] = getcontent(2);
         <div id='magic-line' />
     </nav>
 
-    <header >
+    <header>
       <section class="logo-header" id="home">
 
       </section>
@@ -260,7 +260,7 @@ $tournament[] = getcontent(2);
             <p>
               <?php echo TEXT_SPONSORS_0 ?>
             </p>
-            <a class="btn-small" href="">
+            <a class="btn-small" href="sponsors/?type=partner">
               <?php echo BUTTON_SPONSORS ?>
             </a>
           </div>
@@ -271,7 +271,7 @@ $tournament[] = getcontent(2);
             <p>
               <?php echo TEXT_SPONSORS_1 ?>
             </p>
-            <a class="btn-small" href="">
+            <a class="btn-small" href="sponsors/?type=service">
               <?php echo BUTTON_SPONSORS ?>
             </a>
           </div>
@@ -282,7 +282,7 @@ $tournament[] = getcontent(2);
             <p>
               <?php echo TEXT_SPONSORS_2 ?>
             </p>
-            <a class="btn-small" href="">
+            <a class="btn-small" href="sponsors/?type=finance">
               <?php echo BUTTON_SPONSORS ?>
             </a>
           </div>

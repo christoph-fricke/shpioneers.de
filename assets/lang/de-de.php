@@ -63,4 +63,9 @@ define('BUTTON_SOCIAL_1', 'Twitter');
 define('BUTTON_SOCIAL_2', 'Instagram');
 define('BUTTON_SOCIAL_3', 'YouTube');
 define('COPYRIGHT', '&copy; 2017, Pioneers');
+
+//Sponsor password_get_info
+define('SPONSOR_HEADER_PARTNER', 'Partner');
+define('SPONSOR_HEADER_SPONSORS', 'Sachsponsoren');
+define('SPONSOR_HEADER_FINANCE', 'Finanzsponsoren');
 ?>
