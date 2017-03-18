@@ -174,7 +174,7 @@ function setHtmlLang() {
     <main>
       <section id="partner" class="news">
         <h1><?php echo SPONSOR_HEADER_PARTNER ?></h1>
-	<section class="news"id="news">
+	<section class="news"id="partner">
 	<div class="row">
 
 	<?php printsponsors() ?>

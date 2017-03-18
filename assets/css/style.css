@@ -379,6 +379,7 @@ header {
 .news-card {
     width: 45%;
     height: 500px;
+	max-height: 500px;
     margin-bottom: 50px;
     /*transition: height 10s cubic-bezier(0.4, 0.0, 0.2, 1);*/
 }
@@ -437,6 +438,13 @@ header {
         position: absolute;
         display: none;
     }
+	#partner .news-card{
+	width: 100%;
+	position: relative;
+	display: block;
+	margin-bottom: 40px;
+	margin-right: 0;
+	}
     .news-card:nth-child(1) {
         width: 100%;
         position: relative;
@@ -503,10 +511,23 @@ header {
     animation: card-grow 1s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
 	height:auto;
 }
+@media screen and (max-width: 1000px){
+.selected{
+animation: none;
+transition: max-height 1s ease;
+max-height: 1000px;
+}
+.news-card.minor{
+margin-left: 0;
+width: 100%;
+margin-right: 0;
+}
+}
 @keyframes card-grow {
     from {
         width: 45%; /* initial would be better but it breaks the animation*/
         max-height: 500px;
+	
     }
     to {
         width: 100%;
