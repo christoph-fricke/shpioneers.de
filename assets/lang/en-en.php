@@ -40,7 +40,7 @@ define('BUTTON_SUCESS', 'Learn more');
 
 //Team content
 define('HEADER_TEAM', 'Team');
-define('TEXT_TEAM', 'We are the team Pioneers.ioneers und nehmen in neuer Zusammensetzung nun das zweite Mal am Wettbewerb „Formel 1 in der Schule“ teil. Ziel ist es, ein eigenes, vielseitiges Projekt auf die Beine zu stellen und dabei möglichst viel zu lernen. Hierbei darf aber die Freude an der Arbeit nicht verloren gehen.<br> Durch unsere Erfahrung aus zwei Saison und der erfolgreichen Teilnahme an der Deutschen Meisterschaft mit einer 6. Platzierung haben wir eine gute Basis geschaffen, um in der kommenden Saison voll durch zu starten.<br> Wir haben in unserem Team durch individuelle Stärken und Interessengebiete für den multidisziplinären Wettbewerb eine gute Vorraussetzungen geschaffen und ergänzen uns in jeder Hinsicht optimal.');
+define('TEXT_TEAM', 'We are the team Pioneers. This is the third time we take part in the formula one in schools challenge. The challenge is all about working as a team. Even thoug a lot of our members are exceptionally good at what they do, no single person could mount such an effort. <br> Also is working in a team more fun and offers more opportunities to learn from other people. <br> Since we already have the experince of two prior participations we are well prepared for this new season and hope to build upon our experince to become as successfull as possible.');
 define('BUTTON_TEAM', 'Visit the team');
 
 //Footer content
