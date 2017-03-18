@@ -4,7 +4,7 @@ if (isset($_GET['lang'])) {
     $_SESSION['lang'] = $_GET['lang'];
 }
 if(!isset($_SESSION['lang'])){
-$_SESSION['lang'] = "de-de";
+    $_SESSION['lang'] = "de-de";
 }
 switch ($_SESSION['lang']) {
     case "en-en":
@@ -18,58 +18,38 @@ switch ($_SESSION['lang']) {
         break;
 }
 function getdata($type){
-if(!file_exists("../content/sponsors/". $type ."-". $_SESSION['lang']. ".json")) die();
-return json_decode(file_get_contents("../content/sponsors/". $type ."-". $_SESSION['lang']. ".json"));
+    if(!file_exists("../content/sponsors/". $type ."-". $_SESSION['lang']. ".json")) die();
+    return json_decode(file_get_contents("../content/sponsors/". $type ."-". $_SESSION['lang']. ".json"));
 }
 function printsponsors(){
-foreach (getdata($_GET['type']) as $spons){
-printcard($spons);
-}}
-function printcard($data){
-	echo '<div class="card news-card">
-            <div class="news-upper" style=" background-image: url(' .$data -> img. ') ?>);">
-              <h4>'.$data -> name .'</h4>
-            </div>
-            <div class="news-lower">
-              <div class="news-content">
-              '.$data -> text.'
-		</div>
-              <a class="btn-small maximise" href="news.php?ind=0">
-              '. BUTTON_NEWS.'
-		</a>
-              <a class="btn-small minimise" href="news.php?ind=0">
-              '. BUTTON_NEWS_MIN.'</a>
-		</div>
-            </div>';
-
-}
-function setHtmlLang() {
-    if ($_SESSION['lang']) {
-        echo $_SESSION['lang'];
-    } else {
-        echo "de-de";
-    }
-}
-function gettitle(){
-switch($_GET['type']){
-case 'partner': echo SPONSOR_HEADER_PARTNER;
-		break;
-case 'service': echo SPONSOR_HEADER_SPONSORS;
-		break;
-case 'finance': echo SPONSOR_HEADER_FINANCE;
-		break;
-default: echo SPONSOR_HEADER_PARTNER;
-	break;
-}
-}
-?>
+    foreach (getdata($_GET['type']) as $spons){
+        printcard($spons);
+    }}
+    function printcard($data){
+        echo '<div class="card news-card">
+        <div class="news-upper" style=" background-image: url(' .$data -> img. ') ?>);">
+  <h4>'.$data -> name .'</h4>
+  </div>
+  <div class="news-lower">
+    <div class="news-content">
+      '.$data -> text.'
+    </div>
+    <a class="btn-small maximise" href="news.php?ind=0">
+        '. BUTTON_NEWS.'
+        </a>
+    <a class="btn-small minimise" href="news.php?ind=0">
+        '. BUTTON_NEWS_MIN.'</a>
+  </div>
+  </div>'; } function setHtmlLang() { if ($_SESSION['lang']) { echo $_SESSION['lang']; } else { echo "de-de"; } } function gettitle(){ switch($_GET['type']){ case 'partner': echo SPONSOR_HEADER_PARTNER; break; case 'service': echo SPONSOR_HEADER_SPONSORS; break;
+  case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER_PARTNER; break; } } ?>
 
   <!DOCTYPE html>
   <html lang="<?php setHtmlLang() ?>">
 
   <head>
     <title>
-      <?php echo TITLE ?> | <?php gettitle()?> 
+      <?php echo TITLE ?> |
+        <?php gettitle()?>
     </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -185,15 +165,15 @@ default: echo SPONSOR_HEADER_PARTNER;
     <main>
       <section id="partner" class="news">
         <h1><?php gettitle() ?></h1>
-	<section class="news"id="partner">
-	<div class="row">
+        <section class="news" id="partner">
+          <div class="row">
 
-	<?php printsponsors() ?>
-       </div>
-	</section>
+            <?php printsponsors() ?>
+          </div>
+        </section>
       </section>
     </main>
-  <footer>
+    <footer>
       <main>
         <div class="row">
           <div class="contact">

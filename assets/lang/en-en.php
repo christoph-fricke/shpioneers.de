@@ -65,7 +65,6 @@ define('BUTTON_SOCIAL_3', 'YouTube');
 define('COPYRIGHT', '&copy; 2017, Pioneers');
 
 //sponsors subpage
-
 define('SPONSOR_HEADER_PARTNER', 'Partner');
 define('SPONSOR_HEADER_SPONSORS', 'Non-monetary sponsors');
 define('SPONSOR_HEADER_FINANCE', 'Monetary sponsors');

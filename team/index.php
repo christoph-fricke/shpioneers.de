@@ -4,7 +4,7 @@ if (isset($_GET['lang'])) {
     $_SESSION['lang'] = $_GET['lang'];
 }
 if(!isset($_SESSION['lang'])){
-$_SESSION['lang'] = "de-de";
+    $_SESSION['lang'] = "de-de";
 }
 switch ($_SESSION['lang']) {
     case "en-en":
@@ -18,36 +18,36 @@ switch ($_SESSION['lang']) {
         break;
 }
 function printteam(){
-foreach(getmembers() as $mit){
-printcard($mit);
-}
+    foreach(getmembers() as $mit){
+        printcard($mit);
+    }
 }
 function getmembers()
 {
-return json_decode(file_get_contents("../content/team/team-". $_SESSION['lang'] . ".json"));
+    return json_decode(file_get_contents("../content/team/team-". $_SESSION['lang'] . ".json"));
 }
 function printcard($data){
-echo '<div class="card news-card">
-            <div class="news-upper" style=" background-image: url('. htmlspecialchars($data -> img).');">
-              <h4>'. $data -> name. '</h4>
-            </div>
-            <div class="news-lower">
-              <h5>'.$data -> job.'</h5>
-              <p>
-		'.$data -> quote.'
-              </p>
-              <div class="news-content">
-		'.$data -> text.'
-              </div>
-              <a class="btn-small maximise" href="news.php?ind=0">
-		'. BUTTON_NEWS.'
-              </a>
-              <a class="btn-small minimise" href="news.php?ind=0">
-              '.BUTTON_NEWS_MIN.'
-              </a>
-            </div>
-          </div>';
-
+    echo '<div class="card news-card">
+    <div class="news-upper" style=" background-image: url('. htmlspecialchars($data -> img).');">
+    <h4>'. $data -> name. '</h4>
+    </div>
+    <div class="news-lower">
+    <h5>'.$data -> job.'</h5>
+    <p>
+    '.$data -> quote.'
+    </p>
+    <div class="news-content">
+    '.$data -> text.'
+    </div>
+    <a class="btn-small maximise" href="news.php?ind=0">
+    '. BUTTON_NEWS.'
+    </a>
+    <a class="btn-small minimise" href="news.php?ind=0">
+    '.BUTTON_NEWS_MIN.'
+    </a>
+    </div>
+    </div>';
+    
 }
 function setHtmlLang() {
     if ($_SESSION['lang']) {
@@ -63,7 +63,8 @@ function setHtmlLang() {
 
   <head>
     <title>
-      <?php echo TITLE ?> | <?php echo HEADER_TEAM ?> 
+      <?php echo TITLE ?> |
+        <?php echo HEADER_TEAM ?>
     </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -83,7 +84,7 @@ function setHtmlLang() {
   <body>
     <nav class="mobile">
       <div class="navbar-content">
-            
+
         <div class="left">
           <a class="logo" href="../">
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
@@ -142,14 +143,14 @@ function setHtmlLang() {
     <main>
       <section id="partner" class="news">
         <h1><?php echo HEADER_TEAM ?></h1>
-	<section class="news"id="partner">
-	<div class="row">
-	<?php printteam() ?>
-       </div>
-	</section>
+        <section class="news" id="partner">
+          <div class="row">
+            <?php printteam() ?>
+          </div>
+        </section>
       </section>
     </main>
-  <footer>
+    <footer>
       <main>
         <div class="row">
           <div class="contact">
