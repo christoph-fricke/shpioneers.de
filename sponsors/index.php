@@ -1,8 +1,10 @@
 <?php
 session_start();
-
 if (isset($_GET['lang'])) {
     $_SESSION['lang'] = $_GET['lang'];
+}
+if(!isset($_SESSION['lang'])){
+$_SESSION['lang'] = "de-de";
 }
 switch ($_SESSION['lang']) {
     case "en-en":
