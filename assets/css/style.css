@@ -413,6 +413,7 @@ header {
 .news-content {
     width: 0;
     overflow: hidden;
+	height: 0;
 }
 
 .news-lower {
