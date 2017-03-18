@@ -4,9 +4,6 @@ session_start();
 if (isset($_GET['lang'])) {
     $_SESSION['lang'] = $_GET['lang'];
 }
-else {
-    $_SESSION['lang'] = "de-de";
-}
 switch ($_SESSION['lang']) {
     case "en-en":
         include_once('../assets/lang/en-en.php');
@@ -51,6 +48,18 @@ function setHtmlLang() {
         echo "de-de";
     }
 }
+function gettitle(){
+switch($_GET['type']){
+case 'partner': echo SPONSOR_HEADER_PARTNER;
+		break;
+case 'service': echo SPONSOR_HEADER_SPONSORS;
+		break;
+case 'finance': echo SPONSOR_HEADER_FINANCE;
+		break;
+default: echo SPONSOR_HEADER_PARTNER;
+	break;
+}
+}
 ?>
 
   <!DOCTYPE html>
@@ -58,7 +67,7 @@ function setHtmlLang() {
 
   <head>
     <title>
-      <?php echo TITLE ?>
+      <?php echo TITLE ?> | <?php gettitle()?> 
     </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -102,7 +111,7 @@ function setHtmlLang() {
           <div class="grey"></div>
         </div>
         <div class="left">
-          <a class="logo" href="#home">
+          <a class="logo" href="../">
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
         </div>
@@ -173,7 +182,7 @@ function setHtmlLang() {
 
     <main>
       <section id="partner" class="news">
-        <h1><?php echo SPONSOR_HEADER_PARTNER ?></h1>
+        <h1><?php gettitle() ?></h1>
 	<section class="news"id="partner">
 	<div class="row">
 
@@ -182,6 +191,67 @@ function setHtmlLang() {
 	</section>
       </section>
     </main>
+  <footer>
+      <main>
+        <div class="row">
+          <div class="contact">
+            <h2><?php echo HEADER_FOOTER_0 ?></h2>
+            <form id="contact" action="" method="POST">
+              <input class="contactfield" type="text" name="name" placeholder="<?php echo NAME_FORM ?>" required />
+              <input class="contactfield" type="email" name="email" placeholder="<?php echo EMAIL_FORM ?>" required />
+              <textarea name="message" placeholder="<?php echo MESSAGE_FORM ?>"></textarea>
+              <input class="btn-big" type="submit" value="<?php echo BUTTON_FORM ?>" />
+            </form>
+            <div id="emailsent" class="notification">
+              <?php echo EMAIL_SENT_SUC ?>
+            </div>
+            <div id="nemailsent" class="notification">
+              <?php echo EMAIL_SENT_USUC ?>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="impressum">
+              <h2><?php echo HEADER_FOOTER_1 ?></h2>
+              <h6><?php echo SUBHEADER_IMPRESSUM_0 ?></h6>
+              <p>
+                <?php echo TEXT_IMPRESSUM_0 ?>
+              </p>
+              <h6><?php echo SUBHEADER_IMPRESSUM_1 ?></h6>
+              <p>
+                <?php echo TEXT_IMPRESSUM_1 ?>
+              </p>
+              <h6><?php echo SUBHEADER_IMPRESSUM_2 ?></h6>
+              <p>
+                <?php echo TEXT_IMPRESSUM_2 ?>
+              </p>
+            </div>
+            <div class="social">
+              <a class="btn-big" href="https://www.facebook.com/SHpioneers/" target="_blank">
+                <i class="mdi mdi-facebook-box"></i>
+                <?php echo BUTTON_SOCIAL_0 ?>
+              </a>
+              <a class="btn-big" href="https://twitter.com/SHpioneers/" target="_blank">
+                <i class="mdi mdi-twitter-box"></i>
+                <?php echo BUTTON_SOCIAL_1 ?>
+              </a>
+              <a class="btn-big" href="https://www.instagram.com/shpioneers" target="_blank">
+                <i class="mdi mdi-instagram"></i>
+                <?php echo BUTTON_SOCIAL_2 ?>
+              </a>
+              <a class="btn-big" href="" target="_blank">
+                <i class="mdi mdi-youtube-play"></i>
+                <?php echo BUTTON_SOCIAL_3 ?>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </main>
+      <p class="copyright">
+        <?php echo COPYRIGHT ?>
+      </p>
+    </footer>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../assets/js/functions.js"></script>
