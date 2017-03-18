@@ -118,10 +118,10 @@ function setHtmlLang() {
               <i class="mdi mdi-arrow-down-drop-circle"></i>
           </div>
           <div class="dropdown-content">
-            <a href="?lang=de-de&type=<?php echo $_GET['type']?>">
+            <a href="?lang=de-de">
               <?php echo GERMAN ?>
             </a>
-            <a href="?lang=en-en&type=<?php echo $_GET['type']?>">
+            <a href="?lang=en-en">
               <?php echo ENGLISH ?>
             </a>
           </div>
