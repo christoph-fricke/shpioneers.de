@@ -9,7 +9,7 @@ $tournament[] = getcontent(2);
 ?>
 
   <!DOCTYPE html>
-  <html lang="de-de">
+  <html lang="<?php setHtmlLang() ?>">
 
   <head>
     <title>
