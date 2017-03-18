@@ -6,41 +6,41 @@ define('TITLE', 'Pioneers');
 define('NEWS', 'News');
 define('CONTEST', 'Contest');
 define('SPONSORS', 'Sponsors');
-define('SUCESS', 'Sucesses');
+define('SUCESS', 'Successes');
 define('TEAM', 'Team');
 define('LANGUAGE', 'Language');
 define('GERMAN', 'German');
 define('ENGLISH', 'English');
 
 //News content
-define('HEADER_NEWS', 'This is new');
+define('HEADER_NEWS', 'News');
 define('BUTTON_NEWS', 'Learn more');
 define('BUTTON_OLD_NEWS','Archive');
-define('BUTTON_NEWS_MIN','back');
+define('BUTTON_NEWS_MIN','Back');
 
 //Contest content
-define('HEADER_CONTEST', 'The Contest');
-define('TEXT_CONTEST', 'Formel 1 in der Schule ist ein multidisziplinärer Technologiewettbewerb bei dem wir einen Miniatur-Rennwagen am Computer konstruiert und gefertigt haben. Entscheidend für das Ergebnis ist nicht nur die Fahrzeit des Rennwagens, sondern auch die Gesamt-leistung aus Konstruktion, Fertigung, Businessplan, Portfolio und Präsentation.');
-define('BUTTON_CONTEST', 'Contestpage');
+define('HEADER_CONTEST', 'Challenge');
+define('TEXT_CONTEST', 'Formula one in schools is the worlds most exciting STEM-Challenge. Differnt teams have to compete for sponsors in order to get the necesarry funding to build a modell formula one car. The teams also have to present their project in front of a jury and build a teambox in which they show their achievments. The challenge is all about simulating the enviroment of the free market, in order to prepare the paritcipants for their futur.');
+define('BUTTON_CONTEST', 'Formula one in schools');
 
 //Sponsors content
 define('HEADER_SPONSORS', 'Our Supporters');
 define('SUBHEADERS_SPONSORS_0', 'Partner');
-define('SUBHEADERS_SPONSORS_1', 'Sachsponsoren');
-define('SUBHEADERS_SPONSORS_2', 'Finanzsponsoren');
-define('TEXT_SPONSORS_0', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
-define('TEXT_SPONSORS_1', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
-define('TEXT_SPONSORS_2', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
+define('SUBHEADERS_SPONSORS_1', 'Non-monetary sponsors');
+define('SUBHEADERS_SPONSORS_2', 'Monetary sponsors');
+define('TEXT_SPONSORS_0', 'Our partners are an essential part in the creating of our car.');
+define('TEXT_SPONSORS_1', 'Our Non-monetary sponsors help us with knowledge or through other donations.');
+define('TEXT_SPONSORS_2', 'Monetary sponsors are necessary to keep us mobile an fit for the competition.');
 define('BUTTON_SPONSORS', 'Learn more');
 
 //Sucess content
-define('HEADER_SUCESS', 'This is what we have achieved');
+define('HEADER_SUCESS', 'Achievments');
 define('PLACE','Place');
 define('BUTTON_SUCESS', 'Learn more');
 
 //Team content
-define('HEADER_TEAM', 'Our Team');
-define('TEXT_TEAM', 'Moin, wir sind das Team Pioneers und nehmen in neuer Zusammensetzung nun das zweite Mal am Wettbewerb „Formel 1 in der Schule“ teil. Ziel ist es, ein eigenes, vielseitiges Projekt auf die Beine zu stellen und dabei möglichst viel zu lernen. Hierbei darf aber die Freude an der Arbeit nicht verloren gehen.<br> Durch unsere Erfahrung aus zwei Saison und der erfolgreichen Teilnahme an der Deutschen Meisterschaft mit einer 6. Platzierung haben wir eine gute Basis geschaffen, um in der kommenden Saison voll durch zu starten.<br> Wir haben in unserem Team durch individuelle Stärken und Interessengebiete für den multidisziplinären Wettbewerb eine gute Vorraussetzungen geschaffen und ergänzen uns in jeder Hinsicht optimal.');
+define('HEADER_TEAM', 'Team');
+define('TEXT_TEAM', 'We are the team Pioneers.ioneers und nehmen in neuer Zusammensetzung nun das zweite Mal am Wettbewerb „Formel 1 in der Schule“ teil. Ziel ist es, ein eigenes, vielseitiges Projekt auf die Beine zu stellen und dabei möglichst viel zu lernen. Hierbei darf aber die Freude an der Arbeit nicht verloren gehen.<br> Durch unsere Erfahrung aus zwei Saison und der erfolgreichen Teilnahme an der Deutschen Meisterschaft mit einer 6. Platzierung haben wir eine gute Basis geschaffen, um in der kommenden Saison voll durch zu starten.<br> Wir haben in unserem Team durch individuelle Stärken und Interessengebiete für den multidisziplinären Wettbewerb eine gute Vorraussetzungen geschaffen und ergänzen uns in jeder Hinsicht optimal.');
 define('BUTTON_TEAM', 'Visit the team');
 
 //Footer content
