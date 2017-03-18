@@ -23,7 +23,7 @@ if(!file_exists("../content/sponsors/". $type ."-". $_SESSION['lang']. ".json"))
 return json_decode(file_get_contents("../content/sponsors/". $type ."-". $_SESSION['lang']. ".json"));
 }
 function printsponsors(){
-foreach (getdata('partner') as $spons){
+foreach (getdata($_GET['type']) as $spons){
 printcard($spons);
 }}
 function printcard($data){
@@ -84,28 +84,18 @@ function setHtmlLang() {
           </div>
           <div class="sidebar dropdown-content">
             <div class="sidebar-option">
-              <a href="#news" class="navbar-option">
-                <?php echo NEWS ?>
+              <a href="?type=partner" class="navbar-option">
+                <?php echo SPONSOR_HEADER_PARTNER ?>
               </a>
             </div>
             <div class="sidebar-option">
-              <a href="#contest" class="navbar-option">
-                <?php echo CONTEST ?>
+              <a href="?type=service" class="navbar-option">
+                <?php echo SPONSOR_HEADER_SPONSORS ?>
               </a>
             </div>
             <div class="sidebar-option">
-              <a href="#sponsors" class="navbar-option">
-                <?php echo SPONSORS ?>
-              </a>
-            </div>
-            <div class="sidebar-option">
-              <a href="#sucess" class="navbar-option">
-                <?php echo SUCESS ?>
-              </a>
-            </div>
-            <div class="sidebar-option">
-              <a href="#team" class="navbar-option">
-                <?php echo TEAM ?>
+              <a href="?type=finance" class="navbar-option">
+                <?php echo SPONSOR_HEADER_FINANCE ?>
               </a>
             </div>
           </div>
@@ -134,22 +124,22 @@ function setHtmlLang() {
     <nav class="desktop">
       <div class="navbar-content">
         <div class="left">
-          <a class="logo" href="#home">
+          <a class="logo" href="../">
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="#news">
+          <a class="navbar-option" href="?type=partner">
             <?php echo SPONSOR_HEADER_PARTNER ?>
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="#contest">
+          <a class="navbar-option" href="?type=service">
             <?php echo SPONSOR_HEADER_SPONSORS ?>
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="#sponsors">
+          <a class="navbar-option" href="?type=finance">
             <?php echo SPONSOR_HEADER_FINANCE ?>
           </a>
         </div>
