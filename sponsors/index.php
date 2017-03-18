@@ -120,10 +120,10 @@ default: echo SPONSOR_HEADER_PARTNER;
             <i class="mdi mdi-translate"></i>
           </div>
           <div class="dropdown-content">
-            <a href="?lang=de-de">
+            <a href="?lang=de-de&type=<?php echo $_GET['type']?>">
               <?php echo GERMAN ?>
             </a>
-            <a href="?lang=en-en">
+            <a href="?lang=en-en&type=<?php echo $_GET['type']?>">
               <?php echo ENGLISH ?>
             </a>
           </div>
@@ -158,10 +158,10 @@ default: echo SPONSOR_HEADER_PARTNER;
               <i class="mdi mdi-arrow-down-drop-circle"></i>
           </div>
           <div class="dropdown-content">
-            <a href="?lang=de-de">
+            <a href="?lang=de-de&type=<?php echo $_GET['type']?>">
               <?php echo GERMAN ?>
             </a>
-            <a href="?lang=en-en">
+            <a href="?lang=en-en&type=<?php echo $_GET['type']?>">
               <?php echo ENGLISH ?>
             </a>
           </div>
