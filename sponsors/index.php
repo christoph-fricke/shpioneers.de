@@ -41,7 +41,13 @@ function printsponsors(){
         '. BUTTON_NEWS_MIN.'</a>
   </div>
   </div>'; } function setHtmlLang() { if ($_SESSION['lang']) { echo $_SESSION['lang']; } else { echo "de-de"; } } function gettitle(){ switch($_GET['type']){ case 'partner': echo SPONSOR_HEADER_PARTNER; break; case 'service': echo SPONSOR_HEADER_SPONSORS; break;
-  case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER_PARTNER; break; } } ?>
+  case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER_PARTNER; break; } }
+
+function setactive($type){
+if($type == $_GET['type']){
+echo 'active';
+}
+} ?>
 
   <!DOCTYPE html>
   <html lang="<?php setHtmlLang() ?>">
@@ -120,17 +126,17 @@ function printsponsors(){
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="?type=partner">
+          <a class="navbar-option <?php setactive('partner'); ?>" href="?type=partner">
             <?php echo SPONSOR_HEADER_PARTNER ?>
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="?type=service">
+          <a class="navbar-option <?php setactive('service'); ?>" href="?type=service">
             <?php echo SPONSOR_HEADER_SPONSORS ?>
           </a>
         </div>
         <div class="left">
-          <a class="navbar-option" href="?type=finance">
+          <a class="navbar-option <?php setactive('finance'); ?>" href="?type=finance">
             <?php echo SPONSOR_HEADER_FINANCE ?>
           </a>
         </div>
@@ -236,7 +242,7 @@ function printsponsors(){
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../assets/js/functions.js"></script>
+    <script src="../assets/js/email_responsivnews.js"></script>
   </body>
 
   </html>

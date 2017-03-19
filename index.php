@@ -416,6 +416,7 @@ $tournament[] = getcontent(2);
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/functions.js"></script>
+    <script src="assets/js/email_responsivnews.js"></script>
   </body>
 
   </html>
