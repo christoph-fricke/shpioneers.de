@@ -2,18 +2,63 @@
 {
 "name": "Bendix Sonnenberg",
 "job":"IT und Renderings",
-"quote": "Bendix ist der beste",
-"quotee": "Hanno",
-"text": "Hallo ich bin der Bendix und ich bin nicht behindert",
+"quote": "„Bendix ist eine große Hilfe! Nicht nur, dass er sich um die Animation und Renderings kümmert, er konnte seine Ideen in viele Themenbereiche sehr gut einbringen und half, wo er nur konnte.“",
+"quotee": "Fiete",
+"text": "Bendix ist im Team für IT und die Renderings zuständig. Er hat das Programm unserer Teambox selbst geschrieben, ist für die Porgrammierung unserer Website zuständig und visualisiert unsere Auto Konstruktionen durch seine Renderings.",
 "img": "assets/img/bendix.png"
 },
 
 {
 "name": "Hanno Christiansen",
 "job":"Engineering",
-"quote": "Hanno ist so mittelklasse",
-"quotee": "Linus",
-"text": "Hallo ich bin der Hanno und ich bin nicht behindert",
+"quote": "„Hanno bereitete unserem Team durch seine witzige Art jederzeit Freude. Jedoch bewundere ich ihn auch für seine technischen Fähigkeiten, die er insbesondere bei der Anfertigung unserer Box unter Beweis stellte.“",
+"quotee": "Nils (Supporter)",
+"text": "Hanno ist in unserem Team für die Technik verantwortlich. So baute er das Lichtschrankensystem, mit dem wr unsere Prototypen analysierten und stattete unsere Teambox mit Elektronik aus.",
 "img": "assets/img/hanno.png"
+}
+
+{
+"name": "Linus Pimat",
+"job":"Management",
+"quote": "„Linus ist ein Meister in Sachen Koordination. Unser Team würde eiskalt im Chaos enden, wenn wir ihn nicht hätten. Das Arbeiten in der Gruppe macht mit ihm unglaublich viel Spaß.“",
+"quotee": "Michael (Supporter)",
+"text": "Linus hat als Manager zur Hauptaufgabe, die Termine unseres Teams zu planen. Außerdem ist er das Bindeglied vieler kleinerer Arbeitsgruppen und sorgt dafür, dass alle Mitglieder über jede Arbeit informiert sind.",
+"img": "...."
+}
+
+{
+"name": "Jorina Sendel",
+"job":"Marketing",
+"quote": "„Jorina hat ein begnadetes Talent, wenn es um die Erstellung ansprechender Texte geht. Durch ihre gute Marketingarbeit haben wir unsere Außenwirkung positiv verändert.“",
+"quotee": "Linus",
+"text": "Jorina kümmert sich um die Gewinnung und Betreuung unserer Sponsoren. So schreibt sie diesen regelmäßig Berichte über unsere Arbeit, außerden schreibt sie viele der Inhalte unseres Protfolios.",
+"img": "..."
+}
+
+{
+"name": "Fiete Scheel",
+"job":"Design",
+"quote": "„Fietes Kenntnisse im Bereich des Designs haben unsere Außenwirkung in dieser Saison positiv beeinflusst. Außerdem hat sich seine Begeisterung für die „echte“ Formel 1 als hilfreich erwiesen.“",
+"quotee": "Bendix",
+"text": "Fiete ist nicht nur für die Konstruktion unseres Autos, sondern auch für dessen Design verantwortlich.",
+"img": "..."
+}
+
+{
+"name": "Carl von Brandis",
+"job":"Engineering",
+"quote": "„Carl hat sich direkt gut in unser Team eingefügt. Durch sein lösungsorientiertes Handeln ist er uns eine super Stütze.“",
+"quotee": "Jorina",
+"text": "Carl ist seit den Landesmeisterschaften 2017 Mitglied in unserem Team. Er ist nun besonders für die Tests und Evaluation unserer Rennwagen zuständig. ",
+"img": "..."
+}
+
+{
+"name": "Michael Chumakovski",
+"job":"Supporter",
+"quote": "„Michael hat durch seine lockere Art immer positiv zu unserem Teamklima beigetragen. Er hatte viele hilfreiche Ideen, die gut zur Konstruktion des Autos beigetragen haben.“",
+"quotee": "Jorina",
+"text": "Aus zeitlichen Gründen ist Michael seit den Landesmeisterschaften nur noch als Soupporter unseres Teams aktiv. Das heißt er unterstützt uns immer, wenn wir ihn brauchen.",
+"img": "..."
 }
 ]
