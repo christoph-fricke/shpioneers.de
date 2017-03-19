@@ -546,7 +546,10 @@ header {
     margin-left: calc( 5% / 3);
 }
 
-
+#partner .row{
+display: flex;
+flex-wrap: wrap;
+}
 /*
  * CONTEST
  */

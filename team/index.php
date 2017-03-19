@@ -143,11 +143,9 @@ function setHtmlLang() {
     <main>
       <section id="partner" class="news">
         <h1><?php echo HEADER_TEAM ?></h1>
-        <section class="news" id="partner">
           <div class="row">
             <?php printteam() ?>
           </div>
-        </section>
       </section>
     </main>
     <footer>
