@@ -68,4 +68,9 @@ define('COPYRIGHT', '&copy; 2017, Pioneers');
 define('SPONSOR_HEADER_PARTNER', 'Partner');
 define('SPONSOR_HEADER_SPONSORS', 'Non-monetary sponsors');
 define('SPONSOR_HEADER_FINANCE', 'Monetary sponsors');
+
+//ACHIEVMENT SUBPAGE
+define('HEADER_PERCENTAGES','Percentages');
+define('HEADER_TEXT_ACH','Report');
+define('HEADER_CAR','Car');
 ?>

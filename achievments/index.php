@@ -163,11 +163,11 @@ echo '        <div class="achievment-content">
     <main>
       <section class="container">
         <div class="left">
-          <h3>Leistung</h3>
+          <h3><?php echo HEADER_PERCENTAGES ?></h3>
 		<?php printbars(); ?>
         </div>
         <div class="right">
-          <h3>Some Text</h3>
+          <h3><?php echo HEADER_TEXT_ACH ?></h3>
 		<p>
 	<?php echo $tournament[0] -> text ?>
           </p>
@@ -176,7 +176,7 @@ echo '        <div class="achievment-content">
       </section>
       <div class="clearfix"></div>
 
-      <h3>Racer</h3>
+      <h3><?php echo HEADER_CAR ?></h3>
       <div class="racer-container">
         <img src="../assets/img/450x300.png" />
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
