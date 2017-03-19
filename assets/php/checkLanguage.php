@@ -1,14 +1,13 @@
 <?php
 session_start();
-if(!isset($_SESSION['lang'])){
     if (isset($_GET['lang'])) {
         $_SESSION['lang'] = $_GET['lang'];
     }
     else {
         $_SESSION['lang'] = "de-de";
-    }}
+    }
     
-    switch ($_SESSION['lang']) {
+switch ($_SESSION['lang']) {
         case "en-en":
             include_once('assets/lang/en-en.php');
             break;
