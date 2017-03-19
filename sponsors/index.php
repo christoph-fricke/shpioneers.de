@@ -95,6 +95,17 @@ echo 'active';
                 <?php echo SPONSOR_HEADER_FINANCE ?>
               </a>
             </div>
+            <hr>
+            <div class="sidebar-option">
+              <a href="?lang=de-de" class="navbar-option">
+                <?php echo GERMAN ?>
+              </a>
+            </div>
+            <div class="sidebar-option">
+              <a href="?lang=en-en" class="navbar-option">
+                <?php echo ENGLISH ?>
+              </a </div>
+            </div>
           </div>
           <div class="grey"></div>
         </div>
@@ -102,19 +113,6 @@ echo 'active';
           <a class="logo" href="../">
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
-        </div>
-        <div class="right">
-          <div class="navbar-option dropdown">
-            <i class="mdi mdi-translate"></i>
-          </div>
-          <div class="dropdown-content">
-            <a href="?lang=de-de&type=<?php echo $_GET['type']?>">
-              <?php echo GERMAN ?>
-            </a>
-            <a href="?lang=en-en&type=<?php echo $_GET['type']?>">
-              <?php echo ENGLISH ?>
-            </a>
-          </div>
         </div>
     </nav>
 

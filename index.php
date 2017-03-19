@@ -63,6 +63,17 @@ $tournament[] = getcontent(2);
                 <?php echo TEAM ?>
               </a>
             </div>
+            <hr>
+            <div class="sidebar-option">
+              <a href="?lang=de-de" class="navbar-option">
+                <?php echo GERMAN ?>
+              </a>
+            </div>
+            <div class="sidebar-option">
+              <a href="?lang=en-en" class="navbar-option">
+                <?php echo ENGLISH ?>
+              </a </div>
+            </div>
           </div>
           <div class="grey"></div>
         </div>
@@ -70,19 +81,6 @@ $tournament[] = getcontent(2);
           <a class="logo" href="#home">
             <img class="logo logo-svg" src="assets/icons/logo_text.svg" />
           </a>
-        </div>
-        <div class="right">
-          <div class="navbar-option dropdown">
-            <i class="mdi mdi-translate"></i>
-          </div>
-          <div class="dropdown-content">
-            <a href="?lang=de-de">
-              <?php echo GERMAN ?>
-            </a>
-            <a href="?lang=en-en">
-              <?php echo ENGLISH ?>
-            </a>
-          </div>
         </div>
     </nav>
 
