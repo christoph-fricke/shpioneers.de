@@ -97,12 +97,12 @@ echo 'active';
             </div>
             <hr>
             <div class="sidebar-option">
-              <a href="?lang=de-de" class="navbar-option">
+              <a href="?lang=de-de&type=<?php echo $_GET['type']?>" class="navbar-option">
                 <?php echo GERMAN ?>
               </a>
             </div>
             <div class="sidebar-option">
-              <a href="?lang=en-en" class="navbar-option">
+              <a href="?lang=en-en&type=<?php echo $_GET['type']?>" class="navbar-option">
                 <?php echo ENGLISH ?>
               </a </div>
             </div>
