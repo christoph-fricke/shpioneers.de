@@ -512,10 +512,10 @@ header {
 }
 
 @media screen and (max-width: 1000px) {
-    .selected {
+    .news-card.selected {
         animation: none;
         transition: max-height 1s ease;
-        max-height: 1000px;
+	max-height: 100000px;
     }
     .news-card.minor {
         margin-left: 0;
