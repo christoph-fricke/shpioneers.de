@@ -27,6 +27,24 @@ function setHtmlLang() {
         echo "de-de";
     }
 }
+function printbars(){
+global $tournament;
+for($i = 0; $i < sizeof($tournament[1]); $i++){
+printbar($i);
+}
+}
+function printbar($index){
+global $tournament;
+echo '<div class="status-bar">
+            <h6>'. $tournament[1][$index] -> name.'</h6>
+            <div class="max-length">
+              <p class="reached-number">'.$tournament[2] -> percentage[$index] -> value .'%</p>
+              <div class="reached-length" style="width: '.$tournament[2] -> percentage[$index] -> value .'%;">
+              </div>
+            </div>
+          </div>';
+
+}
 function printsuccesses(){
 global $tournament;
 foreach($tournament[0] -> trophies as $su){
@@ -84,7 +102,7 @@ echo '        <div class="achievment-content">
             <div class="sidebar-option">
               <a href="?lang=en-en" class="navbar-option">
                 <?php echo ENGLISH ?>
-              </a </div>
+              </a> </div>
             </div>
           </div>
           <div class="grey"></div>
@@ -146,38 +164,7 @@ echo '        <div class="achievment-content">
       <section class="container">
         <div class="left">
           <h3>Leistung</h3>
-          <div class="status-bar">
-            <h6>Car</h6>
-            <div class="max-length">
-              <p class="reached-number">50%</p>
-              <div class="reached-length" style="width:50%;">
-              </div>
-            </div>
-          </div>
-          <div class="status-bar">
-            <h6>Portfolio</h6>
-            <div class="max-length">
-              <p class="reached-number">50%</p>
-              <div class="reached-length" style="width:50%;">
-              </div>
-            </div>
-          </div>
-          <div class="status-bar">
-            <h6>Stand</h6>
-            <div class="max-length">
-              <p class="reached-number">50%</p>
-              <div class="reached-length" style="width:50%;">
-              </div>
-            </div>
-          </div>
-          <div class="status-bar">
-            <h6>Swag</h6>
-            <div class="max-length">
-              <p class="reached-number">50%</p>
-              <div class="reached-length" style="width:50%;">
-              </div>
-            </div>
-          </div>
+		<?php printbars(); ?>
         </div>
         <div class="right">
           <h3>Some Text</h3>
