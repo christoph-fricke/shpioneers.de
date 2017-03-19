@@ -19,7 +19,7 @@ switch ($_SESSION['lang']) {
 }
 include("../assets/php/achievment.php");
 define('PATH_TO_ROOT','../');
-$tournament = getcontent(0);
+$tournament = getcontent($_GET['index']);
 function setHtmlLang() {
     if ($_SESSION['lang']) {
         echo $_SESSION['lang'];

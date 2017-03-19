@@ -74,7 +74,7 @@ $tournament[] = getcontent(2);
             <div class="sidebar-option">
               <a href="?lang=en-en" class="navbar-option">
                 <?php echo ENGLISH ?>
-              </a </div>
+              </a> </div>
             </div>
           </div>
           <div class="grey"></div>
@@ -307,7 +307,7 @@ $tournament[] = getcontent(2);
             <p>
               <?php echo $tournament[0][0] -> name. ' | ' . $tournament[0][0] -> location ?>
             </p>
-            <a class="btn-small" href="">
+            <a class="btn-small" href="/achievments/?index=0">
               <?php echo BUTTON_SUCESS ?>
             </a>
           </div>
@@ -322,7 +322,7 @@ $tournament[] = getcontent(2);
             <p>
               <?php echo $tournament[1][0] -> name. ' | ' . $tournament[1][0] -> location ?>
             </p>
-            <a class="btn-small" href="">
+            <a class="btn-small" href="/achievments/?index=1">
               <?php echo BUTTON_SUCESS ?>
             </a>
           </div>
@@ -337,7 +337,7 @@ $tournament[] = getcontent(2);
             <p>
               <?php echo $tournament[2][0] -> name. ' | ' . $tournament[2][0] -> location ?>
             </p>
-            <a class="btn-small" href="">
+            <a class="btn-small" href="/achievments/?index=2">
               <?php echo BUTTON_SUCESS ?>
             </a>
           </div>
