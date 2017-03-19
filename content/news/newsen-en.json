@@ -5,8 +5,8 @@
         "date": "19.02.2017",
         "subtitle": "",
         "preview": "After hard work we achieved our first milestone.",
-        "text": "That weekend it finally happened. For a long time we had worked for the state championship. Full of anticipation we set up our booth on friday so we could talk about our presentation in the evening. On saturday we took of for Elmshorn really early. After the official welcome the competition started with the presentation of our booth, after that we had our oral presentation and our race. Unfortunately we had a penalty time of 0,1 seconds because of a mistake in our construction. With a time of 1.232 sec we placed fourth anyway. Before the final judgement we lost the knock-out race against the team „de blitzen“.<br>Our overall result was quite the contrary: We are state champion and got trophies for the best construction, the best portfolio and the best booth. 
-}
+        "text": "That weekend it finally happened. For a long time we had worked for the state championship. Full of anticipation we set up our booth on friday so we could talk about our presentation in the evening. On saturday we took of for Elmshorn really early. After the official welcome the competition started with the presentation of our booth, after that we had our oral presentation and our race. Unfortunately we had a penalty time of 0,1 seconds because of a mistake in our construction. With a time of 1.232 sec we placed fourth anyway. Before the final judgement we lost the knock-out race against the team „de blitzen“.<br>Our overall result was quite the contrary: We are state champion and got trophies for the best construction, the best portfolio and the best booth."
+},
     {
         "title": "After competition is before the competition",
         "image": "assets/img/test.JPG",
@@ -25,5 +25,13 @@
         "text": "Today we visited the Fachhochschule Kiel, our partner. There we talked about the manufacturing of our car for the german championship. Monday they will start the chassis manufacturing, because on sunday is our construction deadline. "
 
     },
-  
+  {
+        "title": "Besuch der FH Kiel",
+        "image": "assets/img/test.JPG",
+        "date": "16.03.2017",
+        "subtitle": "",
+        "preview": "The Fachhochschule Kiel is still our manufacturing partner.",
+        "text": "Today we visited the Fachhochschule Kiel, our partner. There we talked about the manufacturing of our car for the german championship. Monday they will start the chassis manufacturing, because on sunday is our construction deadline. "
+
+    }
 ]
