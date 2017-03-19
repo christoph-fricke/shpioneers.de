@@ -901,6 +901,7 @@ input[type="submit"] {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .achievment-trophy {
@@ -908,7 +909,8 @@ input[type="submit"] {
 }
 
 .achievment-content {
-    margin: 0 2%;
+    margin: 0 1% 10px 1%;
+    width: 200px;
 }
 
 .achievment-content h2 {
@@ -960,10 +962,28 @@ input[type="submit"] {
 }
 
 .racer-container img {
+    width: 45%;
+    height: auto;
     margin: 0 15px 15px 0;
     float: left;
 }
 
 .racer-container {
     margin-bottom: 100px;
+}
+
+@media screen and (max-width: 650px) {
+    .container .left,
+    .container .right {
+        width: 100%;
+    }
+    .right h3 {
+        margin-top: 50px;
+    }
+    .racer-container img {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+        float: none;
+    }
 }
