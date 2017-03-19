@@ -51,26 +51,30 @@ function setHtmlLang() {
   </head>
 
   <body>
-    <nav class="mobile">
+        <nav class="mobile">
       <div class="navbar-content">
-
+        <div class="left">
+          <div class="navbar-option hamburger">
+            <i class="mdi mdi-menu"></i>
+          </div>
+          <div class="sidebar dropdown-content">
+            <div class="sidebar-option">
+              <a href="?lang=de-de" class="navbar-option">
+                <?php echo GERMAN ?>
+              </a>
+            </div>
+            <div class="sidebar-option">
+              <a href="?lang=en-en" class="navbar-option">
+                <?php echo ENGLISH ?>
+              </a </div>
+            </div>
+          </div>
+          <div class="grey"></div>
+        </div>
         <div class="left">
           <a class="logo" href="../">
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
-        </div>
-        <div class="right">
-          <div class="navbar-option dropdown">
-            <i class="mdi mdi-translate"></i>
-          </div>
-          <div class="dropdown-content">
-            <a href="?lang=de-de">
-              <?php echo GERMAN ?>
-            </a>
-            <a href="?lang=en-en">
-              <?php echo ENGLISH ?>
-            </a>
-          </div>
         </div>
     </nav>
 
