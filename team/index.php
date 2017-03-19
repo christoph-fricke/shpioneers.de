@@ -82,29 +82,6 @@ function setHtmlLang() {
   </head>
 
   <body>
-    <!--<nav class="mobile">
-      <div class="navbar-content">
-
-        <div class="left">
-          <a class="logo" href="../">
-            <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
-          </a>
-        </div>
-        <div class="right">
-          <div class="navbar-option dropdown">
-            <i class="mdi mdi-translate"></i>
-          </div>
-          <div class="dropdown-content">
-            <a href="?lang=de-de">
-              <?php echo GERMAN ?>
-            </a>
-            <a href="?lang=en-en">
-              <?php echo ENGLISH ?>
-            </a>
-          </div>
-        </div>
-    </nav>-->
-
     <nav class="mobile">
       <div class="navbar-content">
         <div class="left">
@@ -160,7 +137,7 @@ function setHtmlLang() {
       <section class="logo-header" id="home">
 
       </section>
-      <a href="#news">
+      <a href="#partner">
         <div class="fab">
           <i class="mdi mdi-arrow-down mdi-24px"></i>
         </div>

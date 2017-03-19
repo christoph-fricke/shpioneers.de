@@ -1,13 +1,6 @@
 // Makes the side works on safari for touch devices.
 document.addEventListener("touchstart", function() {}, true);
 
-$(document).ready(function() {
-    $("a[href*=\\#]").click(function(event) { // scrolling effect for anchors
-        event.preventDefault();
-        $('html,body').animate({ scrollTop: $(this.hash).offset().top - 70 }, 500); // 70 is the offset for the nav bar
-    });
-});
-
 var oldid = '';
 $('section').on('reached', function() { // switching active element based on position
     var id = $(this).attr('id');

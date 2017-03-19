@@ -107,14 +107,14 @@ function setHtmlLang() {
       <section class="logo-header" id="home">
 
       </section>
-      <a href="#news">
+      <a href="#achievments">
         <div class="fab">
           <i class="mdi mdi-arrow-down mdi-24px"></i>
         </div>
       </a>
     </header>
 
-    <main>
+    <main id="achievments">
       <h1>DM 2017</h1>
     </main>
 

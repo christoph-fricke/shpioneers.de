@@ -1,3 +1,10 @@
+$(document).ready(function() {
+    $("a[href*=\\#]").click(function(event) { // scrolling effect for anchors
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top - 70 }, 500); // 70 is the offset for the nav bar
+    });
+});
+
 // Calls the server to recieve a token
 var token; // gloabal because we will need it later
 $(function() {

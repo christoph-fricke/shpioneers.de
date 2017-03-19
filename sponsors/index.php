@@ -159,7 +159,7 @@ echo 'active';
       <section class="logo-header" id="home">
 
       </section>
-      <a href="#news">
+      <a href="#partner">
         <div class="fab">
           <i class="mdi mdi-arrow-down mdi-24px"></i>
         </div>
