@@ -56,7 +56,7 @@ $(function() {
     var tokenRequest;
 
     tokenRequest = $.ajax({
-        url: 'assets/php/tokenCreator.php',
+        url: '/assets/php/tokenCreator.php',
         type: 'post',
         success: function(result) {
             token = result;
@@ -76,7 +76,7 @@ $('#contact').submit(function(event) {
         "&token=" + token; // Maybe the token should gets checked wether or not it is checked be for it gets send. Otherwise it gets checked on the server anyway.
 
     sendMail = $.ajax({
-        url: 'assets/php/mail.php',
+        url: '/assets/php/mail.php',
         type: 'post',
         data: dataString
     });
