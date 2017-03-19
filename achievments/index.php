@@ -18,6 +18,8 @@ switch ($_SESSION['lang']) {
         break;
 }
 include("../assets/php/achievment.php");
+define('PATH_TO_ROOT','../');
+echo PATH_TO_ROOT;
 $tournament = getcontent(0);
 function setHtmlLang() {
     if ($_SESSION['lang']) {
@@ -33,7 +35,7 @@ function setHtmlLang() {
 
   <head>
     <title>
-      <?php echo TITLE . ' | ' .$tournament -> title?>
+      <?php echo TITLE . ' | ' .$tournament[0] -> title?>
     </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -11,12 +11,12 @@ returns an array with the relevant data
 */
 $name = "";
 $rvalue = array();
-$index = json_decode(file_get_contents('content/achievments/list.json'));
+$index = json_decode(file_get_contents(PATH_TO_ROOT . 'content/achievments/list.json'));
 if(!isset($index[$id])) $name = $index[0];
 else $name = $index[$id];
-$rvalue[] = json_decode(file_get_contents('content/achievments/'. $name .'/'. $_SESSION['lang'].".json"));
-$rvalue[] = json_decode(file_get_contents('content/achievments/percentage-list-'. $_SESSION['lang']. ".json"));
-$rvalue[] = json_decode(file_get_contents('content/achievments/'. $name . "/data.json"));
+$rvalue[] = json_decode(file_get_contents(PATH_TO_ROOT . 'content/achievments/'. $name .'/'. $_SESSION['lang'].".json"));
+$rvalue[] = json_decode(file_get_contents(PATH_TO_ROOT . 'content/achievments/percentage-list-'. $_SESSION['lang']. ".json"));
+$rvalue[] = json_decode(file_get_contents(PATH_TO_ROOT . 'content/achievments/'. $name . "/data.json"));
 return $rvalue;
 }
 ?>

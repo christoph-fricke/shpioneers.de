@@ -3,9 +3,11 @@ include('assets/php/checkLanguage.php');
 include('assets/php/news.php');
 include('assets/php/achievment.php');
 $tournament = array();
+define('PATH_TO_ROOT','');
 $tournament[] = getcontent(0);
 $tournament[] = getcontent(1);
 $tournament[] = getcontent(2);
+
 ?>
 
   <!DOCTYPE html>
