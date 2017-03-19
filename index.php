@@ -139,6 +139,7 @@ $tournament[] = getcontent(2);
       <section class="logo-header" id="home">
 
       </section>
+      <div class="clearfix"></div>
       <a href="#news">
         <div class="fab">
           <i class="mdi mdi-arrow-down mdi-24px"></i>
@@ -235,6 +236,7 @@ $tournament[] = getcontent(2);
           </div>
         </div>
       </section>
+      <div class="clearfix"></div>
     </main>
 
     <section id="contest" class="contest">
@@ -248,6 +250,7 @@ $tournament[] = getcontent(2);
         </a>
       </main>
     </section>
+    <div class="clearfix"></div>
 
     <main>
       <section id="sponsors" class="sponsors">
@@ -288,6 +291,7 @@ $tournament[] = getcontent(2);
           </div>
         </div>
       </section>
+      <div class="clearfix"></div>
 
       <section id="sucess" class="sucess">
         <h1><?php echo HEADER_SUCESS ?></h1>
@@ -339,6 +343,7 @@ $tournament[] = getcontent(2);
           </div>
         </div>
       </section>
+      <div class="clearfix"></div>
     </main>
 
     <section id="team" class="team">
@@ -352,6 +357,7 @@ $tournament[] = getcontent(2);
         </a>
       </main>
     </section>
+    <div class="clearfix"></div>
 
     <footer>
       <main>

@@ -19,7 +19,6 @@ switch ($_SESSION['lang']) {
 }
 include("../assets/php/achievment.php");
 define('PATH_TO_ROOT','../');
-echo PATH_TO_ROOT;
 $tournament = getcontent(0);
 function setHtmlLang() {
     if ($_SESSION['lang']) {
@@ -53,7 +52,7 @@ function setHtmlLang() {
   </head>
 
   <body>
-        <nav class="mobile">
+    <nav class="mobile">
       <div class="navbar-content">
         <div class="left">
           <div class="navbar-option hamburger">
@@ -114,7 +113,113 @@ function setHtmlLang() {
         </div>
       </a>
     </header>
-	<footer>
+
+    <main>
+      <h1>DM 2017</h1>
+    </main>
+
+    <section class="contest">
+      <main class="inner-contest achievment-box">
+        <div class="achievment-content">
+          <div class="trophy achievment-trophy">
+            <svg class="icon-big" viewBox="0 0 24 24">
+              <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
+              />
+            </svg>
+          </div>
+          <h2>Best car</h2>
+        </div>
+        <div class="achievment-content">
+          <div class="trophy achievment-trophy">
+            <svg class="icon-big" viewBox="0 0 24 24">
+              <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
+              />
+            </svg>
+          </div>
+          <h2>Coolest portfolie</h2>
+        </div>
+        <div class="achievment-content">
+          <div class="trophy achievment-trophy">
+            <svg class="icon-big" viewBox="0 0 24 24">
+              <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
+              />
+            </svg>
+          </div>
+          <h2>Best messestand</h2>
+        </div>
+        <div class="achievment-content">
+          <div class="trophy achievment-trophy">
+            <svg class="icon-big" viewBox="0 0 24 24">
+              <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
+              />
+            </svg>
+          </div>
+          <h2>Some more swag</h2>
+        </div>
+      </main>
+    </section>
+    <div class="clearfix"></div>
+
+    <main>
+      <section class="container">
+        <div class="left">
+          <h3>Leistung</h3>
+          <div class="status-bar">
+            <h6>Car</h6>
+            <div class="max-length">
+              <p class="reached-number">50%</p>
+              <div class="reached-length" style="width:50%;">
+              </div>
+            </div>
+          </div>
+          <div class="status-bar">
+            <h6>Portfolio</h6>
+            <div class="max-length">
+              <p class="reached-number">50%</p>
+              <div class="reached-length" style="width:50%;">
+              </div>
+            </div>
+          </div>
+          <div class="status-bar">
+            <h6>Stand</h6>
+            <div class="max-length">
+              <p class="reached-number">50%</p>
+              <div class="reached-length" style="width:50%;">
+              </div>
+            </div>
+          </div>
+          <div class="status-bar">
+            <h6>Swag</h6>
+            <div class="max-length">
+              <p class="reached-number">50%</p>
+              <div class="reached-length" style="width:50%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <h3>Some Text</h3>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.
+          </p>
+        </div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+
+      <h3>Racer</h3>
+      <div class="racer-container">
+        <img src="../assets/img/450x300.png" />
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+          sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+          duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
+      </div>
+    </main>
+
+    <footer>
       <main>
         <div class="row">
           <div class="contact">
