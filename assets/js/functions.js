@@ -1,5 +1,3 @@
-// Makes the side works on safari for touch devices.
-document.addEventListener("touchstart", function() {}, true);
 
 var oldid = '';
 $('section').on('reached', function() { // switching active element based on position

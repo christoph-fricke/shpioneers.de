@@ -1,3 +1,6 @@
+// Makes the side works on safari for touch devices.
+document.addEventListener("touchstart", function() {}, true);
+
 $(document).ready(function() {
     $("a[href*=\\#]").click(function(event) { // scrolling effect for anchors
         event.preventDefault();
