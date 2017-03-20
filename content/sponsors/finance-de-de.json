@@ -1,7 +1,12 @@
 [
 {
 "name": "GymKro",
-"img": "assets/img/gymkro.org",
-"text": "Der Förderverein des Gymnasiums Kronshagens ist uns wichtig weil ist so"
+"img": "../assets/img/sponsors/gymkro.png",
+"text": "Das Gymnasium Kronshagen ist „unsere Schule“. Die Schule ist eine MINT EC Schule, was bedeutet, dass die Schüler im MINT-Be- reich (Mathe, Informatik, Naturwissenschaf- ten und Technik) individuell und besonders stark gefördert werden. Die Schule nimmt schon seit geräumiger Zeit am Wettbewerb Formel 1 in der Schule teil, das seit drei Jah- ren bestehende Team Pioneers ist jedoch das bisher erfolgreichste Team des Gymnasiums. Deshalb entschied sich die Schule dafür, das Projekt durch den Förderverein in jeder Sai- son zu unterstützen und dem Team ein Pro- jektkonto mit ca. 5000€ zu überschreiben."
+},
+{
+"name": "Sparkasse",
+"img": "../assets/img/sponsors/sparkasse.svg",
+"text": "Die Sparkasse ist Deutschlands meist emp- fohlenster Finanzpartner, sie gehen indi- viduell auf die Wünsche ihrer Privat- und Unternehmens Kunden ein. Die Sparkasse engagiert sich in einem hohen Maß auf der gesellschaftlichen- sozialen Ebene. Beson- ders regional ist die Finanzgruppe sehr aktiv, da vor Ort regional über zu unterstützende Projekte entschieden wird. In der Saison 2016/2017 spendete die Sparkasse Kronsha- gen dem Formel 1 Team Pioneers 500€, um die Bildung von Schülern in Kronshagen zu unterstützen. In der ersten Pioneers Saison war die Sparkasse ebenfalls Finanzsponsor."
 }
 ]
