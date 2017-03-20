@@ -5,7 +5,7 @@
 "quote": "„Bendix ist eine große Hilfe! Nicht nur, dass er sich um die Animation und Renderings kümmert, er konnte seine Ideen in viele Themenbereiche sehr gut einbringen und half, wo er nur konnte.“",
 "quotee": "Fiete",
 "text": "Bendix ist im Team für IT und die Renderings zuständig. Er hat das Programm unserer Teambox selbst geschrieben, ist für die Porgrammierung unserer Website zuständig und visualisiert unsere Auto Konstruktionen durch seine Renderings.",
-"img": "assets/img/bendix.png"
+"img": "../assets/img/team/bendix.png"
 },
 
 {
@@ -14,7 +14,7 @@
 "quote": "„Hanno bereitete unserem Team durch seine witzige Art jederzeit Freude. Jedoch bewundere ich ihn auch für seine technischen Fähigkeiten, die er insbesondere bei der Anfertigung unserer Box unter Beweis stellte.“",
 "quotee": "Nils (Supporter)",
 "text": "Hanno ist in unserem Team für die Technik verantwortlich. So baute er das Lichtschrankensystem, mit dem wir unsere Prototypen analysierten und stattete unsere Teambox mit Elektronik aus.",
-"img": "assets/img/hanno.png"
+"img": "../assets/img/team/hanno.png"
 },
 
 {
@@ -23,7 +23,7 @@
 "quote": "„Linus ist ein Meister in Sachen Koordination. Unser Team würde eiskalt im Chaos enden, wenn wir ihn nicht hätten. Das Arbeiten in der Gruppe macht mit ihm unglaublich viel Spaß.“",
 "quotee": "Michael (Supporter)",
 "text": "Linus hat als Manager zur Hauptaufgabe, die Termine unseres Teams zu planen. Außerdem ist er das Bindeglied vieler kleinerer Arbeitsgruppen und sorgt dafür, dass alle Mitglieder über jede Arbeit informiert sind.",
-"img": "...."
+"img": "../assets/img/team/linus.png"
 },
 
 {
@@ -32,7 +32,7 @@
 "quote": "„Jorina hat ein begnadetes Talent, wenn es um die Erstellung ansprechender Texte geht. Durch ihre gute Marketingarbeit haben wir unsere Außenwirkung positiv verändert.“",
 "quotee": "Linus",
 "text": "Jorina kümmert sich um die Gewinnung und Betreuung unserer Sponsoren. So schreibt sie diesen regelmäßig Berichte über unsere Arbeit, außerden schreibt sie viele der Inhalte unseres Portfolios.",
-"img": "..."
+"img": "../assets/img/team/jorina.png"
 },
 
 {
@@ -41,7 +41,7 @@
 "quote": "„Fietes Kenntnisse im Bereich des Designs haben unsere Außenwirkung in dieser Saison positiv beeinflusst. Außerdem hat sich seine Begeisterung für die „echte“ Formel 1 als hilfreich erwiesen.“",
 "quotee": "Bendix",
 "text": "Fiete ist nicht nur für die Konstruktion unseres Autos, sondern auch für dessen Design verantwortlich.",
-"img": "..."
+"img": "../assets/img/team/fiete.png"
 },
 
 {
@@ -59,6 +59,6 @@
 "quote": "„Michael hat durch seine lockere Art immer positiv zu unserem Teamklima beigetragen. Er hatte viele hilfreiche Ideen, die gut zur Konstruktion des Autos beigetragen haben.“",
 "quotee": "Jorina",
 "text": "Aus zeitlichen Gründen ist Michael seit den Landesmeisterschaften nur noch als Soupporter unseres Teams aktiv. Das heißt er unterstützt uns immer, wenn wir ihn brauchen.",
-"img": "..."
+"img": "../assets/img/team/michael.png"
 }
 ]
