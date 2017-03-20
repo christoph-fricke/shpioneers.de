@@ -27,7 +27,7 @@ function printsponsors(){
     }}
     function printcard($data){
         echo '<div class="card news-card">
-        <div class="news-upper" style=" background-image: url(' .$data -> img. ') ?>);">
+        <div class="news-upper" style=" background-image: url("' .$data -> img. '");">
   <h4>'.$data -> name .'</h4>
   </div>
   <div class="news-lower">
