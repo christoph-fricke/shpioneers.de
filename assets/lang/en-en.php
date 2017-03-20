@@ -20,7 +20,7 @@ define('BUTTON_NEWS_MIN','Back');
 
 //Contest content
 define('HEADER_CONTEST', 'Challenge');
-define('TEXT_CONTEST', 'Formula one in schools is the worlds most exciting STEM-Challenge. Differnt teams have to compete for sponsors in order to get the necesarry funding to build a modell formula one car. The teams also have to present their project in front of a jury and build a teambox in which they show their achievments. The challenge is all about simulating the enviroment of the free market, in order to prepare the paritcipants for their futur.');
+define('TEXT_CONTEST', 'Formula one in schools is the worlds most exciting STEM-Challenge. Different teams have to compete for sponsors in order to get the necesarry funding to build a modell formula one car. The teams also have to present their project in front of a jury and build a teambox in which they show their achievments. The challenge is all about simulating the enviroment of the free market, in order to prepare the paritcipants for their futur.');
 define('BUTTON_CONTEST', 'Formula one in schools');
 
 //Sponsors content
