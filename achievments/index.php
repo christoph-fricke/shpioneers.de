@@ -106,7 +106,7 @@ function printsuccess($suc){
             </div>
           </div>
 
-        <div class="grey"></div>
+          <div class="grey"></div>
         </div>
         <div class="left">
           <a class="logo" href="../">
@@ -252,6 +252,19 @@ function printsuccess($suc){
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../assets/js/email_responsivnews.js"></script>
+    <script>
+      // Animation for statusbar
+      var didscroll = true;
+      $(document).scroll(function() {
+        didscroll = true;
+      });
+      setInterval(function() {
+        if ($('section.container').offset().top - ($(window).height() / 2) < $(window).scrollTop()) {
+          $('.reached-length').removeClass('zero-width');
+          $('.reached-number').addClass('visible');
+        }
+      }, 50);
+    </script>
   </body>
 
   </html>

@@ -83,15 +83,3 @@ $('.news-lower a.btn-small.minimise').click( // minimising it again
             $(this).removeClass('minor');
         });
     });
-
-// Animation for statusbar
-var didscroll = true;
-$(document).scroll(function() {
-    didscroll = true;
-});
-setInterval(function() {
-    if ($('section.container').offset().top - ($(window).height() / 2) < $(window).scrollTop()) {
-        $('.reached-length').removeClass('zero-width');
-        $('.reached-number').addClass('visible');
-    }
-}, 50);
