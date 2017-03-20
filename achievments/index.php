@@ -28,39 +28,39 @@ function setHtmlLang() {
     }
 }
 function printbars(){
-global $tournament;
-for($i = 0; $i < sizeof($tournament[1]); $i++){
-printbar($i);
-}
+    global $tournament;
+    for($i = 0; $i < sizeof($tournament[1]); $i++){
+        printbar($i);
+    }
 }
 function printbar($index){
-global $tournament;
-echo '<div class="status-bar">
-            <h6>'. $tournament[1][$index] -> name.'</h6>
-            <div class="max-length">
-              <p class="reached-number">'.$tournament[2] -> percentage[$index] -> value .'%</p>
-              <div class="reached-length" style="width: '.$tournament[2] -> percentage[$index] -> value .'%;">
-              </div>
-            </div>
-          </div>';
-
+    global $tournament;
+    echo '<div class="status-bar">
+    <h6>'. $tournament[1][$index] -> name.'</h6>
+    <div class="max-length">
+    <p class="reached-number">'.$tournament[2] -> percentage[$index] -> value .'%</p>
+    <div class="reached-length" style="width: '.$tournament[2] -> percentage[$index] -> value .'%;">
+    </div>
+    </div>
+    </div>';
+    
 }
 function printsuccesses(){
-global $tournament;
-foreach($tournament[0] -> trophies as $su){
-	printsuccess($su);
-}
+    global $tournament;
+    foreach($tournament[0] -> trophies as $su){
+        printsuccess($su);
+    }
 }
 function printsuccess($suc){
-echo '        <div class="achievment-content">
-          <div class="trophy achievment-trophy">
-            <svg class="icon-big" viewBox="0 0 24 24">
-              <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
-              />
-            </svg>
-          </div>
-          <h2>'. $suc -> name.'</h2>
-        </div>';
+    echo '        <div class="achievment-content">
+    <div class="trophy achievment-trophy">
+    <svg class="icon-big" viewBox="0 0 24 24">
+    <path d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
+    />
+    </svg>
+    </div>
+    <h2>'. $suc -> name.'</h2>
+    </div>';
 }
 ?>
 
@@ -102,16 +102,17 @@ echo '        <div class="achievment-content">
             <div class="sidebar-option">
               <a href="?lang=en-en" class="navbar-option">
                 <?php echo ENGLISH ?>
-              </a> </div>
+              </a>
             </div>
           </div>
-          <div class="grey"></div>
         </div>
+        <div class="grey"></div>
         <div class="left">
           <a class="logo" href="../">
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
         </div>
+      </div>
     </nav>
 
     <nav class="desktop">
@@ -155,8 +156,8 @@ echo '        <div class="achievment-content">
 
     <section class="contest">
       <main class="inner-contest achievment-box">
-<?php printsuccesses(); ?>
-              </main>
+        <?php printsuccesses(); ?>
+      </main>
     </section>
     <div class="clearfix"></div>
 
@@ -164,12 +165,12 @@ echo '        <div class="achievment-content">
       <section class="container">
         <div class="left">
           <h3><?php echo HEADER_PERCENTAGES ?></h3>
-		<?php printbars(); ?>
+          <?php printbars(); ?>
         </div>
         <div class="right">
           <h3><?php echo HEADER_TEXT_ACH ?></h3>
-		<p>
-	<?php echo $tournament[0] -> text ?>
+          <p>
+            <?php echo $tournament[0] -> text ?>
           </p>
         </div>
         </div>

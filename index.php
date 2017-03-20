@@ -74,16 +74,17 @@ $tournament[] = getcontent(2);
             <div class="sidebar-option">
               <a href="?lang=en-en" class="navbar-option">
                 <?php echo ENGLISH ?>
-              </a> </div>
+              </a>
             </div>
           </div>
-          <div class="grey"></div>
         </div>
+        <div class="grey"></div>
         <div class="left">
           <a class="logo" href="#home">
             <img class="logo logo-svg" src="assets/icons/logo_text.svg" />
           </a>
         </div>
+      </div>
     </nav>
 
     <nav class="desktop">

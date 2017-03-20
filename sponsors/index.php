@@ -41,13 +41,7 @@ function printsponsors(){
         '. BUTTON_NEWS_MIN.'</a>
   </div>
   </div>'; } function setHtmlLang() { if ($_SESSION['lang']) { echo $_SESSION['lang']; } else { echo "de-de"; } } function gettitle(){ switch($_GET['type']){ case 'partner': echo SPONSOR_HEADER_PARTNER; break; case 'service': echo SPONSOR_HEADER_SPONSORS; break;
-  case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER_PARTNER; break; } }
-
-function setactive($type){
-if($type == $_GET['type']){
-echo 'active';
-}
-} ?>
+  case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER_PARTNER; break; } } function setactive($type){ if($type == $_GET['type']){ echo 'active'; } } ?>
 
   <!DOCTYPE html>
   <html lang="<?php setHtmlLang() ?>">
@@ -107,13 +101,14 @@ echo 'active';
               </a </div>
             </div>
           </div>
-          <div class="grey"></div>
         </div>
+        <div class="grey"></div>
         <div class="left">
           <a class="logo" href="../">
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
         </div>
+      </div>
     </nav>
 
     <nav class="desktop">

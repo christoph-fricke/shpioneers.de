@@ -107,6 +107,7 @@ function setHtmlLang() {
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
         </div>
+      </div>
     </nav>
 
     <nav class="desktop">
@@ -147,9 +148,9 @@ function setHtmlLang() {
     <main>
       <section id="partner" class="news">
         <h1><?php echo HEADER_TEAM ?></h1>
-          <div class="row">
-            <?php printteam() ?>
-          </div>
+        <div class="row">
+          <?php printteam() ?>
+        </div>
       </section>
     </main>
     <footer>
