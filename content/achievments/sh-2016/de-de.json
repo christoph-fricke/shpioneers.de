@@ -3,5 +3,5 @@
 "name": "Landesmeisterschaft Schleswig-Holstein",
 "location": "Nordakademie Elmshorn",
 "text": "Mit dem Gewinn der Schleswig-Holstein Meisterschaft qualifizierte sich unser Team das erste Mal für die deutsche Meisterschaft.",
-"trophies": [{"name": "Konstruktion, Portfolio"}] 
+"trophies": [{"name": "Konstruktion"} ,{"name":"Portfolio"}] 
 }

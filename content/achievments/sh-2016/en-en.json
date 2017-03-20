@@ -3,5 +3,5 @@
 "name": "state championship",
 "location": "Nordakademie Elmshorn",
 "text": "Winning the state championship 2016 we qualified first time for the german championship",
-"trophies": [{"name": "design, portfolio"}] 
+"trophies": [{"name": "design"},{"name":"portfolio"}] 
 }
