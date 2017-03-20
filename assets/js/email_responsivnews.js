@@ -80,3 +80,11 @@ $('.news-lower a.btn-small.minimise').click( // minimising it again
             $(this).removeClass('minor');
         });
     });
+
+// Animation for statusbar
+$(window).scroll(function() {
+    if ($('section.container').offset().top - ($(window).height() / 2) < $(window).scrollTop()) {
+        $('.reached-length').removeClass('zero-width');
+        $('.reached-number').addClass('visible');
+    }
+});

@@ -39,7 +39,7 @@ function printbar($index){
     <h6>'. $tournament[1][$index] -> name.'</h6>
     <div class="max-length">
     <p class="reached-number">'.$tournament[2] -> percentage[$index] -> value .'%</p>
-    <div class="reached-length" style="width: '.$tournament[2] -> percentage[$index] -> value .'%;">
+    <div class="reached-length zero-width" style="width: '.$tournament[2] -> percentage[$index] -> value .'%;">
     </div>
     </div>
     </div>';
