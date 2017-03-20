@@ -95,12 +95,12 @@ function printsuccess($suc){
           </div>
           <div class="sidebar dropdown-content">
             <div class="sidebar-option">
-              <a href="?lang=de-de" class="navbar-option">
+              <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>" class="navbar-option">
                 <?php echo GERMAN ?>
               </a>
             </div>
             <div class="sidebar-option">
-              <a href="?lang=en-en" class="navbar-option">
+              <a href="?lang=en-en&index=<?php echo $_GET['index'] ?>" class="navbar-option">
                 <?php echo ENGLISH ?>
               </a>
             </div>
@@ -129,10 +129,10 @@ function printsuccess($suc){
               <i class="mdi mdi-arrow-down-drop-circle"></i>
           </div>
           <div class="dropdown-content">
-            <a href="?lang=de-de">
+            <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>">
               <?php echo GERMAN ?>
             </a>
-            <a href="?lang=en-en">
+            <a href="?lang=en-en&index=<?php echo $_GET['index'] ?>">
               <?php echo ENGLISH ?>
             </a>
           </div>
