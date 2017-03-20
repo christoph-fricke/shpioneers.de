@@ -98,11 +98,11 @@ function printsponsors(){
             <div class="sidebar-option">
               <a href="?lang=en-en&type=<?php echo $_GET['type']?>" class="navbar-option">
                 <?php echo ENGLISH ?>
-              </a </div>
+              </a >
             </div>
           </div>
-        </div>
         <div class="grey"></div>
+        </div>
         <div class="left">
           <a class="logo" href="../">
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />

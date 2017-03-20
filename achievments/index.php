@@ -105,8 +105,9 @@ function printsuccess($suc){
               </a>
             </div>
           </div>
-        </div>
+
         <div class="grey"></div>
+        </div>
         <div class="left">
           <a class="logo" href="../">
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />

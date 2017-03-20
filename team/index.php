@@ -97,7 +97,7 @@ function setHtmlLang() {
             <div class="sidebar-option">
               <a href="?lang=en-en" class="navbar-option">
                 <?php echo ENGLISH ?>
-              </a </div>
+              </a> 
             </div>
           </div>
           <div class="grey"></div>

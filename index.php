@@ -77,8 +77,9 @@ $tournament[] = getcontent(2);
               </a>
             </div>
           </div>
-        </div>
+
         <div class="grey"></div>
+        </div>
         <div class="left">
           <a class="logo" href="#home">
             <img class="logo logo-svg" src="assets/icons/logo_text.svg" />
