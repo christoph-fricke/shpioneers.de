@@ -28,24 +28,23 @@ function printsponsors(){
     function printcard($data){
         echo '<div class="card news-card">
         <div class="news-upper" style=" background-image: url(' .$data -> img. ');">
-  <h4>'.$data -> name .'</h4>
-  </div>
-  <div class="news-lower">
-	<div class="sponsor-web">'.$data -> web.'
-	</div>
-	<div class="sponsor-email">'.$data -> email.'
-	</div>
-    <div class="news-content">
-      '.$data -> text.'
-    </div>
-    <a class="btn-small maximise" href="news.php?ind=0">
+        <h4>'.$data -> name .'</h4>
+        </div>
+        <div class="news-lower">
+        <div class="sponsor-web"><i class="mdi mdi-earth mdi-24px inline-icon"></i><p class="sponsors-text">'.$data -> web.'</p> </div>
+        <div class="sponsor-email"><i class="mdi mdi-mail-ru mdi-24px inline-icon"></i><p class="sponsors-text">'.$data -> email.'</p>
+        </div>
+        <div class="news-content">
+        '.$data -> text.'
+        </div>
+        <a class="btn-small maximise" href="news.php?ind=0">
         '. BUTTON_NEWS.'
         </a>
-    <a class="btn-small minimise" href="news.php?ind=0">
+        <a class="btn-small minimise" href="news.php?ind=0">
         '. BUTTON_NEWS_MIN.'</a>
-  </div>
-  </div>'; } function setHtmlLang() { if ($_SESSION['lang']) { echo $_SESSION['lang']; } else { echo "de-de"; } } function gettitle(){ switch($_GET['type']){ case 'partner': echo SPONSOR_HEADER_PARTNER; break; case 'service': echo SPONSOR_HEADER_SPONSORS; break;
-  case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER_PARTNER; break; } } function setactive($type){ if($type == $_GET['type']){ echo 'active'; } } ?>
+        </div>
+</div>'; } function setHtmlLang() { if ($_SESSION['lang']) { echo $_SESSION['lang']; } else { echo "de-de"; } } function gettitle(){ switch($_GET['type']){ case 'partner': echo SPONSOR_HEADER_PARTNER; break; case 'service': echo SPONSOR_HEADER_SPONSORS; break;
+case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER_PARTNER; break; } } function setactive($type){ if($type == $_GET['type']){ echo 'active'; } } ?>
 
   <!DOCTYPE html>
   <html lang="<?php setHtmlLang() ?>">
@@ -102,10 +101,10 @@ function printsponsors(){
             <div class="sidebar-option">
               <a href="?lang=en-en&type=<?php echo $_GET['type']?>" class="navbar-option">
                 <?php echo ENGLISH ?>
-              </a >
+              </a>
             </div>
           </div>
-        <div class="grey"></div>
+          <div class="grey"></div>
         </div>
         <div class="left">
           <a class="logo" href="../">

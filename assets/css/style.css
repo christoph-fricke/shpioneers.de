@@ -144,6 +144,18 @@ p {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.inline-icon {
+    margin-right: 10px;
+}
+
+.sponsors-web, .sponsors-email {
+    display: flex;
+    align-items: center;
+}
+
+.sponsors-text {
+    display: inline-block;
+}
 
 /*
  * NAVBAR DESKTOP
