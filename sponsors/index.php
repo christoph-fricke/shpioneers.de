@@ -31,9 +31,15 @@ function printsponsors(){
   <h4>'.$data -> name .'</h4>
   </div>
   <div class="news-lower">
-	<div class="sponsor-web">'.$data -> web.'
+	<div class="sponsor-web">
+	<a href="'.$data -> web.'">'
+	.$data -> web.
+	'</a>
 	</div>
-	<div class="sponsor-email">'.$data -> email.'
+	<div class="sponsor-email">
+	<a href="mailto:'.$data -> email.'">'
+	.$data -> email.
+	'</a>
 	</div>
     <div class="news-content">
       '.$data -> text.'
