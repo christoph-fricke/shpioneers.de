@@ -34,7 +34,7 @@ function printcard($data){
     <div class="news-lower">
     <h5>'.$data -> job.'</h5>
     <p>
-    '.$data -> quote.'~'. $data -> quotee.'
+    '.$data -> quote.' ~'. $data -> quotee.'
     </p>
     <div class="news-content">
     '.$data -> text.'
