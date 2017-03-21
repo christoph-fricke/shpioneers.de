@@ -28,9 +28,9 @@ define('HEADER_SPONSORS', 'Unsere Unterstützer');
 define('SUBHEADERS_SPONSORS_0', 'Partner');
 define('SUBHEADERS_SPONSORS_1', 'Sachsponsoren');
 define('SUBHEADERS_SPONSORS_2', 'Finanzsponsoren');
-define('TEXT_SPONSORS_0', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
-define('TEXT_SPONSORS_1', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
-define('TEXT_SPONSORS_2', 'Unsere Partner haben uns aktiv bei der Fertigung des Autos unterstützt.');
+define('TEXT_SPONSORS_0', 'Wir stehen in ständigem Kontakt mit unseren Partnern, denn sie haben einen großen Anteil an unserem Projekt.');
+define('TEXT_SPONSORS_1', 'Sachsponsoring ist eine unverzichtbare Ergänzung zum Finanzsponsoring, um die Qualität unserer Inhalte zu steigern.');
+define('TEXT_SPONSORS_2', 'Viele Ausgaben werden nicht durch Sachsponsoring abgedeckt, für diese nutzen wir Finanzmittel aus Sponsorings.');
 define('BUTTON_SPONSORS', 'Mehr erfahren');
 
 //Sucess content
