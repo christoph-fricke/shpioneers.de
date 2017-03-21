@@ -539,6 +539,12 @@ background-size: cover;
     height: auto;
 }
 
+.news-card.minor {
+    width: 30%;
+    margin-right: calc( 5% / 3);
+    margin-left: calc( 5% / 3);
+}
+
 @media screen and (max-width: 1000px) {
     .news-card.selected {
         animation: none;
@@ -568,11 +574,6 @@ background-size: cover;
     display: none;
 }
 
-.news-card.minor {
-    width: 30%;
-    margin-right: calc( 5% / 3);
-    margin-left: calc( 5% / 3);
-}
 
 #partner .row {
     display: flex;
