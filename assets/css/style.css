@@ -431,7 +431,7 @@ header {
 
 #news .news-upper{
 background-size: cover;
-	box-shadow: inset 2000px 0 0 0 rgba(0,0,0,.4);
+	box-shadow: inset 2000px 0 0 0 rgba(0,0,0,.4); /* this value still has to be tweaked */
 }
 .news-upper {
     position: relative;
