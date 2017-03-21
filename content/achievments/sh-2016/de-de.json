@@ -3,5 +3,7 @@
 "name": "Landesmeisterschaft Schleswig-Holstein",
 "location": "Nordakademie Elmshorn",
 "text": "Mit dem Gewinn der Schleswig-Holstein Meisterschaft qualifizierte sich unser Team das erste Mal für die deutsche Meisterschaft.",
+"car": "Advanced Orange",
+"cartext": "Advanced Orange ist der zweit schnellste Rennwagen Schleswig-Holsteins im Jahr 2016. Er ist das erste Auto, das Fiete für unser Team konstruierte. Die Besonderheiten dieses Rennwagens sind die Tropfenform der Patronenkammer und das austauschbare Spoilersystem.",
 "trophies": [{"name": "Konstruktion"} ,{"name":"Portfolio"}] 
 }

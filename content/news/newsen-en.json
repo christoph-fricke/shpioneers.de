@@ -1,12 +1,21 @@
 [
-{
-        "title": "We are state champion!",
+  {
+        "title": "Construction deadline",
         "image": "assets/img/test.JPG",
-        "date": "19.02.2017",
+        "date": "16.03.2017",
         "subtitle": "",
-        "preview": "After a lot of hard work we reached our first milestone.",
-        "text": "This weekend the Schleswig-Holstein Formula one in schools championship, which we prepared over the last few months, took place. We put up our stall on friday and still had plenty of time left to go over our presentation again. <br> We left early for Elmshorn on saturday morning. After the official opening, we were one of the first teams to present our stall. Before lunch we also had our oral presentation, followed by our race. Unfortunately we had a 0.1 seconds penalty due to some flaws in our construction. We still reached the fourth place with a resulting time of 1.232s. So we were quite content with our results when we went into lunchbreak. In the knock-out-race we reached second place.<br>In the end we won the Nordmetall-Cup in Schleswig-Holstein and were awarded the special awards for construction, portfolio and stall."
+        "preview": "We made the next big step towards the german championship",
+        "text": "Our design team worked severall months on our new car. Our construction deadline was on sunday  and therefore the design phase of the car has been finished.  Our new car was developed in consideration of many tests. The chassis will be manufactured by the Fachhochschule Kiel. We are happy about the completion and we are looking forward to see its results in Neckarsulm!"
 },
+  {
+        "title": "Visit to the FH Kiel",
+        "image": "assets/img/test.JPG",
+        "date": "16.03.2017",
+        "subtitle": "",
+        "preview": "The Fachhochschule Kiel is still our manufacturing partner.",
+        "text": "Today we visited the Fachhochschule Kiel, our partner. There we talked about the manufacturing of our car for the german championship. Monday they will start the chassis manufacturing, because on sunday is our construction deadline. "
+
+    },
     {
         "title": "After the competition is before the competition",
         "image": "assets/img/test.JPG",
@@ -16,22 +25,12 @@
         "text": "Today we used our day off school for the competition. After the state championship we had the racetrack as our guest. We haven´t got a new car, but we thought it would be useful to take a close look at the old models anyway. Therefor we used the light barrier system Hanno built, which already was called into action in the test runs. With it we were able to exactly document the race to gain some further insight. In the next weeks we are going to analyse our results to use them for the construction of our new car."
 
     },
-    {
-        "title": "Visit to the FH Kiel",
+{
+        "title": "We are state champion!",
         "image": "assets/img/test.JPG",
-        "date": "16.03.2017",
+        "date": "19.02.2017",
         "subtitle": "",
-        "preview": "The Fachhochschule Kiel is still our manufacturing partner.",
-        "text": "Today we visited the Fachhochschule Kiel, our partner. There we talked about the manufacturing of our car for the german championship. Monday they will start the chassis manufacturing, because on sunday is our construction deadline. "
-
-    },
-  {
-        "title": "Besuch der FH Kiel",
-        "image": "assets/img/test.JPG",
-        "date": "16.03.2017",
-        "subtitle": "",
-        "preview": "The Fachhochschule Kiel is still our manufacturing partner.",
-        "text": "Today we visited the Fachhochschule Kiel, our partner. There we talked about the manufacturing of our car for the german championship. Monday they will start the chassis manufacturing, because on sunday is our construction deadline. "
-
-    }
+        "preview": "After a lot of hard work we reached our first milestone.",
+        "text": "This weekend the Schleswig-Holstein Formula one in schools championship, which we prepared over the last few months, took place. We put up our stall on friday and still had plenty of time left to go over our presentation again. <br> We left early for Elmshorn on saturday morning. After the official opening, we were one of the first teams to present our stall. Before lunch we also had our oral presentation, followed by our race. Unfortunately we had a 0.1 seconds penalty due to some flaws in our construction. We still reached the fourth place with a resulting time of 1.232s. So we were quite content with our results when we went into lunchbreak. In the knock-out-race we reached second place.<br>In the end we won the Nordmetall-Cup in Schleswig-Holstein and were awarded the special awards for construction, portfolio and stall."
+}
 ]

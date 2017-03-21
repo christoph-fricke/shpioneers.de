@@ -3,5 +3,7 @@
 "name": "Landesmeisterschaft Schleswig-Holstein",
 "location": "Nordakademie Elmshorn",
 "text": "Bei der Landesmeisterschaft 2015 wurde der Grundstein für die weiteren Teilnahmen am Wettbewerb gelegt.",
+"car": "Simply Orange",
+"cartext": "Mit einer Fahrtzeit von 1,109s ist simply orange der schnellste Rennwagen Schleswig-Holstein des Jahres 2015. Simply orange eröffnete unserem Team den Weg für alle anderen erfolgreichen Rennwagen und Wettbewerbsteilnahmen.",
 "trophies": [{"name": "schnellste Fahrzeit"}, {"name": "Teamstand"},{"name":"technische Eigenleistung"}] 
 }

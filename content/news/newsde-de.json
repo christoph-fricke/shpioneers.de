@@ -1,11 +1,21 @@
 [
     {
-        "title": "Wir sind Landesmeister",
+        "title": "Konstruktionsschluss",
         "image": "assets/img/test.JPG",
-        "date": "19.02.2017",
+        "date": "16.03.2017",
         "subtitle": "",
-        "preview": "Nach harter Arbeit haben wir unser Etappenziel erreicht.",
-        "text": "Am Wochenende war es endlich soweit. Lange hatten wir auf den Tag der Landesmeisterschaft Schleswig-Holstein hingearbeitet. Voller Vorfreude bauten wir am Freitag unseren Messestand auf, sodass wir am Abend noch einmal Zeit zum Besprechen unserer Präsentation hatten.<br> Am Samstag machten wir uns dann schon sehr früh auf den Weg nach Elmshorn. Nach der offiziellen Begrüßung startete der Wettbewerb für uns schon recht früh mit unserer Teamstandpräsentation, darauf folgten noch vor der Mittagspause die mündliche Präsentation und unser Rennen. Leider mussten wir auf Grund eines Konstruktionsfehlers eine Strafzeit von 0,1 Sekunden in Kauf nehmen, trotzdem hatten wir mit einer Zeit von 1,232 Sekunden immernoch die viert schnellste Rennzeit. Insgesamt gingen wir guter Dinge in die Mittagspause und warteten dann auf die Bewertung der Jury. Vor dem entgültigen Jury Urteil findet jedes Jahr das Knock-out Rennen statt, das wir leider knapp gegen das Team de blitzen verloren.<br> Ganz im Gegensatz dazu stand unser Gesamtergebniss. Bei der Siegerehrung standen wir gleich vier Mal auf der Bühne, denn nicht nur der Titel Landesmeister Schleswig-Holstein ging an unser Team. Sondern wir gewannen auch die Sonderpeise für das beste Portfolio, die beste Konstruktion und den besten Teamstand."
+        "preview": "Der nächste große Schritt zur DM ist getan",
+        "text": "Unser Konstruktionsteam hat inzwischen über einige Wochen am neuen Auto gearbeitet. Am Sonntagabend war dann Konstruktionsschluss und damit die Konstruktionsphase des Autos offiziell beendet. Unser neues Auto entstand unter der Berücksichtigung vieler Tests und der Chassis wird nun von der Fachhochschule Kiel gefertigt. Wir freuen uns über den Abschluss dieser Arbeit und sind gespannt was für Zeiten der Rennwagen in Neckarsulm fahren wird!"
+
+    },
+{
+        "title": "Besuch der FH Kiel",
+        "image": "assets/img/test.JPG",
+        "date": "16.03.2017",
+        "subtitle": "",
+        "preview": "Die Fachhochschule bleibt auch auf dem Weg zur DM unser Fertigungspartner",
+        "text": "Heute hatten wir einen Termin beim cimtt der Fachhocshule Kiel. Vor Ort haben wir über die Fertigung unseres Rennwagens für die deutsche Meisterschaft gesprochen. Am Montag wird dort mit der Fertigung des Chassis begonnen, da wir am Sonntag Konstruktionsschluss unseres Rennwagens haben."
+
     },
     {
         "title": "Nach dem Wettbewerb ist vor dem Wettbewerb",
@@ -17,22 +27,12 @@
 
     },
     {
-        "title": "Besuch der FH Kiel",
+        "title": "Wir sind Landesmeister",
         "image": "assets/img/test.JPG",
-        "date": "16.03.2017",
+        "date": "19.02.2017",
         "subtitle": "",
-        "preview": "Die Fachhochschule bleibt auch auf dem Weg zur DM unser Fertigungspartner",
-        "text": "Heute hatten wir einen Termin beim cimtt der Fachhocshule Kiel. Vor Ort haben wir über die Fertigung unseres Rennwagens für die deutsche Meisterschaft gesprochen. Am Montag wird dort mit der Fertigung des Chassis begonnen, da wir am Sonntag Konstruktionsschluss unseres Rennwagens haben."
-
-    },
-{
-        "title": "Besuch der FH Kiel",
-        "image": "assets/img/test.JPG",
-        "date": "16.03.2017",
-        "subtitle": "",
-        "preview": "Die Fachhochschule bleibt auch auf dem Weg zur DM unser Fertigungspartner",
-        "text": "Heute hatten wir einen Termin beim cimtt der Fachhocshule Kiel. Vor Ort haben wir über die Fertigung unseres Rennwagens für die deutsche Meisterschaft gesprochen. Am Montag wird dort mit der Fertigung des Chassis begonnen, da wir am Sonntag Konstruktionsschluss unseres Rennwagens haben."
-
+        "preview": "Nach harter Arbeit haben wir unser Etappenziel erreicht.",
+        "text": "Am Wochenende war es endlich soweit. Lange hatten wir auf den Tag der Landesmeisterschaft Schleswig-Holstein hingearbeitet. Voller Vorfreude bauten wir am Freitag unseren Messestand auf, sodass wir am Abend noch einmal Zeit zum Besprechen unserer Präsentation hatten.<br> Am Samstag machten wir uns dann schon sehr früh auf den Weg nach Elmshorn. Nach der offiziellen Begrüßung startete der Wettbewerb für uns schon recht früh mit unserer Teamstandpräsentation, darauf folgten noch vor der Mittagspause die mündliche Präsentation und unser Rennen. Leider mussten wir auf Grund eines Konstruktionsfehlers eine Strafzeit von 0,1 Sekunden in Kauf nehmen, trotzdem hatten wir mit einer Zeit von 1,232 Sekunden immernoch die viert schnellste Rennzeit. Insgesamt gingen wir guter Dinge in die Mittagspause und warteten dann auf die Bewertung der Jury. Vor dem entgültigen Jury Urteil findet jedes Jahr das Knock-out Rennen statt, das wir leider knapp gegen das Team de blitzen verloren.<br> Ganz im Gegensatz dazu stand unser Gesamtergebniss. Bei der Siegerehrung standen wir gleich vier Mal auf der Bühne, denn nicht nur der Titel Landesmeister Schleswig-Holstein ging an unser Team. Sondern wir gewannen auch die Sonderpeise für das beste Portfolio, die beste Konstruktion und den besten Teamstand."
     }
   
 ]

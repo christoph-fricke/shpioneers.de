@@ -3,5 +3,7 @@
 "name": "state championship",
 "location": "Nordakademie Elmshorn",
 "text": "Winning the state championship 2016 we qualified first time for the german championship",
+"car": "Advanced Orange",
+"cartext": "Advanced Orange is Schleswig-Holsteins second fastest miniature F1 car of 2016. It is our designer Fietes first car. It has a drop shape and a system for interchangeable spoilers.",
 "trophies": [{"name": "design"},{"name":"portfolio"}] 
 }
