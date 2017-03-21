@@ -155,6 +155,10 @@ p {
 
 .sponsors-text {
     display: inline-block;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0px;
 }
 
 /*
