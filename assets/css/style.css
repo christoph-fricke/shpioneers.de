@@ -405,13 +405,16 @@ header {
     margin-bottom: 0px;
 }
 
+#news .news-upper{
+background-size: cover;
+}
 .news-upper {
     position: relative;
     height: 300px;
     border-radius: 2px 2px 0 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .news-upper h4 {
