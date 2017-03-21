@@ -72,5 +72,4 @@ define('SPONSOR_HEADER_FINANCE', 'Monetary sponsors');
 //ACHIEVMENT SUBPAGE
 define('HEADER_PERCENTAGES','Percentages');
 define('HEADER_TEXT_ACH','Report');
-define('HEADER_CAR','Car');
 ?>
