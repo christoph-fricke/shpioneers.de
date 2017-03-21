@@ -365,8 +365,9 @@ header {
     position: relative;
     height: calc(100vh - 60px);
     margin-bottom: 60px;
-    background-image: url("../img/header.jpg");
+    background-image: url("../img/header1.png");
     background-size: cover;
+	background-position: center;
     background-repeat: no-repeat;
 }
 
