@@ -31,7 +31,7 @@ function printsponsors(){
         <h4>'.$data -> name .'</h4>
         </div>
         <div class="news-lower">
-        <div class="sponsor-web"><i class="mdi mdi-earth mdi-24px inline-icon"></i><a class="sponsors-text" href="'.$data -> web.'">'.$data -> web.'</a> </div>
+        <div class="sponsor-web"><i class="mdi mdi-earth mdi-24px inline-icon"></i><a class="sponsors-text" href="http://'.$data -> web.'">'.$data -> web.'</a> </div>
         <div class="sponsor-email"><i class="mdi mdi-mail-ru mdi-24px inline-icon"></i><a class="sponsors-text" href="mailto:'.$data -> email.'">'.$data -> email.'</a>
         </div>
         <div class="news-content">
