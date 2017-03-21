@@ -180,7 +180,7 @@ function printsuccess($suc){
 
       <h3><?php echo $tournament[0] -> car ?></h3>
       <div class="racer-container">
-        <img src="../assets/img/450x300.png" />
+        <img src="<?php echo $tournament[2] -> img?>" />
         <p><?php echo $tournament[0] -> cartext ?></p>
       </div>
     </main>
