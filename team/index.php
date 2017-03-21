@@ -138,7 +138,7 @@ function setHtmlLang() {
       <section class="logo-header" id="home">
 
       </section>
-      <a href="#partner">
+      <a href="#team">
         <div class="fab">
           <i class="mdi mdi-arrow-down mdi-24px"></i>
         </div>
@@ -146,7 +146,7 @@ function setHtmlLang() {
     </header>
 
     <main>
-      <section id="partner" class="news">
+      <section id="team" class="news">
         <h1><?php echo HEADER_TEAM ?></h1>
         <div class="row">
           <?php printteam() ?>

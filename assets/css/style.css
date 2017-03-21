@@ -749,7 +749,14 @@ background-size: cover;
     clear: both;
 }
 
-
+/* TEAM SUBPAGE */
+#team .news-lower{
+	height: 250px;
+}
+#team .news-card{
+	height: 550px;
+	max-height: 550px;
+}
 /*
  * FOOTER
  */
