@@ -982,8 +982,9 @@ input[type="submit"] {
 }
 
 .status-bar {
-    width: 95%;
+    width: 85%;
     margin: 10px auto 10px 0;
+	position: relative;
 }
 
 .max-length {
