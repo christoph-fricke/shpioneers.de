@@ -71,6 +71,7 @@ $('.news-lower a.btn-small.maximise').click( // expanding the news-card
         });
         card.removeClass('minor');
         card.addClass('selected');
+        $('html,body').animate({ scrollTop: $('.row').offset().top - 140 }, 500);
     }
 );
 $('.news-lower a.btn-small.minimise').click( // minimising it again
