@@ -161,6 +161,10 @@ p {
     margin: 0px;
 }
 
+.sponsors-text:hover {
+    text-decoration: underline;
+}
+
 /*
  * NAVBAR DESKTOP
  */
