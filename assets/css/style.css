@@ -164,7 +164,11 @@ p {
 .sponsors-text:hover {
     text-decoration: underline;
 }
-
+@media screen and (max-width: 1000px){
+	h1{
+		word-wrap: break-word;
+	}
+}
 /*
  * NAVBAR DESKTOP
  */
