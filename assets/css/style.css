@@ -592,6 +592,7 @@ display: block;
 }
 #team .news-card.minor{
 height: auto;
+max-height: 700px;
 }
 #team .news-card.minor .news-lower{
 	height: 400px;
