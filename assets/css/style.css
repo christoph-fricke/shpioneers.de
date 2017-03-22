@@ -491,6 +491,9 @@ color: rgba(0,0,0,.7);
 	height: 590px;
 	max-height: 590px;
 }
+#partner .news-upper{
+	margin: 5px;
+}
 
 @media screen and (max-width:1000px) {
     .news-card {
