@@ -449,6 +449,8 @@ background-size: cover;
     bottom: 10px;
     left: 10px;
     margin: 0px;
+    	font-size: 1.5rem;
+    	color: #EA5B10;
 }
 .news-lower h4{
     	font-size: 1.5rem;
@@ -491,7 +493,7 @@ color: rgba(0,0,0,.7);
 	height: 590px;
 	max-height: 590px;
 }
-#partner .news-upper{
+#partner .news-upper, #team .news-upper{
 	margin: 5px;
 }
 
