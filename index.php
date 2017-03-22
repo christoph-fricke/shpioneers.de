@@ -165,6 +165,7 @@ $tournament[] = getcontent(2);
               <p>
                 <?php echo $news[0] -> preview ?>
               </p>
+		<div class="news-date"> <?php echo $news[0] -> date ?> </div>
               <div class="news-content">
                 <?php echo $news[0] -> text ?>
               </div>
@@ -185,6 +186,7 @@ $tournament[] = getcontent(2);
               <p>
                 <?php echo $news[1] -> preview ?>
               </p>
+		<div class="news-date"> <?php echo $news[1] -> date ?> </div>
               <div class="news-content">
                 <?php echo $news[1] -> text ?>
               </div>
@@ -205,6 +207,7 @@ $tournament[] = getcontent(2);
               <p>
                 <?php echo $news[2] -> preview ?>
               </p>
+		<div class="news-date"> <?php echo $news[2] -> date ?> </div>
               <div class="news-content">
                 <?php echo $news[2] -> text ?>
               </div>
@@ -225,6 +228,7 @@ $tournament[] = getcontent(2);
               <p>
                 <?php echo $news[3] -> preview ?>
               </p>
+		<div class="news-date"> <?php echo $news[3] -> date ?> </div>
               <div class="news-content">
                 <?php echo $news[3] -> text ?>
               </div>

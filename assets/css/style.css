@@ -474,6 +474,13 @@ background-size: cover;
 .news-lower p {
     color: rgba(0, 0, 0, 0.70);
 }
+.news-date{
+display:  none;
+position: absolute;
+top: 20px;
+right: 30px;
+color: rgba(0,0,0,.7);
+}
 /* TEAM SUBPAGE */
 #team .news-lower{
 	height: 290px;
@@ -526,6 +533,11 @@ background-size: cover;
         left: 0px;
         margin: 0 0 10px 0;
     }
+	.news-date{
+		position: relative;
+		top: 0;
+		right: 0;
+	}
 }
 
 
@@ -555,7 +567,9 @@ background-size: cover;
     width: auto;
     padding-bottom: 40px;
 }
-
+.selected .news-date{
+display: block;
+}
 .selected .news-lower {
     height: auto;
     padding: 10px 10px;
