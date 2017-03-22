@@ -56,7 +56,14 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
     </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="../assets/icons/favicon.png" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/icons/favicons/manifest.json">
+    <link rel="mask-icon" href="/assets/icons/favicons/safari-pinned-tab.svg" color="#EA5B10">
+    <link rel="shortcut icon" href="/assets/icons/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/assets/icons/favicons/browserconfig.xml">
 
     <meta name="Author" content="Pioneers" />
     <meta name="Description" content="" />
