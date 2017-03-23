@@ -145,7 +145,7 @@ $tournament[] = getcontent(2);
     </nav>
 
     <header>
-	
+
       <section class="logo-header" id="home">
       </section>
       <div class="clearfix"></div>
@@ -428,9 +428,9 @@ $tournament[] = getcontent(2);
                 <?php echo BUTTON_SOCIAL_2 ?>
               </a>
               <!--<a class="btn-big" href="" target="_blank">
-                <i class="mdi mdi-youtube-play"></i>
-                <?php echo BUTTON_SOCIAL_3 ?>
-              </a> -->
+<i class="mdi mdi-youtube-play"></i>
+<?php echo BUTTON_SOCIAL_3 ?>
+</a> -->
             </div>
           </div>
         </div>
