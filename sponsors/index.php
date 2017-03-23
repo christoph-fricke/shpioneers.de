@@ -232,10 +232,10 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
                 <i class="mdi mdi-instagram"></i>
                 <?php echo BUTTON_SOCIAL_2 ?>
               </a>
-              <a class="btn-big" href="" target="_blank">
+              <!--<a class="btn-big" href="" target="_blank">
                 <i class="mdi mdi-youtube-play"></i>
                 <?php echo BUTTON_SOCIAL_3 ?>
-              </a>
+              </a>-->
             </div>
           </div>
         </div>
