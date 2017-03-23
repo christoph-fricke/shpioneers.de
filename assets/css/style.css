@@ -522,6 +522,10 @@ color: rgba(0,0,0,.7);
 	#team .news-lower p{
 		margin-bottom: 50px;
 	}
+	#partner .news-lower{
+	height: auto;
+	padding: 0 10px 50px 10px;
+	}
     .news-card:nth-child(1) {
         width: 100%;
         position: relative;
