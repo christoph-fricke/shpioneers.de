@@ -726,7 +726,11 @@ max-height: 700px;
 .sponsors-card p {
     color: rgba(0, 0, 0, 0.70);
 }
-
+.sponsor-type{
+	height: 5rem; 
+float: left;
+margin-right: 50px;
+}
 @media screen and (max-width: 1000px) {
     .sponsors-card {
         width: 100%;

@@ -175,6 +175,7 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
 
     <main>
       <section id="partner" class="news">
+<img src="../assets/icons/<?php echo $_GET['type'] ?>.svg" class="sponsor-type"/>
         <h1><?php gettitle() ?></h1>
         <section class="news" id="partner">
           <div class="row">
