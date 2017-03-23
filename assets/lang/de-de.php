@@ -55,7 +55,7 @@ define('EMAIL_SENT_USUC','E-Mail nicht erfolgreich gesendet');
 define('SUBHEADER_IMPRESSUM_0', "Anschrift:");
 define("TEXT_IMPRESSUM_0", 'z. Hd. Pioneers<br>Gymnasium Kronshagen<br>Suchsdorfer Weg 35<br>24119 Kronshagen');
 define('SUBHEADER_IMPRESSUM_1', "Telefonnummer:");
-define("TEXT_IMPRESSUM_1", '0157 57199016');
+define("TEXT_IMPRESSUM_1", '0157 - 57199016');
 define('SUBHEADER_IMPRESSUM_2', "E-Mail:");
 define("TEXT_IMPRESSUM_2", 'f1pioneers@gmx.de');
 define('BUTTON_SOCIAL_0', 'Facebook');
