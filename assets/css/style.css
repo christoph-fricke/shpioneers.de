@@ -707,11 +707,11 @@ max-height: 700px;
 }
 
 .thingssponsor {
-    background-image: url('../icons/sachsponsor.svg');
+    background-image: url('../icons/service.svg');
 }
 
 .financesponsor {
-    background-image: url('../icons/finanzsponsor.svg');
+    background-image: url('../icons/finance.svg');
 }
 
 .sponsors-card:last-child {
