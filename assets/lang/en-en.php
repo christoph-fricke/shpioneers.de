@@ -59,7 +59,7 @@ define("TEXT_IMPRESSUM_0", 'z. Hd. Pioneers<br>Gymnasium Kronshagen<br>Suchsdorf
 define('SUBHEADER_IMPRESSUM_1', "Phonenumber:");
 define("TEXT_IMPRESSUM_1", '6666 - 666666');
 define('SUBHEADER_IMPRESSUM_2', "E-Mail:");
-define("TEXT_IMPRESSUM_2", 'info@pioneers.de');
+define("TEXT_IMPRESSUM_2", 'f1pioneers@gmx.de');
 define('BUTTON_SOCIAL_0', 'Facebook');
 define('BUTTON_SOCIAL_1', 'Twitter');
 define('BUTTON_SOCIAL_2', 'Instagram');
