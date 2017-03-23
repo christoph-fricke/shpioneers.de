@@ -145,8 +145,10 @@ $tournament[] = getcontent(2);
     </nav>
 
     <header>
+	
+	<h1>#orangeseason</h1>
+	<img src="assets/icons/logo_no_text.svg"/>
       <section class="logo-header" id="home">
-
       </section>
       <div class="clearfix"></div>
       <a href="#news">
