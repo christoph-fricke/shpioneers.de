@@ -12,6 +12,8 @@ define('LANGUAGE', 'Language');
 define('GERMAN', 'German');
 define('ENGLISH', 'English');
 
+//HEADER content
+define('ORANGESEASON','#orangeseason');
 //News content
 define('HEADER_NEWS', 'News');
 define('BUTTON_NEWS', 'Learn more');
