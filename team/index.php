@@ -29,9 +29,9 @@ function getmembers()
 function printcard($data){
     echo '<div class="card news-card">
     <div class="news-upper" style=" background-image: url('. htmlspecialchars($data -> img).');">
-    <h4>'. $data -> name. '</h4>
     </div>
     <div class="news-lower">
+    <h4>'. $data -> name. '</h4>
     <h5>'.$data -> job.'</h5>
     <p>
     '.$data -> quote.' ~'. $data -> quotee.'
@@ -68,7 +68,7 @@ function setHtmlLang() {
     </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-16x16.png" sizes="16x16">
@@ -104,7 +104,7 @@ function setHtmlLang() {
             <div class="sidebar-option">
               <a href="?lang=en-en" class="navbar-option">
                 <?php echo ENGLISH ?>
-              </a> 
+              </a>
             </div>
           </div>
           <div class="grey"></div>
@@ -208,9 +208,9 @@ function setHtmlLang() {
                 <?php echo BUTTON_SOCIAL_2 ?>
               </a>
               <!--<a class="btn-big" href="" target="_blank">
-                <i class="mdi mdi-youtube-play"></i>
-                <?php echo BUTTON_SOCIAL_3 ?>
-              </a>-->
+<i class="mdi mdi-youtube-play"></i>
+<?php echo BUTTON_SOCIAL_3 ?>
+</a>-->
             </div>
           </div>
         </div>
