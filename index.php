@@ -146,8 +146,6 @@ $tournament[] = getcontent(2);
 
     <header>
 	
-	<h1><?php echo ORANGESEASON ?></h1>
-	<img src="assets/icons/logo_no_text.svg"/>
       <section class="logo-header" id="home">
       </section>
       <div class="clearfix"></div>

@@ -161,8 +161,6 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
     </nav>
 
     <header>
-	<h1><?php echo ORANGESEASON ?></h1>
-	<img src="../assets/icons/logo_no_text.svg"/>
       <section class="logo-header" id="home">
 
       </section>
