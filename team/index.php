@@ -141,7 +141,7 @@ function setHtmlLang() {
         <div id='magic-line' />
     </nav>
 
-    <header>
+    <!--<header>
       <section class="logo-header" id="home">
 
       </section>
@@ -150,8 +150,9 @@ function setHtmlLang() {
           <i class="mdi mdi-arrow-down mdi-24px"></i>
         </div>
       </a>
-    </header>
+    </header>-->
 
+    <div class="spacer"></div>
     <main>
       <section id="team" class="news">
         <h1><?php echo HEADER_TEAM ?></h1>

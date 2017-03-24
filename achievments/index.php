@@ -147,7 +147,7 @@ function printsuccess($suc){
         <div id='magic-line' />
     </nav>
 
-    <header>
+    <!--<header>
       <section class="logo-header" id="home">
 
       </section>
@@ -156,8 +156,8 @@ function printsuccess($suc){
           <i class="mdi mdi-arrow-down mdi-24px"></i>
         </div>
       </a>
-    </header>
-
+    </header>-->
+    <div class="spacer"></div>
     <main id="achievments">
       <h1><?php echo $tournament[0] -> title ?></h1>
     </main>

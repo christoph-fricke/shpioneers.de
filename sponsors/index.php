@@ -166,7 +166,7 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
         <div id='magic-line' />
     </nav>
 
-    <header>
+    <!--<header>
       <section class="logo-header" id="home">
 
       </section>
@@ -175,8 +175,9 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
           <i class="mdi mdi-arrow-down mdi-24px"></i>
         </div>
       </a>
-    </header>
+    </header>-->
 
+    <div class="spacer"></div>
     <main>
       <section id="partner" class="news">
         <img src="../assets/icons/<?php echo $_GET['type'] ?>.svg" class="sponsor-type" />

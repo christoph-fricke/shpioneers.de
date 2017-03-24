@@ -46,6 +46,10 @@ section {
     clear: both;
 }
 
+.spacer {
+    height: 100px;
+}
+
 body>section:last-of-type {
     margin-bottom: 0;
 }
