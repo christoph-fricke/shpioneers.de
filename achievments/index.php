@@ -65,8 +65,37 @@ function printsuccess($suc){
 
 function setactive($type){
     if($type == $_GET['index']) {
-        echo 'active';
+         return 'active';
     }
+}
+function printnavmob(){
+$file = json_decode(file_get_contents('../content/achievments/list.json'));
+foreach($file as $tour){
+printoptionmob($tour,array_search($tour,$file));
+}
+}
+function printoptionmob($name,$index){
+echo ' 
+            <div class="sidebar-option">
+              <a href="?lang=de-de&index='.$index.'" class="navbar-option">
+                '.$name.'
+              </a>
+            </div>';
+}
+function printnavdesk(){
+$file = json_decode(file_get_contents('../content/achievments/list.json'));
+foreach($file as $tour){
+printoptiondesk($tour,array_search($tour,$file));
+}
+}
+
+function printoptiondesk($name,$index){
+echo '
+        <div class="left">
+          <a class="navbar-option '.setactive($index).'" href="?index='.$index.'">
+            '.$name.'
+          </a>
+        </div>';
 }
 ?>
 
@@ -114,22 +143,8 @@ function setactive($type){
                 </a>
               </div>
             </div>
-            <div class="sidebar-option">
-              <a class="navbar-option" href="?index=0">
-                <?php echo $tournament[0] -> title ?>
-              </a>
-            </div>
-            <div class="sidebar-option">
-              <a class="navbar-option" href="?index=1">
-                <?php echo $tournament[0] -> title ?>
-              </a>
-            </div>
-            <div class="sidebar-option">
-              <a class="navbar-option" href="?index=2">
-                <?php echo $tournament[0] -> title ?>
-              </a>
-            </div>
-            <hr>
+<?php printnavmob() ?>
+            <hr> <!-- what is this -->
             <div class="sidebar-option">
               <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>" class="navbar-option">
                 <?php echo GERMAN ?>
@@ -159,21 +174,7 @@ function setactive($type){
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
         </div>
-        <div class="left">
-          <a class="navbar-option <?php setactive(0); ?>" href="?index=0">
-            <?php echo $tournament[0] -> title ?>
-          </a>
-        </div>
-        <div class="left">
-          <a class="navbar-option <?php setactive(1); ?>" href="?index=1">
-            <?php echo $tournament[0] -> title ?>
-          </a>
-        </div>
-        <div class="left">
-          <a class="navbar-option <?php setactive(2); ?>" href="?index=2">
-            <?php echo $tournament[0] -> title ?>
-          </a>
-        </div>
+	<?php printnavdesk() ?>
         <div class="right">
           <div class="navbar-option dropdown" href="">
             <?php echo LANGUAGE ?>
