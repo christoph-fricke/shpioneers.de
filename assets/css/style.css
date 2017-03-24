@@ -169,6 +169,7 @@ p {
 @media screen and (max-width: 1000px) {
     h1 {
         word-wrap: break-word;
+	font-size: 2rem;
     }
 }
 
