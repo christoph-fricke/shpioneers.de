@@ -132,7 +132,7 @@ function setHtmlLang() {
           </a>
         </div>
         <div class="left">
-          <div class="navbar-option">
+          <div class="navbar-option navbar-title active">
             <span><?php echo HEADER_TEAM ?></span>
           </div>
         </div>
