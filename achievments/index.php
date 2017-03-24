@@ -62,6 +62,12 @@ function printsuccess($suc){
     <h2>'. $suc -> name.'</h2>
     </div>';
 }
+
+function setactive($type){
+    if($type == $_GET['index']) {
+        echo 'active';
+    }
+}
 ?>
 
   <!DOCTYPE html>
@@ -110,6 +116,12 @@ function printsuccess($suc){
             </div>
             <div class="sidebar-option">
               <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>" class="navbar-option">
+                <?php echo $tournament[0] -> title ?>
+              </a>
+            </div>
+            <hr>
+            <div class="sidebar-option">
+              <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>" class="navbar-option">
                 <?php echo GERMAN ?>
               </a>
             </div>
@@ -123,7 +135,7 @@ function printsuccess($suc){
           <div class="grey"></div>
         </div>
         <div class="left">
-          <div class="navbar-option">
+          <div class="navbar-option navbar-title">
             <span><?php echo $tournament[0] -> title ?></span>
           </div>
         </div>
@@ -138,9 +150,19 @@ function printsuccess($suc){
           </a>
         </div>
         <div class="left">
-          <span class="navbar-option">
+          <a class="navbar-option <?php setactive(0); ?>" href="?index=0">
             <?php echo $tournament[0] -> title ?>
-          </span>
+          </a>
+        </div>
+        <div class="left">
+          <a class="navbar-option <?php setactive(1); ?>" href="?index=1">
+            <?php echo $tournament[0] -> title ?>
+          </a>
+        </div>
+        <div class="left">
+          <a class="navbar-option <?php setactive(2); ?>" href="?index=2">
+            <?php echo $tournament[0] -> title ?>
+          </a>
         </div>
         <div class="right">
           <div class="navbar-option dropdown" href="">

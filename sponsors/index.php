@@ -127,7 +127,7 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
           <div class="grey"></div>
         </div>
         <div class="left">
-          <div class="navbar-option">
+          <div class="navbar-option navbar-title">
             <span><?php gettitle() ?></span>
           </div>
         </div>
@@ -175,11 +175,11 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
 
     <div class="spacer"></div>
     <main>
-        <section class="news" id="partner">
-          <div class="row">
-            <?php printsponsors() ?>
-          </div>
-        </section>
+      <section class="news" id="partner">
+        <div class="row">
+          <?php printsponsors() ?>
+        </div>
+      </section>
     </main>
     <footer>
       <main>
