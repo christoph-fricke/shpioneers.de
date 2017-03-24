@@ -115,7 +115,17 @@ function setactive($type){
               </div>
             </div>
             <div class="sidebar-option">
-              <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>" class="navbar-option">
+              <a class="navbar-option" href="?index=0">
+                <?php echo $tournament[0] -> title ?>
+              </a>
+            </div>
+            <div class="sidebar-option">
+              <a class="navbar-option" href="?index=1">
+                <?php echo $tournament[0] -> title ?>
+              </a>
+            </div>
+            <div class="sidebar-option">
+              <a class="navbar-option" href="?index=2">
                 <?php echo $tournament[0] -> title ?>
               </a>
             </div>
