@@ -1,10 +1,10 @@
 [
 {
-"name": "Fugmann Werbetechnik",
-"img":"../assets/img/sponsors/fugmann.png",
-"text":"Fugmann Werbetechnik ist ein bundesweiter Verklebeservice. Fugmann Werbetechnik foliert Autos mit individuellen Designs. Außerdem folieren sie Flotten einheitlich, kümmern sich um Verkehrsmittelwerbung, haben eine breite Produktpalette an Sicht und Sonnenschutzfolien und fertigen Werbeschilder an. All dieses nach den individuellen Bedürfnissen ihrer Kunden. In den letzten Jahren bewegte sich die Firma dazu in dem Sektor Schiffsfolierung. Fugmann Werbetechnik unterstützt die Pioneers in der dritten Saison durch Foliendrucke, die beispielsweise für deren Teamstand verwendet werden.",
-"email":"info@fugmann-werbetechnik.de",
-"web": "fugmann-werbetechnik.de"
+"name": "Eggers",
+"img" : "../assets/img/sponsors/eggers.svg",
+"text": "Die Firma RALF EGGERS CNC Dreh- und Frästechnik GmbH & Co. KG bearbeitet Werkstoffe jeglicher Art wie Stahl, Edelstahl, Nichteisenmetalle und Kunststoffe als Komplettbearbeitung auf 5-Achs-Bearbeitungszentren. Außerdem ist das Unternehmen seit fast 20 Jahren auf die Produktion von Ersatzteilen für Eiswaffelbackmaschinen spezialisiert und kooperiert hierzu vorallem im asiatischen Raum. Das Team Pioneers wurde durch die Fertigung von 16 extrem leichten Aluminiumrädern und zugehörigen Radkappen unterstützt.",
+"email":"info@ralfeggers.de",
+"web":"ralfegger.de"
 },
 {
 "name": "Süverkrüp Automobile",
@@ -24,15 +24,15 @@
 "name": "myonic",
 "img" : "../assets/img/sponsors/myonic.svg",
 "text": "myonic ist ein internationales Industri- eunternehmen mit Niederlassungen in Deutschland, Tschechien, Österreich und England. Seit 2009 gehört das Unternehmen zur japanischen Minebea Gruppe. Gemeinsam finden wir Lösungen im Grenzbereich des technisch Machbaren. Mit unserer fast 80-jährigen Erfahrung in der Herstellung von Präzisions-Miniaturkugellagern liefern wir diverse Produkte und Dienstleistungen für (z.B.) Spitzentechnologien der Medizin- technik (...). Die myonic GmbH sieht es in Ihrer Verantwortung die nächste Generation zu fördern. So beteiligen wir uns an diversen Projekten für Kinder/Jugendliche.",
-"email":"info.de@myonic.de",
+"email":"info@myonic.de",
 "web":"myonic.com"
 },
 {
-"name": "Eggers",
-"img" : "../assets/img/sponsors/eggers.svg",
-"text": "Die Firma RALF EGGERS CNC Dreh- und Frästechnik GmbH & Co. KG bearbeitet Werkstoffe jeglicher Art wie Stahl, Edelstahl, Nichteisenmetalle und Kunststoffe als Komplettbearbeitung auf 5-Achs-Bearbeitungszentren. Außerdem ist das Unternehmen seit fast 20 Jahren auf die Produktion von Ersatzteilen für Eiswaffelbackmaschinen spezialisiert und kooperiert hierzu vorallem im asiatischen Raum. Das Team Pioneers wurde durch die Fertigung von 16 extrem leichten Aluminiumrädern und zugehörigen Radkappen unterstützt.",
-"email":"info@ralfeggers.de",
-"web":"ralfegger.de"
+"name": "Fugmann Werbetechnik",
+"img":"../assets/img/sponsors/fugmann.png",
+"text":"Fugmann Werbetechnik ist ein bundesweiter Verklebeservice. Fugmann Werbetechnik foliert Autos mit individuellen Designs. Außerdem folieren sie Flotten einheitlich, kümmern sich um Verkehrsmittelwerbung, haben eine breite Produktpalette an Sicht und Sonnenschutzfolien und fertigen Werbeschilder an. All dieses nach den individuellen Bedürfnissen ihrer Kunden. In den letzten Jahren bewegte sich die Firma dazu in dem Sektor Schiffsfolierung. Fugmann Werbetechnik unterstützt die Pioneers in der dritten Saison durch Foliendrucke, die beispielsweise für deren Teamstand verwendet werden.",
+"email":"info@fugmann-werbetechnik.de",
+"web": "fugmann-werbetechnik.de"
 },
 {
 "name": "Raceyard",
