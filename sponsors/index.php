@@ -91,6 +91,13 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
           </div>
           <div class="sidebar dropdown-content">
             <div class="sidebar-option">
+              <div class="logo-container">
+                <a class="logo" href="../">
+                  <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
+                </a>
+              </div>
+            </div>
+            <div class="sidebar-option">
               <a href="?type=partner" class="navbar-option">
                 <?php echo SPONSOR_HEADER_PARTNER ?>
               </a>
@@ -120,9 +127,9 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
           <div class="grey"></div>
         </div>
         <div class="left">
-          <a class="logo" href="../">
-            <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
-          </a>
+          <div class="navbar-option">
+            <span><?php gettitle() ?></span>
+          </div>
         </div>
       </div>
     </nav>
@@ -166,29 +173,13 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
         <div id='magic-line' />
     </nav>
 
-    <!--<header>
-      <section class="logo-header" id="home">
-
-      </section>
-      <a href="#partner">
-        <div class="fab">
-          <i class="mdi mdi-arrow-down mdi-24px"></i>
-        </div>
-      </a>
-    </header>-->
-
     <div class="spacer"></div>
     <main>
-      <section id="partner" class="news">
-        <img src="../assets/icons/<?php echo $_GET['type'] ?>.svg" class="sponsor-type" />
-        <h1><?php gettitle() ?></h1>
         <section class="news" id="partner">
           <div class="row">
-
             <?php printsponsors() ?>
           </div>
         </section>
-      </section>
     </main>
     <footer>
       <main>

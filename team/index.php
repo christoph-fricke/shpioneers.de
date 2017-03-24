@@ -97,6 +97,13 @@ function setHtmlLang() {
           </div>
           <div class="sidebar dropdown-content">
             <div class="sidebar-option">
+              <div class="logo-container">
+                <a class="logo" href="../">
+                  <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
+                </a>
+              </div>
+            </div>
+            <div class="sidebar-option">
               <a href="?lang=de-de" class="navbar-option">
                 <?php echo GERMAN ?>
               </a>
@@ -110,9 +117,9 @@ function setHtmlLang() {
           <div class="grey"></div>
         </div>
         <div class="left">
-          <a class="logo" href="../">
-            <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
-          </a>
+          <div class="navbar-option">
+            <span><?php echo HEADER_TEAM ?></span>
+          </div>
         </div>
       </div>
     </nav>
@@ -141,21 +148,9 @@ function setHtmlLang() {
         <div id='magic-line' />
     </nav>
 
-    <!--<header>
-      <section class="logo-header" id="home">
-
-      </section>
-      <a href="#team">
-        <div class="fab">
-          <i class="mdi mdi-arrow-down mdi-24px"></i>
-        </div>
-      </a>
-    </header>-->
-
     <div class="spacer"></div>
     <main>
       <section id="team" class="news">
-        <h1><?php echo HEADER_TEAM ?></h1>
         <div class="row">
           <?php printteam() ?>
         </div>

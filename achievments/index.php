@@ -102,6 +102,13 @@ function printsuccess($suc){
           </div>
           <div class="sidebar dropdown-content">
             <div class="sidebar-option">
+              <div class="logo-container">
+                <a class="logo" href="../">
+                  <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
+                </a>
+              </div>
+            </div>
+            <div class="sidebar-option">
               <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>" class="navbar-option">
                 <?php echo GERMAN ?>
               </a>
@@ -116,9 +123,9 @@ function printsuccess($suc){
           <div class="grey"></div>
         </div>
         <div class="left">
-          <a class="logo" href="../">
-            <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
-          </a>
+          <div class="navbar-option">
+            <span><?php echo $tournament[0] -> title ?></span>
+          </div>
         </div>
       </div>
     </nav>
@@ -147,21 +154,7 @@ function printsuccess($suc){
         <div id='magic-line' />
     </nav>
 
-    <!--<header>
-      <section class="logo-header" id="home">
-
-      </section>
-      <a href="#achievments">
-        <div class="fab">
-          <i class="mdi mdi-arrow-down mdi-24px"></i>
-        </div>
-      </a>
-    </header>-->
     <div class="spacer"></div>
-    <main id="achievments">
-      <h1><?php echo $tournament[0] -> title ?></h1>
-    </main>
-
     <section class="contest">
       <main class="inner-contest achievment-box">
         <?php printsuccesses(); ?>
@@ -242,9 +235,9 @@ function printsuccess($suc){
                 <?php echo BUTTON_SOCIAL_2 ?>
               </a>
               <!--<a class="btn-big" href="" target="_blank">
-                <i class="mdi mdi-youtube-play"></i>
-                <?php echo BUTTON_SOCIAL_3 ?>
-              </a>-->
+<i class="mdi mdi-youtube-play"></i>
+<?php echo BUTTON_SOCIAL_3 ?>
+</a>-->
             </div>
           </div>
         </div>
