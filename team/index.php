@@ -131,6 +131,11 @@ function setHtmlLang() {
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
         </div>
+        <div class="left">
+          <div class="navbar-option">
+            <span><?php echo HEADER_TEAM ?></span>
+          </div>
+        </div>
         <div class="right">
           <div class="navbar-option dropdown" href="">
             <?php echo LANGUAGE ?>

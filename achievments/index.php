@@ -137,6 +137,11 @@ function printsuccess($suc){
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
         </div>
+        <div class="left">
+          <span class="navbar-option">
+            <?php echo $tournament[0] -> title ?>
+          </span>
+        </div>
         <div class="right">
           <div class="navbar-option dropdown" href="">
             <?php echo LANGUAGE ?>
