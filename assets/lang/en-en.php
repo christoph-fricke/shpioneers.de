@@ -1,6 +1,8 @@
 <?php
 //Meta infos
 define('TITLE', 'Pioneers');
+define('DESCRIPTION', 'We are competitors in the international competetion "f1 in schools".');
+define('KEYWORDS', 'F1 in schools, Pioneers');
 
 //Nav content
 define('NEWS', 'News');

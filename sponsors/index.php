@@ -22,33 +22,33 @@ function getdata($type){
     return json_decode(file_get_contents("../content/sponsors/". $type ."-". $_SESSION['lang']. ".json"));
 }
 function printsponsors(){
-	if($_SESSION['lang']== 'de-de'){
-    foreach (getdata($_GET['type']) as $spons){
-        printcard($spons);
+    if($_SESSION['lang']== 'de-de'){
+        foreach (getdata($_GET['type']) as $spons){
+            printcard($spons);
+        }
     }
-	}
-	else{
-	echo '<h1> We are still working on the translation</h1>';
+    else{
+        echo '<h1> We are still working on the translation</h1>';
+    }
 }
-	}
-    function printcard($data){
-        echo '<div class="card news-card">
-        <div class="news-upper" style=" background-image: url(' .$data -> img. ');">
-        </div>
-        <div class="news-lower">
-        <h4>'.$data -> name .'</h4>
-        <div class="sponsor-web"><i class="mdi mdi-earth mdi-24px inline-icon"></i><a class="sponsors-text" href="http://'.$data -> web.'" target="blank">'.$data -> web.'</a> </div>
-        <div class="sponsor-email"><i class="mdi mdi-mail-ru mdi-24px inline-icon"></i><a class="sponsors-text" href="mailto:'.$data -> email.'">'.$data -> email.'</a>
-        </div>
-        <div class="news-content">
-        '.$data -> text.'
-        </div>
-        <a class="btn-small maximise" href="news.php?ind=0">
-        '. BUTTON_NEWS.'
-        </a>
-        <a class="btn-small minimise" href="news.php?ind=0">
-        '. BUTTON_NEWS_MIN.'</a>
-        </div>
+function printcard($data){
+    echo '<div class="card news-card">
+    <div class="news-upper" style=" background-image: url(' .$data -> img. ');">
+    </div>
+    <div class="news-lower">
+    <h4>'.$data -> name .'</h4>
+    <div class="sponsor-web"><i class="mdi mdi-earth mdi-24px inline-icon"></i><a class="sponsors-text" href="http://'.$data -> web.'" target="blank">'.$data -> web.'</a> </div>
+    <div class="sponsor-email"><i class="mdi mdi-mail-ru mdi-24px inline-icon"></i><a class="sponsors-text" href="mailto:'.$data -> email.'">'.$data -> email.'</a>
+    </div>
+    <div class="news-content">
+    '.$data -> text.'
+    </div>
+    <a class="btn-small maximise" href="news.php?ind=0">
+    '. BUTTON_NEWS.'
+    </a>
+    <a class="btn-small minimise" href="news.php?ind=0">
+    '. BUTTON_NEWS_MIN.'</a>
+    </div>
 </div>'; } function setHtmlLang() { if ($_SESSION['lang']) { echo $_SESSION['lang']; } else { echo "de-de"; } } function gettitle(){ switch($_GET['type']){ case 'partner': echo SPONSOR_HEADER_PARTNER; break; case 'service': echo SPONSOR_HEADER_SPONSORS; break;
 case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER_PARTNER; break; } } function setactive($type){ if($type == $_GET['type']){ echo 'active'; } } ?>
 
@@ -72,8 +72,8 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
     <meta name="msapplication-config" content="/assets/icons/favicons/browserconfig.xml">
 
     <meta name="Author" content="Pioneers" />
-    <meta name="Description" content="" />
-    <meta name="Keywords" content="" />
+    <meta name="Description" content="<?php echo DESCRIPTION ?>" />
+    <meta name="Keywords" content="<?php echo KEYWORDS ?>" />
 
     <meta name="theme-color" content="#EA5B10" />
     <meta name="format-detection" content="telephone=no" />
@@ -179,7 +179,7 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
 
     <main>
       <section id="partner" class="news">
-<img src="../assets/icons/<?php echo $_GET['type'] ?>.svg" class="sponsor-type"/>
+        <img src="../assets/icons/<?php echo $_GET['type'] ?>.svg" class="sponsor-type" />
         <h1><?php gettitle() ?></h1>
         <section class="news" id="partner">
           <div class="row">
@@ -237,9 +237,9 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
                 <?php echo BUTTON_SOCIAL_2 ?>
               </a>
               <!--<a class="btn-big" href="" target="_blank">
-                <i class="mdi mdi-youtube-play"></i>
-                <?php echo BUTTON_SOCIAL_3 ?>
-              </a>-->
+    <i class="mdi mdi-youtube-play"></i>
+    <?php echo BUTTON_SOCIAL_3 ?>
+    </a>-->
             </div>
           </div>
         </div>

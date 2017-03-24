@@ -78,8 +78,8 @@ function setHtmlLang() {
     <meta name="msapplication-config" content="/assets/icons/favicons/browserconfig.xml">
 
     <meta name="Author" content="Pioneers" />
-    <meta name="Description" content="" />
-    <meta name="Keywords" content="" />
+    <meta name="Description" content="<?php echo DESCRIPTION ?>" />
+    <meta name="Keywords" content="<?php echo KEYWORDS ?>" />
 
     <meta name="theme-color" content="#EA5B10" />
     <meta name="format-detection" content="telephone=no" />
