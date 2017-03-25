@@ -71,7 +71,7 @@ function setactive($type){
 function printnavmob(){
 $file = json_decode(file_get_contents('../content/achievments/list.json'));
 foreach($file as $tour){
-printoptionmob($tour,array_search($tour,$file));
+printoptionmob(getcontent(array_search($tour,$file))[0] -> title,array_search($tour,$file));
 }
 }
 function printoptionmob($name,$index){
@@ -85,7 +85,7 @@ echo '
 function printnavdesk(){
 $file = json_decode(file_get_contents('../content/achievments/list.json'));
 foreach($file as $tour){
-printoptiondesk($tour,array_search($tour,$file));
+printoptiondesk(getcontent(array_search($tour,$file))[0] -> title,array_search($tour,$file));
 }
 }
 
