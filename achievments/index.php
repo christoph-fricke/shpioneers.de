@@ -62,6 +62,41 @@ function printsuccess($suc){
     <h2>'. $suc -> name.'</h2>
     </div>';
 }
+
+function setactive($type){
+    if($type == $_GET['index']) {
+        return 'active';
+    }
+}
+function printnavmob(){
+    $file = json_decode(file_get_contents('../content/achievments/list.json'));
+    foreach($file as $tour){
+        printoptionmob(getcontent(array_search($tour,$file))[0] -> title,array_search($tour,$file));
+    }
+}
+function printoptionmob($name,$index){
+    echo '
+    <div class="sidebar-option">
+    <a href="?lang=de-de&index='.$index.'" class="navbar-option '.setactive($index).'">
+    '.$name.'
+    </a>
+    </div>';
+}
+function printnavdesk(){
+    $file = json_decode(file_get_contents('../content/achievments/list.json'));
+    foreach($file as $tour){
+        printoptiondesk(getcontent(array_search($tour,$file))[0] -> title,array_search($tour,$file));
+    }
+}
+
+function printoptiondesk($name,$index){
+    echo '
+    <div class="left">
+    <a class="navbar-option '.setactive($index).'" href="?index='.$index.'">
+    '.$name.'
+    </a>
+    </div>';
+}
 ?>
 
   <!DOCTYPE html>
@@ -102,23 +137,32 @@ function printsuccess($suc){
           </div>
           <div class="sidebar dropdown-content">
             <div class="sidebar-option">
-              <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>" class="navbar-option">
-                <?php echo GERMAN ?>
-              </a>
+              <div class="logo-container">
+                <a class="logo" href="../">
+                  <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
+                </a>
+              </div>
             </div>
-            <div class="sidebar-option">
-              <a href="?lang=en-en&index=<?php echo $_GET['index'] ?>" class="navbar-option">
-                <?php echo ENGLISH ?>
-              </a>
-            </div>
+            <?php printnavmob() ?>
+              <hr class="navline">
+              <div class="sidebar-option">
+                <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>" class="navbar-option">
+                  <?php echo GERMAN ?>
+                </a>
+              </div>
+              <div class="sidebar-option">
+                <a href="?lang=en-en&index=<?php echo $_GET['index'] ?>" class="navbar-option">
+                  <?php echo ENGLISH ?>
+                </a>
+              </div>
           </div>
 
           <div class="grey"></div>
         </div>
         <div class="left">
-          <a class="logo" href="../">
-            <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
-          </a>
+          <div class="navbar-option navbar-title">
+            <span><?php echo $tournament[0] -> title ?></span>
+          </div>
         </div>
       </div>
     </nav>
@@ -130,38 +174,25 @@ function printsuccess($suc){
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
         </div>
-        <div class="right">
-          <div class="navbar-option dropdown" href="">
-            <?php echo LANGUAGE ?>
-              <i class="mdi mdi-arrow-down-drop-circle"></i>
+        <?php printnavdesk() ?>
+          <div class="right">
+            <div class="navbar-option dropdown" href="">
+              <?php echo LANGUAGE ?>
+                <i class="mdi mdi-arrow-down-drop-circle"></i>
+            </div>
+            <div class="dropdown-content">
+              <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>">
+                <?php echo GERMAN ?>
+              </a>
+              <a href="?lang=en-en&index=<?php echo $_GET['index'] ?>">
+                <?php echo ENGLISH ?>
+              </a>
+            </div>
           </div>
-          <div class="dropdown-content">
-            <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>">
-              <?php echo GERMAN ?>
-            </a>
-            <a href="?lang=en-en&index=<?php echo $_GET['index'] ?>">
-              <?php echo ENGLISH ?>
-            </a>
-          </div>
-        </div>
-        <div id='magic-line' />
+          <div id='magic-line' />
     </nav>
 
-    <header>
-      <section class="logo-header" id="home">
-
-      </section>
-      <a href="#achievments">
-        <div class="fab">
-          <i class="mdi mdi-arrow-down mdi-24px"></i>
-        </div>
-      </a>
-    </header>
-
-    <main id="achievments">
-      <h1><?php echo $tournament[0] -> title ?></h1>
-    </main>
-
+    <div class="spacer"></div>
     <section class="contest">
       <main class="inner-contest achievment-box">
         <?php printsuccesses(); ?>
@@ -242,9 +273,9 @@ function printsuccess($suc){
                 <?php echo BUTTON_SOCIAL_2 ?>
               </a>
               <!--<a class="btn-big" href="" target="_blank">
-                <i class="mdi mdi-youtube-play"></i>
-                <?php echo BUTTON_SOCIAL_3 ?>
-              </a>-->
+<i class="mdi mdi-youtube-play"></i>
+<?php echo BUTTON_SOCIAL_3 ?>
+</a>-->
             </div>
           </div>
         </div>
