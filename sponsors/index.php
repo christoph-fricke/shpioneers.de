@@ -98,21 +98,21 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
               </div>
             </div>
             <div class="sidebar-option">
-              <a href="?type=partner" class="navbar-option">
+              <a href="?type=partner" class="navbar-option <?php setactive('partner'); ?>">
                 <?php echo SPONSOR_HEADER_PARTNER ?>
               </a>
             </div>
             <div class="sidebar-option">
-              <a href="?type=service" class="navbar-option">
+              <a href="?type=service" class="navbar-option <?php setactive('service'); ?>">
                 <?php echo SPONSOR_HEADER_SPONSORS ?>
               </a>
             </div>
             <div class="sidebar-option">
-              <a href="?type=finance" class="navbar-option">
+              <a href="?type=finance" class="navbar-option <?php setactive('finance'); ?>">
                 <?php echo SPONSOR_HEADER_FINANCE ?>
               </a>
             </div>
-            <hr>
+            <hr class="navline">
             <div class="sidebar-option">
               <a href="?lang=de-de&type=<?php echo $_GET['type']?>" class="navbar-option">
                 <?php echo GERMAN ?>

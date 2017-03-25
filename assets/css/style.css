@@ -262,12 +262,17 @@ nav {
 
 .navbar-title:hover {
     cursor: text;
-    background-color: rgba(0, 0, 0, 0);;
+    background-color: rgba(0, 0, 0, 0);
     border-bottom: 0.1em solid rgba(0, 0, 0, 0.0);
 }
 
 .navbar-option.active {
     color: rgba(255, 255, 255, 1);
+    border-bottom: 0.1em solid rgba(255, 255, 255, 1);
+}
+
+ .sidebar-option .active {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .dropdown {
@@ -332,6 +337,10 @@ nav {
 
 .left:hover .grey {
     background-color: rgba(0, 0, 0, .2);
+}
+
+.navline {
+    margin: 10px 10px;
 }
 
 @media screen and (max-width: 1075px) {

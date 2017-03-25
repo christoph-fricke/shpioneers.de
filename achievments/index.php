@@ -65,37 +65,37 @@ function printsuccess($suc){
 
 function setactive($type){
     if($type == $_GET['index']) {
-         return 'active';
+        return 'active';
     }
 }
 function printnavmob(){
-$file = json_decode(file_get_contents('../content/achievments/list.json'));
-foreach($file as $tour){
-printoptionmob(getcontent(array_search($tour,$file))[0] -> title,array_search($tour,$file));
-}
+    $file = json_decode(file_get_contents('../content/achievments/list.json'));
+    foreach($file as $tour){
+        printoptionmob(getcontent(array_search($tour,$file))[0] -> title,array_search($tour,$file));
+    }
 }
 function printoptionmob($name,$index){
-echo ' 
-            <div class="sidebar-option">
-              <a href="?lang=de-de&index='.$index.'" class="navbar-option">
-                '.$name.'
-              </a>
-            </div>';
+    echo '
+    <div class="sidebar-option">
+    <a href="?lang=de-de&index='.$index.'" class="navbar-option '.setactive($index).'">
+    '.$name.'
+    </a>
+    </div>';
 }
 function printnavdesk(){
-$file = json_decode(file_get_contents('../content/achievments/list.json'));
-foreach($file as $tour){
-printoptiondesk(getcontent(array_search($tour,$file))[0] -> title,array_search($tour,$file));
-}
+    $file = json_decode(file_get_contents('../content/achievments/list.json'));
+    foreach($file as $tour){
+        printoptiondesk(getcontent(array_search($tour,$file))[0] -> title,array_search($tour,$file));
+    }
 }
 
 function printoptiondesk($name,$index){
-echo '
-        <div class="left">
-          <a class="navbar-option '.setactive($index).'" href="?index='.$index.'">
-            '.$name.'
-          </a>
-        </div>';
+    echo '
+    <div class="left">
+    <a class="navbar-option '.setactive($index).'" href="?index='.$index.'">
+    '.$name.'
+    </a>
+    </div>';
 }
 ?>
 
@@ -143,18 +143,18 @@ echo '
                 </a>
               </div>
             </div>
-<?php printnavmob() ?>
-            <hr> <!-- what is this -->
-            <div class="sidebar-option">
-              <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>" class="navbar-option">
-                <?php echo GERMAN ?>
-              </a>
-            </div>
-            <div class="sidebar-option">
-              <a href="?lang=en-en&index=<?php echo $_GET['index'] ?>" class="navbar-option">
-                <?php echo ENGLISH ?>
-              </a>
-            </div>
+            <?php printnavmob() ?>
+              <hr class="navline">
+              <div class="sidebar-option">
+                <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>" class="navbar-option">
+                  <?php echo GERMAN ?>
+                </a>
+              </div>
+              <div class="sidebar-option">
+                <a href="?lang=en-en&index=<?php echo $_GET['index'] ?>" class="navbar-option">
+                  <?php echo ENGLISH ?>
+                </a>
+              </div>
           </div>
 
           <div class="grey"></div>
@@ -174,22 +174,22 @@ echo '
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
         </div>
-	<?php printnavdesk() ?>
-        <div class="right">
-          <div class="navbar-option dropdown" href="">
-            <?php echo LANGUAGE ?>
-              <i class="mdi mdi-arrow-down-drop-circle"></i>
+        <?php printnavdesk() ?>
+          <div class="right">
+            <div class="navbar-option dropdown" href="">
+              <?php echo LANGUAGE ?>
+                <i class="mdi mdi-arrow-down-drop-circle"></i>
+            </div>
+            <div class="dropdown-content">
+              <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>">
+                <?php echo GERMAN ?>
+              </a>
+              <a href="?lang=en-en&index=<?php echo $_GET['index'] ?>">
+                <?php echo ENGLISH ?>
+              </a>
+            </div>
           </div>
-          <div class="dropdown-content">
-            <a href="?lang=de-de&index=<?php echo $_GET['index'] ?>">
-              <?php echo GERMAN ?>
-            </a>
-            <a href="?lang=en-en&index=<?php echo $_GET['index'] ?>">
-              <?php echo ENGLISH ?>
-            </a>
-          </div>
-        </div>
-        <div id='magic-line' />
+          <div id='magic-line' />
     </nav>
 
     <div class="spacer"></div>
