@@ -1,4 +1,15 @@
 [
+
+
+{
+"name": "Linus Pimat",
+"job":"Management",
+"quote": "„Linus ist ein Meister in Sachen Koordination. Unser Team würde eiskalt im Chaos enden, wenn wir ihn nicht hätten. Das Arbeiten in der Gruppe macht mit ihm unglaublich viel Spaß.“",
+"quotee": "Michael (Supporter)",
+"text": "Linus hat als Manager zur Hauptaufgabe, die Termine unseres Teams zu planen. Außerdem ist er das Bindeglied vieler kleinerer Arbeitsgruppen und sorgt dafür, dass alle Mitglieder über jede Arbeit informiert sind.",
+"img": "../assets/img/team/linus.jpg"
+},
+
 {
 "name": "Bendix Sonnenberg",
 "job":"IT und Renderings",
@@ -15,15 +26,6 @@
 "quotee": "Nils (Supporter)",
 "text": "Hanno ist in unserem Team für die Technik verantwortlich. So baute er das Lichtschrankensystem, mit dem wir unsere Prototypen analysierten und stattete unsere Teambox mit Elektronik aus.",
 "img": "../assets/img/team/hanno.jpg"
-},
-
-{
-"name": "Linus Pimat",
-"job":"Management",
-"quote": "„Linus ist ein Meister in Sachen Koordination. Unser Team würde eiskalt im Chaos enden, wenn wir ihn nicht hätten. Das Arbeiten in der Gruppe macht mit ihm unglaublich viel Spaß.“",
-"quotee": "Michael (Supporter)",
-"text": "Linus hat als Manager zur Hauptaufgabe, die Termine unseres Teams zu planen. Außerdem ist er das Bindeglied vieler kleinerer Arbeitsgruppen und sorgt dafür, dass alle Mitglieder über jede Arbeit informiert sind.",
-"img": "../assets/img/team/linus.jpg"
 },
 
 {
