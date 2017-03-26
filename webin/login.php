@@ -1,10 +1,12 @@
-<!DOCTYPE>
-<html>
-<body>
-<form action="admin.php" method="POST">
-<input name="user" type="text" placeholder="Name"></input>
-<input name="password" type="password" placeholder="Password"></input>
-<input type="submit" value="Login"></input>
-</form>
-</body>
-</html>
+<?php
+function checkuser($name,$pass){
+	// TODO check Password and Username
+	return True;
+}
+session_start();
+if(checkuser($_POST['username'],$_POST['password'])){
+	$_SESSION['login'] = True;
+
+}
+
+?>
