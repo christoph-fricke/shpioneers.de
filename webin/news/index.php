@@ -14,6 +14,7 @@ function printnews(){
 <html>
 <body>
 <p> Select the news-entry which thou desire to change </p>
+<a href="newsedit.php?index=-1">Add News</a>
 <?php printnews() ?>
 </body>
 </html>

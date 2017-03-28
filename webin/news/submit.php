@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL); 
 session_start();
-if(!($_SESSION['login'] === True)||checktoken()) die();
+if(!($_SESSION['login'] === True)||!checktoken()) die();
 $pathtonews = "../../content/news/news". $_POST['lang']. "-" .$_POST['lang'].".json";
 $newsfile = json_decode(file_get_contents($pathtonews));
 if($_POST['index']>= 0){
@@ -20,7 +20,9 @@ else{
 	$news -> text = $_POST['text'];
 	$news -> image = $_POST['image'];
 	array_insert($newsfile,$news);	
+	add_other_lang();
 }
+var_dump($newsfile);
 $f = fopen($pathtonews,"w+");
 if( fwrite($f,json_encode($newsfile)) ===FALSE) echo 'Fehler_ vermutlich permissions';
 fclose($f);
