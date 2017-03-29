@@ -25,8 +25,12 @@ $newsen = json_decode(file_get_contents('../../content/news/newsen-en.json'));
 	<input name="enimage" type="text" value="<?php echo $newsen[$_GET['index']] -> image?>"></input>	
 	<textarea name="entext"  value=""><?php echo $newsen[$_GET['index']] -> text?></textarea>	
 	<input type="hidden" name="index"value="<?php echo $_GET['index'] ?>"/>
-	<input type="submit" name="submit"/>
 	<!-- TODO token -->
+<br>
+	<input name="indexto" min="0" max="<?php echo sizeof($newsde) -1 ?>" type="number" value="<?php echo $_GET['index'] ?>">
+<br> 
+	<input type="submit" name="submit"/>
+
 </form>
 </body>
 </html>

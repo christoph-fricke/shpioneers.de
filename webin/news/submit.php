@@ -35,7 +35,10 @@ else{
 	array_insert($ennewsfile,$ennews);
 		
 }
-
+if($_POST['index'] != $_POST['indexto']){
+	moveElement($denewsfile,$_POST['index'],$_POST['indexto']);	
+	moveElement($ennewsfile,$_POST['index'],$_POST['indexto']);	
+}
 file_put_contents("../../content/news/newsde-de.json",json_encode($denewsfile));
 file_put_contents("../../content/news/newsen-en.json",json_encode($ennewsfile));
 function checktoken(){
@@ -47,5 +50,9 @@ for($i = sizeof($array);$i > 0; $i-- ){
 	$array[$i] = $array[$i -1];
 }
 $array[0] = $object;
+}
+function moveElement(&$array, $a, $b) {
+    $out = array_splice($array, $a, 1);
+    array_splice($array, $b, 0, $out);
 }
 ?>
