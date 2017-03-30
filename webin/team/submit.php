@@ -35,7 +35,7 @@ else{
 	array_insert($deteam,$demem);
 	array_insert($enteam,$enmem);
 }
-if($_POST['index'] != $_POST['indexto']){
+if($_POST['index'] != $_POST['indexto'] && $_POST['index'] >= 0){
 	moveElement($deteam,$_POST['index'],$_POST['indexto']);
 	moveElement($enteam,$_POST['index'],$_POST['indexto']);
 }
