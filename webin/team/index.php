@@ -13,6 +13,7 @@ function printmembers(){
 <html>
 <body>
 <a href="change.php?index=-1">Add member</a>
+<br>
 <?php printmembers() ?>
 </body>
 </html>
