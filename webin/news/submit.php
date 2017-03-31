@@ -35,7 +35,7 @@ else{
 	array_insert($ennewsfile,$ennews);
 		
 }
-if($_POST['index'] != $_POST['indexto']){
+if($_POST['index'] != $_POST['indexto'] && $_POST['index'] >= 0){
 	moveElement($denewsfile,$_POST['index'],$_POST['indexto']);	
 	moveElement($ennewsfile,$_POST['index'],$_POST['indexto']);	
 }
