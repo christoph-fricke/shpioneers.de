@@ -1,10 +1,14 @@
 <?php
 function checkuser($name,$pass){
-	// TODO check Password and Username
-	return True;
+	$userbase = json_decode(file_get_contents('users.json'));
+	foreach($userbase as $user){
+		if($name == $user -> login && password_verify($pass,$user -> pass)) return True;
+		echo "check";
+	}
+	return False;
 }
 session_start();
-if(checkuser($_POST['username'],$_POST['password'])){
+if(checkuser($_POST['user'],$_POST['password'])){
 	$_SESSION['login'] = True;
 
 }
