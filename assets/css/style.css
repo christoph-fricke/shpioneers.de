@@ -543,7 +543,7 @@ header {
 
 /* TEAM SUBPAGE */
 
-#team .news-lower {
+#team .news-lower{
     height: 320px;
 }
 
@@ -673,6 +673,14 @@ header {
     height: 400px;
 }
 
+#partner .news-card.minor {
+    height: auto;
+    max-height: 550px;
+}
+
+#partner .news-card.minor .news-lower {
+    height: 250px;
+}
 .news-card.minor {
     width: 30%;
     margin-right: calc( 5% / 3);
