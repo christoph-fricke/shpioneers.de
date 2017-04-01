@@ -1,6 +1,7 @@
 <?php
 session_start();
-if(!($_SESSION['login'] === True)) die();
+if(!($_SESSION['login'] === True) || $_SESSION['teamtoken'] != $_GET['token']) die();
+$_SESSION['teamtoken']= ""; // this will prevent reloading the page to cause problems
 $deteam = json_decode(file_get_contents("../../content/team/team-de-de.json"));
 $enteam = json_decode(file_get_contents("../../content/team/team-en-en.json"));
 array_splice($deteam,$_GET['index'],1);

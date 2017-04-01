@@ -42,7 +42,7 @@ if($_POST['index'] != $_POST['indexto'] && $_POST['index'] >= 0){
 file_put_contents("../../content/team/team-de-de.json", json_encode($deteam));
 file_put_contents("../../content/team/team-en-en.json", json_encode($enteam));
 function checktoken(){
-return True; // TODO this
+return $_POST['token'] == $_SESSION['teamtoken']; // TODO this
 }
 function array_insert(&$array,$object){
 for($i = sizeof($array);$i > 0; $i-- ){
