@@ -21,7 +21,6 @@ $_SESSION['newstoken']= bin2hex(openssl_random_pseudo_bytes($length, $secure));
 	<input name="desubtitle" type="text" value="<?php echo $newsde[$_GET['index']] -> subtitle?>"></input>	
 	<input name="depreview" type="text" value="<?php echo $newsde[$_GET['index']] -> preview?>"></input>	
 	<textarea name="detext"  value=""><?php echo $newsde[$_GET['index']] -> text?></textarea>	
-	<!-- TODO token -->
 <br>
 	<input name="entitle" type="text" value="<?php echo $newsen[$_GET['index']] -> title?>"></input>	
 	<input name="ensubtitle" type="text" value="<?php echo $newsen[$_GET['index']] -> subtitle?>"></input>	
