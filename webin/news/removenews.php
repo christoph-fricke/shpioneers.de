@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!($_SESSION['login'] === True)) die(); //TODO token here and on the index page
+if(!($_SESSION['login'] === True) || !($_GET['token'] == $_SESSION['newstoken'])) die(); //TODO token here and on the index page
 $denewsfile = json_decode(file_get_contents("../../content/news/newsde-de.json"));
 $ennewsfile = json_decode(file_get_contents("../../content/news/newsen-en.json"));
 array_splice($denewsfile,$_GET['index'],1);

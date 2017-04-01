@@ -4,8 +4,12 @@
 function printnews(){
 	$news = json_decode(file_get_contents('../../content/news/newsen-en.json'));
 	$i = 0;
+	$length = 32;
+	$secure = true;
+
+	$_SESSION['newstoken']= bin2hex(openssl_random_pseudo_bytes($length, $secure));
 	foreach($news as $new){
-	echo '<a href="newsedit.php?index='.$i.'">'.$new -> title .'</a>&nbsp;<a href="removenews.php?index='.$i++.'">Remove</a><br>';
+	echo '<a href="newsedit.php?index='.$i.'">'.$new -> title .'</a>&nbsp;<a href="removenews.php?index='.$i++.'&token='.$_SESSION['newstoken'].'">Remove</a><br>';
 	}
 }
 

@@ -5,6 +5,9 @@ if(!($_SESSION['login'] === True)) die();
 $newsde = json_decode(file_get_contents('../../content/news/newsde-de.json'));
 $newsen = json_decode(file_get_contents('../../content/news/newsen-en.json'));
 
+$length = 32;
+$secure = true;
+$_SESSION['newstoken']= bin2hex(openssl_random_pseudo_bytes($length, $secure));
 ?>
 <!DOCTYPE>
 <html>
@@ -25,7 +28,7 @@ $newsen = json_decode(file_get_contents('../../content/news/newsen-en.json'));
 	<input name="enpreview" type="text" value="<?php echo $newsen[$_GET['index']] -> preview?>"></input>	
 	<textarea name="entext"  value=""><?php echo $newsen[$_GET['index']] -> text?></textarea>	
 	<input type="hidden" name="index"value="<?php echo $_GET['index'] ?>"/>
-	<!-- TODO token -->
+	<input type="hidden" name="token" value="<?php echo $_SESSION['newstoken'] ?>"/>
 <br>
 	<input name="indexto" min="0" max="<?php echo sizeof($newsde) -1 ?>" type="number" value="<?php echo $_GET['index'] ?>">
 <br> 

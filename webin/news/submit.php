@@ -43,7 +43,7 @@ file_put_contents("../../content/news/newsde-de.json",json_encode($denewsfile));
 file_put_contents("../../content/news/newsen-en.json",json_encode($ennewsfile));
 function checktoken(){
 //TODO check token
-return True;
+return $_POST['token'] == $_SESSION['newstoken'];
 }
 function array_insert(&$array,$object){
 for($i = sizeof($array);$i > 0; $i-- ){
