@@ -3,7 +3,6 @@ function checkuser($name,$pass){
 	$userbase = json_decode(file_get_contents('users.json'));
 	foreach($userbase as $user){
 		if($name == $user -> login && password_verify($pass,$user -> pass)) return True;
-		echo "check";
 	}
 	return False;
 }
