@@ -21,6 +21,11 @@
     width: 250px;
     margin: 5px 0;
     padding: 0.25em 0.5em;
+    outline: none;
+    border: 2px solid $color-accent-500;
+    &:focus {
+        border: 2px solid $color-accent-600;
+    }
 }
 
 .input-item--submit {
@@ -31,11 +36,12 @@
     font-size: 1.5rem;
     border: none;
     border-radius: 2px;
-    outline: none;
     box-shadow: $box-shadow-layer2;
     transition: $transition-200;
-
     &:hover {
         box-shadow: $box-shadow-layer3;
+    }
+    &:focus {
+        border: none;
     }
 }
