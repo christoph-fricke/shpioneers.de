@@ -241,7 +241,18 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
         <?php echo COPYRIGHT ?>
       </p>
     </footer>
+    <div class="clearfix"></div>
 
+    <div class="credits">
+      <a class="credits-content" href="http://christoph-fricke.de">
+        <svg class="credits-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+        </svg>
+        <span class="credits-span">&nbsp;by&nbsp;</span>
+        <span class="credits-span credits-span--bold">Christoph&nbsp;Fricke</span>
+      </a>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../assets/js/email_responsivnews.js"></script>

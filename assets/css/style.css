@@ -274,7 +274,7 @@ nav {
     color: rgba(255, 255, 255, 1);
 }
 
- .sidebar-option .active {
+.sidebar-option .active {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -557,7 +557,8 @@ header {
     margin: 5px;
 }
 
-#partner, #team {
+#partner,
+#team {
     margin-top: 50px;
 }
 
@@ -1163,4 +1164,51 @@ input[type="submit"] {
         margin-bottom: 15px;
         float: none;
     }
+}
+
+/*
+ * Content for credits
+ */
+
+.credits {
+    background-color: #953A0B;
+    text-align: center;
+}
+
+.credits-content {
+    text-decoration: none;
+    margin: 20px;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.credits-icon {
+    display: inline-block;
+    fill: rgba(255, 255, 255, 0.7);
+    height: 24px;
+    width: 24px;
+}
+
+.credits-span {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.credits-span--bold {
+    font-weight: 700;
+}
+
+.credits-content:hover .credits-span {
+    color: rgba(255, 255, 255, 1);
+}
+
+.credits-content:hover .credits-span--bold {
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.credits-content:hover .credits-icon {
+    fill: rgba(0, 0, 0, 0.7);
 }
