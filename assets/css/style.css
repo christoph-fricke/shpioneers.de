@@ -1181,7 +1181,7 @@ input[type="submit"] {
 }
 
 .credits-span {
-    font-family: 'Roboto', 'Open Sans', sans-serif;;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.7);
@@ -1201,8 +1201,4 @@ input[type="submit"] {
 
 .credits-content:hover .credits-icon {
     fill: rgba(0, 0, 0, 0.7);
-}
-
-.credits-content:hover .credits-icon--love {
-    fill: rgba(244, 67, 54, 1);
 }
