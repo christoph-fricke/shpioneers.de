@@ -270,6 +270,9 @@ nav {
     color: rgba(255, 255, 255, 1);
     border-bottom: 0.1em solid rgba(255, 255, 255, 1);
 }
+.navbar-option.position {
+    color: rgba(255, 255, 255, 1);
+}
 
 .sidebar-option .active {
     background-color: rgba(0, 0, 0, 0.1);
@@ -540,7 +543,7 @@ header {
 
 /* TEAM SUBPAGE */
 
-#team .news-lower {
+#team .news-lower{
     height: 320px;
 }
 
@@ -671,6 +674,14 @@ header {
     height: 400px;
 }
 
+#partner .news-card.minor {
+    height: auto;
+    max-height: 550px;
+}
+
+#partner .news-card.minor .news-lower {
+    height: 250px;
+}
 .news-card.minor {
     width: 30%;
     margin-right: calc( 5% / 3);
@@ -745,7 +756,7 @@ header {
     position: relative;
     padding: 0 10px;
     width: 30%;
-    height: 350px;
+    height: 370px;
     margin-right: 5%;
 }
 
@@ -1154,7 +1165,6 @@ input[type="submit"] {
         float: none;
     }
 }
-
 
 /*
  * Content for credits
