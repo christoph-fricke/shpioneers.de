@@ -1,6 +1,6 @@
 <?php
 session_start();
-//if(!($_SESSION['login'] === True)) die();
+if(!($_SESSION['login'] === True)) die();
 define('PATH_TO_ROOT','../../');
 $list = json_decode(file_get_contents('../../content/achievments/list.json'));
 $tounamentde = json_decode(file_get_contents('../../content/achievments/'.$list[$_GET['index']].'/de-de.json'));
