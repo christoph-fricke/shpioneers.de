@@ -47,6 +47,15 @@ for($i = 1; $i < sizeof($active); $i++){
 <textarea name="cartext"><?php echo $tounamentde -> cartext ?></textarea>
 <div> Put in the trophies seperated by commas <input name="trophies" value="<?php printtrophies('de') ?>" type="text"></div>
 </div>
+<br>
+<div>
+<input name="title" value="<?php echo $tounamenten -> title ?>" type="text">
+<input name="name" value="<?php echo $tounamenten -> name ?>" type="text">
+<input name="location" value="<?php echo $tounamenten -> location ?>" type="text">
+<textarea name="text"><?php echo $tounamenten -> text ?></textarea>
+<input name="car" value="<?php echo $tounamenten -> car ?>" type="text">
+<textarea name="cartext"><?php echo $tounamenten -> cartext ?></textarea>
+<div> Put in the trophies seperated by commas <input name="trophies" value="<?php printtrophies('en') ?>" type="text"></div>
 </form>
 </body>
 </html>
