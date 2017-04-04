@@ -51,7 +51,7 @@ for($i = 1; $i < sizeof($active); $i++){
 <textarea name="detext"><?php echo $tounamentde -> text ?></textarea>
 <input name="decar" value="<?php echo $tounamentde -> car ?>" type="text">
 <textarea name="decartext"><?php echo $tounamentde -> cartext ?></textarea>
-<div> Put in the trophies seperated by commas <input name="trophies" value="<?php printtrophies('de') ?>" type="text"></div>
+<div> Put in the trophies seperated by commas <input name="detrophies" value="<?php printtrophies('de') ?>" type="text"></div>
 </div>
 <br>
 <div>
@@ -61,7 +61,7 @@ for($i = 1; $i < sizeof($active); $i++){
 <textarea name="entext"><?php echo $tounamenten -> text ?></textarea>
 <input name="encar" value="<?php echo $tounamenten -> car ?>" type="text">
 <textarea name="encartext"><?php echo $tounamenten -> cartext ?></textarea>
-<div> Put in the trophies seperated by commas <input name="trophies" value="<?php printtrophies('en') ?>" type="text"></div>
+<div> Put in the trophies seperated by commas <input name="entrophies" value="<?php printtrophies('en') ?>" type="text"></div>
 <input type="submit" name="submit">
 <input name="token" type="hidden" value="<?php echo $_SESSION['achievtoken'] ?>">
 <input name="index" type="hidden" value="<?php echo $_GET['index'] ?>">
