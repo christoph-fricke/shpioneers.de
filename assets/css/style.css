@@ -1002,7 +1002,7 @@ textarea:focus {
 
 textarea {
     width: 100%;
-    height: 105px;
+    min-height: 105px;
     resize: vertical;
     margin-top: 10px;
 }
