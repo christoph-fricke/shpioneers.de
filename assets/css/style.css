@@ -603,7 +603,7 @@ header {
     }
 }
 
-@media screen and (max-width:373px) {
+@media screen and (max-width:560px) {
     #news .top_left {
         float: left;
         top: 0px;
