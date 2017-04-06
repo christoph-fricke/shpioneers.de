@@ -1,6 +1,6 @@
 <?php 
 	include('login.php');
-	session_start();
+	// session_start(); this is not needed since the session already started in login.php. It only throws an error!
 	if($_SESSION['login'] === True){}
 	else {
 		die();
@@ -8,8 +8,41 @@
 ?>
 <!DOCTYPE>
 <html>
-<body>
-	
-	<a href="news/">News</a>
-</body>
+    <head>
+        <title>Pioneers | Webinterface</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/assets/icons/favicons/manifest.json">
+        <link rel="mask-icon" href="/assets/icons/favicons/safari-pinned-tab.svg" color="#EA5B10">
+        <link rel="shortcut icon" href="/assets/icons/favicons/favicon.ico">
+        <meta name="msapplication-config" content="/assets/icons/favicons/browserconfig.xml">
+
+        <meta name="Author" content="Pioneers" />
+        <meta name="Description" content="" />
+        <meta name="Keywords" content="" />
+
+        <meta name="theme-color" content="#EA5B10" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <link rel="stylesheet" href="../assets/css/webinterface/admin.css" />
+        <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+
+        <script type="text/javascript"> //It only functions in the head... I am not completly sure why but it does.
+            function iframeLoaded() {
+                var iFrameID = document.getElementById('iframe');
+                if(iFrameID) {
+                    iFrameID.style.height = "";
+                    iFrameID.style.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+                }   
+            }
+        </script> 
+    </head>
+    <body>
+        <a href="news/">News</a>
+        <iframe id="iframe" class="frame" src="team/" scrolling="no" onload="iframeLoaded()"><iframe>
+    </body>
 </html>
