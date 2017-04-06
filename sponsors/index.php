@@ -43,10 +43,10 @@ function printcard($data){
     <div class="news-content">
     '.$data -> text.'
     </div>
-    <a class="btn-small maximise" href="news.php?ind=0">
+    <a class="btn-small maximise" href="">
     '. BUTTON_NEWS.'
     </a>
-    <a class="btn-small minimise" href="news.php?ind=0">
+    <a class="btn-small minimise" href="">
     '. BUTTON_NEWS_MIN.'</a>
     </div>
 </div>'; } function setHtmlLang() { if ($_SESSION['lang']) { echo $_SESSION['lang']; } else { echo "de-de"; } } function gettitle(){ switch($_GET['type']){ case 'partner': echo SPONSOR_HEADER_PARTNER; break; case 'service': echo SPONSOR_HEADER_SPONSORS; break;
