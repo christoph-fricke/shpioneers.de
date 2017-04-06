@@ -57,7 +57,7 @@
                 <input type="text" class="input-item--admin" />
                 <input type="text" class="input-item--admin" />
                 <textarea class="input-item--admin input-item--textarea"></textarea>
-                <input type="submit" class="input-item--admin input-item--submit" value="Save" />
+                <input type="submit" class="input-item--admin input-item--submit" value="Add / Save" />
             </form>
         </div>
     </body>

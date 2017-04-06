@@ -23,11 +23,6 @@ function printmembers(){
 
     <body>
         <table class="table-itemList">
-            <tr>
-                <td class="td-name td-add">
-                    <a href="">Add new item</a>
-                </td>
-            </tr>
             <?php printmembers() ?>
         </table>
     </body>
