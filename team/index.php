@@ -39,10 +39,10 @@ function printcard($data){
     <div class="news-content">
     '.$data -> text.'
     </div>
-    <a class="btn-small maximise" href="news.php?ind=0">
+    <a class="btn-small maximise" href="">
     '. BUTTON_NEWS.'
     </a>
-    <a class="btn-small minimise" href="news.php?ind=0">
+    <a class="btn-small minimise" href="">
     '.BUTTON_NEWS_MIN.'
     </a>
     </div>
@@ -78,8 +78,8 @@ function setHtmlLang() {
     <meta name="msapplication-config" content="/assets/icons/favicons/browserconfig.xml">
 
     <meta name="Author" content="Pioneers" />
-    <meta name="Description" content="" />
-    <meta name="Keywords" content="" />
+    <meta name="Description" content="<?php echo DESCRIPTION ?>" />
+    <meta name="Keywords" content="<?php echo KEYWORDS ?>" />
 
     <meta name="theme-color" content="#EA5B10" />
     <meta name="format-detection" content="telephone=no" />
@@ -97,6 +97,13 @@ function setHtmlLang() {
           </div>
           <div class="sidebar dropdown-content">
             <div class="sidebar-option">
+              <div class="logo-container">
+                <a class="logo" href="../">
+                  <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
+                </a>
+              </div>
+            </div>
+            <div class="sidebar-option">
               <a href="?lang=de-de" class="navbar-option">
                 <?php echo GERMAN ?>
               </a>
@@ -110,9 +117,9 @@ function setHtmlLang() {
           <div class="grey"></div>
         </div>
         <div class="left">
-          <a class="logo" href="../">
-            <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
-          </a>
+          <div class="navbar-option navbar-title">
+            <span><?php echo HEADER_TEAM ?></span>
+          </div>
         </div>
       </div>
     </nav>
@@ -123,6 +130,11 @@ function setHtmlLang() {
           <a class="logo" href="../">
             <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
           </a>
+        </div>
+        <div class="left">
+          <div class="navbar-option navbar-title active">
+            <span><?php echo HEADER_TEAM ?></span>
+          </div>
         </div>
         <div class="right">
           <div class="navbar-option dropdown" href="">
@@ -141,20 +153,9 @@ function setHtmlLang() {
         <div id='magic-line' />
     </nav>
 
-    <header>
-      <section class="logo-header" id="home">
-
-      </section>
-      <a href="#team">
-        <div class="fab">
-          <i class="mdi mdi-arrow-down mdi-24px"></i>
-        </div>
-      </a>
-    </header>
-
+    <div class="spacer"></div>
     <main>
       <section id="team" class="news">
-        <h1><?php echo HEADER_TEAM ?></h1>
         <div class="row">
           <?php printteam() ?>
         </div>
@@ -220,7 +221,18 @@ function setHtmlLang() {
         <?php echo COPYRIGHT ?>
       </p>
     </footer>
+    <div class="clearfix"></div>
 
+    <div class="credits">
+      <a class="credits-content" href="http://christoph-fricke.de">
+        <svg class="credits-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+        </svg>
+        <span class="credits-span">&nbsp;by&nbsp;</span>
+        <span class="credits-span credits-span--bold">Christoph&nbsp;Fricke</span>
+      </a>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../assets/js/email_responsivnews.js"></script>

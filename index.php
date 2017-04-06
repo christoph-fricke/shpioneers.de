@@ -28,11 +28,12 @@ $tournament[] = getcontent(2);
         <meta name="msapplication-config" content="/assets/icons/favicons/browserconfig.xml">
 
         <meta name="Author" content="Pioneers" />
-        <meta name="Description" content="" />
-        <meta name="Keywords" content="" />
+        <meta name="Description" content="<?php echo DESCRIPTION ?>" />
+        <meta name="Keywords" content="<?php echo KEYWORDS ?>" />
 
         <meta name="theme-color" content="#EA5B10" />
         <meta name="format-detection" content="telephone=no" />
+
 
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
@@ -162,119 +163,104 @@ $tournament[] = getcontent(2);
                 <!--<a class="btn-small top_left" href="">
 <?php echo BUTTON_OLD_NEWS?>
 </a>-->
-                <div class="row">
-                    <div class="card news-card">
-                        <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[0] -> image) ?>);">
-                            <h4>
-                                <?php echo $news[0] -> title ?>
-                            </h4>
-                        </div>
-                        <div class="news-lower">
-                            <h5>
-                                <?php echo $news[0] -> subtitle ?>
-                            </h5>
-                            <p>
-                                <?php echo $news[0] -> preview ?>
-                            </p>
-                            <div class="news-date">
-                                <?php echo $news[0] -> date ?>
-                            </div>
-                            <div class="news-content">
-                                <?php echo $news[0] -> text ?>
-                            </div>
-                            <a class="btn-small maximise" href="news.php?ind=0">
-                                <?php echo BUTTON_NEWS ?>
-                            </a>
-                            <a class="btn-small minimise" href="news.php?ind=0">
-                                <?php echo BUTTON_NEWS_MIN ?>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card news-card">
-                        <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[1] -> image) ?>);">
-                            <h4>
-                                <?php echo $news[1] -> title ?>
-                            </h4>
-                        </div>
-                        <div class="news-lower">
-                            <h5>
-                                <?php echo $news[1] -> subtitle ?>
-                            </h5>
-                            <p>
-                                <?php echo $news[1] -> preview ?>
-                            </p>
-                            <div class="news-date">
-                                <?php echo $news[1] -> date ?>
-                            </div>
-                            <div class="news-content">
-                                <?php echo $news[1] -> text ?>
-                            </div>
-                            <a class="btn-small maximise" href="news.php?ind=1">
-                                <?php echo BUTTON_NEWS ?>
-                            </a>
-                            <a class="btn-small minimise" href="news.php?ind=0">
-                                <?php echo BUTTON_NEWS_MIN ?>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card news-card">
-                        <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[2] -> image) ?>);">
-                            <h4>
-                                <?php echo $news[2] -> title ?>
-                            </h4>
-                        </div>
-                        <div class="news-lower">
-                            <h5>
-                                <?php echo $news[2] -> subtitle ?>
-                            </h5>
-                            <p>
-                                <?php echo $news[2] -> preview ?>
-                            </p>
-                            <div class="news-date">
-                                <?php echo $news[2] -> date ?>
-                            </div>
-                            <div class="news-content">
-                                <?php echo $news[2] -> text ?>
-                            </div>
-                            <a class="btn-small maximise" href="news.php?ind=2">
-                                <?php echo BUTTON_NEWS ?>
-                            </a>
-                            <a class="btn-small minimise" href="news.php?ind=0">
-                                <?php echo BUTTON_NEWS_MIN ?>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card news-card">
-                        <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[3] -> image) ?>);">
-                            <h4>
-                                <?php echo $news[3] -> title ?>
-                            </h4>
-                        </div>
-                        <div class="news-lower">
-                            <h5>
-                                <?php echo $news[3] -> subtitle ?>
-                            </h5>
-                            <p>
-                                <?php echo $news[3] -> preview ?>
-                            </p>
-                            <div class="news-date">
-                                <?php echo $news[3] -> date ?>
-                            </div>
-                            <div class="news-content">
-                                <?php echo $news[3] -> text ?>
-                            </div>
-                            <a class="btn-small maximise" href="news.php?ind=3">
-                                <?php echo BUTTON_NEWS ?>
-                            </a>
-                            <a class="btn-small minimise" href="news.php?ind=0">
-                                <?php echo BUTTON_NEWS_MIN ?>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="clearfix"></div>
-        </main>
+              
+        <div class="row">
+          <div class="card news-card">
+            <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[0] -> image) ?>);">
+              <h4><?php echo $news[0] -> title ?></h4>
+            </div>
+            <div class="news-lower">
+              <h5><?php echo $news[0] -> subtitle ?></h5>
+              <p>
+                <?php echo $news[0] -> preview ?>
+              </p>
+              <div class="news-date">
+                <?php echo $news[0] -> date ?>
+              </div>
+              <div class="news-content">
+                <?php echo $news[0] -> text ?>
+              </div>
+              <a class="btn-small maximise" href="">
+                <?php echo BUTTON_NEWS ?>
+              </a>
+              <a class="btn-small minimise" href="">
+                <?php echo BUTTON_NEWS_MIN ?>
+              </a>
+            </div>
+          </div>
+          <div class="card news-card">
+            <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[1] -> image) ?>);">
+              <h4><?php echo $news[1] -> title ?></h4>
+            </div>
+            <div class="news-lower">
+              <h5><?php echo $news[1] -> subtitle ?></h5>
+              <p>
+                <?php echo $news[1] -> preview ?>
+              </p>
+              <div class="news-date">
+                <?php echo $news[1] -> date ?>
+              </div>
+              <div class="news-content">
+                <?php echo $news[1] -> text ?>
+              </div>
+              <a class="btn-small maximise" href="">
+                <?php echo BUTTON_NEWS ?>
+              </a>
+              <a class="btn-small minimise" href="">
+                <?php echo BUTTON_NEWS_MIN ?>
+              </a>
+            </div>
+          </div>
+          <div class="card news-card">
+            <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[2] -> image) ?>);">
+              <h4><?php echo $news[2] -> title ?></h4>
+            </div>
+            <div class="news-lower">
+              <h5><?php echo $news[2] -> subtitle ?></h5>
+              <p>
+                <?php echo $news[2] -> preview ?>
+              </p>
+              <div class="news-date">
+                <?php echo $news[2] -> date ?>
+              </div>
+              <div class="news-content">
+                <?php echo $news[2] -> text ?>
+              </div>
+              <a class="btn-small maximise" href="">
+                <?php echo BUTTON_NEWS ?>
+              </a>
+              <a class="btn-small minimise" href="">
+                <?php echo BUTTON_NEWS_MIN ?>
+              </a>
+            </div>
+          </div>
+          <div class="card news-card">
+            <div class="news-upper" style=" background-image: url(<?php echo htmlspecialchars($news[3] -> image) ?>);">
+              <h4><?php echo $news[3] -> title ?></h4>
+            </div>
+            <div class="news-lower">
+              <h5><?php echo $news[3] -> subtitle ?></h5>
+              <p>
+                <?php echo $news[3] -> preview ?>
+              </p>
+              <div class="news-date">
+                <?php echo $news[3] -> date ?>
+              </div>
+              <div class="news-content">
+                <?php echo $news[3] -> text ?>
+              </div>
+              <a class="btn-small maximise" href="">
+                <?php echo BUTTON_NEWS ?>
+              </a>
+              <a class="btn-small minimise" href="">
+                <?php echo BUTTON_NEWS_MIN ?>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+    </main>
 
         <section id="contest" class="contest">
             <main class="inner-contest">
@@ -481,15 +467,26 @@ $tournament[] = getcontent(2);
                     </div>
                 </div>
 
-            </main>
-            <p class="copyright">
-                <?php echo COPYRIGHT ?>
-            </p>
-        </footer>
+      </main>
+      <p class="copyright">
+        <?php echo COPYRIGHT ?>
+      </p>
+    </footer>
+    <div class="clearfix"></div>
+
+    <div class="credits">
+      <a class="credits-content" href="http://christoph-fricke.de">
+        <svg class="credits-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+        </svg>
+        <span class="credits-span">&nbsp;by&nbsp;</span>
+        <span class="credits-span credits-span--bold">Christoph&nbsp;Fricke</span>
+      </a>
+    </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="assets/js/functions.js"></script>
         <script src="assets/js/email_responsivnews.js"></script>
     </body>
-
-    </html>
+ </html>

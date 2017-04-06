@@ -5,7 +5,7 @@ $('section').on('reached', function() { // switching active element based on pos
     var headerobject = $('.desktop a[href=\\#' + id + ']');
     if (oldid != id && id !== undefined ) {
         removeactive();
-        headerobject.addClass('active');
+        headerobject.addClass('position');
         leftpos = headerobject.parent().position().left;
         width = headerobject.parent().width();
         $('#magic-line').stop(true, false).animate({ left: leftpos, width: width });
@@ -18,8 +18,8 @@ $('section').on('reached', function() { // switching active element based on pos
 });
 
 function removeactive() {
-    $('[class*=active]').each(function() {
-        $(this).removeClass('active');
+    $('[class*=position]').each(function() {
+        $(this).removeClass('position');
     });
 }
 

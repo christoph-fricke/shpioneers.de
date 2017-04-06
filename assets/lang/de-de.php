@@ -1,6 +1,8 @@
 <?php
 //Meta infos
 define('TITLE', 'Pioneers');
+define('DESCRIPTION', 'Wir nehmen als Team an den internationalen Wettbewerb "F1 in der Schule" teil.');
+define('KEYWORDS', 'F1 in der Schule, Pioneers');
 
 //Nav content
 define('NEWS', "Neues");
@@ -20,7 +22,7 @@ define('BUTTON_NEWS_MIN', 'Zurück');
 
 //Contest content
 define('HEADER_CONTEST', 'Der Wettbewerb');
-define('TEXT_CONTEST', 'Formel 1 in der Schule ist ein multidisziplinärer Technologiewettbewerb bei dem wir einen Miniatur-Rennwagen am Computer konstruiert und gefertigt haben. Entscheidend für das Ergebnis ist nicht nur die Fahrzeit des Rennwagens, sondern auch die Gesamt-leistung aus Konstruktion, Fertigung, Businessplan, Portfolio und Präsentation.');
+define('TEXT_CONTEST', 'Formel 1 in der Schule ist ein multidisziplinärer Technologiewettbewerb bei dem wir einen Miniatur-Rennwagen am Computer konstruiert und gefertigt haben. Entscheidend für das Ergebnis ist nicht nur die Fahrzeit des Rennwagens, sondern auch die Gesamtleistung aus Konstruktion, Fertigung, Businessplan, Portfolio und Präsentation.');
 define('BUTTON_CONTEST', 'Zur Wettbewerbsseite');
 
 //Sponsors content
@@ -40,7 +42,7 @@ define('BUTTON_SUCESS', 'Mehr erfahren');
 
 //Team content
 define('HEADER_TEAM', 'Unser Team');
-define('TEXT_TEAM', 'Moin, wir sind das Team Pioneers und nehmen in neuer Zusammensetzung nun das zweite Mal am Wettbewerb „Formel 1 in der Schule“ teil. Ziel ist es, ein eigenes, vielseitiges Projekt auf die Beine zu stellen und dabei möglichst viel zu lernen. Hierbei darf aber die Freude an der Arbeit nicht verloren gehen.<br> Durch unsere Erfahrung aus zwei Saison und der erfolgreichen Teilnahme an der Deutschen Meisterschaft mit einer 6. Platzierung haben wir eine gute Basis geschaffen, um in der kommenden Saison voll durch zu starten.<br> Wir haben in unserem Team durch individuelle Stärken und Interessengebiete für den multidisziplinären Wettbewerb eine gute Vorraussetzungen geschaffen und ergänzen uns in jeder Hinsicht optimal.');
+define('TEXT_TEAM', 'Moin, wir sind das Team Pioneers und nehmen in neuer Zusammensetzung nun das zweite Mal am Wettbewerb „Formel 1 in der Schule“ teil. Ziel ist es, ein eigenes, vielseitiges Projekt auf die Beine zu stellen und dabei möglichst viel zu lernen. Hierbei darf aber die Freude an der Arbeit nicht verloren gehen.<br> Durch unsere Erfahrung aus zwei Saisons und der erfolgreichen Teilnahme an der Deutschen Meisterschaft mit einer 6. Platzierung haben wir eine gute Basis geschaffen, um in der kommenden Saison voll durchzustarten.<br> Wir haben in unserem Team durch individuelle Stärken und Interessengebiete für den multidisziplinären Wettbewerb eine gute Vorraussetzungen geschaffen und ergänzen uns in jeder Hinsicht optimal.');
 define('BUTTON_TEAM', 'Zum Team');
 
 //Footer content
