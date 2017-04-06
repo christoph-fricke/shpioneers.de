@@ -48,6 +48,7 @@ $returnval  -> en -> img = new stdClass();
 $returnval -> en -> img -> value = $enmember -> img;
 $returnval -> en -> img -> type = $oneline;
 $returnval -> token = $_SESSION['teamtoken'];
+$returnval -> submit = 'team/submit.php';
 echo json_encode($returnval);
 ?>
 

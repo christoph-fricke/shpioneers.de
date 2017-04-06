@@ -10,11 +10,16 @@ $(".delete").click(function (e) {
 });
 
 $(".edit").click(function (e) {
-    $.ajax({
+    e.preventDefault();
+	$.ajax({
         url: "change.php",
         type: "GET",
         data: {
-            index: $(this).index(".delete")
-        }
+            index: $(this).index(".edit")
+        },
+	success: function(data,a,b){
+		var result = JSON.parse(data);
+		parent.getchanges(result);
+	}
     })
 });

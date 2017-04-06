@@ -127,6 +127,19 @@
                 <input type="submit" class="input-item--admin input-item--submit" value="Add / Save" />
             </form>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	function getchanges(changes){
+		printlanguage(changes.de);
+	}
+	function printlanguage(langspecific){
+		$.each(langspecific,
+		function(){
+		alert(this.type);
+		}
+		);
+	}
+	</script>
     </body>
 
 </html>
