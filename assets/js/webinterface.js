@@ -8,3 +8,9 @@ $(".delete").click(function (e) {
         }
     });
 });
+
+$(".edit").click(function(e) {
+    $.ajax({
+        url:fdgf
+    })
+});

@@ -9,7 +9,7 @@ function printmembers(){
 	$i = 0;
 	foreach($team as $mem){
 		// echo'<a href="change.php?index='.$i.'">'.$mem -> name .'</a>&nbsp<a href="remove.php?index='.$i++.'&token='.$_SESSION['teamtoken'].'">Remove</a><br>';
-        echo '<tr><td class="table__elem td-name">'. $mem -> name .'</td><td class="table__elem td-icon"><a href=""><i class="mdi mdi-pencil mdi-dark mdi-24px"></i></a></td><td class="table__elem td-icon"><a href=""><i class="mdi mdi-delete mdi-dark mdi-24px"></i></a></td></tr>';
+        echo '<tr><td class="table__elem td-name">'. $mem -> name .'</td><td class="table__elem td-icon"><a class="edit" href=""><i class="mdi mdi-pencil mdi-dark mdi-24px"></i></a></td><td class="table__elem td-icon"><a class="delete" href=""><i class="mdi mdi-delete mdi-dark mdi-24px"></i></a></td></tr>';
 	}
 }
 ?>
