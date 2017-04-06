@@ -44,10 +44,78 @@
     </head>
 
     <body>
-        <a href="achievments/" target="list">Achievments</a>
-        <a href="news/" target="list">News</a>
-        <a href="sponsors/" target="list">Sponsors</a>
-        <a href="team/" target="list">Team</a>
+
+        <nav class="mobile">
+            <div class="navbar-content">
+                <div class="left">
+                    <div class="navbar-option hamburger">
+                        <i class="mdi mdi-menu"></i>
+                    </div>
+                    <div class="sidebar dropdown-content">
+                        <div class="sidebar-option">
+                            <div class="logo-container">
+                                <a class="logo" href="../">
+                                    <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="achievments/" target="list" class="navbar-option">
+                                Achievments
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="news/" target="list" class="navbar-option">
+                                News
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="sponsors/" target="list" class="navbar-option">
+                                Sponsors
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="team/" target="list" class="navbar-option">
+                                Team
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grey"></div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="desktop">
+            <div class="navbar-content">
+                <div class="left">
+                    <a class="logo" href="../">
+                        <img class="logo logo-svg" src="../assets/icons/logo_text.svg" />
+                    </a>
+                </div>
+                <div class="left">
+                    <a class="navbar-option" href="achievments/" target="list">
+                        Achievments
+                    </a>
+                </div>
+                <div class="left">
+                    <a class="navbar-option" href="news/" target="list">
+                        News
+                    </a>
+                </div>
+                <div class="left">
+                    <a class="navbar-option" href="sponsors/" target="list">
+                        Sponsors
+                    </a>
+                </div>
+                <div class="left">
+                    <a class="navbar-option" href="team/" target="list">
+                        Team
+                    </a>
+                </div>
+            </div>
+            <div id='magic-line' />
+        </nav>
+        <div class="spacer"></div>
         <div class="container">
             <iframe id="iframe" class="frame" name="list" src="placeholder.html" scrolling="no" onload="iframeLoaded()">
             </iframe>
