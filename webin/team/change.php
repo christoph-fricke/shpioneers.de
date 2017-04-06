@@ -33,5 +33,6 @@ $returnval -> en -> text -> type = $multline;
 $returnval -> en -> img -> value = $enmember -> img;
 $returnval -> en -> img -> type = $oneline;
 $returnval -> token = $_SESSION['teamtoken'];
+echo json_encode($returnval);
 ?>
 
