@@ -33,6 +33,22 @@
             <input class="input-item input-item--submit" type="submit" value="Login"></input>
         </form>
         <a class="input-item input-item--submit input-item--button" href="../">Main Page</a>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	$('.input-item--submit').click(function(e){
+		e.preventDefault();
+		$.ajax({
+			url: 'login.php',
+			type: 'POST',
+			data: {user: $('[name="user"]').val(), password: $('[name="password"]').val()},
+			success: function(data,a,b){
+				if(data == 'suc'){
+					window.location.replace('admin.php');
+				}
+			}
+		});	
+	});
+	</script>
     </body>
 
 </html>

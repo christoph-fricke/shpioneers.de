@@ -10,9 +10,11 @@ function checkuser($name,$pass){
 session_start();
 if(checkuser($_POST['user'],$_POST['password'])){
 	$_SESSION['login'] = True;
+	echo 'suc';
 
 }
 else{
+	echo 'noc';
 	die();
 }
 

@@ -1,6 +1,5 @@
 <?php 
-	include('login.php');
-	// session_start(); this is not needed since the session already started in login.php. It only throws an error!
+	session_start(); 
 	if($_SESSION['login'] === True){}
 	else {
 		die();
