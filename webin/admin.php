@@ -50,7 +50,7 @@
         <a href="sponsors/" target="list">Sponsors</a>
         <a href="team/" target="list">Team</a>
         <div class="container">
-            <iframe id="iframe" class="frame" name="list" src="" scrolling="no" onload="iframeLoaded()">
+            <iframe id="iframe" class="frame" name="list" src="placeholder.html" scrolling="no" onload="iframeLoaded()">
             </iframe>
             <hr class="line--fullLength">
             <form class="input-container--admin" action="" method="POST">
