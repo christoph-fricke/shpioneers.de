@@ -1,17 +1,3 @@
-.page-container {
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: $color-background-light;
-}
-
 .input-container {
     display: flex;
     flex-direction: column;
@@ -49,6 +35,23 @@
     }
 }
 
+.input-item--textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
 .input-item--button {
     text-decoration: none;
+}
+
+// Stuff for admin page
+.input-container--admin {
+    @extend .input-container;
+    width: 100%;
+    align-items: center;
+}
+
+.input-item--admin {
+    @extend .input-item;
+    width: 100%;
 }

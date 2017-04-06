@@ -8,6 +8,7 @@
 ?>
 <!DOCTYPE>
 <html>
+
     <head>
         <title>Pioneers | Webinterface</title>
         <meta charset="UTF-8" />
@@ -31,18 +32,32 @@
         <link rel="stylesheet" href="../assets/css/webinterface/admin.css" />
         <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
 
-        <script type="text/javascript"> //It only functions in the head... I am not completly sure why but it does.
+        <script type="text/javascript">
+            //It only functions in the head... I am not completly sure why but it does.
             function iframeLoaded() {
                 var iFrameID = document.getElementById('iframe');
-                if(iFrameID) {
+                if (iFrameID) {
                     iFrameID.style.height = "";
                     iFrameID.style.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
-                }   
+                }
             }
-        </script> 
+        </script>
     </head>
+
     <body>
         <a href="news/">News</a>
-        <iframe id="iframe" class="frame" src="team/" scrolling="no" onload="iframeLoaded()"><iframe>
+        <div class="container">
+            <iframe id="iframe" class="frame" src="team/" scrolling="no" onload="iframeLoaded()">
+            </iframe>
+            <hr class="line--fullLength">
+            <form class="input-container--admin" action="" method="POST">
+                <label>Title</label>
+                <input type="text" class="input-item--admin" />
+                <input type="text" class="input-item--admin" />
+                <textarea class="input-item--admin input-item--textarea"></textarea>
+                <input type="submit" class="input-item--admin input-item--submit" value="Save" />
+            </form>
+        </div>
     </body>
+
 </html>

@@ -3,5 +3,9 @@
 @import '01-base/variables';
 @import '01-base/font';
 
+// Input components
+@import '02-components/input';
+@import '02-components/grid';
+
 // admin stuff
 @import '03-admin/iframe';
