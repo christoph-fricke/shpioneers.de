@@ -25,6 +25,13 @@ function printmembers(){
         <table class="table-itemList">
             <?php printmembers() ?>
         </table>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            // This has to stay in this file
+            var token = "<?php echo $_SESSION['teamtoken']; ?>";
+        </script>
+        <script src="../../assets/js/webinterface.js"></script>
     </body>
 
     </html>
