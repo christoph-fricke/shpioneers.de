@@ -9,8 +9,12 @@ $(".delete").click(function (e) {
     });
 });
 
-$(".edit").click(function(e) {
+$(".edit").click(function (e) {
     $.ajax({
-        url:fdgf
+        url: "change.php",
+        type: "GET",
+        data: {
+            index: $(this).index(".delete")
+        }
     })
 });
