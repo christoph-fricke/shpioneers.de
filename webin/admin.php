@@ -120,26 +120,11 @@
             <iframe id="iframe" class="frame" name="list" src="placeholder.html" scrolling="no" onload="iframeLoaded()">
             </iframe>
             <hr class="line--fullLength">
-            <form class="input-container--admin" action="" method="POST">
-                <input type="text" class="input-item--admin" />
-                <input type="text" class="input-item--admin" />
-                <textarea class="input-item--admin input-item--textarea"></textarea>
-                <input type="submit" class="input-item--admin input-item--submit" value="Add / Save" />
+            <form id="form" class="input-container--admin" action="" method="POST">
             </form>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script>
-	function getchanges(changes){
-		printlanguage(changes.de);
-	}
-	function printlanguage(langspecific){
-		$.each(langspecific,
-		function(){
-		alert(this.type);
-		}
-		);
-	}
-	</script>
+        <script src="../assets/js/admin.js"></script>
     </body>
 
 </html>
