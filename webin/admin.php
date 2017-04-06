@@ -30,7 +30,7 @@
         <meta name="format-detection" content="telephone=no" />
 
         <link rel="stylesheet" href="../assets/css/webinterface/admin.css" />
-        <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+        <link rel="stylesheet" href="../assets/css/materialdesignicons.min.css" />
 
         <script type="text/javascript">
             //It only functions in the head... I am not completly sure why but it does.
@@ -45,13 +45,15 @@
     </head>
 
     <body>
-        <a href="news/">News</a>
+        <a href="achievments/" target="list">Achievments</a>
+        <a href="news/" target="list">News</a>
+        <a href="sponsors/" target="list">Sponsors</a>
+        <a href="team/" target="list">Team</a>
         <div class="container">
-            <iframe id="iframe" class="frame" src="team/" scrolling="no" onload="iframeLoaded()">
+            <iframe id="iframe" class="frame" name="list" src="" scrolling="no" onload="iframeLoaded()">
             </iframe>
             <hr class="line--fullLength">
             <form class="input-container--admin" action="" method="POST">
-                <label>Title</label>
                 <input type="text" class="input-item--admin" />
                 <input type="text" class="input-item--admin" />
                 <textarea class="input-item--admin input-item--textarea"></textarea>

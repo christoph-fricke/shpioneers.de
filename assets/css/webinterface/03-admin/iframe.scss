@@ -3,3 +3,38 @@
     width: 100%;
     overflow: hidden;
 }
+
+.table-itemList {
+    width: 100%;
+    border-collapse: collapse;
+    &a {
+        text-decoration: none;
+    }
+}
+
+tr {
+    width: 100%;
+    border-bottom: 2px solid $text-dark-divider;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.table__elem {
+    padding: 10px;
+}
+
+.td-name {
+    width: 90%;
+    color: $text-dark-primary;
+}
+
+// .td-add {
+//     width: 100%;
+// }
+
+.td-icon {
+    text-align: center;
+    border-left: 2px solid $text-dark-divider;
+    width: 5%;
+}
