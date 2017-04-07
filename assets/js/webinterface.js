@@ -11,15 +11,16 @@ $(".delete").click(function (e) {
 
 $(".edit").click(function (e) {
     e.preventDefault();
+	 index = $(this).index(".edit");
 	$.ajax({
         url: "change.php",
         type: "GET",
         data: {
-            index: $(this).index(".edit")
+            index: index 
         },
 	success: function(data,a,b){
 		var result = JSON.parse(data);
-		parent.getchanges(result);
+		parent.getchanges(result,index);
 	}
     })
 });

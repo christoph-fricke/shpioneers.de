@@ -8,10 +8,11 @@ breakLine.setAttribute("class", "line--fullLength line--inputDevider");
 
 var token; 
 var submiturl;
+var glindex;
 
 var form = document.getElementById("form");
 
-function getchanges(changes) {
+function getchanges(changes,index) {
     while (form.firstChild) {
         form.removeChild(form.firstChild);
     }
@@ -21,6 +22,7 @@ function getchanges(changes) {
     form.appendChild(submitButton);
 	token = changes.token;
 	submiturl = changes.submit;
+	glindex = index;
 }
 
 function printlanguage(langspecific, lang) {
@@ -46,3 +48,15 @@ function printlanguage(langspecific, lang) {
         }
     );
 }
+// submit the changes
+$(form).submit(
+function(e){
+e.preventDefault();
+$.ajax({
+	url: submiturl,
+	type: 'POST',
+	data: $(form).serialize() + '&token=' + token + '&index=' + glindex
+});
+alert('confirmation');
+}
+);
