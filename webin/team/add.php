@@ -17,8 +17,10 @@ $enmem -> text = $_POST['entext'];
 $enmem -> img = $_POST['enimg'];
 array_insert($deteam,$demem);
 array_insert($enteam,$enmem);
-file_put_contents("../../content/team/team-de-de.json", json_encode($deteam));
-file_put_contents("../../content/team/team-en-en.json", json_encode($enteam));
+if(file_put_contents("../../content/team/team-de-de.json", json_encode($deteam))> 0 && file_put_contents("../../content/team/team-en-en.json", json_encode($enteam)) > 0) echo 'suc';
+else echo 'noc';
+
+
 
 function array_insert(&$array,$object){
 for($i = sizeof($array);$i > 0; $i-- ){

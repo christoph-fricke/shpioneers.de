@@ -11,7 +11,7 @@ $(".delete").click(function (e) {
 
 $(".edit").click(function (e) {
     e.preventDefault();
-	 index = $(this).index(".edit");
+	 index = $(this).index(".edit") - 1;
 	$.ajax({
         url: "change.php",
         type: "GET",

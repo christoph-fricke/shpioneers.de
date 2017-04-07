@@ -17,12 +17,13 @@ var submiturl;
 var glindex;
 
 var form = document.getElementById("form");
-
-function getchanges(changes, index) {
+function clearform(){
     while (form.firstChild) {
         form.removeChild(form.firstChild);
     }
-
+}
+function getchanges(changes, index) {
+	clearform();
     form.appendChild(editHeaderGerman);
     printlanguage(changes.de, "de");
     form.appendChild(breakLine);
@@ -88,7 +89,9 @@ $(form).submit(
                         $('.failure').removeClass('active');
                     }, 2000);
                 }
+		document.getElementById('iframe').contentWindow.location.reload();
             }
         });
+	if(glindex < 0) clearform();
     }
 );
