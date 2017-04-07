@@ -1,8 +1,26 @@
 <?php
 session_start();
 if(!($_SESSION['login'] === True)) die();
+if($_GET['index'] >= 0){
 $demember = json_decode(file_get_contents('../../content/team/team-de-de.json'))[$_GET['index']];
 $enmember = json_decode(file_get_contents('../../content/team/team-en-en.json'))[$_GET['index']];
+}
+else{
+$demember = new stdClass();
+$demember -> name = "";
+$demember -> job = "";
+$demember -> quote = "";
+$demember -> quotee = "";
+$demember -> text = "";
+$demember -> img = "";
+$enmember = new stdClass();
+$enmember -> name = "";
+$enmember -> job = "";
+$enmember -> quote = "";
+$enmember -> quotee = "";
+$enmember -> text = "";
+$enmember -> img = "";
+}
 $length = 32;
 $secure = true;
 $_SESSION['teamtoken'] = bin2hex(openssl_random_pseudo_bytes($length, $secure));
@@ -48,7 +66,12 @@ $returnval  -> en -> img = new stdClass();
 $returnval -> en -> img -> value = $enmember -> img;
 $returnval -> en -> img -> type = $oneline;
 $returnval -> token = $_SESSION['teamtoken'];
+if($_GET['index'] >= 0){
 $returnval -> submit = 'team/submit.php';
+}
+else{
+$returnval -> submit = 'team/add.php';
+}
 echo json_encode($returnval);
 ?>
 
