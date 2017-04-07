@@ -6,6 +6,9 @@ submitButton.setAttribute("value", "Save");
 var breakLine = document.createElement("hr");
 breakLine.setAttribute("class", "line--fullLength line--inputDevider");
 
+var token; 
+var submiturl;
+
 var form = document.getElementById("form");
 
 function getchanges(changes) {
@@ -16,6 +19,8 @@ function getchanges(changes) {
     form.appendChild(breakLine);
     printlanguage(changes.en, "en");
     form.appendChild(submitButton);
+	token = changes.token;
+	submiturl = changes.submit;
 }
 
 function printlanguage(langspecific, lang) {
