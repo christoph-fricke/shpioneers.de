@@ -21,6 +21,7 @@ function printnews(){
     <head>
         <link rel="stylesheet" href="../../assets/css/webinterface/admin.css" />
         <link rel="stylesheet" href="../../assets/css/materialdesignicons.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" />
     </head>
 
     <body>

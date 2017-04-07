@@ -30,6 +30,7 @@
 
         <link rel="stylesheet" href="../assets/css/webinterface/admin.css" />
         <link rel="stylesheet" href="../assets/css/materialdesignicons.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" />
 
         <script type="text/javascript">
             //It only functions in the head... I am not completly sure why but it does.
