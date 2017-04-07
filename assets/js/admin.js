@@ -55,8 +55,21 @@ e.preventDefault();
 $.ajax({
 	url: submiturl,
 	type: 'POST',
-	data: $(form).serialize() + '&token=' + token + '&index=' + glindex
+	data: $(form).serialize() + '&token=' + token + '&index=' + glindex,
+	success: function(data,a,b){
+	if(data == "suc"){
+		$('.success').addClass('active');
+		setTimeout(function(){
+		$('.success').removeClass('active');
+	}, 2000);
+	}
+	else{
+		$('.failure').addClass('active');
+		setTimeout(function(){
+		$('.failure').removeClass('active');
+	}, 2000);
+	}
+	}
 });
-alert('confirmation');
 }
 );

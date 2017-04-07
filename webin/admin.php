@@ -122,6 +122,8 @@
             <hr class="line--fullLength">
             <form id="form" class="input-container--admin" action="" method="POST">
             </form>
+	<div class="submit-success success">Success</div>
+	<div class="submit-success failure">Failure</div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="../assets/js/admin.js"></script>
