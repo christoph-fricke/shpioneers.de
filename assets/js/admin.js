@@ -1,10 +1,15 @@
 var submitButton = document.createElement("input");
 submitButton.setAttribute("type", "submit");
-submitButton.setAttribute("class", "input-item--admin input-item--submit");
+submitButton.setAttribute("class", "input-item--submit");
 submitButton.setAttribute("value", "Save");
 
 var breakLine = document.createElement("hr");
 breakLine.setAttribute("class", "line--fullLength line--inputDevider");
+
+var editHeaderGerman = document.createElement("h2");
+editHeaderGerman.setAttribute("class", "input__header");
+var editHeaderEnglish = document.createElement("h2");
+editHeaderEnglish.setAttribute("class", "input__header");
 
 var token;
 var submiturl;
@@ -16,8 +21,14 @@ function getchanges(changes, index) {
     while (form.firstChild) {
         form.removeChild(form.firstChild);
     }
+
+    editHeaderGerman.appendChild(document.createTextNode("Edit German"));
+    form.appendChild(editHeaderGerman);
     printlanguage(changes.de, "de");
     form.appendChild(breakLine);
+
+    editHeaderEnglish.appendChild(document.createTextNode("Edit English"));
+    form.appendChild(editHeaderEnglish);
     printlanguage(changes.en, "en");
     form.appendChild(submitButton);
     token = changes.token;
@@ -30,6 +41,7 @@ function printlanguage(langspecific, lang) {
         function (key, value) {
             var label = document.createElement("label");
             label.setAttribute("for", lang + key);
+            label.setAttribute("class", "input__label")
 
             switch (this.type) {
                 case "input":
@@ -39,7 +51,7 @@ function printlanguage(langspecific, lang) {
                     textSingle.setAttribute("value", this.value);
                     textSingle.setAttribute("name", lang + key);
 
-                    label.appendChild(document.createTextNode(key));
+                    label.appendChild(document.createTextNode(key + ":"));
                     form.appendChild(label); 
                     form.appendChild(textSingle);
                     break;
@@ -49,7 +61,7 @@ function printlanguage(langspecific, lang) {
                     textMulti.appendChild(document.createTextNode(this.value));
                     textMulti.setAttribute("name", lang + key);
 
-                    label.appendChild(document.createTextNode(key));
+                    label.appendChild(document.createTextNode(key + ":"));
                     form.appendChild(label); 
                     form.appendChild(textMulti);
                     break;
