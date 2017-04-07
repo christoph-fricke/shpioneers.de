@@ -39,8 +39,8 @@ function printlanguage(langspecific, lang) {
                     textSingle.setAttribute("value", this.value);
                     textSingle.setAttribute("name", lang + key);
 
-                    form.appendChild(label); //Not sure how to acces the innerhtml of this element yet... Still has to be done. The innerHtml would be the key.
-                    $("#form label").last().html = key; // If we ask for the last one we should always get the latest created. At least in theory... Does not work...
+                    label.appendChild(document.createTextNode(key));
+                    form.appendChild(label); 
                     form.appendChild(textSingle);
                     break;
                 case "textarea":
@@ -49,7 +49,8 @@ function printlanguage(langspecific, lang) {
                     textMulti.appendChild(document.createTextNode(this.value));
                     textMulti.setAttribute("name", lang + key);
 
-                    form.appendChild(label); //Not sure how to acces the innerhtml of this element yet... Still has to be done. The innerHtml would be the key.
+                    label.appendChild(document.createTextNode(key));
+                    form.appendChild(label); 
                     form.appendChild(textMulti);
                     break;
             }
