@@ -8,9 +8,10 @@ breakLine.setAttribute("class", "line--fullLength line--inputDevider");
 
 var editHeaderGerman = document.createElement("h2");
 editHeaderGerman.setAttribute("class", "input__header");
+editHeaderGerman.appendChild(document.createTextNode("Edit German"));
 var editHeaderEnglish = document.createElement("h2");
 editHeaderEnglish.setAttribute("class", "input__header");
-
+form.appendChild(editHeaderEnglish);
 var token;
 var submiturl;
 var glindex;
@@ -22,13 +23,11 @@ function getchanges(changes, index) {
         form.removeChild(form.firstChild);
     }
 
-    editHeaderGerman.appendChild(document.createTextNode("Edit German"));
     form.appendChild(editHeaderGerman);
     printlanguage(changes.de, "de");
     form.appendChild(breakLine);
 
     editHeaderEnglish.appendChild(document.createTextNode("Edit English"));
-    form.appendChild(editHeaderEnglish);
     printlanguage(changes.en, "en");
     form.appendChild(submitButton);
     token = changes.token;
