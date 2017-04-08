@@ -1,6 +1,6 @@
 var submitButton = document.createElement("input");
 submitButton.setAttribute("type", "submit");
-submitButton.setAttribute("class", "input-item--submit");
+submitButton.setAttribute("class", "input-item--submit input-item--edit");
 submitButton.setAttribute("value", "Save");
 
 var breakLine = document.createElement("hr");
@@ -11,24 +11,26 @@ editHeaderGerman.setAttribute("class", "input__header");
 editHeaderGerman.appendChild(document.createTextNode("Edit German"));
 var editHeaderEnglish = document.createElement("h2");
 editHeaderEnglish.setAttribute("class", "input__header");
-    editHeaderEnglish.appendChild(document.createTextNode("Edit English"));
+editHeaderEnglish.appendChild(document.createTextNode("Edit English"));
 var token;
 var submiturl;
 var glindex;
 
 var form = document.getElementById("form");
-function clearform(){
+
+function clearform() {
     while (form.firstChild) {
         form.removeChild(form.firstChild);
     }
 }
+
 function getchanges(changes, index) {
-	clearform();
+    clearform();
     form.appendChild(editHeaderGerman);
     printlanguage(changes.de, "de");
     form.appendChild(breakLine);
 
-form.appendChild(editHeaderEnglish);
+    form.appendChild(editHeaderEnglish);
     printlanguage(changes.en, "en");
     form.appendChild(submitButton);
     token = changes.token;
@@ -52,7 +54,7 @@ function printlanguage(langspecific, lang) {
                     textSingle.setAttribute("name", lang + key);
 
                     label.appendChild(document.createTextNode(key + ":"));
-                    form.appendChild(label); 
+                    form.appendChild(label);
                     form.appendChild(textSingle);
                     break;
                 case "textarea":
@@ -62,7 +64,7 @@ function printlanguage(langspecific, lang) {
                     textMulti.setAttribute("name", lang + key);
 
                     label.appendChild(document.createTextNode(key + ":"));
-                    form.appendChild(label); 
+                    form.appendChild(label);
                     form.appendChild(textMulti);
                     break;
             }
@@ -89,9 +91,9 @@ $(form).submit(
                         $('.failure').removeClass('active');
                     }, 2000);
                 }
-		document.getElementById('iframe').contentWindow.location.reload();
+                document.getElementById('iframe').contentWindow.location.reload();
             }
         });
-	if(glindex < 0) clearform();
+        if (glindex < 0) clearform();
     }
 );

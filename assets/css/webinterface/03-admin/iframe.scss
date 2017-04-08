@@ -23,16 +23,26 @@ tr {
 
 .table__elem {
     padding: 10px;
+    &--edit {
+        text-decoration: none;
+        color: $color-accent-500;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: $transition-200;
+        padding: 0 5px;
+        border-radius: 2px;
+        &:hover {
+            color: $color-accent-600;
+            background-color: rgba(0, 0, 0, 0.26);
+        }
+    }
 }
 
 .td-name {
     width: 90%;
     color: $text-dark-primary;
 }
-
-// .td-add {
-//     width: 100%;
-// }
 
 .td-icon {
     text-align: center;

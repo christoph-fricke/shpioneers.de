@@ -24,8 +24,12 @@ function printmembers(){
 
     <body>
         <table class="table-itemList">
-            	<tr> <a class="edit" href=""> Add </a> </tr>
-		<?php printmembers() ?>
+            <tr>
+                <td class="table__elem">
+                    <a class="edit table__elem--edit" href=""> Add new element</a>
+                </td>
+            </tr>
+            <?php printmembers() ?>
         </table>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
