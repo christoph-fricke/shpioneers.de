@@ -1,7 +1,7 @@
 <?php
 //Meta infos
 define('TITLE', 'Pioneers');
-define('DESCRIPTION', 'We are competitors in the international competetion "f1 in schools".');
+define('DESCRIPTION', 'We are competitors in the international competetion &quot f1 in schools &quot.');
 define('KEYWORDS', 'F1 in schools, Pioneers');
 
 //Nav content
@@ -54,12 +54,12 @@ define('MESSAGE_FORM', 'Message');
 define('BUTTON_FORM', 'Submit');
 define('EMAIL_SENT_SUC','Email sent');
 define('EMAIL_SENT_USUC','Email not sent');
-define('SUBHEADER_IMPRESSUM_0', "Location:");
-define("TEXT_IMPRESSUM_0", 'z. Hd. Pioneers<br>Gymnasium Kronshagen<br>Suchsdorfer Weg 35<br>24119 Kronshagen');
-define('SUBHEADER_IMPRESSUM_1', "Phonenumber:");
-define("TEXT_IMPRESSUM_1", '0157 - 57199016');
-define('SUBHEADER_IMPRESSUM_2', "E-Mail:");
-define("TEXT_IMPRESSUM_2", 'f1pioneers@gmx.de');
+define('SUBHEADER_IMPRESSUM_0', 'Location:');
+define('TEXT_IMPRESSUM_0', 'z. Hd. Pioneers<br>Gymnasium Kronshagen<br>Suchsdorfer Weg 35<br>24119 Kronshagen');
+define('SUBHEADER_IMPRESSUM_1', 'Phonenumber:');
+define('TEXT_IMPRESSUM_1', '0157 - 57199016');
+define('SUBHEADER_IMPRESSUM_2', 'E-Mail:');
+define('TEXT_IMPRESSUM_2', 'f1pioneers@gmx.de');
 define('BUTTON_SOCIAL_0', 'Facebook');
 define('BUTTON_SOCIAL_1', 'Twitter');
 define('BUTTON_SOCIAL_2', 'Instagram');
