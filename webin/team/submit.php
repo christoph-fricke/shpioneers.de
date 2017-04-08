@@ -25,8 +25,4 @@ echo 'suc';
 function checktoken(){
 return $_POST['token'] == $_SESSION['teamtoken'];
 }
-function moveElement(&$array, $a, $b) {
-    $out = array_splice($array, $a, 1);
-    array_splice($array, $b, 0, $out);
-}
 ?>

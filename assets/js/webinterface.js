@@ -24,3 +24,26 @@ $(".edit").click(function (e) {
 	}
     })
 });
+$('.change_order').click(function(e){
+if($(this).index('.up') != -1){
+	var movement = 1
+}
+else{
+	var movement = -1;
+}
+if(movement == 1){
+	var index2 = $(this).index('.up');
+}
+else{
+	var index2 = $(this).index('.down');
+}
+$.ajax({
+	url: 'move.php',
+	type: 'GET',
+	data: {
+		index: index2,
+		shift: movement,
+		token: token
+	}
+});
+});
