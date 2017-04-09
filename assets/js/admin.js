@@ -1,3 +1,6 @@
+document.addEventListener("touchstart", function() {}, true);
+
+
 var submitButton = document.createElement("input");
 submitButton.setAttribute("type", "submit");
 submitButton.setAttribute("class", "input-item--submit input-item--edit");
