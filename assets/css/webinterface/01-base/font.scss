@@ -5,6 +5,10 @@
     color: $text-dark-primary;
 }
 
+*::selection {
+    background-color: $color-accent-500;
+}
+
 .header-main {
     font-size: 3rem;
     color: $color-primary-500;
