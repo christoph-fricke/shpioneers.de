@@ -70,6 +70,20 @@ function printlanguage(langspecific, lang) {
                     form.appendChild(label);
                     form.appendChild(textMulti);
                     break;
+		case "number":
+		    var numberInput = document.createElement("input");
+                    numberInput.setAttribute("type", "number");
+                    numberInput.setAttribute("class", "input-item--admin");
+                    numberInput.setAttribute("value", this.value);
+                    numberInput.setAttribute("name", lang + key);
+			numberInput.setAttribute('max', 100);
+			numberInput.setAttribute('min',0);
+
+                    label.appendChild(document.createTextNode(key + ":"));
+                    form.appendChild(label);
+                    form.appendChild(numberInput);
+
+			break;
             }
         }
     );
