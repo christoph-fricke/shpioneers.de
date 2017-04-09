@@ -7,7 +7,9 @@
 *::selection {
     background-color: #00BFFC;
 }
-
+*::-moz-selection{
+	background-color: #00BFFC;
+}
 :root {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: 16px;
