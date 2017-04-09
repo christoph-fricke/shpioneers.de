@@ -2,37 +2,76 @@
 session_start();
 
 if(!($_SESSION['login'] === True)) die();
-$newsde = json_decode(file_get_contents('../../content/news/newsde-de.json'));
-$newsen = json_decode(file_get_contents('../../content/news/newsen-en.json'));
-
+if($_GET['index'] >= 0){
+$newsde = json_decode(file_get_contents('../../content/news/newsde-de.json'))[$_GET['index']];
+$newsen = json_decode(file_get_contents('../../content/news/newsen-en.json'))[$_GET['index']];
+}
+else{
+$newsde = new stdClass();
+$newsde -> title = "";
+$newsde -> image = "";
+$newsde -> date = "";
+$newsde -> preview = "";
+$newsde -> subtitle = "";
+$newsde -> text = "";
+$newsen = new stdClass();
+$newsen -> title = "";
+$newsen -> image = "";
+$newsen -> date = "";
+$newsen -> preview = "";
+$newsen -> subtitle = "";
+$newsen -> text = "";
+}
 $length = 32;
 $secure = true;
 $_SESSION['newstoken']= bin2hex(openssl_random_pseudo_bytes($length, $secure));
+$oneline = "input";
+$multline = "textarea";
+$returnval = new stdClass();
+$returnval -> de = new stdClass();
+$returnval -> de -> title = new stdClass();
+$returnval -> de -> title -> value = $newsde -> title;
+$returnval -> de -> title -> type = $oneline;
+$returnval -> de -> image = new stdClass();
+$returnval -> de -> image -> value = $newsde -> image;
+$returnval -> de -> image -> type = $oneline;
+$returnval -> de -> date = new stdClass();
+$returnval -> de -> date -> value = $newsde -> date;
+$returnval -> de -> date -> type = $oneline;
+$returnval -> de -> preview = new stdClass();
+$returnval -> de -> preview -> value = $newsde -> preview;
+$returnval -> de -> preview -> type = $multline;
+$returnval -> de -> subtitle = new stdClass();
+$returnval -> de -> subtitle -> value = $newsde -> subtitle;
+$returnval -> de -> subtitle -> type = $multline;
+$returnval -> de -> text = new stdClass();
+$returnval -> de -> text -> value = $newsde -> text;
+$returnval -> de -> text -> type = $multline;
+$returnval -> en = new stdClass();
+$returnval -> en -> title = new stdClass();
+$returnval -> en -> title -> value = $newsen -> title;
+$returnval -> en -> title -> type = $oneline;
+$returnval -> en -> image = new stdClass();
+$returnval -> en -> image -> value = $newsen -> image;
+$returnval -> en -> image -> type = $oneline;
+$returnval -> en -> date = new stdClass();
+$returnval -> en -> date -> value = $newsen -> date;
+$returnval -> en -> date -> type = $oneline;
+$returnval -> en -> preview = new stdClass();
+$returnval -> en -> preview -> value = $newsen -> preview;
+$returnval -> en -> preview -> type = $multline;
+$returnval -> en -> subtitle = new stdClass();
+$returnval -> en -> subtitle -> value = $newsen -> subtitle;
+$returnval -> en -> subtitle -> type = $multline;
+$returnval -> en -> text = new stdClass();
+$returnval -> en -> text -> value = $newsen -> text;
+$returnval -> en -> text -> type = $multline;
+$returnval -> token = $_SESSION['newstoken'];
+if($_GET['index'] >= 0){
+$returnval -> submit = 'news/submit.php';
+}
+else{
+$returnval -> submit = 'news/add.php';
+}
+echo json_encode($returnval);
 ?>
-<!DOCTYPE>
-<html>
-<body>
-<form action="submit.php" method="POST">
-
-	<input name="image" type="text" value="<?php echo $newsde[$_GET['index']] -> image ?>"></input>	
-	<input name="date" type="text" value="<?php echo $newsde[$_GET['index']] -> date?>"></input>	
-<br>
-	<input name="detitle" type="text" value="<?php echo $newsde[$_GET['index']] -> title?>"></input>	
-	<input name="desubtitle" type="text" value="<?php echo $newsde[$_GET['index']] -> subtitle?>"></input>	
-	<input name="depreview" type="text" value="<?php echo $newsde[$_GET['index']] -> preview?>"></input>	
-	<textarea name="detext"  value=""><?php echo $newsde[$_GET['index']] -> text?></textarea>	
-<br>
-	<input name="entitle" type="text" value="<?php echo $newsen[$_GET['index']] -> title?>"></input>	
-	<input name="ensubtitle" type="text" value="<?php echo $newsen[$_GET['index']] -> subtitle?>"></input>	
-	<input name="enpreview" type="text" value="<?php echo $newsen[$_GET['index']] -> preview?>"></input>	
-	<textarea name="entext"  value=""><?php echo $newsen[$_GET['index']] -> text?></textarea>	
-	<input type="hidden" name="index"value="<?php echo $_GET['index'] ?>"/>
-	<input type="hidden" name="token" value="<?php echo $_SESSION['newstoken'] ?>"/>
-<br>
-	<input name="indexto" min="0" max="<?php echo sizeof($newsde) -1 ?>" type="number" value="<?php echo $_GET['index'] ?>">
-<br> 
-	<input type="submit" name="submit"/>
-
-</form>
-</body>
-</html>

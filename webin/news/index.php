@@ -10,7 +10,7 @@ function printnews(){
 	$_SESSION['newstoken']= bin2hex(openssl_random_pseudo_bytes($length, $secure));
 	foreach($news as $new){
 	// echo '<a href="newsedit.php?index='.$i.'">'.$new -> title .'</a>&nbsp;<a href="removenews.php?index='.$i++.'&token='.$_SESSION['newstoken'].'">Remove</a><br>';
-    echo '<tr><td class="table__elem td-name">'. $new -> title .'</td><td class="table__elem td-icon"><a class="edit" href=""><i class="mdi mdi-pencil mdi-dark mdi-24px"></i></a></td><td class="table__elem td-icon"><a class="delete" href=""><i class="mdi mdi-delete mdi-dark mdi-24px"></i></a></td></tr>';
+    echo '<tr><td class="table__elem td-name">'. $new -> title .'</td><td class="table__elem td-icon"><a class="change_order up" href=""><i class="mdi mdi-chevron-up mdi-dark mdi-24px"></i></a></td><td class="table__elem td-icon"><a class="change_order down" href=""><i class="mdi mdi-chevron-down mdi-dark mdi-24px"></i></a></td><td class="table__elem td-icon"><a class="edit" href=""><i class="mdi mdi-pencil mdi-dark mdi-24px"></i></a></td><td class="table__elem td-icon"><a class="delete" href=""><i class="mdi mdi-delete mdi-dark mdi-24px"></i></a></td></tr>';
 	}
 }
 
@@ -26,6 +26,11 @@ function printnews(){
 
     <body>
         <table class="table-itemList">
+            <tr>
+                <td class="table__elem">
+                    <a class="edit table__elem--edit" href=""> Add new element</a>
+                </td>
+            </tr>
             <?php printnews() ?>
         </table>
 
