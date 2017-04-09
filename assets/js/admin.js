@@ -97,6 +97,6 @@ $(form).submit(
                 document.getElementById('iframe').contentWindow.location.reload();
             }
         });
-        if (glindex < 0) clearform();
+	clearform();
     }
 );
