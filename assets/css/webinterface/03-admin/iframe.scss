@@ -15,7 +15,7 @@
 
 tr {
     width: 100%;
-    border-bottom: 2px solid $text-dark-divider;
+    border-bottom: 2px solid $color-background-gray;
     &:last-child {
         border-bottom: none;
     }
@@ -46,6 +46,6 @@ tr {
 
 .td-icon {
     text-align: center;
-    border-left: 2px solid $text-dark-divider;
+    border-left: 2px solid $color-background-gray;
     width: 5%;
 }
