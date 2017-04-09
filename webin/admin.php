@@ -61,22 +61,22 @@
                             </div>
                         </div>
                         <div class="sidebar-option">
-                            <a href="achievments/" target="list" class="navbar-option">
+                            <a href="achievments/" onclick="clearform();" target="list" class="navbar-option">
                                 Achievments
                             </a>
                         </div>
                         <div class="sidebar-option">
-                            <a href="news/" target="list" class="navbar-option">
+                            <a href="news/" onclick="clearform();"target="list" class="navbar-option">
                                 News
                             </a>
                         </div>
                         <div class="sidebar-option">
-                            <a href="sponsors/" target="list" class="navbar-option">
+                            <a href="sponsors/" onclick="clearform();"target="list" class="navbar-option">
                                 Sponsors
                             </a>
                         </div>
                         <div class="sidebar-option">
-                            <a href="team/" target="list" class="navbar-option">
+                            <a href="team/" onclick="clearform();"target="list" class="navbar-option">
                                 Team
                             </a>
                         </div>
@@ -94,22 +94,22 @@
                     </a>
                 </div>
                 <div class="left">
-                    <a class="navbar-option" href="achievments/" target="list">
+                    <a class="navbar-option" href="achievments/" onclick="clearform();"target="list">
                         Achievments
                     </a>
                 </div>
                 <div class="left">
-                    <a class="navbar-option" href="news/" target="list">
+                    <a class="navbar-option" href="news/" onclick="clearform();"target="list">
                         News
                     </a>
                 </div>
                 <div class="left">
-                    <a class="navbar-option" href="sponsors/" target="list">
+                    <a class="navbar-option" href="sponsors/" onclick="clearform();"target="list">
                         Sponsors
                     </a>
                 </div>
                 <div class="left">
-                    <a class="navbar-option" href="team/" target="list">
+                    <a class="navbar-option" href="team/" onclick="clearform();"target="list">
                         Team
                     </a>
                 </div>
