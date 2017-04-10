@@ -8,6 +8,8 @@ submitButton.setAttribute("value", "Save");
 
 var breakLine = document.createElement("hr");
 breakLine.setAttribute("class", "line--fullLength line--inputDevider");
+var breakLine2 = document.createElement("hr");
+breakLine2.setAttribute("class", "line--fullLength line--inputDevider");
 
 var editHeaderGerman = document.createElement("h2");
 editHeaderGerman.setAttribute("class", "input__header");
@@ -30,9 +32,10 @@ function clearform() {
 function getchanges(changes, index) {
     clearform();
 	printlanguage(changes.meta, 'meta')
+	form.appendChild(breakLine);
     form.appendChild(editHeaderGerman);
     printlanguage(changes.de, "de");
-    form.appendChild(breakLine);
+    form.appendChild(breakLine2);
 
     form.appendChild(editHeaderEnglish);
     printlanguage(changes.en, "en");
