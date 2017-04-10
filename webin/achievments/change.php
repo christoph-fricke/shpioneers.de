@@ -82,29 +82,29 @@ $returnval -> en -> cartext -> type = $multline;
 $returnval -> en -> trophies = new stdClass();
 $returnval -> en -> trophies -> value = trophies($tounamenten);
 $returnval -> en -> trophies -> type = $oneline;
-// i will add the percentages in the english part so the show up at the bottom of the page
-// i know it is not the most beautifull solution but it cuts back on the work requiered
+
+$returnval -> meta = new stdClass();
 $i = 0;
 foreach($percentagesnames as $nameob){
-$name = $nameob -> name;
-$returnval -> en -> $name = new stdClass();
-$returnval -> en -> $name -> value = ($percentages -> percentage)[$i] -> value;
-$returnval -> en -> $name -> type = "number";
-$i++;
+	$name = $nameob -> name;
+	$returnval -> meta -> $name = new stdClass();
+	$returnval -> meta -> $name -> value = ($percentages -> percentage)[$i] -> value;
+	$returnval -> meta -> $name -> type = "number";
+	$i++;
 }
-$returnval -> en -> place = new stdClass();
-$returnval -> en -> place -> value = $percentages -> place;
-$returnval -> en -> place -> type = $oneline;
-$returnval -> en -> img = new stdClass();
-$returnval -> en -> img -> value = $percentages -> img;
-$returnval -> en -> img -> type = $oneline;
+$returnval -> meta -> place = new stdClass();
+$returnval -> meta -> place -> value = $percentages -> place;
+$returnval -> meta -> place -> type = $oneline;
+$returnval -> meta -> img = new stdClass();
+$returnval -> meta -> img -> value = $percentages -> img;
+$returnval -> meta -> img -> type = $oneline;
 //
 $returnval -> token = $_SESSION['achievtoken'];
 if($_GET['index'] >= 0){
 	$returnval -> submit = 'achievments/submit.php';
 }
 else{
-$returnval -> submit = 'achievments/add.php';
+	$returnval -> submit = 'achievments/add.php';
 }
 echo json_encode($returnval);
 function trophies($file){

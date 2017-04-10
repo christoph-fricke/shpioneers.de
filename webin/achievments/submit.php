@@ -36,14 +36,14 @@ $newElement -> name = $trophie;
 $array[] = $newElement;
 }
 $tounamenten -> trophies = $array;
-$percentages -> place = $_POST['enplace']; //en because it is in the english section
-$percentages -> img = $_POST['enimg'];
+$percentages -> place = $_POST['metaplace']; 
+$percentages -> img = $_POST['metaimg'];
 $i = 0;
 $percent = array();
 foreach($percentagesnames as $nameob){
 $name = $nameob -> name;
 $newElement = new stdClass();
-$newElement -> value= $_POST['en'. str_replace(" ", "_" ,$name)];
+$newElement -> value= $_POST['meta'. str_replace(" ", "_" ,$name)];
 $percent[] = $newElement;
 }
 $percentages -> percentage = $percent;

@@ -29,6 +29,7 @@ function clearform() {
 
 function getchanges(changes, index) {
     clearform();
+	printlanguage(changes.meta, 'meta')
     form.appendChild(editHeaderGerman);
     printlanguage(changes.de, "de");
     form.appendChild(breakLine);

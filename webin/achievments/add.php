@@ -40,14 +40,14 @@ $array[] = $newElement;
 }
 $newAchieven -> trophies = $array;
 $newdata = new stdClass();
-$newdata -> place = $_POST['enplace']; //en because it is in the english section
-$newdata -> img = $_POST['enimg'];
+$newdata -> place = $_POST['metaplace'];
+$newdata -> img = $_POST['metaimg'];
 $i = 0;
 $percent = array();
 foreach($percentagesnames as $nameob){
 $name = $nameob -> name;
 $newElement = new stdClass();
-$newElement -> value= $_POST['en'. str_replace(" ", "_" ,$name)];
+$newElement -> value= $_POST['meta'. str_replace(" ", "_" ,$name)];
 $percent[] = $newElement;
 }
 $newdata -> percentage = $percent;
