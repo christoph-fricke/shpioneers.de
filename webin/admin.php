@@ -66,17 +66,27 @@
                             </a>
                         </div>
                         <div class="sidebar-option">
-                            <a href="news/" onclick="clearform();"target="list" class="navbar-option">
+                            <a href="news/" onclick="clearform();" target="list" class="navbar-option">
                                 News
                             </a>
                         </div>
                         <div class="sidebar-option">
-                            <a href="sponsors/" onclick="clearform();"target="list" class="navbar-option">
-                                Sponsors
+                            <a href="sponsors/partner" onclick="clearform();" target="list" class="navbar-option">
+                                Partner
                             </a>
                         </div>
                         <div class="sidebar-option">
-                            <a href="team/" onclick="clearform();"target="list" class="navbar-option">
+                            <a href="sponsors/service" onclick="clearform();" target="list" class="navbar-option">
+                                Service
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="sponsors/finance" onclick="clearform();" target="list" class="navbar-option">
+                                Finance
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="team/" onclick="clearform();" target="list" class="navbar-option">
                                 Team
                             </a>
                         </div>
@@ -94,22 +104,32 @@
                     </a>
                 </div>
                 <div class="left">
-                    <a class="navbar-option" href="achievments/" onclick="clearform();"target="list">
+                    <a class="navbar-option" href="achievments/" onclick="clearform();" target="list">
                         Achievments
                     </a>
                 </div>
                 <div class="left">
-                    <a class="navbar-option" href="news/" onclick="clearform();"target="list">
+                    <a class="navbar-option" href="news/" onclick="clearform();" target="list">
                         News
                     </a>
                 </div>
                 <div class="left">
-                    <a class="navbar-option" href="sponsors/" onclick="clearform();"target="list">
-                        Sponsors
-                    </a>
+                        <a href="sponsors/partner" onclick="clearform();" target="list" class="navbar-option">
+                                Partner
+                        </a>
                 </div>
                 <div class="left">
-                    <a class="navbar-option" href="team/" onclick="clearform();"target="list">
+                        <a href="sponsors/service" onclick="clearform();" target="list" class="navbar-option">
+                                Service
+                        </a>
+                </div>
+                <div class="left">
+                        <a href="sponsors/finance" onclick="clearform();" target="list" class="navbar-option">
+                                Finance
+                        </a>
+                </div>
+                <div class="left">
+                    <a class="navbar-option" href="team/" onclick="clearform();" target="list">
                         Team
                     </a>
                 </div>
@@ -123,8 +143,8 @@
             <hr class="line--fullLength">
             <form id="form" class="input-container--admin" action="" method="POST">
             </form>
-	        <div class="submit-success success">Success</div>
-        	<div class="submit-success failure">Failure</div>
+            <div class="submit-success success">Success</div>
+            <div class="submit-success failure">Failure</div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="../assets/js/admin.js"></script>
