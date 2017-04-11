@@ -9,15 +9,37 @@ function printsponsors(){
 $sponsors = json_decode(file_get_contents("../../content/sponsors/". $_GET['type'] ."-de-de.json"));
 $i = 0;
 foreach($sponsors as $sponsor){
-	echo '<a href="change.php?type='.$_GET['type'].'&index='.$i.'">'.$sponsor -> name.'</a>&nbsp<a href="remove.php?type='.$_GET['type'].'&index='.$i++.'&token='.$_SESSION['sponsortoken'].'">Remove</a><br>';
+	// echo '<a href="change.php?type='.$_GET['type'].'&index='.$i.'">'.$sponsor -> name.'</a>&nbsp<a href="remove.php?type='.$_GET['type'].'&index='.$i++.'&token='.$_SESSION['sponsortoken'].'">Remove</a><br>';
+    echo '<tr><td class="table__elem td-name">'. $sponsor -> name .'</td><td class="table__elem td-icon"><a class="change_order up" href=""><i class="mdi mdi-chevron-up mdi-dark mdi-24px"></i></a></td><td class="table__elem td-icon"><a class="change_order down" href=""><i class="mdi mdi-chevron-down mdi-dark mdi-24px"></i></a></td><td class="table__elem td-icon"><a class="edit" href=""><i class="mdi mdi-pencil mdi-dark mdi-24px"></i></a></td><td class="table__elem td-icon"><a class="delete" href=""><i class="mdi mdi-delete mdi-dark mdi-24px"></i></a></td></tr>';
 }
 }
 ?>
 
 <!DOCTYPE>
 <html>
-<body>
-<a href="change.php?type=<?php echo $_GET['type'] ?>&index=-1">Add Sponsor</a><br>
-<?php printsponsors() ?>
-</body>
+
+    <head>
+        <link rel="stylesheet" href="../../assets/css/webinterface/admin.css" />
+        <link rel="stylesheet" href="../../assets/css/materialdesignicons.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" />
+    </head>
+
+    <body>
+        <table class="table-itemList">
+            <tr>
+                <td class="table__elem">
+                    <a class="edit table__elem--edit" href=""> Add new element</a>
+                </td>
+            </tr>
+            <?php printsponsors() ?>
+        </table>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            // This has to stay in this file
+            var token = "<?php echo $_SESSION['sponsortoken']; ?>";
+        </script>
+        <script src="../../assets/js/webinterface.js"></script>
+    </body>
+
 </html>

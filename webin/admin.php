@@ -71,17 +71,17 @@
                             </a>
                         </div>
                         <div class="sidebar-option">
-                            <a href="sponsors/partner" onclick="clearform();" target="list" class="navbar-option">
+                            <a href="sponsors/sponsorlist.php?type=partner" onclick="clearform();" target="list" class="navbar-option">
                                 Partner
                             </a>
                         </div>
                         <div class="sidebar-option">
-                            <a href="sponsors/service" onclick="clearform();" target="list" class="navbar-option">
+                            <a href="sponsors/sponsorlist.php?type=service" onclick="clearform();" target="list" class="navbar-option">
                                 Service
                             </a>
                         </div>
                         <div class="sidebar-option">
-                            <a href="sponsors/finance" onclick="clearform();" target="list" class="navbar-option">
+                            <a href="sponsors/sponsorlist.php?type=finance" onclick="clearform();" target="list" class="navbar-option">
                                 Finance
                             </a>
                         </div>
@@ -114,17 +114,17 @@
                     </a>
                 </div>
                 <div class="left">
-                        <a href="sponsors/partner" onclick="clearform();" target="list" class="navbar-option">
+                        <a href="sponsors/sponsorlist.php?type=partner" onclick="clearform();" target="list" class="navbar-option">
                                 Partner
                         </a>
                 </div>
                 <div class="left">
-                        <a href="sponsors/service" onclick="clearform();" target="list" class="navbar-option">
+                        <a href="sponsors/sponsorlist.php?type=service" onclick="clearform();" target="list" class="navbar-option">
                                 Service
                         </a>
                 </div>
                 <div class="left">
-                        <a href="sponsors/finance" onclick="clearform();" target="list" class="navbar-option">
+                        <a href="sponsors/sponsorlist.php?type=finance" onclick="clearform();" target="list" class="navbar-option">
                                 Finance
                         </a>
                 </div>
@@ -136,6 +136,7 @@
             </div>
             <div id='magic-line' />
         </nav>
+        
         <div class="spacer"></div>
         <div class="container">
             <iframe id="iframe" class="frame" name="list" src="placeholder.html" scrolling="no" onload="iframeLoaded()">
