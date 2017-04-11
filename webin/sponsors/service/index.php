@@ -5,7 +5,7 @@ function printsponsors(){
 	$length = 32;
 	$secure = true;
 	$_SESSION['sponsortoken'] = bin2hex(openssl_random_pseudo_bytes($length, $secure));
-	$sponsors = json_decode(file_get_contents("../../../content/sponsors/partner-de-de.json"));
+	$sponsors = json_decode(file_get_contents("../../../content/sponsors/service-de-de.json"));
 	$i = 0;
 	foreach($sponsors as $sponsor){
 		// echo'<a href="change.php?index='.$i.'">'.$mem -> name .'</a>&nbsp<a href="remove.php?index='.$i++.'&token='.$_SESSION['teamtoken'].'">Remove</a><br>';

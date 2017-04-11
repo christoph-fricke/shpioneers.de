@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(!($_SESSION['login'] === True)||$_POST['token'] != $_SESSION['teamtoken']){
+	echo 'noc';
+ die();
+}
 $deteam = json_decode(file_get_contents("../../content/team/team-de-de.json"));
 $enteam = json_decode(file_get_contents("../../content/team/team-en-en.json"));
 $demem = new stdClass();

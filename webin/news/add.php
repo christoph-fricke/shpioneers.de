@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(!($_SESSION['login'] === True)||$_POST['token'] != $_SESSION['newstoken']){
+	echo 'noc';
+ die();
+}
 $allnewsde = json_decode(file_get_contents('../../content/news/newsde-de.json'));
 $allnewsen = json_decode(file_get_contents('../../content/news/newsen-en.json'));
 $newsde = new stdClass();
