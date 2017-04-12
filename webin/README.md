@@ -1,8 +1,8 @@
 # Adding a new user
 ---
 1. generating new Password with the newPass.php
-  * use the pass index of the get variable in the php to send your password
-  * do this through a secure connection
+   * use the pass index of the get variable in the php to send your password
+   * do this through a secure connection
 2. add a new user in the [users.json](users.json) 
 3. Profit 
 ---
