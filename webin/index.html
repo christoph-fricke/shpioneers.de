@@ -28,28 +28,39 @@
 
     <body class="page-container">
         <h1 class="header-main">Login into Pioneers Backend</h1>
-        <form class="input-container" action="login.php" method="POST">
-            <input class="input-item" name="user" type="text" placeholder="Name"></input>
-            <input class="input-item" name="password" type="password" placeholder="Password"></input>
+        <form class="input-container" action="" method="POST">
+            <input class="input-item" name="user" type="text" placeholder="Name" required></input>
+            <input class="input-item" name="password" type="password" placeholder="Password" required></input>
             <input class="input-item input-item--submit" type="submit" value="Login"></input>
         </form>
         <a class="input-item input-item--submit input-item--button" href="../">Main Page</a>
+        <div class="submit-success failure">Wrong username or password</div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script>
-	$('.input-item--submit').click(function(e){
-		e.preventDefault();
-		$.ajax({
-			url: 'login.php',
-			type: 'POST',
-			data: {user: $('[name="user"]').val(), password: $('[name="password"]').val()},
-			success: function(data,a,b){
-				if(data == 'suc'){
-					window.location.replace('admin.php');
-				}
-			}
-		});	
-	});
-	</script>
+        <script>
+            $('.input-container').submit(function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: 'login.php',
+                    type: 'POST',
+                    data: {
+                        user: $('[name="user"]').val(),
+                        password: $('[name="password"]').val()
+                    },
+                    success: function (data, a, b) {
+                        if (data == 'suc') {
+                            window.location.replace('admin.php');
+                        }
+                        else{
+                            $('.failure').addClass('active');
+                            setTimeout(function () {
+                                $('.failure').removeClass('active');
+                            }, 2000);
+                        }
+                    }
+                });
+            });
+        </script>
     </body>
 
 </html>

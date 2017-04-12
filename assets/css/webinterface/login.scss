@@ -5,9 +5,10 @@
 
 // Loginpage
 @import '02-components/input';
+@import '03-admin/submit-confirm.scss';
 
 .page-container {
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
