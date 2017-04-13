@@ -416,7 +416,7 @@ nav {
 
 header {
     position: relative;
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     margin-bottom: 60px;
     background-image: url("../img/header1.jpg");
     background-size: cover;
