@@ -7,9 +7,11 @@
 *::selection {
     background-color: #00BFFC;
 }
-*::-moz-selection{
-	background-color: #00BFFC;
+
+*::-moz-selection {
+    background-color: #00BFFC;
 }
+
 :root {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: 16px;
@@ -276,6 +278,7 @@ nav {
     color: rgba(255, 255, 255, 1);
     border-bottom: 0.1em solid rgba(255, 255, 255, 1);
 }
+
 .navbar-option.position {
     color: rgba(255, 255, 255, 1);
 }
@@ -549,7 +552,7 @@ header {
 
 /* TEAM SUBPAGE */
 
-#team .news-lower{
+#team .news-lower {
     height: 320px;
 }
 
@@ -683,6 +686,7 @@ header {
 #partner .news-card.minor .news-lower {
     height: 250px;
 }
+
 .news-card.minor {
     width: 30%;
     margin-right: calc( 5% / 3);
@@ -1167,6 +1171,7 @@ input[type="submit"] {
     }
 }
 
+
 /*
  * Content for credits
  */
@@ -1212,4 +1217,8 @@ input[type="submit"] {
 
 .credits-content:hover .credits-icon {
     fill: rgba(0, 0, 0, 0.7);
+}
+
+.credits-content:hover .credits-icon--speedometer {
+    fill: rgba(244, 67, 54, 1);
 }
