@@ -1,0 +1,24 @@
+.submit-success {
+    box-shadow: $box-shadow-layer3;
+    border-radius: 2px 2px 0 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    z-index: 50;
+    background-color: white;
+    bottom: 0;
+    transform: translateX(-50%) translateY(100%);
+    padding: 0.5em 1em;
+    left: 50%;
+    transition: $transition-200;
+    &.success {
+        color: $color-success;
+    }
+    &.failure {
+        color: $color-failed;
+    }
+    &.active {
+        transform: translateX(-50%) translateY(0);
+    }
+}

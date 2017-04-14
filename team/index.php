@@ -84,9 +84,10 @@ function setHtmlLang() {
         <meta name="theme-color" content="#EA5B10" />
         <meta name="format-detection" content="telephone=no" />
 
-        <link rel="stylesheet" href="../assets/css/style.css" />
-        <link rel="stylesheet" href="../assets/css/materialdesignicons.min.css" />
-    </head>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" />
+  </head>
 
     <body>
         <nav class="mobile">

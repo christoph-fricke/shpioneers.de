@@ -1,0 +1,76 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-item {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    color: $text-dark-primary;
+    font-size: 1.25rem;
+    width: 250px;
+    margin: 5px 0;
+    padding: 0.4em 0.5em;
+    outline: none;
+    border: 2px solid $color-accent-500;
+    &:focus {
+        border: 2px solid $color-accent-600;
+    }
+}
+
+.input-item--submit {
+    background-color: $color-accent-500;
+    color: $text-white-primary;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 2px;
+    box-shadow: $box-shadow-layer2;
+    transition: $transition-200;
+    padding: 0.4em 0.5em;
+    &:hover {
+        box-shadow: $box-shadow-layer3;
+    }
+    &:focus {
+        border: none;
+    }
+}
+
+.input-item--textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.input-item--button {
+    text-decoration: none;
+}
+
+// Stuff for admin page
+.input-container--admin {
+    @extend .input-container;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.input-item--admin {
+    @extend .input-item;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+}
+
+.input-item--edit {
+    width: 100%;
+}
+
+.input__label {
+    width: 100%;
+    font-size: 1.25rem;;
+}
+
+.input__header {
+    @extend .header-main;
+    font-size: 2rem;
+    width: 100%;
+}

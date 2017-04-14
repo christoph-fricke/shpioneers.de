@@ -126,7 +126,8 @@ function printoptiondesk($name,$index){
 
         <link rel="stylesheet" href="../assets/css/style.css" />
         <link rel="stylesheet" href="../assets/css/materialdesignicons.min.css" />
-    </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" />
+  </head>
 
     <body>
         <nav class="mobile">

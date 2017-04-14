@@ -1,0 +1,54 @@
+.frame {
+    border: none;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.table-itemList {
+    width: 100%;
+    border-collapse: collapse;
+    &a {
+        text-decoration: none;
+    }
+}
+
+tr {
+    width: 100%;
+    border-bottom: 2px solid $color-background-gray;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.table__elem {
+    padding: 10px;
+    &--edit {
+        text-decoration: none;
+        color: $color-accent-500;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: $transition-200;
+        padding: 0 5px;
+        border-radius: 2px;
+        &:hover {
+            color: $color-accent-600;
+            background-color: rgba(0, 0, 0, 0.26);
+        }
+    }
+}
+
+.td-name {
+    width: 80%;
+    color: $text-dark-primary;
+}
+
+.td-icon {
+    text-align: center;
+    border-left: 2px solid $color-background-gray;
+    width: 5%;
+    & a {
+        text-decoration: none;
+    }
+}

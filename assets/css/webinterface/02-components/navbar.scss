@@ -1,0 +1,215 @@
+.spacer {
+    height: 72px;
+}
+
+nav {
+    background-color: $color-primary-500;
+    box-shadow: $box-shadow-layer4;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 50;
+}
+
+.navbar-content {
+    margin: 0 50px;
+}
+
+.navbar-content::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.logo {
+    display: block;
+    height: 72px;
+    width: auto;
+}
+
+.logo-svg {
+    height: 72px;
+    padding: 11px 10px 11px 0;
+}
+
+#magic-line {
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+}
+
+.left {
+    float: left;
+    position: relative;
+}
+
+.right {
+    height: 100%;
+    float: right;
+    cursor: default;
+}
+
+.right .dropdown i.mdi {
+    /* selector has to be this complicated for priotiy */
+    line-height: initial;
+}
+
+.navbar-option {
+    display: block;
+    padding: 1em;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $text-white-secondary;
+    transition: color 0.5s ease;
+    border-bottom: 0.1em solid transparent;
+}
+
+.navbar-option:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1em solid rgba(0, 0, 0, 0.0);
+    cursor: pointer;
+}
+
+.navbar-title:hover {
+    cursor: text;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 0.1em solid rgba(0, 0, 0, 0.0);
+}
+
+.navbar-option.active {
+    color: $text-white-primary;
+    border-bottom: 0.1em solid $text-white-primary;
+}
+.navbar-option.position {
+    color: $text-white-primary;
+}
+
+.sidebar-option .active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    margin-right: 50px;
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    box-shadow: $box-shadow-layer4;
+}
+
+.mobile .right .dropdown-content {
+    margin: auto;
+    right: 0;
+}
+
+.mobile .right {
+    position: relative;
+}
+
+.dropdown-content a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.3em 1em;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: $text-white-secondary;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.right:hover .dropdown-content {
+    display: inline-block;
+}
+
+.mobile {
+    display: none;
+}
+
+.sidebar-option .navbar-option {
+    color: rgba(0, 0, 0, 0.70);
+}
+
+.sidebar.dropdown-content {
+    box-shadow: none;
+}
+
+.grey {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    transition: $transition-200;
+}
+
+.left:hover .grey {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.navline {
+    margin: 10px 10px;
+}
+
+@media screen and (max-width: 1075px) {
+    .mobile {
+        display: block;
+        z-index: 50;
+    }
+    .desktop {
+        display: none;
+    }
+    .logo {
+        display: block;
+        height: 50px;
+        width: auto;
+    }
+    .logo-svg {
+        height: 50px;
+        padding: 5px 0 5px 0;
+    }
+    .logo-container {
+        background-color: rgba(0, 0, 0, 0.60);
+        height: 70px;
+        display: flex;
+        /*justify-content: center;*/
+        align-items: center;
+    }
+    .dropdown-content .logo:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .navbar-content {
+        margin: 0;
+        margin-right: 20px;
+    }
+    .navbar-option {
+        padding: 0.5em;
+    }
+    .hamburger {
+        padding: 0.5em 20px;
+    }
+    .sidebar {
+        left: 0;
+        background-color: white;
+        transition: $transition-200;
+        width: auto;
+        overflow: hidden;
+        position: fixed;
+        height: 100%;
+        display: inline-block;
+        transform: translateX(-101%);
+    }
+    .left:hover .sidebar {
+        box-shadow: $box-shadow-layer4;
+        transform: translateX(0);
+    }
+}
