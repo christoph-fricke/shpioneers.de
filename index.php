@@ -145,8 +145,7 @@ $tournament[] = getcontent(2);
                 <div id='magic-line' />
         </nav>
 
-        <header>
-
+        <header id="header">
             <section class="logo-header" id="home">
             </section>
             <div class="clearfix"></div>
@@ -511,6 +510,14 @@ $tournament[] = getcontent(2);
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="assets/js/functions.js"></script>
         <script src="assets/js/email_responsivnews.js"></script>
+        <script>
+            function calcVH() {
+                var vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+                document.getElementById("header").setAttribute("style", "height:" + (vH - 60) + "px;");
+            }
+            calcVH();
+            window.addEventListener('onorientationchange', calcVH, true);
+        </script>
     </body>
 
     </html>
