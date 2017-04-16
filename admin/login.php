@@ -1,4 +1,5 @@
 <?php
+require_once 'passwordLib.php';
 function checkuser($name,$pass){
 	$userbase = json_decode(file_get_contents('users.json'));
 	foreach($userbase as $user){
