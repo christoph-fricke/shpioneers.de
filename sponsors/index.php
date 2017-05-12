@@ -22,14 +22,9 @@ function getdata($type){
     return json_decode(file_get_contents("../content/sponsors/". $type ."-". $_SESSION['lang']. ".json"));
 }
 function printsponsors(){
-    if($_SESSION['lang']== 'de-de'){
         foreach (getdata($_GET['type']) as $spons){
             printcard($spons);
         }
-    }
-    else{
-        echo '<h1> We are still working on the translation</h1>';
-    }
 }
 function printcard($data){
     echo '<div class="card news-card">
