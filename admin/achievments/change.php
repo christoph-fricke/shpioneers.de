@@ -33,7 +33,8 @@ $percentages -> percentage = array();
 foreach($percentagesnames as $name){
 	$include = new stdClass();
 	$include -> value = 0;
-	($percentages -> percentage)[]   = $include;
+	$percentages -> percentage = array();
+	$percentages -> percentage[0]   = $include;
 }
 }
 $oneline = "input";
@@ -90,7 +91,7 @@ $i = 0;
 foreach($percentagesnames as $nameob){
 	$name = $nameob -> name;
 	$returnval -> meta -> $name = new stdClass();
-	$returnval -> meta -> $name -> value = ($percentages -> percentage)[$i] -> value;
+	$returnval -> meta -> $name -> value = $percentages -> percentage[$i] -> value;
 	$returnval -> meta -> $name -> type = "number";
 	$i++;
 }
