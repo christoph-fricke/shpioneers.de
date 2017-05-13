@@ -74,4 +74,7 @@ define('SPONSOR_HEADER_FINANCE', 'Monetary sponsors');
 //ACHIEVMENT SUBPAGE
 define('HEADER_PERCENTAGES','Percentages');
 define('HEADER_TEXT_ACH','Report');
+
+// Notification
+define('INFO_TEXT', 'Hoorayyy!!! We won the 2nd place at the germman championchip!');
 ?>

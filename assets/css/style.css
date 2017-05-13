@@ -21,6 +21,7 @@
 html,
 body {
     background-color: #F5F5F5;
+    /*position: relative;*/
 }
 
 main {
@@ -1220,4 +1221,43 @@ input[type="submit"] {
 
 .credits-content:hover .credits-icon--speedometer {
     fill: rgba(244, 67, 54, 1);
+}
+
+.banner {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    font-size: 1.25rem;
+    border-radius: 2px 2px 0 0;
+    color: rgba(76, 175, 80, 0.87);
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    z-index: 50;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    padding: 1em 1em;
+    transition: transform 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    display: flex;
+    flex-direction: row;
+}
+
+.banner.active {
+    transform: translateX(-50%) translateY(0);
+}
+
+#info-close {
+    display: block;
+    padding: 0 0 0 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .banner {
+        left: 0;
+        width: 100%;
+        transform: translateY(100%);
+    }
+    .banner.active {
+        transform: translateY(0);
+    }
 }
