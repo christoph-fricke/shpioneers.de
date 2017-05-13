@@ -76,5 +76,5 @@ define('HEADER_PERCENTAGES','Prozente');
 define('HEADER_TEXT_ACH','Bericht');
 
 // Notification
-define('INFO_TEXT', 'Huurraaa!!! Wir haben den 2ten Platz bei den deutschen Meisterschaften erreicht!');
+define('INFO_TEXT', 'Wir haben den 2ten Platz bei den deutschen Meisterschaften erreicht!');
 ?>
