@@ -216,6 +216,7 @@ function printoptiondesk($name,$index){
                     <p>
                         <?php echo $tournament[0] -> text ?>
                     </p>
+			<img width="100%" alt="Image of the team Pioneers infront of their teambox" src="<?php echo $tournament[2] -> teamimg ?>">
                 </div>
                 </div>
             </section>
