@@ -476,7 +476,7 @@ header {
 .news-card {
     width: 45%;
     height: 500px;
-    max-height: 500px;
+ /*   max-height: 500px;*/
     margin-bottom: 50px;
     /*transition: height 10s cubic-bezier(0.4, 0.0, 0.2, 1);*/
 }
@@ -638,7 +638,7 @@ header {
     margin-right: 0;
     margin-bottom: 50px;
     overflow: hidden;
-    max-height: 1000px;
+ /*   max-height: 1000px;*/
 }
 
 .news-card.selected .news-lower .minimise {
@@ -714,7 +714,7 @@ header {
     }
     to {
         width: 100%;
-        max-height: 1000px;
+        /*max-height: 1000px;*/
     }
 }
 
