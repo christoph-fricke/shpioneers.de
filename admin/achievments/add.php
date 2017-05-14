@@ -42,6 +42,7 @@ $newAchieven -> trophies = $array;
 $newdata = new stdClass();
 $newdata -> place = $_POST['metaplace'];
 $newdata -> img = $_POST['metaimg'];
+$newdata -> teamimg = $_POST['metateamimg'];
 $i = 0;
 $percent = array();
 foreach($percentagesnames as $nameob){

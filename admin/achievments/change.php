@@ -10,6 +10,7 @@ if($_GET['index'] >= 0){
 $tounamentde = json_decode(file_get_contents('../../content/achievments/'.$list[$_GET['index']].'/de-de.json'));
 $tounamenten = json_decode(file_get_contents('../../content/achievments/'.$list[$_GET['index']].'/en-en.json'));
 $percentages =json_decode(file_get_contents('../../content/achievments/'.$list[$_GET['index']].'/data.json'));
+if(!isset($percentages -> teamimg)) $percentages -> teamimg = ""; // this was added later so some datasets dont have it inside
 }
 else{
 $tounamentde = new stdClass();
@@ -26,6 +27,7 @@ $tounamentde -> trophies[] = $a ;
 $tounamenten = $tounamentde;
 $percentages = new stdClass();
 $percentages -> img = "";
+$percentages -> teamimg = "";
 $percentages -> place = "";
 $percentages -> percentage = array();
 foreach($percentagesnames as $name){
@@ -98,6 +100,9 @@ $returnval -> meta -> place -> type = $oneline;
 $returnval -> meta -> img = new stdClass();
 $returnval -> meta -> img -> value = $percentages -> img;
 $returnval -> meta -> img -> type = $oneline;
+$returnval -> meta -> teamimg = new stdClass();
+$returnval -> meta -> teamimg -> value = $percentages -> teamimg;
+$returnval -> meta -> teamimg -> type = $oneline;
 //
 $returnval -> token = $_SESSION['achievtoken'];
 if($_GET['index'] >= 0){

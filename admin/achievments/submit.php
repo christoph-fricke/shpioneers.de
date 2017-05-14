@@ -38,6 +38,7 @@ $array[] = $newElement;
 $tounamenten -> trophies = $array;
 $percentages -> place = $_POST['metaplace']; 
 $percentages -> img = $_POST['metaimg'];
+$percentages -> teamimg = $_POST['metateamimg'];
 $i = 0;
 $percent = array();
 foreach($percentagesnames as $nameob){
