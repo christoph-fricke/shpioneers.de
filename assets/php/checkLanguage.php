@@ -4,7 +4,7 @@ session_start();
         $_SESSION['lang'] = $_GET['lang'];
     }
     else {
-        $_SESSION['lang'] = "de-de";
+        $_SESSION['lang'] = "en-en";
     }
     
 switch ($_SESSION['lang']) {
