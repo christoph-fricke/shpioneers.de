@@ -2,7 +2,7 @@
 session_start();
 
 $strFrom = "";
-$strReceiver = "f1pioneers@gmx.de";
+$strReceiver = "info@shpioneers.de";
 $strSubject = "";
 $strMessage = "";
 $strToken = "";
