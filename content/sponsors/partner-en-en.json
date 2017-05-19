@@ -1,30 +1,30 @@
 [
-{
-"name": "step one",
-"img":"../assets/img/sponsors/step_one.svg",
-"text": "step one ist ganzheitlicher Lösungsanbieter für Live-Kommunikation sowie integrierte Marketing- und Vertriebs- Kommunikation. Die Agentur mit Stammsitz in Hamburg betreut zahlreiche namhafte Kunden aus dem B2B-Bereich und bietet ein einzigartiges Leistungsspektrum aus einer Hand: von der Beratung bis zur Strategie, von der Idee bis zur Umsetzung, vom Leadmanagement bis zur Erfolgskontrolle. step one behält immer das große Ganze im Blick und sorgt durch die intelligente Verzahnung aller Dialogpunkte für mehr Unternehmenserfolg. step one bezahlte und unterstütze die Umsetzung des Messestands der Pioneers.",
-"email": "info@stepone-hamburg.de",
-"web":"stepone-hamburg.de"
-},
-{
-"name": "cimtt",
-"img":"../assets/img/sponsors/cimtt.svg",
-"text":"Das cimtt ist seit 2014 das „Institut für CIM-Technologietransfer“ der Fachhochschule Kiel. Der Schwerpunkt der Arbeit des Instituts liegt in der Lehre, F&E, sowie dem Technologietransfer. Auch möchte das cimtt eine digitalisierte Fabrik realisieren, das bedeutet die digitale Darstellung aller Geschäfts- und Fertigungsvorgänge innerhalb einer beispielhaften Fabrik, sowie der daraus resultierenden Entwicklungsund Produktionsprozesse, entwickeln. Das cimtt und die Fachhochschule Kiel unterstützen die Pioneers diese Saison durch die 7-Achs-Fräsung von 9 Rennwagen aus Polyurethan- Hartschaum Blöcken.",
-"email": "-",
-"web": "www.cimtt-kiel.de"
-},
-{
-"name": "Hofer",
-"img":"../assets/img/sponsors/hofer.svg",
-"text":"Hofer ist ein Unternehmen, dass sich mit Lackierungen jeglicher Art und Karosserie Reperaturen beschäftigt. Ansässig ist es seit 1958 in Kiel/ Kronshagen. Hofer ist eines der modernsten Karosserie- und Lackierzentren Schleswig-Holsteins. Auf 1.500 Quadratmetern bietet das Zentrum, das mit energieeffizienter Technik ausgestattet ist, Platz für eine schnelle und professionelle Auftragsabwicklung. Hofer unterstützt die Pioneers seit drei Jahren, indem das Unternehmen deren Rennwagen lackiert und mit einem Design versieht. Durch ständige Kommunikation wird das Lackgewicht minimiert.",
-"email": "info@hofergmbh.de",
-"web": "hofergmbh.de"
-},
-{
-"name": "Christian-Albrechts Universität",
-"img":"../assets/img/sponsors/cau.jpg",
-"text": "Das Physikzentrum der Christian-Albrechts Universität zu Kiel besteht aus dem Institut für Experimentelle und Angewandte Physik und dem für Theoretische Physik und Astrophysik. Das Physikzentrum stellte dem Formel 1 in der Schule Team Pioneers dieses Jahr einen Mitarbeiter Herrn Dr. Sönke Harm offziell an die Seite. Mit diesem entwickelten die Schüler Testverfahren für ihre Rennwagen und überarbeiteten ihre Achsenkonstruktion. Genauso half das Institut bei der Arbeit an Maschinen und klärte Fragen zur Entwicklung der Messestand Elektronik. Diese Leistung stellt Dr. Sönke Harm den Pioneers zum dritten Mal zur Verfügung.",
-"email": "sommer@physik.uni-kiel.de",
-"web": "www.physik.uni-kiel.de"
-}
-]
+    {
+        "email": "info@stepone-hamburg.de",
+        "img": "../assets/img/sponsors/step_one.svg",
+        "name": "step one",
+        "text": "\u201cstep one\u201d is an integrated solution provider for live communication as well as integrated marketing and sales communication. The agency, headquartered in Hamburg, serves numerous well-known customers in the B2B area and offers a unique range of services from one source: from consulting to strategy, from the idea to implementation, from lead management to success control. step one always keeps an eye on the big picture and ensures the company's success through the intelligent interlinking of all dialogues. step one paid and supported the implementation of the Pioneers' stand.",
+        "web": "stepone-hamburg.de"
+    },
+    {
+        "email": "-",
+        "img": "../assets/img/sponsors/cimtt.svg",
+        "name": "cimtt",
+        "text": "The cimtt has been the \"Institute for CIM Technology Transfer\" of the Kiel University of Applied Sciences since 2014. The focus of the institute's work is on teaching, R & D, and technology transfer. The cimtt also aims to realize a digitized factory, meaning the digital representation of all business and manufacturing processes within an exemplary factory, as well as the resulting development and production processes. The cimtt and the Kiel University of Applied Sciences support the Pioneers this season through the 7-axis-milling of 9 racing cars from polyurethane hard foam blocks.",
+        "web": "www.cimtt-kiel.de"
+    },
+    {
+        "email": "info@hofergmbh.de",
+        "img": "../assets/img/sponsors/hofer.svg",
+        "name": "Hofer",
+        "text": "Hofer is a company that deals with all types of paint and body repairs. It was established in Kiel / Kronshagen in 1958. Hofer is one of the most modern car body and painting centers in Schleswig-Holstein. Covering 1,500 square meters, the center, which is equipped with energy-efficient technology, offers a space for fast and professional order processing. Hofer has been supporting the Pioneers for the last three years by painting a design on their racing cars. Constant communication minimizes paint weight.",
+        "web": "hofergmbh.de"
+    },    {
+        "email": "info@ralfeggers.de",
+        "img": "../assets/img/sponsors/eggers.svg",
+        "name": "Eggers",
+        "text": "The company RALF EGGERS CNC Dreh- und Fr\u00e4stechnik GmbH & Co. KG processes all types of materials such as steel, stainless steel, non-ferrous metals and plastics as complete processing on 5-axis machining centers. In addition, the company has specialized in the production of spare parts for ice wafer baking machines for almost 20 years and works in this regard with the Asian market in particular. The Pioneers team was supported by the production of 16 extremely light aluminum wheels and their respective wheel trims.",
+        "web": "ralfegger.de"
+    }
+
+    ]

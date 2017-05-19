@@ -1,44 +1,51 @@
 [
-{
-"name": "Eggers",
-"img" : "../assets/img/sponsors/eggers.svg",
-"text": "Die Firma RALF EGGERS CNC Dreh- und Frästechnik GmbH & Co. KG bearbeitet Werkstoffe jeglicher Art wie Stahl, Edelstahl, Nichteisenmetalle und Kunststoffe als Komplettbearbeitung auf 5-Achs-Bearbeitungszentren. Außerdem ist das Unternehmen seit fast 20 Jahren auf die Produktion von Ersatzteilen für Eiswaffelbackmaschinen spezialisiert und kooperiert hierzu vorallem im asiatischen Raum. Das Team Pioneers wurde durch die Fertigung von 16 extrem leichten Aluminiumrädern und zugehörigen Radkappen unterstützt.",
-"email":"info@ralfeggers.de",
-"web":"www.ralfeggers.de"
-},
-{
-"name": "Süverkrüp Automobile",
-"img":"../assets/img/sponsors/suverkrup.svg",
-"text":"Die Firma Süverkrüp Automobile ist ein seit über 100 Jahren existierender Familienbetrieb, der die Bedürfnisse seiner Kunden im Bereich Mobilität stillen möchte. In Schleswig-Holstein besitzt die gesamte Unternehmensgruppe 11 Standorte für Mercedes-Benz Vertrieb und Service. Servicequalität hat bei Süverkrüp Automobile einen hohen Stellenwert, so dass die Firma regelmäßig bei einer bundesweiten Kundenzufriedenheitsumfrage auf Platz 1 landet. Das Unternehmen hat in Kiel drei Standorte. In der Daimlerstraße sind die Hallen für Nutzfahrzeuge und gebrauchte Pkw mit ihrer großen Auswahl hervorzuheben.",
-"email":"info@sueverkruep.sh",
-"web":"www.mercedes-benz-sueverkruep.de"
-},
-{
-"name": "messemacher",
-"img": "../assets/img/sponsors/messemacher.svg",
-"text": "Zusammen mit der Schwesterfirma step one wird das Thema Live-Kommunikation im Bereich Messeauftritt durch die messemacher individuell und effektiv umgesetzt. In enger Zusammenarbeit werden ganzheitliche Kommunikationskonzepte national sowie international realisiert. Hierbei zeichnen sich die messemacher vor allem durch eine nachhaltige und qualitativ hochwertige Bauweise aus. Besonders hervorzuheben ist auch das hochmoderne, fahrbare Hochregalsystem mit 5.800 Palettenstellplätzen, welches das über 3.000qm große Lager am Standort in Quickborn organisiert.",
-"email":"info@stepone-hamburg.de",
-"web":"messemacher-hamburg.de"
-},
-{
-"name": "myonic",
-"img" : "../assets/img/sponsors/myonic.svg",
-"text": "myonic ist ein internationales Industri- eunternehmen mit Niederlassungen in Deutschland, Tschechien, Österreich und England. Seit 2009 gehört das Unternehmen zur japanischen Minebea Gruppe. Gemeinsam finden wir Lösungen im Grenzbereich des technisch Machbaren. Mit unserer fast 80-jährigen Erfahrung in der Herstellung von Präzisions-Miniaturkugellagern liefern wir diverse Produkte und Dienstleistungen für (z.B.) Spitzentechnologien der Medizin- technik (...). Die myonic GmbH sieht es in Ihrer Verantwortung die nächste Generation zu fördern. So beteiligen wir uns an diversen Projekten für Kinder/Jugendliche.",
-"email":"info@myonic.de",
-"web":"myonic.com"
-},
-{
-"name": "Fugmann Werbetechnik",
-"img":"../assets/img/sponsors/fugmann.png",
-"text":"Fugmann Werbetechnik ist ein bundesweiter Verklebeservice. Fugmann Werbetechnik foliert Autos mit individuellen Designs. Außerdem folieren sie Flotten einheitlich, kümmern sich um Verkehrsmittelwerbung, haben eine breite Produktpalette an Sicht und Sonnenschutzfolien und fertigen Werbeschilder an. All dieses nach den individuellen Bedürfnissen ihrer Kunden. In den letzten Jahren bewegte sich die Firma dazu in dem Sektor Schiffsfolierung. Fugmann Werbetechnik unterstützt die Pioneers in der dritten Saison durch Foliendrucke, die beispielsweise für deren Teamstand verwendet werden.",
-"email":"info@fugmann-werbetechnik.de",
-"web": "fugmann-werbetechnik.de"
-},
-{
-"name": "Raceyard",
-"img": "../assets/img/sponsors/raceyard.svg",
-"text": "Das Formula Student Team Raceyard setzt sich aus Studierenden der Fachhochschule Kiel, der Muthesius Kunsthochschule sowie der CAU-Kiel zusammen. Jährlich konstruieren sie einen neuen Rennwagen. Gegründet wurde Raceyard 2005 und besteht heute aus 107 Teammitgliedern. Seit dem Jahr 2012 liegt der Entwicklungsschwerpunkt auf der Konstruktion eines elektrisch betriebenen Fahrzeuges. Bei den Wettbewerben gewinnt nicht unbedingt das schnellste Auto, sondern auch das Team, welches den schlüssigsten Marketing- und Businessplan vorweisen kann. Das Team stand den Pioneers in Fragen zur Aerodynamik zur Seite.",
-"email":"mail@raceyard.de",
-"web":"raceyard.de"
-}
+    {
+        "email": "info@sueverkruep.sh",
+        "img": "../assets/img/sponsors/suverkrup.svg",
+        "name": "S\u00fcverkr\u00fcp Automobile",
+        "text": "Die Firma S\u00fcverkr\u00fcp Automobile ist ein seit \u00fcber 100 Jahren existierender Familienbetrieb, der die Bed\u00fcrfnisse seiner Kunden im Bereich Mobilit\u00e4t stillen m\u00f6chte. In Schleswig-Holstein besitzt die gesamte Unternehmensgruppe 11 Standorte f\u00fcr Mercedes-Benz Vertrieb und Service. Servicequalit\u00e4t hat bei S\u00fcverkr\u00fcp Automobile einen hohen Stellenwert, so dass die Firma regelm\u00e4\u00dfig bei einer bundesweiten Kundenzufriedenheitsumfrage auf Platz 1 landet. Das Unternehmen hat in Kiel drei Standorte. In der Daimlerstra\u00dfe sind die Hallen f\u00fcr Nutzfahrzeuge und gebrauchte Pkw mit ihrer gro\u00dfen Auswahl hervorzuheben.",
+        "web": "mercedes-benz-sueverkruep.de"
+    },
+    {
+        "email": "info@tinwozard.de",
+        "img": "../assets/img/sponsors/interdecal.svg",
+        "name": "Interdecal/Tin Wizard",
+        "text": "Das Unternehmen Tin Wizard fertigt seit 1979 Modellautos in Handarbeit.\r\nDas besondere der Autos, die in Kleinserie gefertigt werden, ist, dass diese in einer kleinen St\u00fcckzahl aus einer Zinnlegierung gegossen werden. Die Modelle sind als Baus\u00e4tze, aber auch als Fertigmodelle zu erwerben.\r\nSeit 2012 stellt dasselbe Unternehmen, lediglich mit einem anderen Namen INTERDECAL, auch Foto\u00e4tzteile und Na\u00dfschiebebilder  her. Mit dem UV-Druck solcher Na\u00dfschiebebilder unterst\u00fctzt das Unternehmen nun das Team.",
+        "web": "tinwozard.de"
+    },
+    {
+        "email": "sommer@physik.uni-kiel.de",
+        "img": "../assets/img/sponsors/cau.jpg",
+        "name": "Christan-Albrechts-Universit\u00e4t",
+        "text": "Das Physikzentrum der Christian Albrechts Universit\u00e4t zu Kiel besteht aus dem Institut f\u00fcr Experimentelle und Angewandte Physik und dem f\u00fcr Theoretische Physik und Astrophysik.\r\nDas Physikzentrum stellte dem Formel 1 in der Schule Team Pioneers dieses Jahr einen Mitarbeiter- Herrn Dr. S\u00f6nke Harm- offiziell an die Seite. Mit diesem entwickelten die Sch\u00fcler Testverfahren f\u00fcr ihre Rennwagen und \u00fcberarbeiteten ihre Achsenkonstruktion. Genauso half das Institut bei der Arbeit an Maschinen und kl\u00e4rte Fragen zur Entwicklung der Messestand Elektronik.",
+        "web": "physik.uni-kiel.de"
+    },
+    {
+        "email": "info@stepone-hamburg.de",
+        "img": "../assets/img/sponsors/messemacher.svg",
+        "name": "messemacher",
+        "text": "Zusammen mit der Schwesterfirma step one wird das Thema Live-Kommunikation im Bereich Messeauftritt durch die messemacher individuell und effektiv umgesetzt. In enger Zusammenarbeit werden ganzheitliche Kommunikationskonzepte national sowie international realisiert. Hierbei zeichnen sich die messemacher vor allem durch eine nachhaltige und qualitativ hochwertige Bauweise aus. Besonders hervorzuheben ist auch das hochmoderne, fahrbare Hochregalsystem mit 5.800 Palettenstellpl\u00e4tzen, welches das \u00fcber 3.000qm gro\u00dfe Lager am Standort in Quickborn organisiert.",
+        "web": "messemacher-hamburg.de"
+    },
+    {
+        "email": "info@myonic.de",
+        "img": "../assets/img/sponsors/myonic.svg",
+        "name": "myonic",
+        "text": "myonic ist ein internationales Industrieunternehmen mit Niederlassungen in Deutschland, Tschechien, \u00d6sterreich und England. Seit 2009 geh\u00f6rt das Unternehmen zur japanischen Minebea Gruppe. Gemeinsam finden wir L\u00f6sungen im Grenzbereich des technisch Machbaren. Mit unserer fast 80-j\u00e4hrigen Erfahrung in der Herstellung von Pr\u00e4zisions-Miniaturkugellagern liefern wir diverse Produkte und Dienstleistungen f\u00fcr (z.B.) Spitzentechnologien der Medizintechnik (...). Die myonic GmbH sieht es in Ihrer Verantwortung die n\u00e4chste Generation zu f\u00f6rdern. So beteiligen wir uns an diversen Projekten f\u00fcr Kinder/Jugendliche.",
+        "web": "myonic.com"
+    },
+    {
+        "email": "info@fugmann-werbetechnik.de",
+        "img": "../assets/img/sponsors/fugmann.png",
+        "name": "Fugmann Werbetechnik",
+        "text": "Fugmann Werbetechnik ist ein bundesweiter Verklebeservice. Fugmann Werbetechnik foliert Autos mit individuellen Designs. Au\u00dferdem folieren sie Flotten einheitlich, k\u00fcmmern sich um Verkehrsmittelwerbung, haben eine breite Produktpalette an Sicht und Sonnenschutzfolien und fertigen Werbeschilder an. All dieses nach den individuellen Bed\u00fcrfnissen ihrer Kunden. In den letzten Jahren bewegte sich die Firma dazu in dem Sektor Schiffsfolierung. Fugmann Werbetechnik unterst\u00fctzt die Pioneers in der dritten Saison durch Foliendrucke, die beispielsweise f\u00fcr deren Teamstand verwendet werden.",
+        "web": "fugmann-werbetechnik.de"
+    },
+    {
+        "email": "mail@raceyard.de",
+        "img": "../assets/img/sponsors/raceyard.svg",
+        "name": "Raceyard",
+        "text": "Das Formula Student Team Raceyard setzt sich aus Studierenden der Fachhochschule Kiel, der Muthesius Kunsthochschule sowie der CAU-Kiel zusammen. J\u00e4hrlich konstruieren sie einen neuen Rennwagen. Gegr\u00fcndet wurde Raceyard 2005 und besteht heute aus 107 Teammitgliedern. Seit dem Jahr 2012 liegt der Entwicklungsschwerpunkt auf der Konstruktion eines elektrisch betriebenen Fahrzeuges. Bei den Wettbewerben gewinnt nicht unbedingt das schnellste Auto, sondern auch das Team, welches den schl\u00fcssigsten Marketing- und Businessplan vorweisen kann. Das Team stand den Pioneers in Fragen zur Aerodynamik zur Seite.",
+        "web": "raceyard.de"
+    }
 ]
