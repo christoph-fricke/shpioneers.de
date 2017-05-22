@@ -1,7 +1,7 @@
 <?php
 //Meta infos
 define('TITLE', 'Pioneers');
-define('DESCRIPTION', 'Wir nehmen als Team an den internationalen Wettbewerb &quot F1 in der Schule &quot teil.');
+define('DESCRIPTION', 'Wir nehmen als Team an der Weltmeisterschaft des internationalen Wettbewerb &quot F1 in der Schule &quot teil.');
 define('KEYWORDS', 'F1 in der Schule, Pioneers');
 
 //Nav content
