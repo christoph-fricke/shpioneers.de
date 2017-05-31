@@ -48,7 +48,7 @@ function printcard($data){
 case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER_PARTNER; break; } } function setactive($type){ if($type == $_GET['type']){ echo 'active'; } } ?>
 
     <!DOCTYPE html>
-    <html lang="<?php setHtmlLang() ?>">
+    <html hreflang="<?php setHtmlLang() ?>">
 
     <head>
         <title>

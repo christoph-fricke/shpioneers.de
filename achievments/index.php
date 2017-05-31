@@ -100,7 +100,7 @@ function printoptiondesk($name,$index){
 ?>
 
     <!DOCTYPE html>
-    <html lang="<?php setHtmlLang() ?>">
+    <html hreflang="<?php setHtmlLang() ?>">
 
     <head>
         <title>

@@ -59,7 +59,7 @@ function setHtmlLang() {
 ?>
 
     <!DOCTYPE html>
-    <html lang="<?php setHtmlLang() ?>">
+    <html hreflang="<?php setHtmlLang() ?>">
 
     <head>
         <title>
