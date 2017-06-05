@@ -15,7 +15,7 @@ define('GERMAN', 'Deutsch');
 define('ENGLISH', 'Englisch');
 
 //News content
-define('HEADER_NEWS', 'Das ist neu');
+define('HEADER_NEWS', 'Neues');
 define('BUTTON_NEWS', 'Mehr erfahren');
 define('BUTTON_OLD_NEWS', 'Archiv');
 define('BUTTON_NEWS_MIN', 'Zurück');
