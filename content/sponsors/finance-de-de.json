@@ -1,1 +1,51 @@
-[{"name":"GymKro","img":"..\/assets\/img\/sponsors\/gymkro.png","text":"Das Gymnasium Kronshagen ist \u201eunsere Schule\u201c. Die Schule ist eine MINT EC Schule, was bedeutet, dass die Sch\u00fcler im MINT-Bereich (Mathe, Informatik, Naturwissenschaften und Technik) individuell und besonders stark gef\u00f6rdert werden. Die Schule nimmt schon seit ger\u00e4umiger Zeit am Wettbewerb Formel 1 in der Schule teil, das seit drei Jahren bestehende Team Pioneers ist jedoch das bisher erfolgreichste Team des Gymnasiums. Deshalb entschied sich die Schule daf\u00fcr, das Projekt durch den F\u00f6rderverein in jeder Saison zu unterst\u00fctzen und dem Team ein Projektkonto mit ca. 5000\u20ac zu \u00fcberschreiben.","email":"gymnasium@kronshagen.de","web":"gymnasium-kronshagen.de"},{"name":"Sparkasse","img":"..\/assets\/img\/sponsors\/sparkasse.svg","text":"Die Sparkasse ist Deutschlands meist empfohlenster Finanzpartner, sie gehen individuell auf die W\u00fcnsche ihrer Privat- und Unternehmens Kunden ein. Die Sparkasse engagiert sich in einem hohen Ma\u00df auf der gesellschaftlichen- sozialen Ebene. Besonders regional ist die Finanzgruppe sehr aktiv, da vor Ort regional \u00fcber zu unterst\u00fctzende Projekte entschieden wird. In der Saison 2016\/2017 spendete die Sparkasse Kronshagen dem Formel 1 Team Pioneers 500\u20ac, um die Bildung von Sch\u00fclern in Kronshagen zu unterst\u00fctzen. In der ersten Pioneers Saison war die Sparkasse ebenfalls Finanzsponsor.","email":"info@foerdesparkasse.de","web":"sparkasse.de"},{"name":"Verband des Kfz-Gewerbes Schleswig-Holstein","img":"..\/assets\/img\/sponsors\/kfz.jpg","text":"Der Landesverband Schleswig-Holstein vertritt 18 Kfz-Innungen mit fast 1.500 Mitgliedsbetrieben, davon ca. 250 Tankstellen, und ca. 13.000 Mitarbeitern. Neben der wichtigen Aufgabe der Verbraucherinformation ist der Landesverband erster Ansprechpartner seiner Mitglieder. Die enge Zusammenarbeit mit Gesetzgeber, Beh\u00f6rden, Ministerien und anderen Organisationen bedeuten Infos und Hilfestellungen aus erster Hand. Nicht zuletzt verhandeln die Experten des Landes- verbandes mit den jeweiligen Gewerkschaften die Tarifvertr\u00e4ge f\u00fcr die Mitarbeiter\/-innen in den Mitgliedsbetrieben. Der Verband unterst\u00fctzt die Pioneers zum dritten Mal.","email":"info@kfz-sh.de","web":"kfz-sh.de"},{"name":"Saal digital","img":"..\/assets\/img\/sponsors\/saal_digital.svg","text":"saal digital geh\u00f6rt zu Europas f\u00fchrenden Herstellern von Fotoprodukten aller Art. Das Unternehmen zeichnet sich durch hohe Qualit\u00e4tsstandards, eine gro\u00dfe Kunden- und Mitarbeiterzufriedenheit, sowie durch eine st\u00e4ndige Weiterentwicklung der innovativen Fotoprodukte aus. Schon zur Landesmeisterschaft lie\u00df das Team ihr Portfolio von saal digital fertigen, zur deutschen Meisterschaft wird der Fotobuchdruck ihres Portfolios nun als Sachsponsoringleistung von dem Unternehmen \u00fcbernommen.","web":"saal-digital.de","email":"support@saal-digital.de"},{"name":"Fahrschule Lemke","img":"..\/assets\/img\/sponsors\/lemke.svg","text":"Die Fahrschule Lemke hat vier Standorte im Gro\u00dfraum Kiel\/Kronshagen. Sie ebnet ihren Kunden den einfachen, sicheren und schnellen Weg f\u00fcr ihren F\u00fchrerschein. Ob PKW-F\u00fchrerschein oder Traktorf\u00fchrerschein, alles kann man bei der Fahrschule Lemke erwerben. Zwei Mitglieder des Formel 1 in der Schule Teams Pioneers, erworben ebenfalls erfolgreich ihren F\u00fchrerschein mit Hilfe der Fahrschule Lemke. Die Fahrschule unterst\u00fctzt ihr Projekt durch den Erl\u00f6s einer Tombolla auf der Kronshagener Gewerbeschau im Sommer 2016 mit 650\u20ac.","email":"info@fahrschulelemke.de","web":"fahrschule-lemke-kiel.de"},{"name":"Versorgungsbetriebe Kronshagen","img":"..\/assets\/img\/sponsors\/vbk.svg","text":"Die Versorgungsbetriebe Kronshagen GmbH sind ein ein modernes Versorgungsunternehmen mit Tradition. Als kommunales Versorgungsunternehmen legen diese besonderen Wert auf kundenfreundlichen Service, Kundenn\u00e4he, Zuverl\u00e4ssigkeit sowie Qualit\u00e4t und Sicherheit unserer Leistungen. Die Ver- sorgungsbetriebe sind als lokaler Betrieb sehr informiert \u00fcber die Bed\u00fcrfnisse und Anforderungen ihrer Kunden. Au\u00dferdem unterst\u00fctzen sie regional Patenkinder unter dem Motto: \u201eZukunft-fest im Blick!\u201c. Das Team Pioneers wurde mit einer Geldspende von 500\u20ac unterst\u00fctzt, diese wurde f\u00fcr deren Teamkleidung verwendet.","email":"info@vbk-kronshagen.de","web":"vbk-kronshagen.de"},{"name":"Gosch und Schl\u00fcter","img":"..\/assets\/img\/sponsors\/goschundschlueter.png","text":"Die Firma Gosch & Schl\u00fcter sitzt in Kiel und hat sich auf die Entwicklung von Elektro- und Antriebstechnik spezialisiert. Seit nun mehr als 80 Jahren ist das Unternehmen stetig gewachsen. Mit \u00fcber 140 Mitarbeitern befindet sich Gosch & Schl\u00fcter in der dritten Generation. Das Kieler Unternehmen unterst\u00fctzt die Pioneers finanziell zur Deutschen Meisterschaft im Mai.","email":"info@goschundschlueter.de","web":"goschundschlueter.de"}]
+[
+    {
+        "email": "gymnasium@kronshagen.de",
+        "img": "../assets/img/sponsors/gymkro.png",
+        "name": "GymKro",
+        "text": "Das Gymnasium Kronshagen ist \u201eunsere Schule\u201c. Die Schule ist eine MINT EC Schule, was bedeutet, dass die Sch\u00fcler im MINT-Bereich (Mathe, Informatik, Naturwissenschaften und Technik) individuell und besonders stark gef\u00f6rdert werden. Die Schule nimmt schon seit ger\u00e4umiger Zeit am Wettbewerb Formel 1 in der Schule teil, das seit drei Jahren bestehende Team Pioneers ist jedoch das bisher erfolgreichste Team des Gymnasiums. Deshalb entschied sich die Schule daf\u00fcr, das Projekt durch den F\u00f6rderverein in jeder Saison zu unterst\u00fctzen und dem Team ein Projektkonto mit ca. 5000\u20ac zu \u00fcberschreiben.",
+        "web": "gymnasium-kronshagen.de"
+    },
+    {
+        "email": "info@foerdesparkasse.de",
+        "img": "../assets/img/sponsors/sparkasse.svg",
+        "name": "Sparkasse",
+        "text": "Die Sparkasse ist Deutschlands meist empfohlenster Finanzpartner, sie gehen individuell auf die W\u00fcnsche ihrer Privat- und Unternehmens Kunden ein. Die Sparkasse engagiert sich in einem hohen Ma\u00df auf der gesellschaftlichen- sozialen Ebene. Besonders regional ist die Finanzgruppe sehr aktiv, da vor Ort regional \u00fcber zu unterst\u00fctzende Projekte entschieden wird. In der Saison 2016/2017 spendete die Sparkasse Kronshagen dem Formel 1 Team Pioneers 500\u20ac, um die Bildung von Sch\u00fclern in Kronshagen zu unterst\u00fctzen. In der ersten Pioneers Saison war die Sparkasse ebenfalls Finanzsponsor.",
+        "web": "sparkasse.de"
+    },
+    {
+        "email": "info@kfz-sh.de",
+        "img": "../assets/img/sponsors/kfz.jpg",
+        "name": "Verband des Kfz-Gewerbes Schleswig-Holstein",
+        "text": "Der Landesverband Schleswig-Holstein vertritt 18 Kfz-Innungen mit fast 1.500 Mitgliedsbetrieben, davon ca. 250 Tankstellen, und ca. 13.000 Mitarbeitern. Neben der wichtigen Aufgabe der Verbraucherinformation ist der Landesverband erster Ansprechpartner seiner Mitglieder. Die enge Zusammenarbeit mit Gesetzgeber, Beh\u00f6rden, Ministerien und anderen Organisationen bedeuten Infos und Hilfestellungen aus erster Hand. Nicht zuletzt verhandeln die Experten des Landes- verbandes mit den jeweiligen Gewerkschaften die Tarifvertr\u00e4ge f\u00fcr die Mitarbeiter/-innen in den Mitgliedsbetrieben. Der Verband unterst\u00fctzt die Pioneers zum dritten Mal.",
+        "web": "kfz-sh.de"
+    },
+    {
+        "email": "-",
+        "img": "../assets/img/sponsors/ghk.jpg",
+        "name": "GHK",
+        "text": "Der Gewerbeverein Kronshagen ist ein Zusammenschluss von \u00fcber 120 Unternehmen aus Kronshagen. Dieser hat es sich zur Aufgabe gemacht, den Standort Kronshagen und dessen Gewerbetreibende zu st\u00e4rken. Der Verein organisiert beispielsweise die Kronshagener Gewerbeschau und gibt das Gemeindemagazin das Kronshagen-Magazin heraus. Der Verein unterst\u00fctzt mit einer Spende an die Pioneers die Bildung Kronshagener Sch\u00fcler.",
+        "web": "www.ghk-kronshagen.de"
+    },
+    {
+        "email": "info@fahrschulelemke.de",
+        "img": "../assets/img/sponsors/lemke.svg",
+        "name": "Fahrschule Lemke",
+        "text": "Die Fahrschule Lemke hat vier Standorte im Gro\u00dfraum Kiel/Kronshagen. Sie ebnet ihren Kunden den einfachen, sicheren und schnellen Weg f\u00fcr ihren F\u00fchrerschein. Ob PKW-F\u00fchrerschein oder Traktorf\u00fchrerschein, alles kann man bei der Fahrschule Lemke erwerben. Zwei Mitglieder des Formel 1 in der Schule Teams Pioneers, erworben ebenfalls erfolgreich ihren F\u00fchrerschein mit Hilfe der Fahrschule Lemke. Die Fahrschule unterst\u00fctzt ihr Projekt durch den Erl\u00f6s einer Tombolla auf der Kronshagener Gewerbeschau im Sommer 2016 mit 650\u20ac.",
+        "web": "fahrschule-lemke-kiel.de"
+    },
+    {
+        "email": "info@vbk-kronshagen.de",
+        "img": "../assets/img/sponsors/vbk.svg",
+        "name": "Versorgungsbetriebe Kronshagen",
+        "text": "Die Versorgungsbetriebe Kronshagen GmbH sind ein ein modernes Versorgungsunternehmen mit Tradition. Als kommunales Versorgungsunternehmen legen diese besonderen Wert auf kundenfreundlichen Service, Kundenn\u00e4he, Zuverl\u00e4ssigkeit sowie Qualit\u00e4t und Sicherheit unserer Leistungen. Die Ver- sorgungsbetriebe sind als lokaler Betrieb sehr informiert \u00fcber die Bed\u00fcrfnisse und Anforderungen ihrer Kunden. Au\u00dferdem unterst\u00fctzen sie regional Patenkinder unter dem Motto: \u201eZukunft-fest im Blick!\u201c. Das Team Pioneers wurde mit einer Geldspende von 500\u20ac unterst\u00fctzt, diese wurde f\u00fcr deren Teamkleidung verwendet.",
+        "web": "vbk-kronshagen.de"
+    },
+    {
+        "email": "info@goschundschlueter.de",
+        "img": "../assets/img/sponsors/goschundschlueter.jpg",
+        "name": "Gosch und Schl\u00fcter",
+        "text": "Die Firma Gosch & Schl\u00fcter sitzt in Kiel und hat sich auf die Entwicklung von Elektro- und Antriebstechnik spezialisiert. Seit nun mehr als 80 Jahren ist das Unternehmen stetig gewachsen. Mit \u00fcber 140 Mitarbeitern befindet sich Gosch & Schl\u00fcter in der dritten Generation. Das Kieler Unternehmen unterst\u00fctzt die Pioneers finanziell zur Deutschen Meisterschaft im Mai.",
+        "web": "goschundschlueter.de"
+    }
+]

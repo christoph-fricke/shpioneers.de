@@ -7,6 +7,20 @@
         "web": "mercedes-benz-sueverkruep.de"
     },
     {
+        "email": "sommer@physik.uni-kiel.de",
+        "img": "../assets/img/sponsors/cau.jpg",
+        "name": "Christan-Albrechts-Universit\u00e4t",
+        "text": "Das Physikzentrum der Christian Albrechts Universit\u00e4t zu Kiel besteht aus dem Institut f\u00fcr Experimentelle und Angewandte Physik und dem f\u00fcr Theoretische Physik und Astrophysik.\r\nDas Physikzentrum stellte dem Formel 1 in der Schule Team Pioneers dieses Jahr einen Mitarbeiter- Herrn Dr. S\u00f6nke Harm- offiziell an die Seite. Mit diesem entwickelten die Sch\u00fcler Testverfahren f\u00fcr ihre Rennwagen und \u00fcberarbeiteten ihre Achsenkonstruktion. Genauso half das Institut bei der Arbeit an Maschinen und kl\u00e4rte Fragen zur Entwicklung der Messestand Elektronik.",
+        "web": "physik.uni-kiel.de"
+    },
+    {
+        "email": "support@saal-digital.de",
+        "img": "../assets/img/sponsors/saal_digital.svg",
+        "name": "Saal digital",
+        "text": "saal digital geh\u00f6rt zu Europas f\u00fchrenden Herstellern von Fotoprodukten aller Art. Das Unternehmen zeichnet sich durch hohe Qualit\u00e4tsstandards, eine gro\u00dfe Kunden- und Mitarbeiterzufriedenheit, sowie durch eine st\u00e4ndige Weiterentwicklung der innovativen Fotoprodukte aus. Schon zur Landesmeisterschaft lie\u00df das Team ihr Portfolio von saal digital fertigen, zur deutschen Meisterschaft wird der Fotobuchdruck ihres Portfolios nun als Sachsponsoringleistung von dem Unternehmen \u00fcbernommen.",
+        "web": "saal-digital.de"
+    },
+    {
         "email": "info@tinwozard.de",
         "img": "../assets/img/sponsors/interdecal.svg",
         "name": "Interdecal/Tin Wizard",
@@ -14,11 +28,11 @@
         "web": "tinwozard.de"
     },
     {
-        "email": "sommer@physik.uni-kiel.de",
-        "img": "../assets/img/sponsors/cau.jpg",
-        "name": "Christan-Albrechts-Universit\u00e4t",
-        "text": "Das Physikzentrum der Christian Albrechts Universit\u00e4t zu Kiel besteht aus dem Institut f\u00fcr Experimentelle und Angewandte Physik und dem f\u00fcr Theoretische Physik und Astrophysik.\r\nDas Physikzentrum stellte dem Formel 1 in der Schule Team Pioneers dieses Jahr einen Mitarbeiter- Herrn Dr. S\u00f6nke Harm- offiziell an die Seite. Mit diesem entwickelten die Sch\u00fcler Testverfahren f\u00fcr ihre Rennwagen und \u00fcberarbeiteten ihre Achsenkonstruktion. Genauso half das Institut bei der Arbeit an Maschinen und kl\u00e4rte Fragen zur Entwicklung der Messestand Elektronik.",
-        "web": "physik.uni-kiel.de"
+        "email": "info@stamp-media.de",
+        "img": "../assets/img/sponsors/stamp.jpg",
+        "name": "stamp media",
+        "text": "Stamp media ist eine Agentur f\u00fcr Kommunikation und Design im Kieler Medienhaus, dem Ansprechpartner f\u00fcr Kommunikation im Raum Kiel. Stamp media entwickelt visuelle Kommunikationsma\u00dfnahmen wie Logos, Corporate Designs und begleitet Kunden bei der Entwicklung nachhaltiger Werbema\u00dfnahmen. Die Sch\u00fcler aus Schleswig-Holstein werden durch ein Sachsponsoring von Flyer, Brosch\u00fcren und Plakatdrucken von stamp media unterst\u00fctzt. ",
+        "web": "www.stamp-media.de/"
     },
     {
         "email": "info@stepone-hamburg.de",

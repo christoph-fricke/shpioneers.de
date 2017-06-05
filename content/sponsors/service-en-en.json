@@ -7,6 +7,20 @@
         "web": "mercedes-benz-sueverkruep.de"
     },
     {
+        "email": "sommer@physik.uni-kiel.de",
+        "img": "../assets/img/sponsors/cau.jpg",
+        "name": "Christan-Albrechts-Universit\u00e4t",
+        "text": "The physics department in the Christian-Albrechts-Universit\u00e4t (CAU) in Kiel consists of the Institute for experimental and applied physics and the Institure for theoretical physics and astrophysics. The physics department supported the Formula 1 in Schools Team Pioneers exceptionally, as one of their members of staff \u2013 Mr. Dr. S\u00f6nke Harm \u2013 helped the students develop tests for their racing cars and revise their car constructions. The Institute helps the Pioneers with working with machines and tried to explain questions about the exhibition stand. ",
+        "web": "physik.uni-kiel.de"
+    },
+    {
+        "email": "support@saal-digital.de",
+        "img": "../assets/img/sponsors/saal_digital.svg",
+        "name": "Saal digital",
+        "text": "Saal digital belongs to Europe\u00b4s leading producers in photographic production of any kind. The company distinguishes itself from the other companies, as they have very high standards in quality, great customer and employee satisfaction and continuous development of their innovative photographic products. Already for the state championships of \u201cFormula 1 in schools\u201d, the Team Pioneers had their Portfolio printed by Saal Digital, for the national championships the company sponsored the printing of their portfolio. ",
+        "web": "saal-digital.de"
+    },
+    {
         "email": "info@tinwozard.de",
         "img": "../assets/img/sponsors/interdecal.svg",
         "name": "Interdecal/Tin Wizard",
@@ -14,11 +28,11 @@
         "web": "tinwozard.de"
     },
     {
-        "email": "sommer@physik.uni-kiel.de",
-        "img": "../assets/img/sponsors/cau.jpg",
-        "name": "Christan-Albrechts-Universit\u00e4t",
-        "text": "The physics department in the Christian-Albrechts-Universit\u00e4t (CAU) in Kiel consists of the Institute for experimental and applied physics and the Institure for theoretical physics and astrophysics. The physics department supported the Formula 1 in Schools Team Pioneers exceptionally, as one of their members of staff \u2013 Mr. Dr. S\u00f6nke Harm \u2013 helped the students develop tests for their racing cars and revise their car constructions. The Institute helps the Pioneers with working with machines and tried to explain questions about the exhibition stand. ",
-        "web": "physik.uni-kiel.de"
+        "email": "info@stamp-media.de",
+        "img": "../assets/img/sponsors/stamp.jpg",
+        "name": "stamp media",
+        "text": "Stamp media is an agency for communication and design in the Kiel media center, which is the contact for communikation in and around Kiel. Stamp media develops visual communication measures, for example logos, corporate designs and helps customers to develop their own sustainable commercial measures. The students from Schleswig-Holstein are supported by object sponsoring, for example flyers, brochures and poster printings.",
+        "web": "www.stamp-media.de/"
     },
     {
         "email": "info@stepone-hamburg.de",

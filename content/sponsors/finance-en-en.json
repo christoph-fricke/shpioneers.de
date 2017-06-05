@@ -1,1 +1,51 @@
-[{"name":"GymKro","img":"..\/assets\/img\/sponsors\/gymkro.png","text":"The Gymnasium Kronshagen is \u201dour school\u201c. It is a so called MINTEC school which means that the school provides particular and individual support for students in the areas of Mathematics, IT, Natural Sciences and Technology. Our school has been participating in the contest \u201cFormel 1 in der Schule\u201d (Formula 1 in schools) for a while. The current team \u201cPioneers\u201d has been together for three years and is the most successful team so far. Because of the success our school decided to fund the project together with the association \u201cFriends of Gymnasium Kronshagen\u201d (F\u00f6rderverein) by giving us a project account with around 5000\u20ac on it every season. ","email":"gymnasium@kronshagen.de","web":"gymnasium-kronshagen.de"},{"name":"Sparkasse","img":"..\/assets\/img\/sponsors\/sparkasse.svg","text":"The Sparkasse is Germany\u2019s most recommended financial partner. The Sparkasse takes the individual wishes of their private and business clients into account. They is highly active on social and societal level. Especially on a regional level the Sparkasse is highly active since they decide locally on which projects to fund. In this season the Sparkasse Kronshagen gave us 500\u20ac in funds to support education of students in Kronshagen. In the first Pioneers season the Sparkasse also was a financial sponsor.","email":"info@foerdesparkasse.de","web":"sparkasse.de"},{"name":"Verband des Kfz-Gewerbes Schleswig-Holstein","img":"..\/assets\/img\/sponsors\/kfz.jpg","text":"The State Association of Auto Mechanics in Schleswig-Holstein represents 18 auto mechanic guilds with almost 1,500 members among them 250 gas stations and around 13,000 employees. In addition to the important role of providing consumer information the State Association of Auto Mechanics prime contact for its members. The close cooperation with lawmakers, authorities, ministries and other organizations results in first-hand information and assistance. Furthermore the State Association of Auto Mechanics negotiates work conditions and wages of its members. The Association is backing Pioneers for the third time.","email":"info@kfz-sh.de","web":"kfz-sh.de"},{"name":"Saal digital","img":"..\/assets\/img\/sponsors\/saal_digital.svg","text":"Saal digital belongs to Europe\u00b4s leading producers in photographic production of any kind. The company distinguishes itself from the other companies, as they have very high standards in quality, great customer and employee satisfaction and continuous development of their innovative photographic products. Already for the state championships of \u201cFormula 1 in schools\u201d, the Team Pioneers had their Portfolio printed by Saal Digital, for the national championships the company sponsored the printing of their portfolio. ","web":"saal-digital.de","email":"support@saal-digital.de"},{"name":"Fahrschule Lemke","img":"..\/assets\/img\/sponsors\/lemke.svg","text":"The driving school Lemke has four locations in the region Kiel\/Kronshagen. It paves the way to quickly and easily master driving and get your license. No matter if you\u2019re looking for a regular driving license or a tractor license the driving school Lemke will teach you. Two members of Pioneers completed their driving license at the driving school Lemke. The driving school supported their project by donating the proceeds from a drawing.","email":"info@fahrschulelemke.de","web":"fahrschule-lemke-kiel.de"},{"name":"Versorgungsbetriebe Kronshagen","img":"..\/assets\/img\/sponsors\/vbk.svg","text":"The supply companies Kronshagen GmbH are a modern supply company. As a municipal utility, values such as customer oriented service, customer proximity and quality and safety of services are of great importance. The supply companies Kronshagen GmbH are a local utility and as such are well informed about the needs and requirements of their customers. In addition, they support individual children in keeping with their motto \u201cZukunft-fest im Blick\u201d (The future firmly in view). The team Pioneers was supported by a gift of 500\u20ac which was used to acquire the team uniforms.","email":"info@vbk-kronshagen.de","web":"vbk-kronshagen.de"},{"name":"Gosch und Schl\u00fcter","img":"..\/assets\/img\/sponsors\/goschundschlueter.png","text":"The company Gosch & Schl\u00fcter is located in Kiel and specializes in the development of electric and drive technology. The company has been growing steadily for 80 years. In the third generation the company now has 140 employees. The Kiel company is supporting the Pioneers financially in the German Championship in May.","email":"info@goschundschlueter.de","web":"goschundschlueter.de"}]
+[
+    {
+        "email": "gymnasium@kronshagen.de",
+        "img": "../assets/img/sponsors/gymkro.png",
+        "name": "GymKro",
+        "text": "The Gymnasium Kronshagen is \u201dour school\u201c. It is a so called MINTEC school which means that the school provides particular and individual support for students in the areas of Mathematics, IT, Natural Sciences and Technology. Our school has been participating in the contest \u201cFormel 1 in der Schule\u201d (Formula 1 in schools) for a while. The current team \u201cPioneers\u201d has been together for three years and is the most successful team so far. Because of the success our school decided to fund the project together with the association \u201cFriends of Gymnasium Kronshagen\u201d (F\u00f6rderverein) by giving us a project account with around 5000\u20ac on it every season. ",
+        "web": "gymnasium-kronshagen.de"
+    },
+    {
+        "email": "info@foerdesparkasse.de",
+        "img": "../assets/img/sponsors/sparkasse.svg",
+        "name": "Sparkasse",
+        "text": "The Sparkasse is Germany\u2019s most recommended financial partner. The Sparkasse takes the individual wishes of their private and business clients into account. They is highly active on social and societal level. Especially on a regional level the Sparkasse is highly active since they decide locally on which projects to fund. In this season the Sparkasse Kronshagen gave us 500\u20ac in funds to support education of students in Kronshagen. In the first Pioneers season the Sparkasse also was a financial sponsor.",
+        "web": "sparkasse.de"
+    },
+    {
+        "email": "info@kfz-sh.de",
+        "img": "../assets/img/sponsors/kfz.jpg",
+        "name": "Verband des Kfz-Gewerbes Schleswig-Holstein",
+        "text": "The State Association of Auto Mechanics in Schleswig-Holstein represents 18 auto mechanic guilds with almost 1,500 members among them 250 gas stations and around 13,000 employees. In addition to the important role of providing consumer information the State Association of Auto Mechanics prime contact for its members. The close cooperation with lawmakers, authorities, ministries and other organizations results in first-hand information and assistance. Furthermore the State Association of Auto Mechanics negotiates work conditions and wages of its members. The Association is backing Pioneers for the third time.",
+        "web": "kfz-sh.de"
+    },
+    {
+        "email": "-",
+        "img": "../assets/img/sponsors/ghk.jpg",
+        "name": "GHK",
+        "text": "The Gewerbeverein Kronshagen is a merger of more than 120 companies in Kronshagen. It is their job to support the location in Kronshagen and their tradesmen. The association organises the Kronshagen Gewerbeschau, where many companies get together to talk about their buisness, and publishes the Kronshagen magazine, which is a magazine with local information. By donating money to the Pioneers, the association supports the education of students in Kronshagen. ",
+        "web": "www.ghk-kronshagen.de"
+    },
+    {
+        "email": "info@fahrschulelemke.de",
+        "img": "../assets/img/sponsors/lemke.svg",
+        "name": "Fahrschule Lemke",
+        "text": "The driving school Lemke has four locations in the region Kiel/Kronshagen. It paves the way to quickly and easily master driving and get your license. No matter if you\u2019re looking for a regular driving license or a tractor license the driving school Lemke will teach you. Two members of Pioneers completed their driving license at the driving school Lemke. The driving school supported their project by donating the proceeds from a drawing.",
+        "web": "fahrschule-lemke-kiel.de"
+    },
+    {
+        "email": "info@vbk-kronshagen.de",
+        "img": "../assets/img/sponsors/vbk.svg",
+        "name": "Versorgungsbetriebe Kronshagen",
+        "text": "The supply companies Kronshagen GmbH are a modern supply company. As a municipal utility, values such as customer oriented service, customer proximity and quality and safety of services are of great importance. The supply companies Kronshagen GmbH are a local utility and as such are well informed about the needs and requirements of their customers. In addition, they support individual children in keeping with their motto \u201cZukunft-fest im Blick\u201d (The future firmly in view). The team Pioneers was supported by a gift of 500\u20ac which was used to acquire the team uniforms.",
+        "web": "vbk-kronshagen.de"
+    },
+    {
+        "email": "info@goschundschlueter.de",
+        "img": "../assets/img/sponsors/goschundschlueter.jpg",
+        "name": "Gosch und Schl\u00fcter",
+        "text": "The company Gosch & Schl\u00fcter is located in Kiel and specializes in the development of electric and drive technology. The company has been growing steadily for 80 years. In the third generation the company now has 140 employees. The Kiel company is supporting the Pioneers financially in the German Championship in May.",
+        "web": "goschundschlueter.de"
+    }
+]
