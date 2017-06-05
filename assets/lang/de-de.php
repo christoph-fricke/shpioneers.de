@@ -36,7 +36,7 @@ define('TEXT_SPONSORS_2', 'Viele Ausgaben werden nicht durch Sachsponsoring abge
 define('BUTTON_SPONSORS', 'Mehr erfahren');
 
 //Sucess content
-define('HEADER_SUCESS', 'Das haben wir erreicht');
+define('HEADER_SUCESS', 'Erfolge');
 define('PLACE','Platz');
 define('BUTTON_SUCESS', 'Mehr erfahren');
 
