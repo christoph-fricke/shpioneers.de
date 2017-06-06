@@ -76,5 +76,5 @@ define('HEADER_PERCENTAGES','Percentages');
 define('HEADER_TEXT_ACH','Report');
 
 // Notification
-define('INFO_TEXT', 'We\'ve won the 2nd place at the german championchip!');
+define('INFO_TEXT', 'We\'ve won the 2nd place at the german championship!');
 ?>
