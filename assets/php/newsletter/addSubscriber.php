@@ -2,15 +2,7 @@
 session_start();
 require_once('../../../admin/passwordLib.php');
 //Checks if the script is called with a valid token and if an email adress is provided.
-if ((!isset($_SESSION['token']) || $_SESSION['token'] != $_POST['token']) && !isset($_POST['email'])) {
-    die('No token and/or email is provided.');
-}
-
 require_once('dbConnector.php');
-
-$email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
-$secure = true;
-$hash =	password_hash($email,PASSWORD_DEFAULT); 
 
 try {
     $prepared -> exec("INSERT INTO subscribers[(email, hash, date)] SELECT email, hash, date FROM pendingSubscribers WHERE hash = {$_GET['hash']}");
@@ -20,16 +12,3 @@ try {
 catch(Exception $e) {
     $status = 0;
 }
-
-//Return feedback to the client
-echo $status . ';' . newToken();
-
-function newToken() {
-    $length = 32;
-    $secure = true;
-    
-    $newToken = bin2hex(openssl_random_pseudo_bytes($length, $secure));
-    $_SESSION['token'] = $newToken;
-    return $newToken;
-}
-?>
