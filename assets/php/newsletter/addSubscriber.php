@@ -8,6 +8,7 @@ if ((!isset($_SESSION['token']) || $_SESSION['token'] != $_POST['token']) && !is
 require_once('dbConnector.php');
 
 $email = $_POST['email'];
+$hash = bin2hex(openssl_random_pseudo_bytes(64, true));
 
 try {
     $sql = "INSERT INTO subscribers (email, hash) VALUES (:email, :hash)";
@@ -18,6 +19,4 @@ catch(PDOExeption $e) {
     echo $e -> getMessage();
     echo $e -> getTraceAsString();  
 }
-
-//TODO: Add hashing script
 ?>
