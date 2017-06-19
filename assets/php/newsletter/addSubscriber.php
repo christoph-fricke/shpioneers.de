@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once('../../../admin/passwordLib.php');
 //Checks if the script is called with a valid token and if an email adress is provided.
 if ((!isset($_SESSION['token']) || $_SESSION['token'] != $_POST['token']) && !isset($_POST['email'])) {
     die('No token and/or email is provided.');
@@ -9,10 +10,10 @@ require_once('dbConnector.php');
 
 $email = $_POST['email'];
 $secure = true;
-$hash = bin2hex(openssl_random_pseudo_bytes(64, $secure));
+$hash =	password_hash($email,PASSWORD_DEFAULT); 
 
 try {
-    $sql = "INSERT INTO subscribers (email, hash) VALUES (:email, :hash)";
+    $sql = "INSERT INTO subscribers ( email, hash) VALUES (:email, :hash)";
     $prepared = $pdo -> prepare($sql);
     $prepared -> execute(array('email' => $email, 'hash' => $hash));
 

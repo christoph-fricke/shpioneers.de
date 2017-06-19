@@ -5,7 +5,7 @@ try {
     $pdo = new PDO(DSN, USER, PASS);
     $pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "CREATE TABLE IF NOT EXISTS subscribers (id int PRIMARY KEY AUTO_INCREMENT, email text, hash text, UNIQUE (email(255)) )";
+    $sql = "CREATE TABLE IF NOT EXISTS subscribers (id int PRIMARY KEY AUTO_INCREMENT, email text, hash text, UNIQUE (email(255), hash(255)) )";
     $pdo -> exec($sql);
 }
 catch(PDOExeption $e) {
