@@ -19,7 +19,7 @@ try {
 
     $status = 1;
 }
-catch(PDOExeption $e) {
+catch(Exception $e) {
     $status = 0;
 }
 
