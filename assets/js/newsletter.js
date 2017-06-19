@@ -6,7 +6,7 @@ $('#newsletter').submit(function (event) {
         var dataString = 'email=' + email + '&token=' + token;
 
         var xhttp = $.ajax({
-            url: '/assets/php/newsletter/addSubscriber.php',
+            url: '/assets/php/newsletter/addPending.php',
             type: 'post',
             data: dataString
         });
