@@ -13,9 +13,7 @@ $secure = true;
 $hash =	password_hash($email,PASSWORD_DEFAULT); 
 
 try {
-    $sql = "INSERT INTO subscribers ( email, hash, date) VALUES (:email, :hash, NOW())";
-    $prepared = $pdo -> prepare($sql);
-    $prepared -> execute(array('email' => $email, 'hash' => $hash));
+    $prepared -> exec("INSERT INTO subscribers[(email, hash, date)] SELECT email, hash, date FROM pendingSubscribers WHERE hash = {$_GET['hash']}");
 
     $status = 1;
 }
