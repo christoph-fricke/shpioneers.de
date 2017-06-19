@@ -266,16 +266,16 @@ case 'finance': echo SPONSOR_HEADER_FINANCE; break; default: echo SPONSOR_HEADER
             </a>
         </div>
 
-        <div id="info-banner" class="banner">
+        <!--<div id="info-banner" class="banner">
             <span><?php echo INFO_TEXT ?></span>
             <div class="block">
                 <i id="info-close" class="mdi mdi-close"></i>
             </div>
-        </div>
+        </div>-->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="../assets/js/email_responsivnews.js"></script>
-        <script src="../assets/js/notification.js"></script>
+        <!--<script src="../assets/js/notification.js"></script>-->
     </body>
 
     </html>
