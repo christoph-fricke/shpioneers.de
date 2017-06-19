@@ -515,10 +515,16 @@ $tournament[] = getcontent(2);
             </div>
         </div>
 
+        <form id="newsletter" action="" method="POST" novalidate>
+            <input id="newsletter__email" type="email" name="email" placeholder="Your email address" />
+            <input type="submit" class="btn-big" value="SUBMIT" />
+        </form>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="assets/js/functions.js"></script>
         <script src="assets/js/email_responsivnews.js"></script>
         <script src="assets/js/notification.js"></script>
+        <script src="assets/js/newsletter.js"></script>
     </body>
 
     </html>
