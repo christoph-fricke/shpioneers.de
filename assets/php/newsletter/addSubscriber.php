@@ -5,8 +5,8 @@ require_once('../../../admin/passwordLib.php');
 require_once('dbConnector.php');
 
 try {
-    $prepared -> exec("INSERT INTO subscribers[(email, hash, date)] SELECT email, hash, date FROM pendingSubscribers WHERE hash = {$_GET['hash']}");
-
+    $sql = "INSERT INTO subscribers (email, hash, date) SELECT email, hash, date FROM pendingSubscribers WHERE hash = \"{$_GET['hash']}\"";
+    $pdo -> exec($sql);
     $status = 1;
 }
 catch(Exception $e) {
