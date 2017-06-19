@@ -14,9 +14,22 @@ try {
     $sql = "INSERT INTO subscribers (email, hash) VALUES (:email, :hash)";
     $prepared = $pdo -> prepare($sql);
     $prepared -> execute(array('email' -> $email, 'hash' -> $hash));
+
+    $status = 1;
 }
 catch(PDOExeption $e) {
-    echo $e -> getMessage();
-    echo $e -> getTraceAsString();  
+    $status = 0;
+}
+
+//Return feedback to the client
+echo $status + ';' + newToken();
+
+function newToken() {
+    $length = 32;
+    $secure = true;
+    
+    $newToken = bin2hex(openssl_random_pseudo_bytes($length, $secure));
+    $_SESSION['token'] = $newToken;
+    return $newToken;
 }
 ?>
