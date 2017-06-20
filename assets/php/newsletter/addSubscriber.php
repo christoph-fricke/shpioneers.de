@@ -7,7 +7,7 @@ require_once('dbConnector.php');
 $hash = $_GET['hash'];
 try {
     $sqlMove = "INSERT INTO subscribers (email, hash, date) SELECT email, hash, date FROM pendingSubscribers WHERE hash = \"{$hash}\"";
-    $pdo -> exec($sqlMove);
+    $pdo -> exec($sqlMove); // commented out so that i may text more easily
      $sqlGetEmail ="SELECT email FROM pendingSubscribers WHERE hash = \"{$hash}\"";
 	$sth = $pdo -> prepare($sqlGetEmail);
 	$sth -> execute();
@@ -20,5 +20,4 @@ catch(PDOException $e) {
     	echo $e -> getMessage();
 	$status = 0;
 }
-
 //TODO: Give the user feedback if his email already exists
