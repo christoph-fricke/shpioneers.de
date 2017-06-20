@@ -9,7 +9,6 @@ if ((!isset($_SESSION['token']) || $_SESSION['token'] != $_POST['token']) && !is
 require_once('dbConnector.php');
 
 $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
-$secure = true;
 $hash =	password_hash($email,PASSWORD_DEFAULT); 
 
 try {

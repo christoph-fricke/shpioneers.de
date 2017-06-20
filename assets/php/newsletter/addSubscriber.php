@@ -4,7 +4,7 @@ require_once('dbConnector.php');
 
 $hash = $_GET['hash'];
 $email = "";
-echo "I ama here" . $hash;
+
 try {
     $sqlMove = "INSERT INTO subscribers (email, hash, date) SELECT email, hash, date FROM pendingSubscribers WHERE hash = :hash";
     $prepared = $pdo -> prepare($sqlMove);
