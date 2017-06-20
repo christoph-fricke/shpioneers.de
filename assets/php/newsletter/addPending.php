@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once('../../../admin/passwordLib.php');
+error_reporting(-1);
 //Checks if the script is called with a valid token and if an email adress is provided.
 if ((!isset($_SESSION['token']) || $_SESSION['token'] != $_POST['token']) && !isset($_POST['email'])) {
     die('No token and/or email is provided.');
@@ -13,6 +14,8 @@ $secure = true;
 $hash =	password_hash($email,PASSWORD_DEFAULT); 
 
 try {
+	$sth = $pdo -> prepare("SELECT email FROM subscribers WHERE email = \"{$email}\"");
+	if($sth -> execute()) die("Already Subscribed");
     $sql = "INSERT INTO pendingSubscribers ( email, hash, date) VALUES (:email, :hash, NOW())";
     $prepared = $pdo -> prepare($sql);
     $prepared -> execute(array('email' => $email, 'hash' => $hash));
