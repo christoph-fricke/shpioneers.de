@@ -10,16 +10,10 @@ try {
     $prepared = $pdo -> prepare($sqlMove);
     $prepared -> execute(array('hash' => $hash));
 
-    //Gets the email of the 
-    $sqlGetEmail = "SELECT email FROM pendingSubscribers WHERE hash = :hash";
-    $prepared = $pdo -> prepare($sqlGetEmail);
-    $prepared -> execute(array('hash' => $hash));
-    $email = $prepared -> fetch(PDO::FETCH_ASSOC)['email'];
-
-    //Deletes all pending email addresses which are equal with the one in the database
-    $sqlDelete = "DELETE FROM pendingSubscribers WHERE email = :email";
+	//Delete all the other entries in the db for the relevant email
+    $sqlDelete = "DELETE FROM pendingSubscribers WHERE email = (SELECT email FROM subscribers WHERE hash = :hash)";
  	$prepared = $pdo -> prepare($sqlDelete);
-    $prepared -> execute(array('email' => $email));
+    $prepared -> execute(array('hash' => $hash));
     
     $status = 1;
 }
