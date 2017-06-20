@@ -515,7 +515,7 @@ $tournament[] = getcontent(2);
             </div>
         </div>
 
-        <form id="newsletter" action="" method="POST" novalidate>
+        <form id="newsletter" action="" method="POST" accept-charset="UTF-8"novalidate>
             <input id="newsletter__email" type="email" name="email" placeholder="Your email address" />
             <input type="submit" class="btn-big" value="SUBMIT" />
         </form>

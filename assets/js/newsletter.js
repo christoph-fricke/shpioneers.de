@@ -4,9 +4,9 @@ $('#newsletter').submit(function (event) {
 
     if (email != "" && validateEmail(email)) {
         var dataString = 'email=' + email + '&token=' + token;
-
         var xhttp = $.ajax({
             url: '/assets/php/newsletter/addPending.php',
+		contentType: "application/x-www-form-urlencoded;charset=utf-8",
             type: 'post',
             data: dataString
         });
