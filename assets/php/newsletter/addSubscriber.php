@@ -5,19 +5,18 @@ require_once('../../../admin/passwordLib.php');
 require_once('dbConnector.php');
 
 $hash = $_GET['hash'];
+echo "I ama here";
 try {
     $sqlMove = "INSERT INTO subscribers (email, hash, date) SELECT email, hash, date FROM pendingSubscribers WHERE hash = \"{$hash}\"";
-    $pdo -> exec($sqlMove); // commented out so that i may text more easily
-     $sqlGetEmail ="SELECT email FROM pendingSubscribers WHERE hash = \"{$hash}\"";
-	$sth = $pdo -> prepare($sqlGetEmail);
-	$sth -> execute();
-	$email = $sth -> fetch(PDO::FETCH_ASSOC)['email'];
-	$sqlDelete = "DELETE FROM pendingSubscribers WHERE email = \"{$email}\"";
-	$pdo -> exec($sqlDelete);
+    $pdo -> exec($sqlMove);
+    // $sqlGetEmail = "SELECT email FROM pendingSubscribers WHERE hash = \"{$hash}\"";
+    // $statement = $pdo -> query($sqlGetEmail);
+    // $response = $statement -> fetch(PDO::FETCH_ASSOC);
+    // echo $response;
     $status = 1;
 }
-catch(PDOException $e) {
-    	echo $e -> getMessage();
-	$status = 0;
+catch(Exception $e) {
+    $status = 0;
 }
+
 //TODO: Give the user feedback if his email already exists
