@@ -10,11 +10,11 @@ require_once('dbConnector.php');
 
 $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
 $hash =	password_hash($email,PASSWORD_DEFAULT); 
-
+$lang = 1;// TODO somehow include the language
 try {
-    $sql = "INSERT INTO pendingSubscribers ( email, hash, date) VALUES (:email, :hash, NOW())";
+    $sql = "INSERT INTO pendingSubscribers ( email, hash, date, lang) VALUES (:email, :hash, NOW(), :lang)";
     $prepared = $pdo -> prepare($sql);
-    $prepared -> execute(array('email' => $email, 'hash' => $hash));
+    $prepared -> execute(array('email' => $email, 'hash' => $hash, 'lang' => $lang)); 
 
     $status = 1;
 }
@@ -24,6 +24,7 @@ catch(Exception $e) {
 
 //Return feedback to the client
 echo $status . ';' . newToken();
+include('sendConfirmation.php');
 
 function newToken() {
     $length = 32;

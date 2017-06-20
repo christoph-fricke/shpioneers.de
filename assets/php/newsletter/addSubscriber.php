@@ -6,7 +6,7 @@ $hash = $_GET['hash'];
 $email = "";
 
 try {
-    $sqlMove = "INSERT INTO subscribers (email, hash, date) SELECT email, hash, date FROM pendingSubscribers WHERE hash = :hash";
+    $sqlMove = "INSERT INTO subscribers (email, hash, date, lang) SELECT email, hash, date, lang FROM pendingSubscribers WHERE hash = :hash";
     $prepared = $pdo -> prepare($sqlMove);
     $prepared -> execute(array('hash' => $hash));
 
