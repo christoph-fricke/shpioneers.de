@@ -21,7 +21,6 @@ $message = MESSAGE_FRONT. "<a href=\"http://localhost/confirm.php?hash={$hash}\"
     } catch(Exeption $e) {
         $status = 0;
     }
-echo $message;
 
 
 ?>
