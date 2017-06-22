@@ -49,11 +49,11 @@ $('#contact').submit(function(event) {
             $('#contact [name=email]').val("");
             $('#contact [name=message]').val("");
             $('#emailsent').addClass('active');
-            setInterval(function() { $('#emailsent').removeClass('active') }, 5000);
+            setTimeout(function() { $('#emailsent').removeClass('active') }, 5000);
         } else {
             console.log('Email could not been send');
             $('#nemailsent').addClass('active');
-            setInterval(function() { $('#nemailsent').removeClass('active') }, 5000);
+            setTimeout(function() { $('#nemailsent').removeClass('active') }, 5000);
 
         }
     });
