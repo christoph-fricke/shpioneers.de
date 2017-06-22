@@ -11,12 +11,12 @@ switch($lang){
 		include('lang/de.php');
 		break;
 }
-$from = "FROM: <info@shpioneers.de>\nContent-Type:text/html;charset=UTF-8";
+$header = "FROM: <info@shpioneers.de>\nContent-Type:text/html;charset=UTF-8";
 $to = $email;
 $subject = CONFIRM_SUB;  
 $message = MESSAGE_FRONT. "<a href=\"http://localhost/confirm.php?hash={$hash}\">".MESSAGE_MIDDLE."</a>". MESSAGE_BACK;
  try {
-        mail($to, $subject, $message, $from);
+        mail($to, $subject, $message, $header);
         $status = 1;
     } catch(Exeption $e) {
         $status = 0;
