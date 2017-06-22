@@ -1326,6 +1326,13 @@ input[type="submit"] {
     margin: 20px 0;
 }
 
+#newsletter select{
+	margin-right: 10px;
+	border: 2px solid #00BFFC;
+	background-color: #fff;
+	appearance: none;
+	-moz-appearance: none;
+}
 @media screen and (max-width: 650px) {
     #newsletter h3 {
         font-size: 2rem;
@@ -1341,5 +1348,9 @@ input[type="submit"] {
         width: 80%;
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    #newsletter select{
+    	margin-right: 0;
+	margin-bottom: 10px;
     }
 }

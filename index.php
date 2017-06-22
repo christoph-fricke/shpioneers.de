@@ -284,6 +284,11 @@ $tournament[] = getcontent(2);
                     <h2><?php echo NEWSLETTER_CALL ?></h2>
                     <form id="newsletter" action="" method="POST" accept-charset="UTF-8"novalidate>
                         <input id="newsletter__email" type="email" name="email" placeholder="<?php echo NEWSLETTER_PLACEHOLDER ?>" />
+			<select name="lang">
+				<option value=""  disabled selected><?php echo LANGUAGE ?></option>
+				<option value="de"> <?php echo GERMAN ?> </option>
+				<option value="en"> <?php echo ENGLISH ?> </option>
+			</select>
                         <input type="submit" class="btn-big" value="subscribe" />
                     </form>
                     <div id="nlSuccess" class="notification">

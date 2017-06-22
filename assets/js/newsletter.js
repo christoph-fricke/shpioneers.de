@@ -1,9 +1,9 @@
 $('#newsletter').submit(function (event) {
     event.preventDefault();
     var email = $('#newsletter__email').val();
-
-    if (email != "" && validateEmail(email)) {
-        var dataString = 'email=' + email + '&token=' + token;
+    var lang = $('#newsletter select').val();
+    if (lang !== null && email != "" && validateEmail(email)) {
+        var dataString = 'email=' + email + '&lang=' + '&token=' + token;
         var xhttp = $.ajax({
             url: '/assets/php/newsletter/addPending.php',
             contentType: "application/x-www-form-urlencoded;charset=utf-8",
