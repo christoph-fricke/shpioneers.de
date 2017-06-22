@@ -6,7 +6,7 @@ $('#newsletter').submit(function (event) {
         var dataString = 'email=' + email + '&token=' + token;
         var xhttp = $.ajax({
             url: '/assets/php/newsletter/addPending.php',
-		contentType: "application/x-www-form-urlencoded;charset=utf-8",
+            contentType: "application/x-www-form-urlencoded;charset=utf-8",
             type: 'post',
             data: dataString
         });
@@ -15,7 +15,23 @@ $('#newsletter').submit(function (event) {
         xhttp.done(function (response, textStatus, jqXHR) {
             response = response.split(';');
             token = response[1];
-            console.log(response[0]);
+            if (1 == response[0]) {
+                console.log('Subscribes successfully');
+              
+                $('#newsletter [name=email]').val("");
+              
+                $('#nlSuccess').addClass('active');
+                setTimeout(function () {
+                    $('#nlSuccess').removeClass('active')
+                }, 5000);
+            } else {
+                console.log('Subscribition failed');
+                $('#nlFailed').addClass('active');
+                setTimeout(function () {
+                    $('#nlFailed').removeClass('active')
+                }, 5000);
+
+            }
         });
     }
 });

@@ -286,6 +286,12 @@ $tournament[] = getcontent(2);
                         <input id="newsletter__email" type="email" name="email" placeholder="Your email address" />
                         <input type="submit" class="btn-big" value="subscribe" />
                     </form>
+                    <div id="nlSuccess" class="notification">
+                        <?php echo NEWSLETTER_SUCCESS ?>
+                    </div>
+                    <div id="nlFailed" class="notification">
+                            <?php echo NEWSLETTER_FAILED ?>
+                    </div>
                 </div>
             </section>
         </main>

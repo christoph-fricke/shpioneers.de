@@ -81,4 +81,6 @@ define('INFO_TEXT', 'Wir haben den 2ten Platz bei den deutschen Meisterschaften 
 //Newsletter
 define('NEWSLETTER_SLANG', 'Erhalte all unsere Neuigkeiten.');
 define('NEWSLETTER_CALL', 'Abonniere unseren Newsletter!');
+define('NEWSLETTER_SUCCESS', 'Erfolgreich! Bitte überprüfen deine Emails.');
+define('NEWSLETTER_FAILED', 'Fehler! Bitte versuche es noch einmal.');
 ?>

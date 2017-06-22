@@ -81,4 +81,6 @@ define('INFO_TEXT', 'We\'ve won the 2nd place at the german championship!');
 //Newsletter
 define('NEWSLETTER_SLANG', 'Keep up with the latest news.');
 define('NEWSLETTER_CALL', 'Subscribe to our newsletter!');
+define('NEWSLETTER_SUCCESS', 'Success! Please check your emails.');
+define('NEWSLETTER_FAILED', 'Error! Please try again.');
 ?>
