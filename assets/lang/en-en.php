@@ -77,4 +77,8 @@ define('HEADER_TEXT_ACH','Report');
 
 // Notification
 define('INFO_TEXT', 'We\'ve won the 2nd place at the german championship!');
+
+//Newsletter
+define('NEWSLETTER_SLANG', 'Keep up with the latest news.');
+define('NEWSLETTER_CALL', 'Subscribe to our newsletter!');
 ?>

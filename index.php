@@ -277,6 +277,17 @@ $tournament[] = getcontent(2);
                 </div>
             </section>
             <div class="clearfix"></div>
+
+            <section id="newsletter" class="newsletter">
+                <div class="card">
+                    <h3><?php echo NEWSLETTER_SLANG ?></h3>
+                    <h2><?php echo NEWSLETTER_CALL ?></h2>
+                    <form id="newsletter" action="" method="POST" accept-charset="UTF-8"novalidate>
+                        <input id="newsletter__email" type="email" name="email" placeholder="Your email address" />
+                        <input type="submit" class="btn-big" value="subscribe" />
+                    </form>
+                </div>
+            </section>
         </main>
 
         <section id="contest" class="contest">
@@ -514,11 +525,6 @@ $tournament[] = getcontent(2);
                 <i id="info-close" class="mdi mdi-close"></i>
             </div>
         </div>
-
-        <form id="newsletter" action="" method="POST" accept-charset="UTF-8"novalidate>
-            <input id="newsletter__email" type="email" name="email" placeholder="Your email address" />
-            <input type="submit" class="btn-big" value="SUBMIT" />
-        </form>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="assets/js/functions.js"></script>

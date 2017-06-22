@@ -77,4 +77,8 @@ define('HEADER_TEXT_ACH','Bericht');
 
 // Notification
 define('INFO_TEXT', 'Wir haben den 2ten Platz bei den deutschen Meisterschaften erreicht!');
+
+//Newsletter
+define('NEWSLETTER_SLANG', 'Erhalte all unsere Neuigkeiten.');
+define('NEWSLETTER_CALL', 'Abonniere unseren Newsletter!');
 ?>
