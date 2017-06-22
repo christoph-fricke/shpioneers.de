@@ -10,7 +10,10 @@ require_once('dbConnector.php');
 
 $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
 $hash =	password_hash($email,PASSWORD_DEFAULT); 
-$lang = 1;// TODO somehow include the language
+if($_POST['lang'] == 'de'){
+$lang = 0;
+}
+else $lang = 1;
 try {
     $sql = "INSERT INTO pendingSubscribers ( email, hash, date, lang) VALUES (:email, :hash, NOW(), :lang)";
     $prepared = $pdo -> prepare($sql);
