@@ -11,7 +11,7 @@ switch($lang){
 		include('lang/de.php');
 		break;
 }
-$from = "FROM: info@shpioneers.de; Content-Type: text/html; charset=UTF-8";
+$from = "FROM: <info@shpioneers.de>\nContent-Type:text/html;charset=UTF-8";
 $to = $email;
 $subject = CONFIRM_SUB;  
 $message = MESSAGE_FRONT. "<a href=\"http://localhost/confirm.php?hash={$hash}\">".MESSAGE_MIDDLE."</a>". MESSAGE_BACK;
