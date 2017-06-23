@@ -14,7 +14,7 @@ function confirm(){
    		if (this.readyState == 4 && this.status == 200) {
 		switch(this.responseText){
 			case '0': 
-				banner('Internal error. <br> If this has happend multiple times send us a report to <a href="mailto:info@shpioneers.de"> info@shpioneers.de </a>.',false);
+				banner('Internal error <br> If this has happens multiple times send us a report to <a href="mailto:info@shpioneers.de"> info@shpioneers.de </a>.',false);
 				break;
 			case '1':
 				banner('Subscription confirmed',true);
