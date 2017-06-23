@@ -1259,6 +1259,10 @@ input[type="submit"] {
 .banner.active {
     transform: translateX(-50%) translateY(0);
 }
+.banner.negative{
+    color: rgba(244, 67, 54, 0.87);
+
+}
 
 #info-close {
     display: block;

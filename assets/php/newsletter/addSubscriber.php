@@ -3,9 +3,14 @@ require_once('../../../admin/passwordLib.php');
 require_once('dbConnector.php');
 
 $hash = $_GET['hash'];
-$email = "";
 
 try {
+    // find out if the hash exist
+    $sqlHash = "SELECT COUNT(email) FROM pendingSubscribers WHERE hash = :hash";
+    $prepared = $pdo -> prepare($sqlHash);
+    $prepared -> execute(array('hash' => $hash));
+	$result = $prepared -> fetchAll();
+	if($result[0][0] == 0) die('2');
     $sqlMove = "INSERT INTO subscribers (email, hash, date, lang) SELECT email, hash, date, lang FROM pendingSubscribers WHERE hash = :hash";
     $prepared = $pdo -> prepare($sqlMove);
     $prepared -> execute(array('hash' => $hash));
@@ -20,5 +25,5 @@ try {
 catch(Exception $e) {
     $status = 0;
 }
-
+echo $status;
 //TODO: Give the user feedback if his email already exists
