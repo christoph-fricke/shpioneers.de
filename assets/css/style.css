@@ -1330,6 +1330,7 @@ input[type="submit"] {
 	margin-right: 10px;
 	border: 2px solid #00BFFC;
 	background-color: #fff;
+    outline: none;
 	appearance: none;
 	-moz-appearance: none;
 	padding: 0.625em 0.3125em;
