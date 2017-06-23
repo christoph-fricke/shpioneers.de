@@ -1360,3 +1360,10 @@ input[type="submit"] {
 	margin-bottom: 10px;
     }
 }
+/* Confirmation Subsites */
+
+.btn-newsletter-confirm{
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+}

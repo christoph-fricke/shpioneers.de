@@ -10,5 +10,6 @@
 	catch(Exception $e){
 	$status = 0;
 	}		
+	echo $status;
 	//TODO feedback to user
 ?>
