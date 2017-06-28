@@ -24,7 +24,15 @@ $('#newsletter').submit(function (event) {
                 setTimeout(function () {
                     $('#nlSuccess').removeClass('active')
                 }, 5000);
-            } else {
+            }
+		else if( 2 == response[0]){
+                $('#nlRegistered').addClass('active');
+                setTimeout(function () {
+                    $('#nlRegistered').removeClass('active')
+                }, 5000);
+		
+			}
+	 else {
                 console.log('Subscribition failed');
                 $('#nlFailed').addClass('active');
                 setTimeout(function () {

@@ -297,6 +297,9 @@ $tournament[] = getcontent(2);
                     <div id="nlFailed" class="notification">
                             <?php echo NEWSLETTER_FAILED ?>
                     </div>
+                    <div id="nlRegistered" class="notification">
+                            <?php echo NEWSLETTER_REGISTERED ?>
+                    </div>
                 </div>
             </section>
         </main>
