@@ -1,8 +1,8 @@
 <?php
 include('dbConnector.php');
-define(UNSUBSCRIBEDE1,'<br> Zum abmelden von diesem Newsletter <a href="shpioneers.de/unsubscribe.php?hash=');
+define(UNSUBSCRIBEDE1,'<br> Zum abmelden von diesem Newsletter <a href="http://shpioneers.de/unsubscribe.php?hash=');
 define(UNSUBSCRIBEDE2,'">hier</a> klicken.');
-define(UNSUBSCRIBEEN1,'<br>To unsubscribe click <a href="shpioneers.de/unsubscribe.php?hash=');
+define(UNSUBSCRIBEEN1,'<br>To unsubscribe click <a href="http://shpioneers.de/unsubscribe.php?hash=');
 define(UNSUBSCRIBEEN2,'">here</a>.');
 // TODO authentication
 $sql = "SELECT email,hash,lang FROM subscribers";
@@ -34,5 +34,6 @@ $header = "FROM: info@shpioneers.de\n";
 $header .= "Content-Type: text/html; charset= UTF-8\n";
 $message = $_POST["message{$lng}"] . $unsub;
 mail($to,$_POST["subject{$lng}"],$message,$header);
+//echo $header . $message;
 }
 ?>
