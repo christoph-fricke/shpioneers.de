@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="assets/css/normalize.css">
 </head>
 <body>
-<input class="btn-big btn-newsletter-confirm" onclick="confirm();" type="button" value="End subscription"/>
+<input class="btn-big btn-newsletter-confirm" onclick="confirm();" type="button" value="Click to end subscription"/>
 <div class="banner" id="banner">Subscription confirmed</div>
 <script>
 function confirm(){
