@@ -46,7 +46,7 @@
 
     <body>
 
-        <nav class="mobile">
+        <nav class="mobile mobile-admin">
             <div class="navbar-content">
                 <div class="left">
                     <div class="navbar-option hamburger">
@@ -90,13 +90,18 @@
                                 Team
                             </a>
                         </div>
+                        <div class="sidebar-option">
+                            <a href="newsletter.php" onclick="clearform();" target="list" class="navbar-option">
+                                Newsletter
+                            </a>
+                        </div>
                     </div>
                     <div class="grey"></div>
                 </div>
             </div>
         </nav>
 
-        <nav class="desktop">
+        <nav class="desktop desktop-admin">
             <div class="navbar-content">
                 <div class="left">
                     <a class="logo" href="../">
@@ -131,6 +136,11 @@
                 <div class="left">
                     <a class="navbar-option" href="team/" onclick="clearform();" target="list">
                         Team
+                    </a>
+                </div>
+                <div class="left">
+                    <a class="navbar-option" href="newsletter.php" onclick="clearform();" target="list">
+                        Newsletter
                     </a>
                 </div>
             </div>

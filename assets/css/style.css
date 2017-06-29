@@ -476,7 +476,7 @@ header {
 .news-card {
     width: 45%;
     height: 500px;
- /*   max-height: 500px;*/
+    /*   max-height: 500px;*/
     margin-bottom: 50px;
     /*transition: height 10s cubic-bezier(0.4, 0.0, 0.2, 1);*/
 }
@@ -549,20 +549,20 @@ header {
     color: rgba(0, 0, 0, .7);
 }
 
-@media screen and (max-width: 1000px){
-
-	.news-lower{
-		padding: 0 10px 50px 10px;
-		height: auto;
-	}
-	.btn-small{
-		bottom: 10px;
-		right: 10px;
-	}
-	.news-card{
-		height: auto; 
-	}
+@media screen and (max-width: 1000px) {
+    .news-lower {
+        padding: 0 10px 50px 10px;
+        height: auto;
+    }
+    .btn-small {
+        bottom: 10px;
+        right: 10px;
+    }
+    .news-card {
+        height: auto;
+    }
 }
+
 
 /* TEAM SUBPAGE */
 
@@ -652,7 +652,7 @@ header {
     margin-right: 0;
     margin-bottom: 50px;
     overflow: hidden;
- /*   max-height: 1000px;*/
+    /*   max-height: 1000px;*/
 }
 
 .news-card.selected .news-lower .minimise {
@@ -1259,6 +1259,10 @@ input[type="submit"] {
 .banner.active {
     transform: translateX(-50%) translateY(0);
 }
+.banner.negative{
+    color: rgba(244, 67, 54, 0.87);
+
+}
 
 #info-close {
     display: block;
@@ -1274,4 +1278,92 @@ input[type="submit"] {
     .banner.active {
         transform: translateY(0);
     }
+}
+
+
+/* Newsletter */
+
+#news {
+    margin-bottom: 50px;
+}
+
+#newsletter,
+#newsletter .card {
+    width: 100%;
+}
+
+#newsletter .card {
+    padding: 20px;
+    text-align: center;
+}
+
+#newsletter h3 {
+    margin-bottom: 10px;
+}
+
+#newsletter input[type="submit"] {
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+#newsletter input[type="email"] {
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding: 0.625em 0.3125em;
+    outline: none;
+    border: 2px solid #00BFFC;
+    transition: border 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    width: 40%;
+    margin-right: 10px;
+}
+
+#newsletter input[type="email"]:focus {
+    border: 2px solid #009DCF;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+#newsletter select{
+	margin-right: 10px;
+	border: 2px solid #00BFFC;
+	background-color: #fff;
+    outline: none;
+	appearance: none;
+	-moz-appearance: none;
+	padding: 0.625em 0.3125em;
+}
+@media screen and (max-width: 650px) {
+    #newsletter h3 {
+        font-size: 2rem;
+    }
+    #newsletter h2 {
+        font-size: 1.5rem;
+    }
+    #newsletter form {
+        align-items: center;
+        flex-direction: column;
+    }
+    #newsletter input[type="email"] {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #newsletter select{
+    	margin-right: 0;
+	margin-bottom: 10px;
+    }
+}
+/* Confirmation Subsites */
+
+.btn-newsletter-confirm{
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
 }
