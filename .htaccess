@@ -6,7 +6,3 @@ ErrorDocument 400 /errorpages/400.html
 ErrorDocument 403 /errorpages/403.html
 ErrorDocument 404 /errorpages/404.html
 
-<FilesMatch "\.json$">
-Order allow,deny
-Deny from all
-</FilesMatch>
