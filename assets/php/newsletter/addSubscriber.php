@@ -16,7 +16,6 @@ try {
 	$sqlMove = "INSERT INTO subscribers (email, hash, date, lang) SELECT email, hash, date, lang FROM pendingSubscribers WHERE hash = :hash";
 	$prepared = $pdo -> prepare($sqlMove);
 	$prepared -> execute(array('hash' => $hash));
-
 	//Delete all the other entries in the db for the relevant email
 	$sqlDelete = "DELETE FROM pendingSubscribers WHERE email = (SELECT email FROM subscribers WHERE hash = :hash)";
 	$prepared = $pdo -> prepare($sqlDelete);
@@ -34,16 +33,21 @@ try {
 		case 0:
 			$subject = SUB_EN;
 			$message = file_get_contents('welcome_en.html');
+			include('lang/en.php'):
 			break;
 		case 1:
-		$subject = SUB_DE;
-		$message = file_get_contents('welcome_de.html');
-		break;
+			$subject = SUB_DE;
+			$message = file_get_contents('welcome_de.html');
+			include('lang/de.php'):
+			break;
 		default:
 			$subject = SUB_EN;
 			$message = file_get_contents('welcome_en.html');
+			include('lang/en.php'):
 			break;
 	}
+	$message .= '<br> To unsubscribe from this newsletter click <a href="http://www.shpioneers.de/unsubscribe.php?hash='
+	$message .= $hash . '">here</a>.';
 	mail($email,$subject,$message,$header);
 	$status = 1;
 }
