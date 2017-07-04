@@ -24,29 +24,26 @@ try {
 	$sqlWelcome = "SELECT email,lang FROM subscribers WHERE hash= :hash";
 	$prepared = $pdo -> prepare($sqlWelcome);
 	$prepared -> execute(array('hash' => $hash));
-	$result = $preparedd -> fetchAll();
+	$result = $prepared -> fetchAll();
 	$email = $result[0]['email'];
 	$lang = $result[0]['lang'];
 	$header = "FROM: <info@shpioneers.de>\n";
 	$header .= "Content-Type:text/html;charset=UTF-8";
 	switch($lang){
-		case 0:
+		case "1":
 			$subject = SUB_EN;
 			$message = file_get_contents('welcome_en.html');
-			include('lang/en.php'):
 			break;
-		case 1:
+		case "0":
 			$subject = SUB_DE;
 			$message = file_get_contents('welcome_de.html');
-			include('lang/de.php'):
 			break;
 		default:
 			$subject = SUB_EN;
 			$message = file_get_contents('welcome_en.html');
-			include('lang/en.php'):
 			break;
 	}
-	$message .= '<br> To unsubscribe from this newsletter click <a href="http://www.shpioneers.de/unsubscribe.php?hash='
+	$message .= '<br> To unsubscribe from this newsletter click <a href="http://www.shpioneers.de/unsubscribe.php?hash=';
 	$message .= $hash . '">here</a>.';
 	mail($email,$subject,$message,$header);
 	$status = 1;
