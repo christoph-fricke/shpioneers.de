@@ -1,6 +1,6 @@
 <?php
 include('dbConnector.php');
-addSub('asdf.de');
+require_once('../../../admin/passwordLib.php');
 function addSub($email){
 	global $pdo;
 	$hash = password_hash($email,PASSWORD_DEFAULT);
