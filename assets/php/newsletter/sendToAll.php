@@ -1,15 +1,21 @@
 <?php
+/* For this file to work the newsletter has to be a pdf document in the same directory as this file
+The two versions have to be named "Newsletterde.pdf" and "Newsletteren.pdf"
+This file will not work if php is used in safe mode, because the shell function used to convert the pdf files to base64 is not accesible
+in save mode.
+*/
 session_start();
 if(!($_SESSION['login'] === True)||!checktoken()){
 	echo 'noc';
  die();
 }
 include('dbConnector.php');
+define(MESSAGEDE,'Den Newsletter finden sie als pdf-Dokument im Anhang.');
+define(MESSAGEEN,'You can find the Newsletter as an attachment.');
 define(UNSUBSCRIBEDE1,'<br> Zum abmelden von diesem Newsletter <a href="http://shpioneers.de/unsubscribe.php?hash=');
 define(UNSUBSCRIBEDE2,'">hier</a> klicken.');
 define(UNSUBSCRIBEEN1,'<br>To unsubscribe click <a href="http://shpioneers.de/unsubscribe.php?hash=');
 define(UNSUBSCRIBEEN2,'">here</a>.');
-
 $sql = "SELECT email,hash,lang FROM subscribers";
 try{
 $res = $pdo -> query($sql);
@@ -21,25 +27,34 @@ catch(Exception $e){
 echo $e -> getMessage();
 }
 function sendEmailTo($to,$hash,$lang){
+$header = "FROM: info@shpioneers.de\n";
+$header .= "Content-Type: multipart/mixed; boundary=fuckyouall\n";
+$message = "\n--fuckyouall\nContent-Type: text/html;charset=UTF-8\n\n";
 switch($lang){
 	case 0:
 		$lng = "de";
 		$unsub = UNSUBSCRIBEDE1 . $hash. UNSUBSCRIBEDE2;
+		$message .= MESSAGEDE;
 		break;
 	case 1:
 		$lng = "en";
 		$unsub = UNSUBSCRIBEEN1 . $hash. UNSUBSCRIBEEN2;
+		$message .= MESSAGEEN;
 		break;
 	default:
 		$lng = "de";
 		$unsub = UNSUBSCRIBEDE1 . $hash. UNSUBSCRIBEDE2;
+		$message .= MESSAGEDE;
 		break;
 }
-$header = "FROM: info@shpioneers.de\n";
-$header .= "Content-Type: text/html; charset= UTF-8\n";
-$message = $_POST["message{$lng}"] . $unsub;
+$message .= $unsub;
+$message .= "\n--fuckyouall\nContent-Type: application/pdf; name=\"Pioneers_Newsletter.pdf\"\n";
+$message .= "Content-Disposition: attachment; filename=\"Pioneers_Newsletter.pdf\"\n";
+$message .= "Content-Transfer-Encoding: base64\n\n"; // two newlines to begin message
+$message .= shell_exec("base64 Newsletter{$lng}.pdf");
+$message .= "--fuckyouall--";
+
 mail($to,$_POST["subject{$lng}"],$message,$header);
-//echo $header . $message;
 }function checktoken(){
 return $_POST['token'] == $_SESSION['token'];
 }
