@@ -5,17 +5,18 @@ This file will not work if php is used in safe mode, because the shell function 
 in save mode.
 */
 session_start();
+
 if(!($_SESSION['login'] === True)||!checktoken()){
 	echo 'noc';
  die();
 }
 include('dbConnector.php');
-define(MESSAGEDE,'Den Newsletter finden sie als pdf-Dokument im Anhang.');
-define(MESSAGEEN,'You can find the Newsletter as an attachment.');
+define(MESSAGEDE,'<html>Den Newsletter finden sie als pdf-Dokument im Anhang.');
+define(MESSAGEEN,'<html>You can find the Newsletter as an attachment.');
 define(UNSUBSCRIBEDE1,'<br> Zum abmelden von diesem Newsletter <a href="http://shpioneers.de/unsubscribe.php?hash=');
-define(UNSUBSCRIBEDE2,'">hier</a> klicken.');
+define(UNSUBSCRIBEDE2,'">hier</a> klicken.</html>');
 define(UNSUBSCRIBEEN1,'<br>To unsubscribe click <a href="http://shpioneers.de/unsubscribe.php?hash=');
-define(UNSUBSCRIBEEN2,'">here</a>.');
+define(UNSUBSCRIBEEN2,'">here</a>.</html>');
 $sql = "SELECT email,hash,lang FROM subscribers";
 try{
 $res = $pdo -> query($sql);
@@ -28,8 +29,10 @@ echo $e -> getMessage();
 }
 function sendEmailTo($to,$hash,$lang){
 $header = "FROM: info@shpioneers.de\n";
+$header .= "MIME-Version: 1.0\n";
 $header .= "Content-Type: multipart/mixed; boundary=fuckyouall\n";
-$message = "\n--fuckyouall\nContent-Type: text/html;charset=UTF-8\n\n";
+$message = "\n If you cant see this message properly your email client does not support multipartmessages";
+$message .= "\n--fuckyouall\nContent-Type: text/html;charset=UTF-8\n\n";
 switch($lang){
 	case 0:
 		$lng = "de";
