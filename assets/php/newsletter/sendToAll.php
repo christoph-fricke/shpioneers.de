@@ -10,7 +10,7 @@ define(UNSUBSCRIBEDE2,'">hier</a> klicken.');
 define(UNSUBSCRIBEEN1,'<br>To unsubscribe click <a href="http://shpioneers.de/unsubscribe.php?hash=');
 define(UNSUBSCRIBEEN2,'">here</a>.');
 
-$sql = "SELECT email,hash,lang FROM subscribers";
+/*$sql = "SELECT email,hash,lang FROM subscribers";
 try{
 $res = $pdo -> query($sql);
 foreach($res as $row){
@@ -20,6 +20,8 @@ foreach($res as $row){
 catch(Exception $e){
 echo $e -> getMessage();
 }
+*/
+sendEmailTo("bendix.sonnenberg@gmx.de","hallo",1);
 function sendEmailTo($to,$hash,$lang){
 switch($lang){
 	case 0:
@@ -37,7 +39,8 @@ switch($lang){
 }
 $header = "FROM: info@shpioneers.de\n";
 $header .= "Content-Type: text/html; charset= UTF-8\n";
-$message = $_POST["message{$lng}"] . $unsub;
+$message = file_get_contents("newsletter{$lng}.html") . $unsub;
+echo file_get_contents("newsletter{$lng}.html");
 mail($to,$_POST["subject{$lng}"],$message,$header);
 //echo $header . $message;
 }function checktoken(){
