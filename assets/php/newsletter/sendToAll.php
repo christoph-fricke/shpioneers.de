@@ -5,12 +5,12 @@ if(!($_SESSION['login'] === True)||!checktoken()){
  die();
 }
 include('dbConnector.php');
-define(UNSUBSCRIBEDE1,'<br> Zum abmelden von diesem Newsletter <a href="http://shpioneers.de/unsubscribe.php?hash=');
+define(UNSUBSCRIBEDE1,'<br> Zum Abmelden von diesem Newsletter <a href="http://shpioneers.de/unsubscribe.php?hash=');
 define(UNSUBSCRIBEDE2,'">hier</a> klicken.');
 define(UNSUBSCRIBEEN1,'<br>To unsubscribe click <a href="http://shpioneers.de/unsubscribe.php?hash=');
 define(UNSUBSCRIBEEN2,'">here</a>.');
 
-/*$sql = "SELECT email,hash,lang FROM subscribers";
+$sql = "SELECT email,hash,lang FROM subscribers";
 try{
 $res = $pdo -> query($sql);
 foreach($res as $row){
@@ -20,8 +20,6 @@ foreach($res as $row){
 catch(Exception $e){
 echo $e -> getMessage();
 }
-*/
-sendEmailTo("bendix.sonnenberg@gmx.de","hallo",1);
 function sendEmailTo($to,$hash,$lang){
 switch($lang){
 	case 0:
@@ -38,6 +36,7 @@ switch($lang){
 		break;
 }
 $header = "FROM: info@shpioneers.de\n";
+$header .= "MIME-Version: 1.0\n";
 $header .= "Content-Type: text/html; charset= UTF-8\n";
 $message = file_get_contents("newsletter{$lng}.html") . $unsub;
 echo file_get_contents("newsletter{$lng}.html");
