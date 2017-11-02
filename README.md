@@ -1,3 +1,5 @@
+# This repository will **NOT** be updated anymore, since the competition is over
+For more information visit [f1inschools.com](http://www.f1inschools.com)
 # Pioneers
 This is the codebase for the official website of the racing team "Pioneers".
 <br><br>
